@@ -1,0 +1,38 @@
+.integral{width: 100%;background-color: #b0d3fa;}
+.intTitle{height: 655px;background: url(../images/img_integral/inthead.png) no-repeat center;}
+.intTitleCenter{height: 570px;width:400px;margin:0px auto;}
+.intInvite{float: left;  position: relative; top: 400px;background: url(../images/img_integral/intInvite.png) no-repeat  0px -5px;width: 200px;height: 70px;}
+.intInvite:hover{cursor:pointer;background: url(../images/img_integral/intInvite.png) no-repeat  0px -85px;}
+.intExchange{float: left;  position: relative; top: 400px;background: url(../images/img_integral/intExchange.png) no-repeat  0px -5px;width: 200px;height: 70px;}
+.intExchange:hover{cursor:pointer;background: url(../images/img_integral/intExchange.png) no-repeat  0px -84px;}
+.intTitle-little{height:85px;line-height:85px;width:520px;margin:0px auto;text-align: center;font-size: 22px;color: #333;font-weight: bold;}
+.intCenter{width: 1110px;margin: 0px auto;}
+.intContent{height: 561px;}
+.exProduct{position: relative;}
+.intposition1{float: left;}
+.intposition2{float: left;margin-left: 12px;}
+.intposition3{float: left;margin-right: 9px;  margin-top: 8px;}
+.intposition4{margin-top: 8px;}
+.exProduct .exProHide{background-color: #000;opacity:0.8;position: absolute;display: none;}
+.intShow1{width:623px;height: 270px;top:0px;left: 0px; }
+.intShow2{width: 474px;height: 270px;top:0px;left: 0px;}
+.intShow3{width: 308px;height: 138px;top:0px;left: 0px;}
+.intShow4{width: 474px;height: 283px;top:0px;left: 0px;}
+.exProductText1{color:#f8f71a;font-size: 28px;text-align: center;  margin-top: 80px; }
+.exProductText1 span{font-size: 20px;}
+.exProductBtn1{  width: 200px;height: 50px;line-height: 50px;font-size: 28px; margin: 20px auto 0px; text-align: center;}
+.exProductText2{color:#f8f71a;font-size: 22px;text-align: center;  margin-top: 30px; }
+.exProductText2 span{font-size: 20px;}
+.exProductBtn2{ width: 140px; height: 40px;line-height: 40px; font-size: 22px; margin: 15px auto 0px;text-align: center;}
+.intdivleft{float: left;width: 635px; }
+.intdivright{float: left;}
+.intText{background: url(../images/img_integral/intbottom.png) no-repeat top;height: 680px;}
+.intTextCom{ font-size: 14px;color: #666;padding-left: 140px;}
+.intText1{ padding-top: 113px;}
+.intText2{ padding-top: 6px;}
+.intText3{ padding-top: 170px;}
+.intText4{  padding-top: 8px;}
+.intShare{ cursor: pointer; margin: 147px auto 0px;background: url(../images/img_integral/share.png) no-repeat center;width:325px;height: 141px; }
+.intShare:hover{cursor: pointer;background: url(../images/img_integral/sharehover.png) no-repeat center;}
+.shengjimc{width: 100%;  opacity: 0.7; filter:alpha(opacity=70);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);  position: absolute;top: 120px;height:1900px;background-color: #000;text-align: center;}
+.shengjimc img{width: 60%;margin-top: 100px;}

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+.safe_1{width: 100%;}
+.safe_1 img{width: 100%;}
+.safe_2{overflow: hidden;padding-bottom: 20px;}
+.safe_2 .div_com{display:block;width: 94%;margin: 5px 3%;float: left;border-radius: 5px;padding: 10px 0;background-color: #ffffff;}
+.safe_2 .div_com .p1{float: left;width: 55px;margin: 10px;}
+.safe_2 .div_com .p1 img{width: 100%;}
+.safe_2 .div_com .p2{float: left;width: 57%;margin-top: 10px;margin-left: 2%;}
+.safe_2 .div_com .p2 .span1{display: block;color: #f86c36;font-size: 1em;}
+.safe_2 .div_com .p2 .span2{display: block;color: #666;font-size: 0.75em;margin-top: 2px;}
+.safe_2 .div_com .p3{float: right;width: 25px;padding-top: 30px;margin-right: 10px;display: block;}
+.safe_2 .div_com .p3 img{width: 100%;}
+.safe_2 .div1{background-color: #f6f2ff;}
+.safe_2 .div2{background-color: #eff6ff;}
+#empty{display: none;}
+/*底部浮动框*/
+.navFud{width: 100%;background-color: #fff;position: fixed;bottom: 0;left:0;z-index: 2;padding-top:0.75rem;border-top: 1px #ccc solid;}
+.navFud li{width: 25%;text-align: center;float: left;font-size: 0.688rem;padding-bottom: 0.5rem;}
+.navFud li a{display: block;text-align: center;}
+.navFud li a span{width: 1.5rem;display: block;margin: 0 auto 0.3rem;height: 1.7rem;background-repeat: no-repeat;
+    background-image:url("../img/navIcon.svg");background-size: 1.9rem 41rem;}
+.navFud .nav-1{background-position: 0 -5.8rem;}
+.navFud .nav-2{background-position: 0 -9.3rem;}
+.navFud .nav-3{background-position: 0 -12.8rem;}
+.navFud .nav-4{background-position: 0 -16.5rem;}
+.navFud .navOn-1{background-position: 0 -20rem;}
+.navFud .navOn-2{background-position: 0 -23.5rem;}
+.navFud .navOn-3{background-position: 0 -27rem;}
+.navFud .navOn-4{background-position: 0 -30.5rem;}
+.navFud .navOn-1 a{color: #f86c36;}
+.navFud .navOn-2 a{color: #f86c36;}
+.navFud .navOn-3 a{color: #f86c36;}
+.navFud .navOn-4 a{color: #f86c36;}

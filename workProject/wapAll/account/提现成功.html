@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>提现</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/account/css/rechargeSuc.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    提现
+</div>
+<div class="part1">
+    <p class="p_img"><img src="http://static.facebank.cn/static/wapFront/invest/img/sc_ok.png"></p>
+    <p class="p_text">提现申请完成</p>
+    <ul>
+        <li>
+            <p class="p1">8,000.00</p>
+            <p class="p2">本次提现(元)</p>
+        </li>
+        <li>
+            <p class="p1">480.00+320.00</p>
+            <p class="p2">账户余额(元)</p>
+        </li>
+    </ul>
+    <div class="result">
+        <p>
+            手续费：<span class="span1">2.00元</span>
+        </p>
+        <p>到账时间：<span class="span1">T+1内到账</span><span class="i"><img src="img/ic_i.png"></span></p>
+    </div>
+</div>
+<div class="wapMc" id="wapMc"></div>18701672405
+<div class="wapPos" >
+    <div class="wapTip">
+        <p class="p1">提现申请提交后一个工作日内到账<br/>(若遇节假日顺延)</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(".i").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapPos").show();
+            }
+    )
+    /*点击错误提示框的确定按钮关闭弹框*/
+    $(".wapPos .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapPos").hide();
+            }
+    )
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/*我的红包*/
+.head a.new1 {left: 76%;top: 0;font-size: 0.75em;width: 23%;color: #fff;}
+.redPart{width: 95%;margin: 15px auto 0;border-bottom: 1px #eaeaea solid;border-left: 1px #eaeaea solid;border-right: 1px #eaeaea solid;}
+.redPart .color1{}
+.redPart .color2{background-color: #cccccc;}
+.redPart .color3{background-color: #FEF8F0;}
+.redPart .rp_1{overflow: hidden;    padding-bottom: 10px;padding-top: 15px;background-repeat: no-repeat;background-position:top right;background-size:50px 45px;}
+.redPart .rp_1 .left{float: left;width: 41%;padding-left: 4%;}
+.redPart .rp_1 .left .span1{display: block;font-size: 0.9em;}
+.redPart .rp_1 .left .span2{display: block;font-size: 1.8em;margin-top: 5px;}
+.redPart .rp_1 .left .span2 font{font-size: 0.7em;    margin-left: 3px;}
+.redPart .rp_1 .right{float: left;width: 50%;    }
+.redPart .rp_1 .right .span1{display: block;font-size: 0.75em;line-height:20px;}
+.redPart .rp_1 .right .span2{display: block;font-size: 0.75em;line-height:20px;}
+.redPart .rp_1 .right .span3{display: block;color: #999999;font-size: 0.7em;margin-top: 2px;}
+.redPart .p3{height: 5px;}
+.redPart .p3 img{width: 100%;  vertical-align: top;}
+.redPart .p4{background-color: #ffffff;border-radius:0 0 3px 3px;  padding: 6px 0;}
+.redPart .p4 .span1{margin-left: 10px;font-size: 0.75em;}
+.redPart .p4 .span2{float: right;margin-right: 20px;}
+.redPart_1{border-top: 1px #F67676 solid; }
+.redPart_1 .rp_1 .left{color: #ED7373;}
+.redPart_1 .rp_1{background-color: #FEF0F0;background-image: url("../img/jiaxi_jiao.png");}
+.redPart_2{border-top: 1px #FB9D41 solid;}
+.redPart_2 .rp_1 .left{color: #F7912D;}
+.redPart_2 .rp_1 {background-color: #FEF8F0;background-image: url("../img/fanx_jiao.png");}
+.redPart_3{border-top: 1px #F67676 solid; }
+.redPart_3 .rp_1 .left{color: #ED7373;}
+.redPart_3 .rp_1{background-color: #FEF0F0;background-image: url("../img/jiaxi_special_jiao.png");}
+/*我的红包（无）*/
+.no_hb_1{width: 100%;text-align: center;margin-top: 100px;}
+.no_hb_1 img{width: 175px;}
+.no_hb_2{text-align: center;}
+.no_hb_2 .p1{color: #666;font-size: 1.2em;margin: 15px 0 5px;}
+.no_hb_2 .p2{color: #999;font-size: 0.9em;}
+/*我的红包使用说明*/
+body{background-color: #ffffff;    color: #333;}
+ol{width: 85%;margin: 0.8rem auto;line-height: 28px; padding-left: 15px;font-size: 0.9rem;}
+ol li span{color: #999999;}
+h3{margin-left: 5%;color: #f86c36;margin-top: 2rem;font-size: 1rem;}
+.rw-8{font-size:0.75rem;color: #999999;margin-left: 5%; line-height: 1.5rem;margin-bottom: 1.188rem;}
+.rw-8 img{width: 0.875rem;vertical-align: -4px;margin-right: 4px;}
+.rw-8 .p1 a{color: #999999;margin-right: 3px;}
+.rw-8 .p2 a{color: #999999;}
+.rw-8 ol{margin-left: 0.8rem;width: 90%;margin-bottom: 1.188rem;}

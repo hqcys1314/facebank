@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+/*转盘*/
+*{margin: 0;padding: 0;color: #444444;}
+.html_1{height: 100%;}
+.activity-lottery-winning {height: 100%;}
+.activity-lottery-winning .main {background: url(../img/activity-lottery-bg.jpg) no-repeat top center;background-size: 100% 100%;height: 100%;}
+div#outercont { position: absolute;top: 32%;width: 100%;}
+#outer-cont {position: relative;width:280px;margin: 0 auto;background: url(../img/zhuanpan_back.png) no-repeat top center;background-size: 100% 100%;height: 290px;}
+#inner-cont {position: absolute;width: 100%;top: 75px;}
+#outer {position: absolute;width: 227px;max-width: 227px;height: 227px;margin: 0 auto;top: 9.2%;left: 9.2%;}
+#inner {width: 90px;max-width: 90px;height: 90px;margin: 0 auto;cursor: pointer;}
+#outer img,#inner img {display: block;margin: 0 auto;}
+.main img {max-width: 100%;border: 0 none;}
+.gameMc{background-color: rgba(0,0,0,0.6);height: 100%;width: 100%;position: absolute;top: 0;display: none;}
+.gameMc .tankuang{width: 85%;margin: 50% auto 0;background-color: #ffffff;border-radius: 5px;text-align: center;padding-bottom: 30px;}
+.gameMc .tankuang .span1{width: 90%;display: block;margin: 0 auto;}
+.gameMc .tankuang .span1 img{width: 100%;margin-top: -2em;}
+.gameMc .tankuang .p1{font-size: 1.6em;color: #f96969;margin-top: 30px;margin-bottom:5px;font-weight: bold; }
+.gameMc .tankuang .p2{font-size:1.2em;color: #f96969;width: 80%;margin: 0 auto;}
+.gameMc .tankuang .p2 span{color: #f96969;}
+.gameMc .tankuang .a1{width: 80%;margin: 30px auto 0;background-color: #f96969;display: block;height: 40px;line-height: 40px;font-size: 1.2em;
+    color: #ffffff;border-radius: 2em;text-decoration: none;}
+/*结果页*/
+.body_1{background-color: #ffeab2;}
+.jg_1{background: url(../img/jieguo_3.jpg) no-repeat top center;background-size: 100% 100%;padding-bottom: 10px;text-align: center;}
+.jg_1 .p1{font-size: 1.8em;color: #de0000;padding-top: 30px;font-weight: bold; }
+.jg_1 .p2{font-size:1.1em;color: #de0000;margin: 10px 0;font-weight: bold;}
+.jg_1 .p2 span{color: #de0000;}
+.jg_1 .jg_hongbao{width: 75%;margin: 15px auto;position: relative;}
+.jg_1 .jg_hongbao img{width: 100%;}
+.jg_1 .jg_hongbao p{position: absolute;text-align: center;top: 27%;width: 43%;}
+.jg_1 .jg_hongbao p .span1{font-size: 1.7em;font-weight: bold;color: #de0000;}
+.jg_1 .jg_hongbao p .span2{font-size: 2.8em;font-weight: bold;color: #de0000;}
+.jg_1 .a1{width: 80%;margin:0 auto;background-color: #f86c36;display: block;height: 40px;line-height: 40px;font-size: 1.3em;
+    color: #ffffff;border-radius: 2em;text-decoration: none;}
+.jg_2{width: 100%;}
+.jg_2 img{width: 100%;}
+/*落地页*/
+.body_2{background-color: #b32626;}
+.ldy_1{width: 100%;}
+.ldy_1 img{width: 100%;}
+.ldy_2{width: 90%;margin: 15px auto 0;background-color: #d13535;color: #ffffff;padding-bottom: 20px;}
+.ldy_2 h3{font-size: 1.05em;color: #ffffff;margin: 0 5%;padding-top: 10px;padding-bottom: 2px;}
+.ldy_2 .p1{font-size: 0.95em;color: #ffffff;margin: 0 5%;}
+.ldy_3{height:50px;line-height: 50px;text-align: center;font-size: 0.95em;color: #cc8080;}
+.gameMcFud{background-color: #000;position:fixed;bottom: 0;opacity: 0.7;z-index: 20;  width: 100%;height: 4em;}
+.gameMcPos{position:fixed;bottom: 0;z-index: 21;  width: 100%;height:4em; }
+.gameMcPos a{width: 80%;margin: 0.6em 10%; height: 43px;background-color: #ffde00;color: #75351c;font-weight: bold;
+    font-size: 1.2em;border-radius: 5px;display: block;text-align: center;line-height: 43px;text-decoration: none;}

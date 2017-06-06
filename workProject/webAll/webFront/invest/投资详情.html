@@ -1,0 +1,1105 @@
+
+<!-- saved from url=(0045)http://www.facebank.cn/loan/enterprise-528573 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="page-name" content="标的详情页">
+<meta name="user-id" content="">
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="刷脸金融,笑脸金融,华电,中国华电,华电集团">
+<meta name="description" content="笑脸金融互联网理财平台www.facebank.cn, 高收益低门槛,安全有保障！为投资者提供加鑫宝、加信宝等优质理财产品, 1000元起投,随时转让,资金灵活！世界500强华电集团与上市公司阳光保险集团联手打造互联网理财时代首选品牌！互联网投资理财,就选笑脸金融！">
+<meta name="user-id" content="">
+<meta name="user-cash" content="">
+<title>笑脸金融www.facebank.cn-中国领先个人微金融服务平台！微理财，微信贷，云银行，专注小微信贷与个人金融服务！</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://static.facebank.cn/static/webFront/common/img/favicon.ico">
+<link rel="apple-touch-icon" href="http://static.facebank.cn/fb/565eb3876a568.png">
+<link rel="stylesheet" href="投资详情/common.css">
+<link rel="stylesheet" href="投资详情/head_foot.css">
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/common.css" />
+<script type="text/javascript" async="" defer="" src="投资详情/9WAI779FPB.js"></script><script src="投资详情/hm.js"></script><script src="投资详情/jquery.js"></script>
+</head>
+<body>
+<!--温馨提示-->
+ <!--页头-->
+   <div class="top">
+      <div class="top-1">
+        <ul class="top-1-left">
+          <li>
+            <span class="home">笑脸金融,欢迎您!</span>
+         </li>
+         <li>
+            <span class="top-phone">客服热线：</span>
+            <span class="phone">4008 900 766</span>       
+        </li>
+        </ul>
+        <ul class="top-1-right" id="nologin" style="">
+            <li> <a href="http://www.facebank.cn/login" data-event="topLogin" data-event-name="页头-登录" data-event-category="topLoginLink"> 请登录 </a> </li>
+	        <li> <a href="http://www.facebank.cn/goRegister" data-event="topRegister" data-event-name="页头-快速注册" data-event-category="topRegisterLink"> 快速注册 </a> </li>
+	        <li> <a href="http://cms.facebank.cn/helpIndex.html" data-event="topHelp" data-event-name="页头-帮助中心" data-event-category="topHelpLink"> 帮助中心 </a> </li>	
+         	<li> <a href="http://cms.facebank.cn/a/uploadpage.html" target="_blank" class="phone-border" data-event="top" data-event-name="页头-下载专区" data-event-category="topLoadLink"><span class="phone-load"> 移动端下载 </span></a> </li>	
+        </ul>
+        <ul class="top-1-right" id="login" style="display: none;">
+                <li> <a href="http://www.facebank.cn/account/info" id="phone"> 欢迎您, </a> </li>
+	        <li> <a href="http://www.facebank.cn/account/toMessagePage" id="inner_mail"> 站内信(0) </a> </li>
+	        <li> <a href="http://www.facebank.cn/account/logout"> 退出 </a> </li>
+	        <li> <a href="http://cms.facebank.cn/helpIndex.html"> 帮助中心 </a> </li>	
+         	<li> <a href="http://cms.facebank.cn/a/uploadpage.html" target="_blank" class="phone-border"><span class="phone-load"> 移动端下载 </span></a> </li>	
+        </ul>
+      </div>
+   </div>
+   <!--清除浮动-->
+   <div class="clear"></div>
+   <!--导航-->
+   <div class="common_nav">
+        <div class="nav-1"> 
+          <div class="nav-1-left">       
+          <a href="http://www.facebank.cn/index" data-event="topLogo" data-event-name="页头-Logo" data-event-category="topLogoLink">
+          <img src="投资详情/logo.png"></a>
+          </div>        
+           <ul class="nav-1-right">
+                <li class="font-juli">
+				 <a href="http://www.facebank.cn/index" data-event="navIndex" data-event-name="菜单-首页" data-event-category="navIndex">首页</a> 
+				  </li>
+			   <li class="font-juli">
+				 <a href="http://www.facebank.cn/invest/list" data-event="navInvest" data-event-name="菜单-投资" data-event-category="navInvestLink">投资</a> 
+				  </li>
+			  <li class="font-juli">
+				 <a href="http://www.facebank.cn/debt/list" data-event="navTransfer" data-event-name="菜单-转让" data-event-category="navTransferLink">转让</a> 
+				  </li>
+			   <li class="font-juli-m">
+				 <a href="http://www.facebank.cn/account/info" data-event="navAccount" data-event-name="菜单-我的账户" data-event-category="navAccountLink">我的账户</a> 
+				  </li>
+			</ul>
+        
+        </div>
+   </div>
+   <div id="header_id"></div>
+   <script>
+       $(function(){            
+            var _key = getCookieValue('_key');
+//            _key = 'MTM1MDExNDQ5NDY=';
+            if(_key){
+                    _key = _key.replace(/\"/g, "");
+                    
+                    var api_url_java = "http://www.facebank.cn/account/checkLogin";
+                    
+                    var timestamp=new Date().getTime();
+                    
+                    var header_url = api_url_java+'?_key='+encodeURIComponent(_key)+'&t='+timestamp+'&callback=?';
+                    $.getJSON(header_url,function(data){
+                            if(data['status']){
+                                    $("#nologin").hide();
+                                    //用户已登陆
+                                    //step1 页头处理
+                                    var api_url = "http://api.facebank.cn/fbindex";
+                                    var header_url = api_url+'/getUserInnerMail?_key='+encodeURIComponent(_key)+'&t='+timestamp+'&callback=?';
+                                    $.getJSON(header_url,function(data){
+                                            $("#login").show();
+                                            $("#phone").html("欢迎您，"+data['mobile']);
+                                            $("meta[name='user-mobile']").attr("content",data['mobile']);
+                                            var mails = 0;
+                                            if(data['num']>0){
+                                                mails = data['num'];
+                                            }
+                                            $("#inner_mail").html("站内信("+mails+")");
+                                    });
+
+                                    //step2 轮播图中用户信息
+                                    $(".banner-fuD-zhuce").hide();
+                                    $(".banner-fuD-login").show();
+                                    var user_cash_url = api_url+'/getUserCash?_key='+encodeURIComponent(_key)+'&t='+timestamp+'&callback=?'; 
+                                    $.getJSON(user_cash_url,function(data){
+                                            if(data){
+                                                    if(data['mobile']){
+                                                            $(".login-p2").html(data['mobile']);
+                                                    }
+                                                    var totalEarnedInterest = 0;
+                                                    var cash = 0;
+                                                    if(data['totalEarnedInterest']){
+                                                           totalEarnedInterest = data['totalEarnedInterest'];
+                                                    }
+                                                    if(data['cash']){
+                                                           cash = data['cash'];
+                                                    }
+                                                    $("meta[name='user-cash']").attr("content",cash);
+                                                    var user_id = '';
+                                                    if(data['userId']){
+                                                           user_id = data['userId'];
+                                                    }
+                                                    $("meta[name='user-id']").attr("content",user_id);
+                                                    $("#user_sy").html(totalEarnedInterest);
+                                                    $("#user_cash").html(cash);
+                                            }
+                                    });
+                            }else{
+                                    //step1
+                                    $("#login").hide(); 
+                                    $("#nologin").show(); 
+                                    //step2
+                                    $(".banner-fuD-zhuce").show();
+                                    $(".banner-fuD-login").hide();
+                            }
+                    });
+                
+            }else{
+                    //step1
+                    $("#login").hide(); 
+                    $("#nologin").show(); 
+                    //step2
+                    $(".banner-fuD-zhuce").show();
+                    $(".banner-fuD-login").hide();
+            }
+       });
+       
+        //获取cookie
+        function getCookieValue(cookieName)
+        {
+               var cookieValue = document.cookie;
+               var cookieStartAt = cookieValue.indexOf(""+cookieName+"=");
+               if(cookieStartAt==-1)
+               {
+                       cookieStartAt = cookieValue.indexOf(cookieName+"=");
+               }
+               if(cookieStartAt==-1)
+               {
+                       cookieValue = null;
+               }
+               else
+               {
+                       cookieStartAt = cookieValue.indexOf("=",cookieStartAt)+1;
+                       cookieEndAt = cookieValue.indexOf(";",cookieStartAt);
+                       if(cookieEndAt==-1)
+                       {
+                               cookieEndAt = cookieValue.length;
+                       }
+                       cookieValue = unescape(cookieValue.substring(cookieStartAt,cookieEndAt));//解码latin-1
+               }
+               return cookieValue;
+        }
+       
+       
+   </script>
+<link rel="stylesheet" href="投资详情/listDetail.css">
+
+	<div class="mycontainer">
+		<div class="row-inside">
+			<div class="subnavWrap">
+				<div class="list-detail">
+					<div class="detail-title">加鑫宝-2016-0488<img src="投资详情/xinke.png">
+					  <img src="投资详情/redbag.png">
+					  <img src="投资详情/redbag_fanxian.png">
+					  <!-- 
+				 <img src="http://static.facebank.cn/static/themes/style/imgs/xinke.png">
+                 <img src="http://static.facebank.cn/static/themes/style/imgs/xinbao.png">
+                 <img src="http://static.facebank.cn/static/themes/style/imgs/bao4.png">
+                 <img src="http://static.facebank.cn/static/themes/style/imgs/bao3.png">
+                  -->
+					</div>
+					<div class="detail-content myclearfix">
+						<div class="detail_wrap">
+							<div class="detail_box">
+								<div class="detail_left">
+									<ul class="listInfoDate">
+										<li><span>预期年化收益率</span><p><span class="gai">6.50%</span></p></li>
+										<li><span>投资期限</span><p><span class="gai">39</span>天</p></li>
+										<li style="border: none 0;"><span>项目总金额</span><p><span class="num gai">100</span><span>万元</span></p></li>
+									</ul>
+									<table cellpadding="0" cellspacing="0" border="0" class="listInfoTab">
+										<tbody>
+											<tr>
+												<th class="pt10">投资进度：</th>
+												<td colspan="3" class="pt10" style="*width: 440px;"><div class="DataLoadding">
+														<span data-value="0.00" style="width:43.3%;"></span><b class="org">43.3%</b>
+													</div></td>
+											</tr>
+											<tr>
+												<th>起息日期：</th>
+												<td colspan="3"> 
+													<div class="ptstart">
+													2016-05-06</div>
+													</td>
+	  									 		<!-- <th>项目止息日：</th>
+												<td>2016-06-13</td> -->
+											</tr>
+											<tr>
+												<th>还款方式：</th>
+												<td>一次性还本付息</td>
+												
+												<th>募集截止：</th>
+													<td>5天8小时34分</td>
+													</tr>
+											<!---->
+										</tbody>
+									</table>
+									<div class="detailPromotions">促销信息：<span>起息日前按银行活期利率进行贴息，在产品到期后与投资利息一并返还</span></div>
+									<div class="detailPromotions">申购说明：此标限未在平台成功投资过的新用户参与。每名新用户限享有一次</div>
+									</div>
+								<div class="detail_right">
+									<p>
+										可投金额:<span class="numerical">
+										56.70<span style="padding-left:0;font-size:18px;position:relative;top:-3px; font-family:微软雅黑;">万元</span></span>
+									</p>
+									<p>
+										账户余额:
+										<span> <a href="http://www.facebank.cn/login?loanid=528573" data-event="invDetailLogin" data-event-name="标的详情页-登录" data-event-category="invDetailLoginLink" class="org">登录</a>
+												后可见余额
+											</span>
+										</p>
+									<div class="detail_right_tit">
+										<p>请填写投资金额：</p>
+										<span>起投金额： 1000 元</span><span>递增金额：
+											1000 元</span> <input type="hidden" value="1000" id="inc_money"> <input type="hidden" value="1000" id="start_money">
+									</div>
+									<div class="detail_op">
+										<div class="count_input">
+											<a href="javascript:countMoney('-1')" data-event="invDetailLower" data-event-name="标的详情页-减号" data-event-category="invDetailLowerSign" class="btn_op gray" id="minus_id">-</a><input type="text" onkeyup="invest_calc()" id="investAmount" value="1000"><a href="javascript:countMoney('1')" data-event="invDetailAdd" data-event-name="标的详情页-加号" data-event-category="invDetailAddSign" class="btn_op">+</a>
+										</div>
+										<button class="btn_detail" id="btn_detail_id" data-event="invDetailInvest" data-event-name="标的详情页-立即投资" data-event-category="invDetailInvestBtn">立即投资</button>
+									</div>
+									<div class="tip_count" id="increaseAmountDiv" style="display: none;">递增金额为 1000元</div>
+									<p class="tr" id="xq-yuqi">
+										预期收益<span id="lab-income">6.95元</span>
+									</p>
+									<div class="xq-tishiyu" style="display:none">
+									<!-- <img src="http://static.facebank.cn/static/themes/style/img/tishi.png"> -->
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<input type="hidden" value="528573" id="loanId"> <input type="hidden" value="" id="userId"> <input type="hidden" value="" id="userCode"> <input type="hidden" id="usercash" value=""> <input type="hidden" value="527034" id="borrowerId"> <input type="hidden" value="1000000.00" id="amount"> <input type="hidden" value="1000" id="beginAmount"> <input type="hidden" value="1000" id="increaseAmount">
+			<input type="hidden" value="567000.00" id="remaining"> <input type="hidden" value="39" id="termCount"> <input type="hidden" value="1" id="termUnit"> <input type="hidden" value="2" id="productId"> <input type="hidden" value="6.50" id="annualInterestRate"> <input type="hidden" value="2" id="loanType">
+			<input type="hidden" value="" id="firstcharge">
+			<input type="hidden" value="" id="paypass">
+			<input type="hidden" value="" id="maxAmount">	
+			<input type="hidden" value="" id="isNovice">	
+			<input type="hidden" value="" id="hisAmount">	
+		<div class="leftxq"> 
+			<div class="subnavWrap">
+				<div class="subtab">
+					<ul>
+						<li class="bg_none" id="tab0" data-event="invDetailproExplain" data-event-name="标的详情页-项目说明" data-event-category="invDetailproExplainClick" onclick="javascript:tab(0);">项目说明</li>
+						<li id="tab1" data-event="invDetailproDetail" data-event-name="标的详情页-项目详情" data-event-category="invDetailproDetailClick" onclick="javascript:tab(1);" class="bg_block">项目详情</li>
+                        <li id="tab2" data-event="invDetailproDetail" data-event-name="标的详情页-还款计划" data-event-category="invDetailproHuankuanClick" onclick="javascript:tab(2);">还款计划</li>
+
+                    </ul>
+				</div>
+			</div>
+			<div class="tab" style="display: none;" id="tab_hd0">
+				<div class="project-info">
+					<div class="project-info-title" style=" border-bottom:1px  #eee solid;">
+						项目说明：</div>
+					<div class="project-info-content">
+						低风险固定收益类金融产品</div>
+					<div class="project-info-title" style=" border-bottom:1px  #eee solid;">
+						融资用途：</div>
+					<div class="project-info-content">
+						投资于以信贷资产、委托贷款等各种非标准化投资项目对应的金融产品；投资于金融机构发行的但不限于金融资产受益权、资产管理计划等其他流动类资产的金融产品。</div>
+					<div class="project-info-title" style=" border-bottom:1px  #eee solid;">
+						还款来源：</div>
+					<div class="project-info-content">
+						1、金融产品的还本付息；<br>2、抵质押物的处置变现；</div>
+					<div class="project-info-title" style=" border-bottom:1px  #eee solid;">
+						项目主体：</div>
+					<div class="project-info-content">
+						金融产品备投项目：<br>1、金融机构发行的金融产品优先级受益权；<br>2、优先级：（中间级＋劣后级）不超过2:1，优先兑付，本金收益保障高。</div>
+					<div class="project-info-title" style=" border-bottom:1px  #eee solid;">
+						安全保障：
+					</div>
+					<div class="project-info-content">
+						1、 投资标的为标准化的固定收益类金融产品，风险低、流动性强；<br>2、有足额的抵质押物，处置变现灵活，本金收益有较强保障。</div>
+			  <!--<div class="project-info-title">
+						已审核内容：
+					</div>
+					<div class="project-info-content">
+						<p class="project-info-content-audited">
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/feb67417-55b1-469b-9551-366fd7e57524.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="组织机构代码证"
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/feb67417-55b1-469b-9551-366fd7e57524.png">
+								</a>
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/6dbeefa4-073a-4fff-924f-426252a69be1.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="近年财务报表真实性审核"
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/6dbeefa4-073a-4fff-924f-426252a69be1.png">
+								</a>
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/9361f0bb-c0c5-4b23-80a3-3fcef20bcb62.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="税务登记证"
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/9361f0bb-c0c5-4b23-80a3-3fcef20bcb62.png">
+								</a>
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/7fde3bc9-6f12-4610-819e-56ce9818c482.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="融资方银行授信"
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/7fde3bc9-6f12-4610-819e-56ce9818c482.png">
+								</a>
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/2667a92b-e867-4138-9094-a70e9cebdf23.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="公司法人"
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/2667a92b-e867-4138-9094-a70e9cebdf23.png">
+								</a>
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/908a5455-f23b-4705-812d-a0c89d52beec.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="营业执照"
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/908a5455-f23b-4705-812d-a0c89d52beec.png">
+								</a>
+							<a
+									href="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/4f400883-3a9c-4134-acf7-2d40a114e6ef.png"
+									target="blank" data-plugin-options='{"type":"image"}'> <img
+									 title="融资方经营场地实地认证 "
+									src="http://static.facebank.cn/bsd/loanCreditMaterial/527034/prototype/4f400883-3a9c-4134-acf7-2d40a114e6ef.png">
+								</a>
+							</p>
+					</div> -->
+				</div>
+			</div>
+
+			<div class="tab" style="display: block;" id="tab_hd1">
+				<div class="detail">
+						<table class="detail-table">
+						<thead>
+							<tr class="detail-tr">
+								<td class="detail-td">项目名称</td>
+								<td width="500px"></td>								                                
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td class="detail-table-td1">融资规模</td>
+									<td class="detail-table-td2">1000000.00元</td>
+								</tr>
+                            	<tr>
+									<td class="detail-table-td1">预期年化收益率</td>
+									<td class="detail-table-td2">6.50%</td>
+								</tr>
+							  	<tr>
+									<td class="detail-table-td1">投资期限</td>
+									<td class="detail-table-td2">39天</td>
+								</tr>
+                                  <tr>
+									<td class="detail-table-td1">还款方式</td>
+									<td class="detail-table-td2">一次性还本付息</td>
+								</tr>
+                                  <tr>
+									<td class="detail-table-td1">募集期</td>
+									<td class="detail-table-td2">2016-04-28至2016-05-04</td>
+								</tr>
+                                  <tr>
+									<td class="detail-table-td1">起息日</td>
+									<td class="detail-table-td2">
+									<!-- <td class="detail-table-td2">2016-05-06</td> -->
+									2016-05-06</td>
+								</tr>
+                                  <tr>
+									<td class="detail-table-td1">止息日</td>
+									<td class="detail-table-td2">2016-06-13</td>
+								</tr>
+                                  <tr>
+									<td class="detail-table-td1">还款到账日</td>
+									<td style="text-align:left;padding-left:20px">T+3个工作日内</td>
+								</tr>
+                                  <tr>
+									<td class="detail-table-td1">最小投资单位</td>									
+									<td class="detail-table-td2">最小投资金额1000元起，且按1000元的整数倍递增。</td>
+								</tr>
+                                 <tr>
+									<td class="detail-table-td1">转让属性</td>
+									<td class="detail-table-td2">30天后可转让</td>
+								</tr>
+                                 <tr>
+									<td class="detail-table-td1">税款</td>
+									<td class="detail-table-td2">投资收益的应纳税款由投资人自行申报及缴纳</td>
+								</tr>
+                                 <tr>
+									<td class="detail-table-td1">收益计算方法</td>
+									<td class="detail-table-td2">投资收益=投资本金x预期年化收益率/365x投资期限（天）</td>
+								</tr>
+						</tbody>
+					</table>
+					<div id="detail-bs" class="detail-bs1"><a href="http://www.facebank.cn/loan/showLoanContract?type=1&tp=5vLLl8p%2BW5o%3D&loan=daoVf9tzypc%3D" data-event="enterpriseLoanDetailEntrust" data-event-name="标的详情页-定向委托投资协议链接" data-event-category="enterpriseLoanDetailEntrustLink" target="_blank">阅读《笑脸金融定向委托投资协议》</a></div>
+				</div>
+		   </div>
+            <div class="tab" style="display: none" id="tab_hd2">
+                <div class="detail hk_plan">
+                    <p class="p1">预期收益* （以下数据根据“投资金额22 万元、期限36个月”计算，您的收益以实际到账为准）</p>
+                    <p class="p2">共36期&nbsp;总计&nbsp;应收本息：249,648.06 元&nbsp;应收本金：220,000.00 元&nbsp;应收利息：29,648.06 元</p>
+                    <table>
+                        <tr class="color_green">
+                            <td>期数</td>
+                            <td>本金（元）</td>
+                            <td>本息(元)</td>
+                            <td>总额(元)</td>
+                            <td>还款日</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>8.73</td>
+                            <td>8.73</td>
+                            <td>2016/5/31</td>
+                        </tr>
+                        <tr class="color_green">
+                            <td>2</td>
+                            <td>0</td>
+                            <td>8.73</td>
+                            <td>8.73</td>
+                            <td>2016/4/31</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>8.73</td>
+                            <td>8.73</td>
+                            <td>2016/3/31</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+ 			</div>
+
+			
+			<!--右侧-->
+    		<div class="rightxq">
+                <p class="tzjl">投资记录</p>  
+                <form action="投资详情/笑脸金融www.facebank.cn-中国领先个人微金融服务平台！微理财，微信贷，云银行，专注小微信贷与个人金融服务！.html" id="listform" method="get">
+                <input type="hidden" name="currentPage" value="1">
+                <div class="tzjl-div">
+				<table id="invest-record-table" class="table tzjl-table">   
+					<thead>
+						<tr>
+							<td width="15%">编号</td>
+							<td width="25%">投资人</td>
+							<td width="30%">金额（元）</td>	
+							<td width="30%">投资时间</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td>1</td>
+								<td>186***16</td>
+								<td>1000</td>
+								<td>2016-04-28</td>
+							</tr>
+						<tr>
+								<td>2</td>
+								<td>189***00</td>
+								<td>5000</td>
+								<td>2016-04-28</td>
+							</tr>
+						<tr>
+								<td>3</td>
+								<td>133***41</td>
+								<td>3000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>4</td>
+								<td>134***16</td>
+								<td>20000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>5</td>
+								<td>135***95</td>
+								<td>50000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>6</td>
+								<td>155***91</td>
+								<td>20000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>7</td>
+								<td>136***40</td>
+								<td>1000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>8</td>
+								<td>136***26</td>
+								<td>10000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>9</td>
+								<td>137***43</td>
+								<td>10000</td>
+								<td>2016-04-29</td>
+							</tr>
+						<tr>
+								<td>10</td>
+								<td>186***16</td>
+								<td>300000</td>
+								<td>2016-04-29</td>
+							</tr>
+						</tbody>
+				</table></div>
+				<!-- 分页 -->
+        <div class="page" style="padding-bottom:45px;">
+	     <ul class="pagination">
+	      <li class="disabled"><span>&lt;</span></li>
+	      <li><span class="page_hover">1<span class="sr-only">(current)</span></span></li>
+	        <li><a href="http://www.facebank.cn/loan/enterprise-528573#" class="page_a" data-page-number="2">2</a></li>
+	        <li><a href="http://www.facebank.cn/loan/enterprise-528573#" class="page_a" data-page-number="2">&gt;</a></li>
+	      </ul>
+    
+    	</div>
+		</form>		
+					
+			</div>
+		
+			<!-- 投标校验 -->
+			<div class="modal fade" id="check-loan-invest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" id="myModalLabel">提示</h4>
+						</div>
+						<div class="modal-body"></div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 投标登录 -->
+			<div class="modal fade" id="check-loan-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" id="myModalLabel">提示</h4>
+						</div>
+						<div class="modal-body"></div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	  <script src="投资详情/common.js"></script>
+
+
+
+
+<!--浏览器版本弹框-->
+<div class="tanch" style="display: none;">
+    <h2>
+        <span>提示</span> <a href="javascript:;" id="close_id"></a>
+    </h2>
+    <div class="cont">
+        <p>您当前使用的浏览器版本过低，建议升级到IE8或以上版本的IE浏览器</p>
+        <p>也可使用以下浏览器继续浏览：</p>
+        <ul>
+            <li><img src="投资详情/360.png"><span>360浏览器</span>
+                <a href="http://se.360.cn/" target="blank">下载</a></li>
+            <li><img src="投资详情/chrome.png"><span>chrome浏览器</span>
+                <a href="http://rj.baidu.com/soft/detail/14744.html?ald" target="blank">下载</a></li>
+            <li><img src="投资详情/sogou.png"><span>搜狗浏览器</span>
+                <a href="http://ie.sogou.com/" target="blank">下载</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--页尾-->
+<div class="clear"></div>
+<div class="foot-top">
+  <div class="foot-1">
+         <div class="foot-left">    
+           <img src="投资详情/logo1.png">
+         </div>
+         <div class="foot-middle">      
+              <ul class="foot-m-top"> 
+
+                 <li class="f-about"><a href="http://www.facebank.cn/static/aboutus" data-event="footAbout" data-event-name="页尾-关于笑脸金融" data-event-category="footAboutLink">关于笑脸金融</a></li>
+                 <li class="f-wenti"><a href="http://cms.facebank.cn/helpIndex.html" data-event="footQuestion" data-event-name="页尾-常见问题" data-event-category="footQuestionLink">常见问题</a></li>
+                 <li class="f-us"><a href="http://www.facebank.cn/static/contactus" data-event="footContract" data-event-name="页尾-联系我们" data-event-category="footContractLink"> 联系我们</a></li>        
+
+              </ul>  
+             <div class="clear"></div>                     
+           <ul class="foot-m-bottom">
+                  <li class="f-m-b-1"><span class="footphone">4008-900-766</span>（工作时间：9:00-18:00）</li>
+                  <li class="f-m-b-2"><span class="footphone">service@facebank.cn</span></li>
+               </ul>
+         </div>
+          <div class="foot-right"><img src="投资详情/m-app-load.png">
+          <img src="投资详情/wxkf.png">
+          </div>       
+     </div>
+  </div>
+  
+  <div class="foot-bottom">
+  <div class="foot-2">
+     <p class="foot-p1">
+<!--            <img id="fd-1" src="http://static.facebank.cn/static/webFront/common/img/img_foot/fd_1.png" alt="">
+            <img id="fd-2" src="http://static.facebank.cn/static/webFront/common/img/img_foot/fd_2.png" alt="">-->
+         <a href="http://webscan.360.cn/index/checkwebsite?url=www.facebank.cn" target="_blank"><img id="fd-3" src="投资详情/fd-h3.png" alt=""></a>
+            <a id="___szfw_logo___" href="https://credit.szfw.org/CX20151014011611810181.html" target="_blank">
+                <img id="fd-4" src="投资详情/fd-h4.png" alt="">
+            </a>
+            <img id="fd-5" src="投资详情/fd_5.png" style="display:none">
+           </p>
+           <p class="foot-p2">备案号：粤ICP备15075713号<span class="kongge">©</span>2015 www.facebank.cn<span class="kongge">|</span>光华普惠科技有限公司<span class="kongge">版权所有</span></p>
+  </div>
+  </div>
+
+
+
+
+<!--------------------------改动1开始------------------------------------->
+<link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/invest/css/tk_login.css" />
+
+<div class="mask" style="display: block">
+</div>
+<div class="maskBox" style="display: block">
+        <div class="loginLeft">
+            <div class="loginTitle">
+                <span><img src="http://static.facebank.cn/static/webFront/common/img/close_white.png"></span>用户登录
+            </div>
+            <div class="loginChoose">
+                <ul>
+                    <li class="loginBlock" id="loginChoose1" onClick="javascript:login(1)">密码登录</li>
+                    <li class="loginGray"  id="loginChoose2" onClick="javascript:login(2)">快捷登录</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="loginUser" id="loginM1">
+                <div class="loginErr loginUserErr1">
+                    你输入的手机号码与密码不匹配，请重新输入，
+                    <p>或 <span>忘记密码</span></p>
+                </div>
+                <div class="loginErr loginUserErr2">
+                    你输入的手机号码格式不对
+                </div>
+                <div class="loginList">
+                     <span class="telPhoneBackImg">
+                     <input type="text" value="" placeholder="请输入您的手机号码" class="telPhone" id="aa" name="aa"></span>
+                    <span class="loginDel loginDel1"></span>
+                </div>
+                <div class="loginList">
+                   <span class="logPasswordBackImg">
+                   <input type="password" value="" placeholder="请输入您的登录密码" class="logPassword"></span>
+                    <span class="loginDel loginDel2"></span>
+                </div>
+                <div class="loginList loginLable">
+                    <a href="" data-event="loginForgetPassword"
+                       data-event-name="登录页面-忘记密码"
+                       data-event-category="loginForgetPasswordLink">忘记密码？</a>
+                    <input type="checkbox" data-event="loginAuto"
+                           data-event-name="登录页面-自动登录框"
+                           data-event-category="loginAutoBox"/><span>自动登录</span>
+                </div>
+                <div class="improtant_button loginBtn" data-event="loginLogin"
+                     data-event-name="登录页面-登录按钮"
+                     data-event-category="loginLoginBtn">登录</div>
+                <div class="loginRegtip">还不是会员？<a href="" data-event="loginRegister"
+                                                  data-event-name="登录页面-注册按钮"
+                                                  data-event-category="loginRegisterBtn">免费注册</a></div>
+            </div>
+            <div class="loginPhone" id="loginM2">
+                <div class="loginErr loginPhoneErr1">
+                    你输入的手机号码格式不对
+                </div>
+                <div class="loginList">
+                    <span class="title">手机号码</span>
+                    <input type="text" value="" placeholder="请输入您的手机号码" class="telPhone" >
+                    <span class="loginDel loginDel3"></span>
+                </div>
+                <div class="loginList loginListImgCode">
+                    <span class="title">图形验证码</span>
+                    <input type="text" value="" class="safecode" placeholder="请输入验证码">
+                    <span class="loginImgcard"><img src="http://static.facebank.cn/static/webFront/login/img/loginImgcode.png"></span>
+                </div>
+                <div class="loginList2 loginListImgCode">看不清？<a data-event="loginImgcodeChange"
+                                                                data-event-name="登录页面-切换图形验证码"
+                                                                data-event-category="loginImgcodeChangeLink">换一张</a></div>
+                <div class="loginList">
+                    <span class="title">动态密码</span>
+                    <input type="text" value=""  class="safecode">
+                    <input type="button" class="loginMsgcard" data-event="loginMsgcode"
+                           data-event-name="登录页面-获取动态密码"
+                           data-event-category="loginMsgcodeLink"  onclick="timePass()" value="获取动态密码">
+                </div>
+                <div class="loginVoiceTip">
+                    动态密码已发送至您的手机133****9873，<br>
+                    请尽快输入，若收不到短信请 <a data-event="loginVoicecode"
+                                     data-event-name="登录页面-语音获取动态密码"
+                                     data-event-category="loginVoicecodeLink">语音获取</a>
+                </div>
+                <div class="loginVoiceTip loginVoiceWordTip">您的手机号133****9873将在60秒内收到021-1111111的电话，请接听并在120秒内输入</div>
+                <div class="improtant_button loginBtn" data-event="phoneloginBtn"
+                     data-event-name="登录页面-快捷登录按钮"
+                     data-event-category="phoneloginBtnLink">登录</div>
+                <div class="loginProTip">
+                    提示： 未注册刷脸账号的手机号，登录时将自动注册<br>
+                    刷脸账号， 且代表您已同意 <a href="" data-event="loginContract"
+                                     data-event-name="登录页面-阅读协议"
+                                     data-event-category="loginContractLink">《刷脸金融用户协议》</a>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+<script>
+    $(".loginTitle span").click(
+            function(){
+                $(".mask").hide();
+                $(".maskBox").hide();
+            }
+    )
+    function login(num){
+        for(var i=1;i<=2;i++){
+            if(i==num){
+                document.getElementById("loginM"+i).style.display="block";
+                document.getElementById("loginChoose"+i).className = "loginBlock";
+            }
+            else{
+                document.getElementById("loginM"+i).style.display="none";
+                document.getElementById("loginChoose"+i).className ="loginGray";
+
+            }
+        }
+    }
+</script>
+<!--------------------------改动1结束------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	$(function() {
+		checkBrowser();
+		$("#close_id").click(function() {
+			$(".tanch").hide();
+		});
+	})
+        
+	function checkBrowser() {
+		var browser = navigator.appName;
+		var b_version = navigator.appVersion;
+		var version = b_version.split(";");
+                if(version[1]){
+                        var trim_Version = version[1].replace(/[ ]/g, "");
+                        if (browser == "Microsoft Internet Explorer") {
+                                if (trim_Version == "MSIE6.0" || trim_Version == "MSIE7.0") {
+                                        $(".tanch").show();
+                                }
+                        }
+                }
+	}
+</script>
+
+
+  <!--百度统计异步代码-->
+ <script>
+	  var _hmt = _hmt || [];
+	  (function() {
+	    var hm = document.createElement("script");
+	    hm.src = "//hm.baidu.com/hm.js?85de82c54eafe5cccc2dcc7bfcea42d2";
+	    var s = document.getElementsByTagName("script")[0]; 
+	    s.parentNode.insertBefore(hm, s);
+	  })();
+ </script>
+
+
+ <script type="text/javascript">
+  // install FireDATA sdk
+	!function(key) {
+	var w = window, d = document, _fd = w._fd = w._fd || [], methods = [
+				"pageView", "event", "event2app", "autoEvent2app",
+				"setUserInfo", "setContentInfo" ];
+		var fac = function(t) {
+			return function() {
+				var e = Array.prototype.slice.call(arguments);
+				e.unshift(t);
+				_fd.push(e);
+				return _fd
+			}
+		};
+		for (var t = 0; t < methods.length; t++) {
+			var e = methods[t];
+			_fd[e] = fac(e)
+		}
+		var g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+		g.type = 'text/javascript';
+		g.async = true;
+		g.defer = true;
+		g.src = '//sdk.firedata.cc/js/' + key + '.js';
+		s.parentNode.insertBefore(g, s);
+	}('9WAI779FPB');
+	_fd.pageView();
+</script>
+<script src="投资详情/jquery-1.11.3.min.js"></script>
+	  	<script src="投资详情/personLoanDetail.js"></script>
+	  	<script src="投资详情/app.js"></script>
+	<script src="投资详情/bootstrap.js"></script>
+		<script src="投资详情/invest.js"></script>
+		 
+
+	<script src="投资详情/province_city_country.js"></script>
+
+		
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			
+			$(".ptstart").hover(function() {
+				$(this).find(".ptstarthide").stop().animate({left: "120", opacity:1}, "fast").css("display","block");
+				$(this).find(">a").addClass("current");
+			},function(){
+				$(this).find(".ptstarthide").stop().animate({left: "0", opacity: 0}, "fast");
+				$(this).find(">a").removeClass("current");
+			});
+			
+		});
+
+		// 分页
+		$(function(){
+			$("#investAmount").focus();
+			$('#listform').appPagination();
+		});
+
+		function tab(num) {
+			for (var id = 0; id <= 2; id++) {
+				if (id == num) {
+					document.getElementById("tab_hd" + id).style.display = "block";
+					document.getElementById("tab" + id).className = "bg_block";
+				} else {
+					document.getElementById("tab_hd" + id).style.display = "none";
+					document.getElementById("tab" + id).className = "bg_none";
+				}
+			}
+		}
+
+		function invest_calc() {
+			//投资金额
+			var amount = document.getElementById("investAmount").value;
+			var remaining = document.getElementById("remaining").value;
+			if(parseInt(remaining)<=0) 
+				return;
+	         
+			var reg = new RegExp("^[0-9]*$");
+			if (!reg.test(amount)) {
+				$("#investAmount").val("0");
+				return;
+			}
+			if (parseInt(amount) > parseInt(remaining)) {
+				app.openL("温馨提示", "投资金额超过剩余可投金额");
+				$("#investAmount").val(parseInt(remaining));
+				return;
+			}
+			//年化利率
+			var rate = $("#annualInterestRate").val();
+			//投资期限 
+			var loandeadline = $("#termCount").val();
+			//还款方式3- 等额本息 2- 一次性还本付息 1- 按月付息 到期还本
+			var type = document.getElementById("productId").value;
+			
+			if (type == 3) {
+				var Amount = parseFloat(amount);
+				var Rate = parseFloat(rate) / 1200;
+				var Deadline = parseInt(loandeadline);
+				var monthIn = (Amount * Rate * Math.pow((1 + Rate), Deadline))
+						/ (Math.pow((1 + Rate), Deadline) - 1);
+				var TotalRate = monthIn * Deadline - Amount;
+				TotalRate1 = TotalRate.toFixed(2);// 支付总利息
+				var TotalRepay = parseFloat(TotalRate) + parseFloat(Amount);
+				TotalRepay = Math.round(TotalRepay * 100) / 100;
+				document.getElementById("lab-income").innerHTML = TotalRate1
+						+ "元";
+			} else if (type == 2) {
+				/* var sumamoney = amount * rate / 100 / 12;
+				var sum2 = sumamoney.toFixed(2);
+				var sum = sum2 * loandeadline;
+				var sumfinal = sum.toFixed(2);
+				document.getElementById("lab-income").innerHTML = sumfinal
+						+ "元"; */
+				var termUnit = $("#termUnit").val();
+			    var days;
+				if(termUnit == 1){
+					days=loandeadline;
+				}else if(termUnit == 3){
+					days=loandeadline * 30;
+				}
+				
+				var sumamoney = amount * rate / 100 / 365;		
+				var sum2 = sumamoney.toFixed(2);
+				var sum = sumamoney * days;
+				var sumfinal = sum.toFixed(2);
+				document.getElementById("lab-income").innerHTML = sumfinal
+						+ "元"; 	
+						
+			} else if (type == 1) {
+				var sumamoney = amount * rate / 100 / 12;
+				var sum2 = sumamoney.toFixed(2);
+				var sum = sum2 * loandeadline;
+				var sumfinal = sum.toFixed(2)
+				//每个月需要还的利息钱
+				var sumfinalEve = (sumfinal / loandeadline).toFixed(2);
+				document.getElementById("lab-income").innerHTML = sumfinal
+						+ "元";
+			}
+
+
+                        var start_money_obj = document.getElementById("start_money");
+            var start_money_value = parseInt(start_money_obj.value);
+            if(amount > start_money_value) {
+                document.getElementById("minus_id").className = 'btn_op';
+            } else {
+                document.getElementById("minus_id").className = 'btn_op gray';
+            }
+		}
+
+
+
+
+		/*
+		 * @action  计算金额
+		 * @type    type >0 加法运算 type <0 减法
+		 
+		function countMoney(type){
+		        var incr_value = parseInt(document.getElementById("inc_money").value);//每次增加的金额
+		        var order_money_obj = document.getElementById("investAmount");
+		        var order_money_value = parseInt(order_money_obj.value);
+		        if(type>0){
+		                order_money_value +=incr_value;
+		        }else{
+		                order_money_value -=incr_value;
+		                if(order_money_value<0){
+		                        order_money_value = 0;
+		                }
+		        }
+		        order_money_obj.value = order_money_value;
+		        invest_calc();
+		}*/
+
+		function countMoney(type) {
+			var incr_value = parseInt(document.getElementById("inc_money").value);//每次增加的金额
+			var start_money_obj = document.getElementById("start_money"); //起始金额
+			var start_money_value = parseInt(start_money_obj.value);
+
+			var order_money_obj = document.getElementById("investAmount");
+			var order_money_value = parseInt(order_money_obj.value);
+
+			var minus_dom = document.getElementById("minus_id");
+			if (type > 0) {
+				order_money_value += incr_value;
+				minus_dom.className = "btn_op";
+			} else {
+				order_money_value -= incr_value;
+				if (order_money_value <= start_money_value) {
+					order_money_value = start_money_value;
+					minus_dom.className = "btn_op gray";
+				}
+			}
+			order_money_obj.value = order_money_value;
+			invest_calc();
+		}
+
+		$("#investAmount").keyup(function() {
+			var set = {
+				id : "investAmount",
+				no : "letter,chn,sign,space"
+			};
+			FBValid.trimingInputletter(set);
+		});
+
+		//失去焦点
+		$("#investAmount").blur(function() {
+			//起始金额
+			var start_money_value = parseInt($.trim($("#start_money").val()));
+			var order_money = parseInt($.trim($(this).val()));
+			if (order_money < start_money_value) {
+				$(this).val(start_money_value);
+			}
+			if(investAmount != ""){
+				var remaining = $("#remaining").val();//剩余金额
+				var investAmount = $("#investAmount").val();//投资金额
+				var beginAmount = $("#beginAmount").val();//起投金额
+				var increaseAmount = $("#increaseAmount").val();//递增金额
+				if((investAmount*1-beginAmount*1) % increaseAmount*1!=0 && (remaining*1-(increaseAmount*1+beginAmount*1)>=0)){
+					$("#increaseAmountDiv").show();
+					
+				}
+				
+			}
+           
+		});
+		//获取焦点
+		$("#investAmount").focus(function(){
+			
+			$("#increaseAmountDiv").hide();
+		});
+
+		$(function(){
+		    //“万元”单位
+			$('.num').each(function() {
+				var quZhi = parseInt($(this).html())
+		        if( quZhi >= 100000 ){
+					$(this).html(quZhi/10000)
+					$(this).next().html("万元")
+				}else{
+					$(this).html(quZhi)
+					$(this).next().html("元")
+				};
+		    });	
+		});
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			
+			invest_calc();
+			
+			/*if(aa){
+				$("#btn_detail_id").removeClass("btn_detail").addClass("btn_detail_gray");
+				$("#btn_detail_id").attr('disabled',true);
+			}*/
+		});
+</script>
+<script>
+								$(function(){
+	$("#xq-yuqi").hover(
+	     function(){$('.xq-tishiyu').show()},
+		 function(){$('.xq-tishiyu').hide()}
+	);
+								});
+</script>
+</body></html>

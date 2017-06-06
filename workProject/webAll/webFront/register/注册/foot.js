@@ -1,0 +1,27 @@
+/**
+ * Created by facebank on 2015/11/12.
+ */
+/*foot模块鼠标划过灰色图片变亮色*/
+/*$(function(){
+    $("#fd-1").hover(
+        function(){$('#fd-1').attr('src','img/fd-h1.png');},
+        function(){$('#fd-1').attr('src','img/fd_1.png');}
+    );
+    $("#fd-2").hover(
+        function(){$('#fd-2').attr('src','img/fd-h2.png');},
+        function(){$('#fd-2').attr('src','img/fd_2.png');}
+    );
+    $("#fd-3").hover(
+        function(){$('#fd-3').attr('src','img/fd-h3.png');},
+        function(){$('#fd-3').attr('src','img/fd_3.png');}
+    );
+    $("#fd-4").hover(
+        function(){$('#fd-4').attr('src','img/fd-h4.png');},
+        function(){$('#fd-4').attr('src','img/fd_4.png');}
+    );
+    $("#fd-5").hover(
+        function(){$('#fd-1').attr('src','img/fd-h5.png');},
+        function(){$('#fd-1').attr('src','img/fd_5.png');}
+    );
+});
+*/

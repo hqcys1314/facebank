@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.qx_1{width: 100%;}
+.qx_1 img{width: 100%;}
+.qx_2{width: 90%;margin: 0 auto;}
+.qx_2 h3{color: #db4b6d;font-size: 1.1em;margin-top: 10px;margin-bottom: 5px;font-weight: normal;}
+.qx_2 .div_1{font-weight: bold;line-height: 22px;font-size: 0.9em;}
+.qx_2 .div_1 p{}
+.qx_2 .div_2{line-height: 22px;font-size: 0.9em;}
+.qx_2 .div_2 p{}
+.qx_2 .div_2 p img{width: 100%;    margin: 10px 0;}
+.footer{font-size: 0.8em;margin: 10px 0;text-align: center;color: #999;}
+.gameMc{background-color: #000;position:fixed;bottom: 0;opacity: 0.7;z-index: 20;  width: 100%;height: 4em;max-width: 600px;}
+.gameMcPos{position:fixed;bottom: 0;z-index: 21;  width: 100%;height:4em;max-width: 600px; }
+.gameMcPos a{width: 70%;margin: 0.6em 15%; height: 43px;background-color: #EF6586;color: #fff;
+    font-size: 1.2em;border-radius: 2em;display: block;text-align: center;line-height: 43px;text-decoration: none;}

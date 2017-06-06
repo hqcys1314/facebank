@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+/*排行榜*/
+ .meau{overflow: hidden;width: 90%;margin:15px auto;border-left: 1px #f86c36 solid;border-radius: 3px 0 0 3px;}
+ .meau li{float: left;width: 32.5%;color: #f86c36;background-color: #ffffff;height: 38px;line-height: 38px;border-top: 1px #f86c36 solid;
+    border-bottom: 1px #f86c36 solid;border-right: 1px #f86c36 solid;text-align: center;font-size: 0.95em;}
+ .meau li:last-child{border-radius:0 3px 3px 0}
+ .meau li.on{background-color: #f86c36;color: #ffffff;}
+
+ .myPos{overflow: hidden;background-color: #ffffff;margin-bottom: 15px;}
+ .myPos li{float: left;border-right: 1px #dddddd solid;margin: 10px 0;text-align: center;width: 33%;}
+ .myPos li .p1{color: #f86c36;font-size: 1em;}
+ .myPos li .p2{font-size: 0.8em;color: #999999;}
+.myPos li:last-child{border-right: 0;}
+.ul_com{overflow: hidden;}
+.ul_com li{float: left;width: 33.3%;text-align: center;}
+.ul_com .li_1{width: 26%;}
+.ul_com .li_1 img{width: 25px;vertical-align: middle;}
+.ul_com .li_1 .span1{border-radius: 50%;text-align: center;background-color: #fcccb8;color: #ffffff;    margin: 8px auto;
+    font-size: 13px;width: 24px; height: 24px;display: block;vertical-align: middle;line-height: 24px;}
+.ul_com li.li_2{width: 37%;}
+.ul_com li.li_3{width: 30%;text-align: right;}
+
+.ul_1{font-size: 0.95em;color: #333333;height: 30px;line-height: 30px;}
+.ul_2{font-size: 0.9em;background-color: #ffffff;height: 44px;line-height: 44px;border-top: 1px #dddddd solid;}
+#show_2{display: none;}
+#show_3{display: none;}
+/*排行榜为空*/
+.ph_empty{text-align: center;margin-top: 50px;}
+.ph_empty .p1{}
+.ph_empty .p1 img{width: 150px;}
+.ph_empty .p2{color: #999999;font-size: 0.9em;}
+.ph_empty .yq{display: block;width: 40%;border: 1px #f86c36 solid;height: 40px;line-height: 40px;color: #f86c36;margin: 20px auto 0;}

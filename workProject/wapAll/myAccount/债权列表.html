@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>债权列表</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/commonAuto.css">
+    <link rel="stylesheet" href="css/claimsList.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    债权列表
+</div>
+<div class="title">
+        <div class="list-con-record">
+            <div class="number">
+                编号
+            </div>
+            <div class="date">
+                时间
+            </div>
+            <div class="value">
+                债权金额
+            </div>
+
+        </div>
+</div>
+<div class="record">
+    <div class="list-con">
+        <ul>
+            <li>
+                <div class="list-con-record">
+                    <div class="number">
+                        000793
+                    </div>
+                    <div class="date">
+                        2016-12-12<br/>
+                        15:45:24
+                    </div>
+                    <div class="value">
+                        ¥290,560.00
+                    </div>
+                    <div class="arrow">
+                        <img src="http://static.facebank.cn/static/wapFront/vipCenter/img/rightJt.svg">
+                    </div>
+                </div>
+                <p class="list-con-detail">
+                      <a class="span-left" href="">转让协议</a><span class="span-jiantou"><img src="img/infoJiantou.png"></span><a class="span-left" href="">债权列表</a><span class="span-jiantou"><img src="img/infoJiantou.png"></span>
+                </p>
+            </li>
+            <li>
+                <div class="list-con-record">
+                    <div class="number">
+                        000793
+                    </div>
+                    <div class="date">
+                        2016-12-12<br/>
+                        15:45:24
+                    </div>
+                    <div class="value">
+                        ¥290,560.00
+                    </div>
+                    <div class="arrow">
+                        <img src="http://static.facebank.cn/static/wapFront/vipCenter/img/rightJt.svg">
+                    </div>
+                </div>
+                <p class="list-con-detail">
+                    <a class="span-left" href="">转让协议</a><span class="span-jiantou"><img src="img/infoJiantou.png"></span><a class="span-left" href="">债权列表</a><span class="span-jiantou"><img src="img/infoJiantou.png"></span>
+                </p>
+            </li>
+            <li>
+                <div class="list-con-record">
+                    <div class="number">
+                        000793
+                    </div>
+                    <div class="date">
+                        2016-12-12<br/>
+                        15:45:24
+                    </div>
+                    <div class="value">
+                        ¥290,560.00
+                    </div>
+                    <div class="arrow">
+                        <img src="http://static.facebank.cn/static/wapFront/vipCenter/img/rightJt.svg">
+                    </div>
+                </div>
+                <p class="list-con-detail">
+                    <a class="span-left" href="">转让协议</a><span class="span-jiantou"><img src="img/infoJiantou.png"></span><a class="span-left" href="">债权列表</a><span class="span-jiantou"><img src="img/infoJiantou.png"></span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(".list-con-record").click(
+            function(){
+                var img=$(this).find(".arrow img").attr("src");
+                var $arrowImg=$(this).find(".arrow img");
+                if(img=="http://static.facebank.cn/static/wapFront/vipCenter/img/rightJt.svg"){
+                    $arrowImg.attr("src","http://static.facebank.cn/static/wapFront/vipCenter/img/downJt.svg");
+                }else{
+                    $arrowImg.attr("src","http://static.facebank.cn/static/wapFront/vipCenter/img/rightJt.svg");
+                }
+                $(this).next().slideToggle();
+            }
+    )
+</script>
+</html>

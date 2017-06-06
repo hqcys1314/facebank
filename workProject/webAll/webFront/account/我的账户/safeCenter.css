@@ -1,0 +1,19 @@
+﻿/*安全中心*/
+.safeTitle .titleName{float: left;}
+.safeTitle .titleLevel{ float: left;margin-left: 70px;font-size: 14px;  color: #999;}
+.safeTitle .titleLevelPer {float: left;display: inline-block;background-color: #eaeaea;
+    width: 120px;height:12px;margin-top:19px;margin-left:10px;}
+/*黄色#ffcc01  绿#60c461*/
+.safeTitle .titleLevelPer div{height: 12px;}
+.safeTitle .titleLevelText{margin-left: 10px;font-size: 14px;}
+.safeTitle .titleTip{color: #999; font-size: 12px; margin-left: 30px;}
+.safeList {font-size: 14px; border-bottom: 1px solid #f2f2f2;overflow: hidden;line-height:80px;  margin: 0 25px;}
+.safeList img { float: left;margin:31px 10px 0px 20px;}
+.safeList p {float: left; color: #000;  width: 150px;}
+.safeList .span1{float: left;width: 90px;font-weight: bold;}
+.safeList div {float: left; width:430px;font-size: 14px; color: #666; padding-left:120px;}
+.safeList .span2{color:#f86c32;padding-left: 10px;  border: 0; }
+.safeList a { float: left;color: #2932e1; display: inline-block;width: 50px;font-size:12px;}
+.safeList .p1{color: #666666;}
+.safeTop{margin-top: 30px;}
+.safeBottom{margin-bottom: 80px;}

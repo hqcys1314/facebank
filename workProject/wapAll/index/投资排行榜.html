@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/index/css/paihangbang.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    投资排行榜
+</div>
+<div class="listTab">
+    <ul>
+        <li class="listTabOn" id="list1" onclick="listTab(1)">总榜</li>
+        <li class="listTabOff" id="list2" onclick="listTab(2)">月度</li>
+    </ul>
+</div>
+<div class="listShow1">
+    <ul class="ul_1 ul_com">
+        <li class="li_1">排名</li>
+        <li class="li_2">账号</li>
+        <li class="li_2">累计投资(元)</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><img src="http://static.facebank.cn/static/wapFront/index/img/num_1.png"></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><img src="http://static.facebank.cn/static/wapFront/index/img/num_2.png"></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><img src="http://static.facebank.cn/static/wapFront/index/img/num_3.png"></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><span class="span1">4</span></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><span class="span1">10</span></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+</div>
+<div class="listShow2">
+    <ul class="ul_1 ul_com">
+        <li class="li_1">排名</li>
+        <li class="li_2">账号</li>
+        <li class="li_2">累计投资(元)</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><img src="http://static.facebank.cn/static/wapFront/index/img/num_1.png"></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><img src="http://static.facebank.cn/static/wapFront/index/img/num_2.png"></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><img src="http://static.facebank.cn/static/wapFront/index/img/num_3.png"></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><span class="span1">4</span></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+    <ul class="ul_2 ul_com">
+        <li class="li_1"><span class="span1">10</span></li>
+        <li class="li_2">187******69</li>
+        <li class="li_2">9844443200</li>
+    </ul>
+</div>
+<div class="empty" id="empty">
+
+</div>
+<div class="phb_fud">
+    <ul>
+        <li>
+            <a href="">
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/index/img/phb_1.png"></span>
+                <span class="span2">我的排名<font>106</font></span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/index/img/phb_2.png"></span>
+                <span class="span2">累计投资(元)<font>1006600</font></span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    function listTab(num){
+        for(var i=1;i<=2;i++){
+            if(i==num){
+                $(".listShow"+i).show();
+                $("#list"+i).removeClass("listTabOff").addClass("listTabOn");
+            }
+            else{
+                $(".listShow"+i).hide();
+                $("#list"+i).removeClass("listTabOn").addClass("listTabOff");
+
+            }
+        }
+    }
+</script>
+</html>

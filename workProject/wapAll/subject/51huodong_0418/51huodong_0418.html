@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>51活动</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/51huodong_0418.css">
+</head>
+<body>
+<div class="cy_1">
+    <img src="img/cy_1.jpg">
+</div>
+<div class="cy_2">
+    <div class="content">
+        <form id="propose_form" method="post" name="propose">
+        <p class="p1">选择你的倡议理由，发起倡议吧：</p>
+        <p class="p2">
+            <label for="choose_1"><input type="checkbox" id="choose_1" name="chName1" class="chName"><span>可以错开十一长假高峰期</span></label>
+            <label for="choose_1"><input type="checkbox" id="choose_1" name="chName1" class="chName"><span>可以错开十一长假高峰期</span></label>
+            <label for="choose_2"><input type="checkbox" id="choose_2" name="chName2" class="chName"><span>放假太短，太折腾</span></label>
+            <label for="choose_3"><input type="checkbox" id="choose_3" name="chName3" class="chName"><span>休息好了，才能把活干好</span></label>
+            <label for="choose_4"><input type="checkbox" id="choose_4" name="chName4" class="chName"><input type="text" placeholder="其他倡议理由,14字以内。" id="choose_other" onblur="textLimit_1()"></label>
+        </p>
+        <p class="p3">
+            <input type="text" placeholder="在此输入倡议人姓名.8字以内。" id="nicheng" onblur="textLimit_2()"><span><img src="img/cy_bi.png"></span>
+        </p>
+        <a class="p4"  href="javascript:_submit()">
+            发起你的倡议
+        </a>
+        </form>
+    </div>
+</div>
+<div class="cy_4"></div>
+<div class="cy_5">
+
+</div>
+<div class="cy_3" id="cy_3">
+      <p class="left">
+          <img src="img/cy_logo.jpg">
+      </p>
+        <p class="right">
+            <span class="span1">
+                  <a href=""><img src="img/cy_4.png"></a>
+                  <span class="span_zi">没有三倍工资？理财一招搞定！
+                       <font>500强集团联合打造互联网金融平台</font>
+                  </span>
+            </span>
+            <span class="span2">劳动节红包</span>
+        </p>
+</div>
+<div class="wapMc" id="wapMc"></div>
+<!---错误提示--->
+<div class="wapPos wapErr">
+    <div class="wapTip">
+        <p class="p1"></p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        /*底部浮动框高度*/
+        var cy_3=$("#cy_3").outerHeight();
+        $(".cy_4").css("height",cy_3);
+        $(".cy_5").css("height", cy_3);
+
+
+        /*补充理由*/
+        $("#choose_other").click(
+                function(){
+                    $("#choose_4").attr("checked",true);
+               /*   var hd_1=$("#choose_4").is(':checked');
+                if(hd_1){
+                        $("#choose_other").attr("disabled",false);
+                    }else{
+                        $("#choose_other").attr("disabled",true);
+                    }*/
+
+                }
+        )
+        /*选择理由个数*/
+        $("input").click( function() {
+            var len = $("input:checkbox[class=chName]:checked").length;
+            if(len>3){
+                $(this).attr("checked",false);
+                $(".wapTip .p1").html("最多只能选择三个");
+                $(".wapMc").show();
+                $(".wapErr").show();
+            }
+        /*    if(len<1){
+                $(".wapTip .p1").html("至少选择一个");
+                $(".wapMc").show();
+                $(".wapErr").show();
+            }*/
+        });
+        /*点击错误提示框的确定按钮关闭弹框*/
+        $(".wapErr .p3").click(
+                function(){
+                    $(".wapMc").hide();
+                    $(".wapErr").hide();
+                }
+        );
+
+    });
+    function textLimit_1(){
+        var strlen = 0; //初始定义长度为0
+        var txtval =$("#choose_other").val().length;
+        if(txtval.valueOf()>14){
+            $(".wapTip .p1").html("超出字数限制");
+            $(".wapMc").show();
+            $(".wapErr").show();
+        }
+    }
+    function textLimit_2(){
+        var strlen = 0; //初始定义长度为0
+        var txtval =$("#nicheng").val().length;
+        if(txtval.valueOf()>8){
+            $(".wapTip .p1").html("超出字数限制");
+            $(".wapMc").show();
+            $(".wapErr").show();
+        }
+    }
+    function _submit() {
+        var len = $("input:checkbox[class=chName]:checked").length;
+        if(len<1){
+            $(".wapTip .p1").html("至少选择一个");
+            $(".wapMc").show();
+            $(".wapErr").show();
+        }
+    }
+</script>
+</html>

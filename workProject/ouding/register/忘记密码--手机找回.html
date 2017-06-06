@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>忘记密码</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/register/css/login.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>忘记密码?</h3>
+    <p class="tip">请输入您的电话号码进行重置密码。</p>
+</header>
+<section class="content">
+    <div class="part">
+        <p>手机号码</p>
+        <input type="tel" placeholder="请输入您的手机号" value="">
+        <span class="icon">
+                <img src="http://static.facebank.cn/staticod/ouding/register/img/delate.png">
+         </span>
+    </div>
+    <div class="part-msg">
+        <p>短信验证码</p>
+        <input type="text" class="msgcode" placeholder="请输入短信验证码" value="" id="msgCode" >
+        <input type="button" class="msgcode-send" id="msgCodeSend" value="发送验证码"  onclick="timePass()"
+               >
+    </div>
+
+</section>
+<div class="error">
+    此号码未注册
+</div>
+<!-----------------------登录按钮为红色---------------------------------->
+<input type="button" value="下一步" class="login-btn color-red" style="display: none;"
+       data-event="forget-phone-btn" data-event-name="忘记密码-手机-下一步" data-event-category="forget-phone-btn">
+<!-----------------------登录按钮为灰色---------------------------------->
+<input type="button" value="下一步" class="login-btn">
+<div class="other-tz">
+    <a href="忘记密码--邮箱找回.html">使用邮箱重置密码</a>
+</div>
+
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCodeSend").val("发送验证码");
+            $("#msgCodeSend").css("color", "#f44028");
+            $("#msgCodeSend").css("border-color", "#f44028");
+            $("#msgCodeSend").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCodeSend").val("重新获取("+miao+")");
+            $("#msgCodeSend").attr('disabled',true);
+            $("#msgCodeSend").css("color", "#666");
+            $("#msgCodeSend").css("border-color", "#666");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+</script>
+</html>

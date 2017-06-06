@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.tyj-1{width: 100%;position: relative;}
+.tyj-1 img{width: 100%;}
+.tyj-1 p{position: absolute;right: 0;border-radius: 2em 0 0 2em;color: #ffffff;top: 10px;font-size: 0.9em;padding:7px 7px 7px 15px;background-color: #f86c25;}
+.tyj-1 p:hover{cursor: pointer;}
+.tyj-2{width: 100%;background-color: #e64530;margin-top: -5px;margin-bottom: -5px;padding-top: 30px;padding-bottom: 20px;}
+.tyj-2 .div_pos{width: 82%;margin: 0 auto;}
+.tyj-2 .div_pos input{border-radius: 5px;height: 36px;font-size: 0.9em;}
+.tyj-2 .div_pos .p_tip{color: #ffffff; font-size: 0.85em;   margin-bottom: 7px;display: none;}
+.tyj-2 .div_pos .part1{ margin-bottom: 3%;}
+.tyj-2 .div_pos .part1 input{width: 100%;margin: 0 auto;text-indent: 20px;}
+.tyj-2 .div_pos .part2 {margin-bottom: 3%;}
+.tyj-2 .div_pos .part2 input[type="tel"]{width: 58%;text-indent: 20px;}
+.tyj-2 .div_pos .part2 input[type="button"]{color: #75351c;width: 40%;margin-left: 2%;background-color: #ffde00;}
+.tyj-2 .div_pos .part3 input{width: 100%;margin: 0 auto;font-size:1em;background-color: #ffde00;color: #75351c;box-shadow: 0 5px 0px #ec8c00;font-weight: bold;}
+.tyj-2 .div_pos .part4{color: #ffffff;    margin: 8px 0;font-size: 0.9em;}
+.tyj-2 .div_pos .part5{ margin-bottom: 3%;display: none;}
+.tyj-2 .div_pos .part5 input{width: 100%;margin: 0 auto;text-indent: 20px;}
+.tyj-2 .div_pos .part6{margin-top: 10px;font-size: 0.8em;text-align: left;color: #ffffff;}
+.tyj-2 .div_pos .part6 input{vertical-align: middle;}
+.tyj-2 .div_pos .part6 span{vertical-align: middle;margin-left: 1%;}
+.tyj-2 .div_pos .part6 a{color: #ffffff;margin-left: 1%;}
+.tyj-3{width: 100%;margin-top: -2px;}
+.tyj-3 img{width: 100%;}
+.appEnd{background-color: #000;opacity: 0.95;position: absolute;top: 50px;width: 100%;z-index: 30;display: none; left: 0;}
+.appEnd img{ width: 100%; }
+/*弹框*/
+.wapTk{position: fixed;top: 30%;left: 50%;margin-left: -120px;z-index: 21;display: none; }
+.wapTk .tk_con{border-radius: 10px;background-color:#fff6c5;width: 240px;position: relative;padding-bottom: 15px;}
+.wapTk .tk_con .p_title{height: 50px;line-height: 50px;width: 210px;margin: 0 auto;color: #f86c36;font-size: 1.1em;text-align: center;border-bottom: 1px #fcba86 solid;}
+.wapTk .tk_con .p_con{width: 210px;margin: 0 auto;padding: 20px 0;text-align: center;}
+.wapTk .tk_con .p_btn{background-color:#f86c36;color: #ffffff;width:210px;height: 40px;line-height: 40px;border-radius: 5px;font-size: 1.1em;
+    margin: 5px auto;text-align: center;display: block;}
+.wapTk .tk_con .p_btn a{color: #ffffff;}
+.wapTk .tk_con .p_close{text-align: center;position: absolute;bottom: -45px;left: 50%;margin-left: -15px;}
+.wapTk .tk_con .p_close img{width: 30px;}
+.tiaozhuan{font-size: 0.9em;margin: 8px 0 0;color:#d93f2c;text-align: center;}
+/*规则*/
+.wapGz{position: fixed;top: 10%;left: 50%;margin-left: -41%;z-index: 21;width: 82%;height: 395px;display: none;}
+.wapGz .gz_con{border-radius: 10px;position: relative;padding-bottom: 15px;background-color: #fff9da;height: 95%;}
+.wapGz .gz_con .p_title{height: 50px;line-height: 50px;margin: 0 auto;color: #f86c36;font-size: 1.2em;text-align: center;border-bottom: 1px #fcba86 solid;}
+.wapGz .gz_con .content{overflow-y: scroll;    height: 80%;}
+.wapGz .gz_con .content h2{color: #f86c36;background-color:#feedcc;padding-left: 5%;font-size: 1em;height: 40px;line-height: 40px;font-weight: normal; }
+.wapGz .gz_con .content h3{color: #f86c36;font-size: 0.95em;font-weight: normal;width: 90%;margin: 10px auto 0;}
+.wapGz .gz_con .content p{color: #666666;font-size: 0.9em;width: 90%;margin: 3px auto 10px;}
+.wapGz .gz_con .p_con{width: 210px;margin: 0 auto;padding: 20px 0;text-align: center;}
+.wapGz .gz_con .p_btn{background-color:#feedcc;color: #999999;height: 35px;line-height: 35px;font-size: 0.9em;text-align: center;
+    position: absolute;bottom: 0; border-radius: 0 0 10px 10px;width: 100%;}
+.wapGz .gz_con .p_close{text-align: center;position: absolute;bottom: -42px;left: 50%;margin-left: -15px;}
+.wapGz .gz_con .p_close img{width: 30px;}
+.tiaozhuan{font-size: 0.9em;margin: 8px 0 0;color:#d93f2c;text-align: center;}

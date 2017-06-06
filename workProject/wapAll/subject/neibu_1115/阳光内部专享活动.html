@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>非凡体验 激战72小时</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/neibu_1115/css/neibu.css">
+</head>
+<body>
+<div class="nb_1">
+    <img src="http://static.facebank.cn/static/wapFront/subject/neibu_1115/img/nb_banner.jpg">
+</div>
+<div class="nb_2">
+    <div id="old">
+        老用户宝典
+    </div>
+    <div id="new">
+        新用户秘籍
+    </div>
+    <p class="clear"></p>
+    <a href="http://m.facebank.cn/promo/event20160919?utm_campaign=channel0003&utm_term=event018|wl" class="tiaozhuan">
+        立即注册享收益
+    </a>
+</div>
+<div class="wapMc">
+
+</div>
+<div class="wapTk" id="oldTk">
+    <div class="tk_con">
+        <p class="p_title">老用户宝典</p>
+        <p class="p_con">
+            别蓝廋，别香菇！<br/>
+            身边的小伙伴也可以成为你的合伙人<br/>
+            听说，这三天邀请内部合伙人更帅哦！<br/>
+            所以，告诉他（她）<br/>
+            <span style="color: #f86c36;">16、17、18三天首投有奖</span><br/>
+            手把手给小伙伴算算<br/>
+            体验金+新手专享+体验奖<br/>
+            如何直逼16%年化收益...<br/>
+            <span style="color: #f86c36;">扫我海报，分享快乐</span><br/>
+            <span style="color: #f86c36;">送人玫瑰，手留余香（合伙人）</span>
+        </p>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<div class="wapTk" id="newTk">
+    <div class="tk_con">
+        <p class="p_title">新用户秘籍</p>
+        <p class="p_con">
+            <span style="color: #f86c36;">此活动仅限未投资过的阳光保险内部员工参与；<br/>
+            使用公司登记在册的手机号码注册，是此次活动获奖的唯一识别标准；</span><br/>
+            如果您符合活动条件，但未得到50元红包，请按如下方式操作：<br/>
+            1.提供您本人的身份证正面照片一张<br/>
+            2.提供您注册投资的手机号码<br/>
+            3.将1-2两项资料发送至以下邮箱：<br/>
+            service@facebank.cn<br/>
+            我们将核实您是否符合活动参与资格，如符合，将在7个工作日内为您补发50元红包</p>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $("#old").click(
+            function(){
+                $(".wapMc").show();
+                $("#oldTk").show();
+            }
+    )
+    $("#new").click(
+            function(){
+                $(".wapMc").show();
+                $("#newTk").show();
+            }
+    )
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").hide();
+                $("#newTk").hide();
+                $("#oldTk").hide();
+            }
+    )
+
+</script>
+</html>

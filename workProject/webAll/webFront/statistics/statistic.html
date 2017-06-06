@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://static.facebank.cn/static/webFront/common/css/common.css">
+    <link href="css/statistic.css" rel="stylesheet">
+</head>
+<body>
+ <div class="content">
+      <ul class="ul-1">
+          <li>
+              第一级1
+          </li>
+          <li>
+             第一级2
+          </li>
+      </ul>
+     <ul class="ul-2">
+         <li> <span class="span2">第二级1</span><span class="span-count">100000次</span> </li>
+         <li> <span class="span2">第二级2</span><span class="span-count">100000次</span> </li>
+         <li> <span class="span2">第二级3</span><span class="span-count">100000次</span> </li>
+         <li> <span class="span2">第二级4</span><span class="span-count">100000次</span> </li>
+     </ul>
+ </div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    var json=[
+        {response:"a",request:"b",count:"100000"},
+        {response:"a",request:"b",count:"90000"},
+        {response:"a",request:"b",count:"10000"},
+        {response:"a",request:"b",count:"9000"},
+        {response:"b",request:"b",count:"10000"},
+        {response:"b",request:"b",count:"30000"},
+        {response:"b",request:"b",count:"100"},
+        {response:"c",request:"b",count:"900"},
+        {response:"c",request:"b",count:"1000"},
+        {response:"c",request:"b",count:"90"},
+        {response:"d",request:"b",count:"10"},
+        {response:"d",request:"b",count:"9"},
+    ]
+    alert(json[0].response);
+
+    $(".ul-1 li").click(
+            function(){
+                $(".ul-2").show();
+            }
+    )
+</script>
+</html>

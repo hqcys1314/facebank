@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>常用操作</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/caozuo.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="img/jiantou.png">
+    </a>
+    常用操作<a href="" class="new1">注销</a>
+</div>
+<h2 class="title"><img src="img/setIcon.png">常用操作</h2>
+<div class="content">
+    <p class="p_title" id="p_title_1" onclick="display(1)"><span class="span1"><img src="img/jia.png"></span><a class="a1">发送红包</a></p>
+        <ul class="p_content" id="show1">
+            <li><a href="">加息红包</a></li>
+            <li><a href="">返现红包</a></li>
+        </ul>
+</div>
+<div class="content" id="p_title_2" onclick="display(2)">
+    <p class="p_title"><span class="span1"><img src="img/jia.png"></span><a class="a1">添加红包模型</a></p>
+    <ul class="p_content" id="show2">
+        <li><a href="">加息红包</a></li>
+        <li><a href="">返现红包</a></li>
+    </ul>
+</div>
+<div class="content" id="p_title_3">
+    <p class="p_title"><span class="span1"><img src="img/jian.png"></span><a class="a1" href="http://www.baidu.com">添加红包模型</a></p>
+
+</div>
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    function display(value){
+        var displayNow=$("#show"+value).css("display");
+        if(displayNow=="none"){
+            $("#show"+value).show();
+            $("#p_title_"+value+" .span1 img").attr("src","img/jian.png");
+        }else{
+            $("#show"+value).hide();
+            $("#p_title_"+value+" .span1 img").attr("src","img/jia.png");
+        }
+    }
+</script>
+</html>

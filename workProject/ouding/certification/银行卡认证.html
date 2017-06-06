@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>银行卡验证</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/certification/css/bank-cer.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>银行卡认证</h3>
+</header>
+<section class="content">
+    <div class="part">
+        <p>持卡人</p>
+        <input type="text" placeholder="请输入持卡人姓名" value="">
+    </div>
+    <div class="part">
+        <p>选择银行</p>
+        <div class="ziliao" id="bank" data-event="bankCer-bank" data-event-name="银行卡认证-选择银行" data-event-category="bankCer-bank-btn">请选择银行</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part">
+        <p>银行卡号</p>
+        <input type="text" placeholder="请输入银行卡号" value="">
+    </div>
+    <div class="part">
+        <p>手机号</p>
+        <input type="text" placeholder="输入该银行卡绑定的手机号" value="">
+    </div>
+    <div class="part-msg">
+        <p>短信验证码</p>
+        <input type="text" class="msgcode" placeholder="请输入短信验证码" value="" id="msgCode">
+        <input type="button" class="msgcode-send" id="msgCodeSend" value="发送验证码"  onclick="timePass()"  data-event="bankCer-sendmsg" data-event-name="银行卡认证-发送验证码" data-event-category="bankCer-sendmsg-btn">
+    </div>
+    <!----------------------按钮为红色--------------------->
+    <input type="button" value="提交" class="tijiao color-red" style="display: none" data-event="bankCer-submit" data-event-name="银行卡认证-提交" data-event-category="bankCer-submit-btn">
+    <!----------------------按钮为灰色-------------------->
+    <input type="button" value="提交" class="tijiao">
+    <div class="xieyi">
+        <input type="checkbox">已阅读并同意下方三个重要协议
+    </div>
+    <div class="xieyi-detail">
+        <a href="">《快捷充值服务协议》</a>
+        <a href="">《委托代扣还款服务协议》</a>
+        <a href="">《委托提现服务协议》</a>
+    </div>
+</section>
+<div class="zl-mc">&nbsp;</div>
+<!------------------------------婚姻状况选择框--------------------------------->
+<div class="common-tk" id="bank_tk">
+    <a class="common-fanhui">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>选择银行</h3>
+    <div class="common-choose">
+        <ul>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+            <li>
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/bankLogoImg/gongshang.png" alt="工商银行">
+            </li>
+        </ul>
+    </div>
+    <div class="nobank">
+        <a href="">列表中没有我的银行></a>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/staticod/ouding/certification/js/banktk.js"></script>
+<script>
+    $(".zl-mc").click(
+            function(){
+                $(".zl-mc").animate({
+                    marginLeft:"0"
+                },500);
+                $(".meau-tk").animate({
+                    marginLeft:"0"
+                },500);
+                $(".common-tk").animate({
+                    marginLeft:"0"
+                },500);
+            }
+    )
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCodeSend").val("发送验证码");
+            $("#msgCodeSend").css("color", "#f44028");
+            $("#msgCodeSend").css("border-color", "#f44028");
+            $("#msgCodeSend").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCodeSend").val("重新获取("+miao+")");
+            $("#msgCodeSend").attr('disabled',true);
+            $("#msgCodeSend").css("color", "#666");
+            $("#msgCodeSend").css("border-color", "#666");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/* 注册成功页 */
+.success{width:490px;margin:140px auto 0;border-bottom: #eaeaea 1px solid;text-align: center;}
+.success .p_img{margin-bottom: 45px;}
+.success .con{width:100%;font-size: 18px;margin-bottom: 30px;color:#666666;}
+.success .con p{margin-bottom: 10px;}
+.success .con .p1{font-size: 24px;}
+.success .con .number_color{color: #f86c36;font-size: 24px;}
+.suc_btn{width:300px;text-align: center;font-size: 18px;margin: 25px auto 0;}
+.suc_btn a{display: block;height:40px;line-height:40px;color:#fff;margin: 0 10%;background: #f86c36;border-radius:5px;}
+.suc_share{text-align: center;font-size: 18px;color: #f86c36;margin-top: 25px;}
+.suc_no{text-align: center;font-size:14px;color: #999999;margin-top: 10px;text-decoration: underline;display: block;}

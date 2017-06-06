@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #fff9f7;}
+.gz_1{width: 100%;}
+.gz_1 img{width: 100%;}
+.gz_2{padding: 25px 5% 0;width: 90%;}
+.gz_2 h3{font-size: 0.9em;color:#ffffff;font-weight: normal;margin-bottom: 15px;}
+.gz_2 h3 span{border-radius: 2em;padding:3px 10px;background-color: #ec574f;}
+.gz_2 ol{color: #333333;    margin-left: 5%;font-size: 0.8em;}
+.gz_2 ol li{margin-top: 4px;}
+.gz_2 img{width: 97%; margin-top: 8px;}
+.gz_2 .p1{color: #333333;font-size: 0.8em;margin-top: 7px;margin-left: 5%;}
+.gz_2 .p2{color: #333333;font-size: 0.8em;margin-left: 5%;}
+.gz_2 .p3{color: #000000;font-size: 0.9em;margin-left: 5%;}
+.gz_2 .p4{color: #666666;font-size: 0.8em;overflow: hidden;margin-left: 5%;line-height: 20px;}
+.gz_2 .p4 .span1{float: left;display: inline-block;width: 40px;}
+.gz_2 .p4 .span2{float: left;display: inline-block;width: 84%;}
+.gz_3{width: 100%;margin-top:20px;}
+.gz_3 img{width: 100%;}

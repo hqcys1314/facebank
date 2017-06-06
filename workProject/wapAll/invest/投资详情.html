@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>投资详情页</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/investDetail.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    标的详情
+</div>
+<div class="head_top">
+    <p class="bt"><font>加薪宝2015003</font><span class="span_xinshou"><img src="http://static.facebank.cn/static/wapFront/common/img/xinke.gif"></span>
+        <span class="span_jiaxi"><img src="http://static.facebank.cn/static/wapFront/index/img/jiaxi_icon.png"></span>
+        <span class="span_fanxian"><img src="http://static.facebank.cn/static/wapFront/index/img/fanxian_icon.png"></span></p>
+    <p>投资截止日期：29天2小时24分</p>
+    <div class="per_a">
+        <div class="perGrey_a">
+            <div class="perstatus_a" style="width:20%;"></div>
+        </div>
+        <div class="perValue_a">
+            20%
+        </div>
+    </div>
+    <p>剩余可投金额：<span class="color_qd">200000.00</span>元</p>
+</div>
+<div class="invest-add">
+    <span class="span1">
+        <img src="img/jiaxi_activity.png">
+    </span>
+    <span class="span2">
+        <img src="img/jiaxi_0.3%.png">
+    </span>
+      <span class="span2">
+        <img src="img/jiaxi_0.2%.png">
+    </span>
+      <span class="span2">
+        <img src="img/jiaxi_0.1%.png">
+    </span>
+</div>
+<div class="wapMc" id="wapMc"></div>
+<!-----------------------规则弹框---------------------------->
+<div class="wapGz" id="first-invest-add-tk">
+    <div class="gz_con">
+        <p class="p_title">首购加息说明</p>
+        <div class="content">
+            <p class="mtop">1.首次购买大于等于90天小鱼180天的产品，用户加息0.3%</p>
+            <p>2.首次购买大于等于90天小鱼180天的产品，用户加息0.3%</p>
+            <p>3.首次购买大于等于90天小鱼180天的产品，用户加息0.3%</p>
+        </div>
+        <p class="p_btn">上下滑动查看更多...</p>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+
+<script>
+    $("#first-invest-add").click(
+            function(){
+                $(".wapMc").show();
+                $("#first-invest-add-tk").show();
+            }
+    )
+    /*点击弹框里的关闭按钮，关闭弹框+蒙层*/
+    $(".p_close").click(
+            function(){
+                $(".wapMc").hide();
+                $("#first-invest-add-tk").hide();
+            }
+    )
+</script>
+
+
+<div class="xq_tip">
+  <img src="http://static.facebank.cn/static/wapFront/invest/img/new_tip.png">新手标仅限新用户首次投资
+</div>
+<div class="xqTab">
+    <ul>
+        <li class="xqTabOn" id="xq1" onclick="xqTab(1)">项目详情</li>
+        <li class="xqTabOff" id="xq2" onclick="xqTab(2)">项目说明</li>
+        <li class="xqTabOff" id="xq3" onclick="xqTab(3)">投资记录</li>
+    </ul>
+</div>
+<div class="clear"></div>
+
+<!--项目详情-->
+<div class="main_xq1">
+    <ul>
+        <li><p>融资规模</p><span class="color_qd1">100万</span></li>
+        <li><p>年化收益率</p><span class="color_qd2">6.8%</span></li>
+        <li><p>投资期限</p><span>63天</span></li>
+
+        <li class="mx_detail"><p>还款方式</p><span>一次性还本付息</span>
+            <div class="mx_detail_img">
+               <img src="http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png">
+            </div>
+        </li>
+        <li class="mx_detail_content">
+            <div class="mxd">
+                <div class="one">
+                    <div class="div_num">1</div>
+                    <div class="div_content">
+                        <div class="div_1">1000.00</div>
+                        <div class="div_2">本金(元)</div>
+                    </div>
+                    <div class="div_content">
+                        <div class="div_1">8.73</div>
+                        <div class="div_2">利息(元)</div>
+                    </div>
+                    <div class="div_content" style="border: 0;">
+                        <div class="div_1">1008.73</div>
+                        <div class="div_2">总额(元)</div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                </div>
+            </div>
+            <div class="mxd">
+                <div class="one">
+                    <div class="div_num">2</div>
+                    <div class="div_content">
+                        <div class="div_1">1000.00</div>
+                        <div class="div_2">本金(元)</div>
+                    </div>
+                    <div class="div_content">
+                        <div class="div_1">8.73</div>
+                        <div class="div_2">利息(元)</div>
+                    </div>
+                    <div class="div_content" style="border: 0;">
+                        <div class="div_1">1008.73</div>
+                        <div class="div_2">总额(元)</div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                </div>
+            </div>
+            <div class="mxd">
+                <div class="one">
+                    <div class="div_num">3</div>
+                    <div class="div_content">
+                        <div class="div_1">1000.00</div>
+                        <div class="div_2">本金(元)</div>
+                    </div>
+                    <div class="div_content">
+                        <div class="div_1">8.73</div>
+                        <div class="div_2">利息(元)</div>
+                    </div>
+                    <div class="div_content" style="border: 0;">
+                        <div class="div_1">1008.73</div>
+                        <div class="div_2">总额(元)</div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                </div>
+            </div>
+            <div class="mxd_btn">
+                 点击收起
+            </div>
+        </li>
+
+
+
+        <li><p>最小投资单位</p>
+            <div class="color_div">
+                <div class="color_qd3">1000元起</div>
+                <div class="color_qd4">且按1000元的整数倍递增</div>
+            </div>
+        </li>
+        <li><p>起息日</p>
+            <div class="color_div">
+                <div class="color_qd3">2016-01-19</div>
+                <div class="color_qd4">该产品享受起息日前按银行同期活息贴息政策</div>
+            </div>
+        </li>
+        <li><p>止息日</p><span class="color_qd2">2016-03-21</span></li>
+        <li><p>还款到帐日</p><span>T—+3个工作日内</span></li>
+        <li><p>募集期</p><span>2016-01-14 ~ 2016-01-17</span></li>
+        <li><p>转让属性</p><span>30天后可转让</span></li>
+        <li class="h_10">
+            <div class="color_div1">
+                <div class="color_qd6">收益计算方法</div>
+                <div class="color_qd4_1">投资收益=投资本金x预期年化收益率/365x实际投资期限</div>
+            </div>
+        </li>
+        <li class="h_10">
+            <div class="color_div1">
+                <div class="color_qd6">税款</div>
+                <div class="color_qd4_1">投资收益的应纳税款由投资人自行申报及缴纳</div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="clear"></div>
+</div>
+
+<!--项目说明-->
+<div class="main_xq2">
+    <ul>
+        <li>
+            <p>项目说明</p>
+            <span class="color_qd1">低风险固定收益类金融产品</span>
+        </li>
+        <li>
+            <p>资金用途</p>
+            <span class="color_qd1">投资于以信贷资产、委托贷款等各种非标准化投资项目对应的金融产品；投资于金融机构发行的但不限于金融资产受益权、资产管理计划等其他流动类资产的金融产品。</span>
+        </li>
+        <li>
+            <p>还款来源</p>
+            <span class="color_qd1">1、金融产品的还本付息；<br />2、抵质押物的处置变现； </span>
+        </li>
+        <li>
+            <p>项目主体</p>
+            <span class="color_qd1">金融产品备投政府平台项目：<br />
+                1、项目方所属区域2014年GDP近千亿，财政总收入超过200亿，实力强劲；<br />
+                2、项目方和项目担保企业近年发行的债券评级和主体评级均为AA级，安全可靠；<br />
+                3、项目方属地为国务院确定的地方性金融中心和交通枢纽，区域优势明显；
+            </span>
+        </li>
+        <li>
+            <p>安全保障</p>
+            <span class="color_qd1">1、 投资标的为标准化的固定收益类金融产品，风险低、流动性强；<br />
+                2、有足额的抵质押物，处置变现灵活，本金收益有较强保障。</span>
+        </li>
+        <li>
+            <p>已审核内容</p>
+            <div class="audit">
+                <span class="mc">营业执照</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+            <div class="audit">
+                <span class="mc">税务登记证</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+            <div class="audit">
+                <span class="mc">组织机构代码</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+            <div class="audit">
+                <span class="mc">公司法人</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+            <div class="audit">
+                <span class="mc">融资方银行授信</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+            <div class="audit">
+                <span class="mc">融资方经营场地实地认证</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+            <div class="audit">
+                <span class="mc">近年财务报表真实性审核</span>
+                <span class="dg"><img src="http://static.facebank.cn/static/wapFront/invest/img/circle_ok.png" ></span>
+            </div>
+        </li>
+    </ul>
+    <div class="clear"></div>
+</div>
+
+<!--投资记录-->
+<div class="main_xq3">
+<div class="tle">
+    <div class="tle_l">项目名称/时间</div>
+    <div class="tle_r">投资金额</div>
+</div>
+<div class="main_jl">
+    <ul>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+        <li><p>189****61<br /><span class="time_xq">2016-01-18 11:00:04</span></p><span class="color_qd1">20000.00元</span></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="yd">阅读<a href="#">《投资服务协议》</a></div>
+<div class="empty" id="empty">
+
+</div>
+<div class="wapFud" id="wapFud">
+    <input type="text" name="text" placeholder="金额为1000的整数倍" class="btn_text"/>
+    <input type="button" name="button" value="立即投资" class="btn_bn"/>
+</div>
+</body>
+
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+
+<script>
+    function xqTab(num){
+        for(var i=1;i<=3;i++){
+            if(i==num){
+                $(".main_xq"+i).show();
+                $("#xq"+i).removeClass("xqTabOff").addClass("xqTabOn");
+            }
+            else{
+                $(".main_xq"+i).hide();
+                $("#xq"+i).removeClass("xqTabOn").addClass("xqTabOff");
+
+            }
+        }
+    }
+
+    <!-----------------------------------------改动2开始----------------------------------------------------------->
+
+    $(".mx_detail").click(
+            function(){
+                $(".mx_detail_content").slideDown();
+                $(".mx_detail_img img").attr("src","http://static.facebank.cn/static/wapFront/account/img/jiantou_xia.png")
+            }
+    );
+    $(".mxd_btn").click(
+            function(){
+                $(".mx_detail_content").slideUp();
+                $(".mx_detail_img img").attr("src","http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png")
+            }
+    );
+    <!-----------------------------------------改动2结束----------------------------------------------------------->
+
+</script>
+
+</html>

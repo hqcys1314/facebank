@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title> 全部</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/transactionDetail.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    <span id="chooseBtn">全部</span>
+</div>
+<div class="choose">
+    <ul>
+        <li class="on">全部</li>
+        <li>收入</li>
+        <li>支出</li>
+    </ul>
+</div>
+<section>
+    <div class="tdDate">
+        2016年9月
+    </div>
+    <div class="tdList">
+        <div class="tdListPos infoborder">
+            <div class="posRight">
+                <p class="p_center jia">+15,000.00</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">充值</p>
+                <p class="p2">9月25日11:09</p>
+            </div>
+        </div>
+        <div class="tdListPos infoborder">
+            <div class="posRight">
+                <p class="p_center jian">-15,000.00</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">投资</p>
+                <p class="p2">9月25日11:09</p>
+            </div>
+        </div>
+        <div class="tdListPos infoborder">
+            <div class="posRight">
+                <p class="p1 jia">+29.09</p>
+                <p class="p2">可用余额 3,203.02</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">收益</p>
+                <p class="p2">9月25日12:09</p>
+            </div>
+        </div>
+        <div class="tdListPos">
+            <div class="posRight">
+                <p class="p1 jian">-5,000.00</p>
+                <p class="p2">可用余额 3,203.02</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">投资</p>
+                <p class="p2">9月25日11:09</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="tdDate">
+        2016年10月
+    </div>
+    <div class="tdList">
+        <div class="tdListPos infoborder">
+            <div class="posRight">
+                <p class="p_center jia">+15,000.00</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">充值</p>
+                <p class="p2">8月25日11:09</p>
+            </div>
+        </div>
+        <div class="tdListPos infoborder">
+            <div class="posRight">
+                <p class="p_center jian">-15,000.00</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">投资</p>
+                <p class="p2">8月25日11:09</p>
+            </div>
+        </div>
+        <div class="tdListPos infoborder">
+            <div class="posRight">
+                <p class="p1 jia">+29.09</p>
+                <p class="p2">可用余额 3,203.02</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">收益</p>
+                <p class="p2">8月25日12:09</p>
+            </div>
+        </div>
+        <div class="tdListPos">
+            <div class="posRight">
+                <p class="p1 jian">-5,000.00</p>
+                <p class="p2">可用余额 3,203.02</p>
+            </div>
+            <div class="posLeft">
+                <p class="p1">投资</p>
+                <p class="p2">8月25日11:09</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="wapMc" id="wapMc"></div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    $("#chooseBtn").click(
+            function(){
+                $(".wapMc").css('top','50px').show();
+                $(".choose").show();
+            }
+    )
+    /*点击取消按钮关闭弹框*/
+    $(".choose ul li").each(
+            function(){
+               $(this).click(
+                       function(){
+                           var status=$(this).html();
+                           $("#chooseBtn").html(status);
+                           $(".choose").hide();
+                           $(".wapMc").hide();
+                           $(".choose ul li").removeClass('on');
+                           $(this).addClass('on');
+                       }
+               )
+            }
+    )
+</script>
+</html>

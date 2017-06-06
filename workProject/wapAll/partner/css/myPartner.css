@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+/*我的合伙人*/
+.myp_2{height: 100px;text-align: center;background-color: #f86c36;color: #ffffff;    margin-top: -2px;}
+.myp_2 .p1{font-size: 0.8em;  opacity: 0.7;padding-top: 20px;margin-bottom: 5px;}
+.myp_2 .p1 img{width:13px; vertical-align: text-top; margin-right: 4px; }
+.myp_2 .p2{text-align: center;display: block;color: #ffffff;}
+.myp_2 .p2 .span1{font-size: 1.1em;margin-right: 2px;}
+.myp_2 .p2 .span2{font-size: 1.8em;margin-right: 3px;font-family: arial;}
+.myp_2 .p2 .span3{width: 13px;display: inline-block;}
+.myp_2 .p2 .span3 img{width: 100%;}
+.myp_3{background-color: #fb7947;color: #ffffff;margin-top: -2px;}
+.myp_3 ul{height: 40px;padding: 10px 0;}
+.myp_3 ul li{width: 49.5%;border-right: 1px #fdc9b5 solid;
+    float: left;text-align: center;font-size: 0.8em;height: 40px;line-height: 20px;}
+.myp_3 ul li font{font-size: 1.4em;margin-top: 3px;}
+.myp_4{background-color: #ffffff;overflow: hidden;padding: 13px 5%;width: 90%; margin: 0 auto 15px;}
+.myp_4 .left{width: 18%;float: left;margin-right: 3%;}
+.myp_4 .left img{width:48px;}
+.myp_4 .center{float: left;width: 68%;margin-top: 5px;}
+.myp_4 .center .p1{font-size: 0.95em;}
+.myp_4 .center .p1 span{color: #f86c36;}
+.myp_4 .center .p2{font-size: 0.75em;margin-top: 2px;color: #999999;}
+.myp_4 .right{float: left;width: 11%;line-height: 48px;}
+.myp_4 .right img{width: 13px;vertical-align: middle;}
+
+.myp_5{overflow: hidden;}
+.myp_5 .meau{overflow: hidden;width:90%;margin: 0 auto 15px;border-left: 1px #f86c36 solid;border-radius: 3px;}
+.myp_5 .meau li{float: left;width: 24.5%;color: #f86c36;background-color: #ffffff;height: 38px;line-height: 38px;border-top: 1px #f86c36 solid;
+    border-bottom: 1px #f86c36 solid;border-right: 1px #f86c36 solid;text-align: center;font-size: 0.95em;}
+.myp_5 .meau li:last-child{border-radius:0 3px 3px 0;}
+.myp_5 .meau li.on{background-color: #f86c36;color: #ffffff;}
+.myp_5 .content{background-color: #ffffff;padding-bottom: 15px;}
+.myp_5 .content h3{display: block;overflow: hidden;font-weight: normal;text-align: center;height: 40px;line-height: 40px;font-size: 1em;}
+.myp_5 .content ul{display: block;overflow: hidden;margin-left: 5%;}
+.myp_5 .content ul li{border-top: 1px #dddddd solid;overflow: hidden;padding: 12px 0;}
+.myp_5 .content ul li .left{float: left;width: 80%;}
+.myp_5 .content ul li .left .p1{}
+.myp_5 .content ul li .left .p2{font-size: 0.75em;margin-top: 3px;color: #999999;}
+.myp_5 .content ul li .left p span{margin-left: 5px;}
+.myp_5 .content ul li .right{float:left;line-height: 60px;color: #f86c36;}
+.myp_5 .content .more_btn{height: 40px;line-height: 40px;text-align: center;font-size: 0.9em;border-top: 1px #eaeaea solid;}
+#show_2{display: none;}
+#show_3{display: none;}
+#show_4{display: none;}
+.gameMc{background-color: #f2f2f2;position:fixed;bottom: 0;opacity: 0.7;z-index: 20;  width: 100%;height: 4em;max-width: 600px;}
+.gameMcPos{position:fixed;bottom: 0;z-index: 21;  width: 100%;height:4em; max-width: 600px;}
+.gameMcPos a{width: 90%;margin: 0.6em 5%; height: 43px;background-color: #f86c36;color: #ffffff;
+    font-size: 1.1em;border-radius: 2px;display: block;text-align: center;line-height: 43px;text-decoration: none;}

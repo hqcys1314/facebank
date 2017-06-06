@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/css/agr.css">
+</head>
+<body>
+<div class="agrPart1">
+    <img src="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/img/agr1.png">
+    <a href="agrQuesion.html">
+        <img src="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/img/agrBtn.png">
+    </a>
+</div>
+<div class="agrPart2">
+  <div class="div_hr">
+    <hr><span>活动规则</span><hr>
+  </div>
+    <div class="div_con">
+        1. 玩游戏即可获得平台所提供的相应加息红包（红包仅限使用于90天以内产品）；<br/>
+        2. 每位用户可重复参与游戏，每日仅限领取一个加息红包；<br/>
+        3. 本活动时间：2016年2月19日至2016年2月29日<br/>
+        4. 红包有效期：自用户收到红包起30天内使用，过期失效。
+    </div>
+    <p>
+        本活动最终解释权归刷脸金融平台运营方所有
+    </p>
+</div>
+<div class="wapShare" style="display: block;">
+    <img src="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/img/shareJiantou.png">
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function mcLoad(){
+            var wapShare=document.body.scrollHeight;
+            $(".wapShare").css("height",wapShare);
+        }
+        window.onload=mcLoad();
+        $('.wapShare').click(
+                function(){
+                    $(".wapShare").hide();
+                }
+        );
+    });
+
+</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="刷脸金融">
+    <meta name="description" content="刷脸金融">
+    <title>绑定电子邮箱</title>
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/head_foot.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/common.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/account/safeCenter/css/setPassword.css" />
+
+</head>
+<body>
+<!------页头开始--------->
+<div class="top">
+    <div class="top-1">
+        <ul class="top-1-left">
+            <li>
+                <span class="home">刷脸金融,欢迎您!</span>
+            </li>
+            <li>
+                <span class="top-phone">客服热线：</span>
+                <span class="phone">4008 900 766</span>
+            </li>
+        </ul>
+        <ul class="top-1-right">
+            <li> <a  href="http://www.facebank.cn/index"> 首页 </a> </li>
+            <li> <a  href="http://www.facebank.cn/login" data-event="topLogin" data-event-name="页头-登录" data-event-category="topLoginLink"> 请登录 </a> </li>
+            <li> <a  href="http://www.facebank.cn/goRegister" data-event="topRegister" data-event-name="页头-快速注册" data-event-category="topRegisterLink"> 快速注册 </a> </li>
+            <li> <a  href="http://www.facebank.cn/static/helpcenter" data-event="topHelp" data-event-name="页头-帮助中心" data-event-category="topHelpLink"> 帮助中心 </a> </li>
+            <li> <a  href="http://cms.facebank.cn/a/uploadpage.html" target="_blank" class="phone-border" data-event="top" data-event-name="页头-下载专区" data-event-category="topLoadLink" ><span class="phone-load" > 移动端下载 </span></a> </li>
+        </ul>
+    </div>
+</div>
+<!--清除浮动-->
+<div class="clear"></div>
+<!--导航-->
+<div class="common_nav">
+    <div class="nav-1">
+        <div class="nav-1-left">
+            <a  href="http://www.facebank.cn/index" data-event="topLogo" data-event-name="页头-Logo" data-event-category="topLogoLink">
+                <img src="http://static.facebank.cn/static/webFront/common/img/logo.png" /></a>
+        </div>
+        <div class="navTitle" id="navTitle">
+            绑定电子邮箱
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="setPwd" id="setPwd">
+    <div class="setPwdTitle setEmial1"></div>
+    <div class="setPwdList">
+        <span class="span1">电子邮箱地址</span>
+        <input type="text" placeholder="请输入您的电子邮箱地址">
+        <span class="errortipCom errtipSetpwd">请输入您的电子邮箱地址</span>
+        <span class="warmtipCom warmtipSetpwd">请输入您的电子邮箱地址</span>
+    </div>
+    <div class="findppList">
+        <span class="span1">短信验证码</span>
+        <input type="text" placeholder="请输入验证码">
+        <input class="findppMsgcode" onclick="timePass()" value="获取动态验证码" id="setEmail" type="button">
+
+    </div>
+     <div class="setPwdBtn improtant_button">
+        绑定
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/webFront/account/safeCenter/js/safeCenter.js"></script>
+<script>
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#setEmail").val("获取动态验证码");
+            $("#setEmail").css("color", "#333");
+            $("#setEmail").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#setEmail").val(miao + "秒后重发");
+            $("#setEmail").attr('disabled',true);
+            $("#setEmail:hover").css("color", "#999");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+
+        }
+    }
+
+</script>
+</html>

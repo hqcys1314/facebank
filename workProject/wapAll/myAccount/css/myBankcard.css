@@ -1,0 +1,15 @@
+/*我的银行卡*/
+.rw-1{width: 90%;background-color: #ff0000; margin: 1rem auto 0;border-radius: 5px;color: #fff;position: relative;}
+.rw-1 img{width: 100%;}
+.rw-1 .pos{position: absolute;top: 0;height: 100%;width: 100%;}
+.rw-1 .pos .p1{height: 45%;position: relative;}
+.rw-1 .pos .p1 span{top: 22%;left: 12%;position: absolute;font-size: 0.9rem;}
+.rw-1 .pos .p2{height: 30%;text-align: right;font-size: 1.4rem;    margin-right: 1rem;}
+.rw-1 .pos .p3{height: 25%;  margin-left: 12px;font-size: 0.688rem;}
+.rw-2{font-size: 0.688rem;color: #999;margin: 0.8rem 0 1.8rem 5%;}
+.bankEmpty{padding: 40px 0 20px;width: 95%;background-color: #fff; margin: 20px auto 0;border-radius: 5px;color: #000;position: relative;text-align: center;}
+.bankEmpty img{  width: 20%; }
+.bankEmpty .pos{width: 100%;font-size: 1em;color: #999;}
+.change-btn{}
+.change-btn .comBtn{background-color: #f86c36;display: block;line-height: 2.75rem;}
+.chage-tip{margin-left: 5%;margin-top: 1rem;font-size: 0.688rem;color: #999999;}

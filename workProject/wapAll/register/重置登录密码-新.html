@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸金融</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="https://static.facebank.cn/static/wapFront/register/css/regOrlogin.css">
+</head>
+<body>
+<div class="reg-send">
+    <p class="p1">已发送验证码到您手机</p>
+    <p class="p2">13811001234</p>
+</div>
+<div class="rl-con">
+    <div class="rl-con-list">
+        <input type="tel" id="telPhone" name="telPhone" placeholder="请输入验证码" class="rl-input">
+        <input type="button" class="msg-code cl-grey" id="msgCode" value="" onclick="timePass()"
+               data-event="wap_reset_getMsgCode"
+               data-event-name="wap重置密码-获取短信验证码"
+               data-event-category="wap_reset_getMsgCode">
+    </div>
+    <div class="rl-con-list">
+        <input type="text"  placeholder="请重置登录密码" class="rl-input" id="password">
+         <span class="rl-del" id="rl-del-password">
+             <img src="https://static.facebank.cn/static/wapFront/register/img/del.png">
+         </span>
+    </div>
+    <!-----------图形验证码--------------------------------------->
+    <div class="rl-con-list" style="display: none;">
+        <input type="text"  placeholder="请输入图片中字符" class="rl-input">
+         <span class="rl-img">
+             <img src="https://static.facebank.cn/static/wapFront/register/img/token.png" onclick="reloadImg();" id="verifyCodeImg" name="verifyCodeImg" >
+         </span>
+    </div>
+    <div class="rl-sy" style="display: none;">
+        剩余输入次数：<span>3</span>
+    </div>
+    <div class="rl-tip">
+        <img src="https://static.facebank.cn/static/wapFront/register/img/tipi.png">密码6-20位，建议使用数字、字母混合
+    </div>
+</div>
+
+<div class="rl-btn">
+    <input type="button" value="重置密码" data-event="wap_resetPassword"
+           data-event-name="wap重置密码"
+           data-event-category="wap_resetPasswordBtn">
+</div>
+
+<div class="rl-kefu">
+    <img src="https://static.facebank.cn/static/wapFront/register/img/telIcon.png"><a href="tel:4008-900-766">4008-900-766</a>  (工作日：9:00-18:00)
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="wapPos wapErr">
+    <div class="wapTip">
+        <p class="p1">XXX错误</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*页面初次加载发送验证码后*/
+    $("#msgCode").trigger("click").val("60秒");
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").removeClass("cl-grey");
+            $("#msgCode").addClass("cl-red");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val(miao+"秒");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").removeClass("cl-red");
+            $("#msgCode").addClass("cl-grey");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+    /*清空内容*/
+    $("#rl-del-password").click(
+            function(){
+                $("#password").val("");
+            }
+    )
+    /*点击按钮弹出弹框*/
+    $(".rl-btn input").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapErr").show();
+            }
+    )
+    /*点击确定关闭弹框*/
+    $(".wapTip .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapErr").hide();
+            }
+    )
+    /*打开协议*/
+    function openAgree(){
+        window.open("http://cms.facebank.cn/smile_contract_reg.html");
+    }
+
+</script>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+/*答题抢红包首页*/
+body{background-color: #e60012;}
+.agrPart1{ width: 100%;position: relative;}
+.agrPart1 img{width: 100%;}
+.agrPart1 a{display:block;position: absolute;bottom: 8%;left: 15%;width: 70%;}
+.agrPart1 a img{width: 100%;}
+.agrPart2{color: #ffffff;}
+.agrPart2 .div_hr{height: 35px;line-height: 35px;margin-left:8%;text-align: center;}
+.agrPart2 .div_hr hr{width: 33%;float: left;margin-top: 17px;}
+.agrPart2 .div_hr span{float: left;display: block;width: 24%;}
+.agrPart2 .div_con{width: 90%;margin: 0 auto;  font-size: 0.9em;}
+.agrPart2 p{text-align: center;font-size: 0.9em;  margin: 10px auto 20px;}
+/*答题抢红包答题页*/
+.agrqPart1{ width: 100%;position: relative; }
+.agrqPart1 img{width: 100%;position: absolute;top: 0;  height: 100%;}
+.agrqPart1 .div1{color: #ffffff;  padding-top: 23%;}
+.agrqPart1 .div1 .p1{text-align: center;  font-size: 1.3em;margin-bottom: 10px;  font-weight: bold;}
+.agrqPart1 .div1 .p2{  width: 90%; margin: 0 auto;}
+.agrqPart2{}
+.agrqPart2 p{width: 90%; margin: 0 auto;background-color: #fce5b3;border-radius: 5px;  margin-top: 15px;}
+.agrqPart2 p input{  width: 15px;height: 15px;vertical-align: -10%;  margin-left: 3px;}
+.agrqPart2 p label{display: inline-block;  margin: 20px 0;  width: 92%;}
+.agrqPart2 p .span1{display: inline-block;width: 15px;  float: left;  margin: 0 3px 0 0;}
+.agrqPart2 p .span1 img{width: 100%;vertical-align: middle;}
+.agrqPart2 p .span2{height: 30px;line-height: 30px;display: inline-block;color:#000000;font-size: 1.1em;
+    font-weight: bold;}
+.agrqPart3{text-align: center;color: #fcee21;margin: 10px 0 0;font-size: 1.2em;}
+.agrqPart4{font-size: 1.2em;width: 96%;margin: 15px auto 0;  height: 45px;}
+.agrqPart4 ul li{float:left;width: 50%;text-align: center;}
+.agrqPart4 ul li a{width:90%;margin: 0 auto;display: block; background-color: #fcee21;  border-radius: 5px;
+    height: 40px;line-height: 40px;color: #e60012;font-weight: bold;}
+.agrqPart4 p a{width:50%;margin: 0 auto;display: block; background-color: #fcee21;  border-radius: 5px;
+    height: 40px;line-height: 40px;color: #e60012;font-weight: bold;text-align: center;}
+.agrqPart5{width: 90%;margin: 20px auto;color: #ffffff;}
+/*答题结果页*/
+.agrrPart1{ width: 100%; }
+.agrrPart1 img{width: 100%;}
+.agrrPart2{width: 80%;margin: 10px auto 15px; text-align: center;color: #fcee21;}
+.agrrPart3{position:relative;width: 80%;margin: 0 auto 20px;text-align: center;color: #e60012;}
+.agrrPart3 img{width: 100%;}
+.agrrPart3 p{position: absolute;top: 28%;  width: 100%; font-size: 2.5em;font-weight: bold;}
+.agrrPart4{font-size: 1.2em;width: 96%;margin:0 auto 20px;  height: 45px;}
+.agrrPart4 ul li{float:left;width: 50%;text-align: center;}
+.agrrPart4 ul li a{width:90%;margin: 0 auto;display: block; background-color: #fcee21;  border-radius: 5px;
+    height: 40px;line-height: 40px;color: #e60012;font-weight: bold;}
+.agrrPart4 ul li p {width: 90%; margin: 0 auto;background-color: #ccc;border-radius: 5px;height: 40px; line-height:40px;color: #fff;font-size: 1em;}
+.agrrPart5{  display: block;font-weight: bold;width: 90%;margin: 1px auto 20px;  height: 40px;line-height: 40px;text-align: center;color:#fcee21;border: 1px #fcee21 solid;font-size: 1.2em; border-radius: 5px; }
+.wapShare{background-color: #000;opacity: 0.7;position: absolute;top: 0;width: 100%;z-index: 30;height: 100%;display: none;}
+.wapShare img{ width: 100%; }
+/*领取红包*/
+.agrRec{width: 100%;position: relative;}
+.agrRec img{width: 100%;}
+.agrRec div{position: absolute;top: 40%;width: 100%;text-align: center;}
+.agrRec div .p1{color: #fcee21;text-align: center;  margin-top: 5px;}
+.agrRec div .p2{ margin: 10px 0;}
+.agrRec div input{width: 55%;margin: 0 auto;border-radius: 2em;  text-align: center;  font-size: 1.2em;}
+.agrRec div input::-webkit-input-placeholder{text-align: center;}
+.agrRec div input::-ms-input-placeholder{text-align: center;}
+.agrRec div input::-moz-placeholder{text-align: center;}
+.agrRec div .p3 input{background-color: #fcee21;color: #e60012;  font-weight: bold;}
+.agrRec div .tip{display: none;}
+/*领取红包成功*/
+.agrRec div .p4{position:relative;width: 50%;margin: 0 auto;text-align: center;color: #e60012;}
+.agrRec div .p4 img{width: 100%;}
+.agrRec div .p4 p{position: absolute;top: 30%;  width: 100%; font-size: 1.5em;font-weight: bold;}
+.agrRec div .p5{color: #fcee21;text-align: center;font-size: 1.2em;margin: 10px 0; }
+.agrRec div .p6 a{background-color: #fcee21;color: #e60012; display: block; font-weight: bold;  line-height: 45px;width: 55%;margin: 0 auto;}
+
+

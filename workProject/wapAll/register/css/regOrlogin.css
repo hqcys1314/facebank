@@ -1,0 +1,148 @@
+body {
+  background-color: #FFFFFF;
+}
+
+/*登录&注册*/
+.rl-title {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.rl-con .rl-con-list {
+  border-bottom: 1px #ddd solid;
+  position: relative;
+  margin-left: 5%;
+  width: 95%;
+}
+.rl-con .rl-con-list .rl-input {
+  width: 100%;
+  font-size: 1em;
+  height: 48px;
+  color: #333;
+}
+.rl-con .rl-con-list .rl-del {
+  position: absolute;
+  height: 48px;
+  line-height: 48px;
+  right: 5%;
+  width: 10%;
+  top: 0;
+  text-align: right;
+}
+.rl-con .rl-con-list .rl-del img {
+  width: 14px;
+  vertical-align: middle;
+}
+.rl-con .rl-con-list .rl-img {
+  position: absolute;
+  right: 5%;
+  width: 76px;
+  top: 10px;
+}
+.rl-con .rl-con-list .rl-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+.rl-con .rl-con-list .msg-code {
+  position: absolute;
+  height: 30px;
+  width: 28%;
+  right: 5%;
+  top: 10px;
+  font-size: 0.8em;
+  border-radius: 2em;
+  background-color: #FFFFFF;
+}
+.rl-con .rl-con-list .cl-grey {
+  color: #cccccc;
+  border: 1px #cccccc solid;
+}
+.rl-con .rl-con-list .cl-red {
+  color: #f86c36;
+  border: 1px #f86c36 solid;
+}
+.rl-con .rl-tip {
+  margin-left: 5%;
+  margin-top: 12px;
+  font-size: 0.8em;
+  color: #999999;
+}
+.rl-con .rl-tip img {
+  margin-right: 3px;
+  width: 16px;
+  vertical-align: text-bottom;
+}
+.rl-con .rl-sy {
+  margin-left: 5%;
+  color: #999999;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.rl-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.rl-btn input {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 44px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.rl-btn input.color-red{
+    background-color:#f86c36;
+}
+.rl-kefu {
+  font-size: 0.7em;
+  text-align: center;
+
+  width: 100%;
+  color: #cccccc;
+    margin-top: 17rem;
+  max-width: 600px;
+}
+.rl-kefu a {
+  color: #cccccc;
+}
+.rl-kefu img {
+  width: 16px;
+  vertical-align: text-bottom;
+}
+/*注册*/
+.reg-send {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.reg-send .p1 {
+  font-size: 0.7em;
+  margin-bottom: 3px;
+  color: #999999;
+}
+.reg-send .p2 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.reg-agreement {
+  margin-left: 5%;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #999999;
+}
+.reg-agreement a {
+  color: #f86c36;
+}
+/*登录*/
+.login-forgetPassword {
+  font-size: 0.8em;
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 15px;
+}
+.login-forgetPassword a {
+  color: #f86c36;
+}

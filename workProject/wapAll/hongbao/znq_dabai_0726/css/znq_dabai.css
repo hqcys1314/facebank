@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/* msg */
+.gudong_1{width: 100%;position: relative}
+.gudong_1 .div1{width: 100%;}
+.gudong_1 .div1 img{width: 100%;}
+.gudong_1 .div2{position: absolute;width: 100%;  top: 37%;text-align: center;}
+.gudong_1 .div2 input{border-radius: 5px;height: 40px;font-size: 0.85em;}
+.gudong_1 .div2 .hb{position: relative;}
+.gudong_1 .div2 .hb img{width: 75%;}
+.gudong_1 .div2 .hb .p2{position:absolute;text-align: center;font-size: 1em;top: 61%;width: 45%;left: 35%;padding: 5px 0;
+    background-color: #c33c20;border-radius: 2em;color: #e6e598;}
+.gudong_1 .div2 .hb .p1{position:absolute;text-align: center;font-size:2.8em;color: #efea69;font-weight: bold; top: 12%;width: 45%;left: 35%;}
+.gudong_1 .div2 .lq{    margin-top: 2%;}
+.gudong_1 .div2 .lq .p2{ margin:1% 0 3%;}
+.gudong_1 .div2 .lq .p2 input{width: 75%;margin: 0 auto;text-indent: 22px;}
+.gudong_1 .div2 .lq .p3 {margin-bottom: 3%;}
+.gudong_1 .div2 .lq .p3 input[type="text"]{width: 48%;text-indent: 22px;}
+.gudong_1 .div2 .lq .p3 input[type="button"]{color: #ffffff;width: 25%;margin-left: 2%;background-color: #ebb84a;}
+.gudong_1 .div2 .lq .p_error{color: #d93f2c;font-size: 0.8em; width: 75%; margin: 0 auto 5px;text-align: left;text-indent: 22px;}
+.gudong_1 .div2 .lq .p4 input{width: 75%;margin: 1% auto 0;font-size:1em;background-color: #d93f2c;color: #fff;  font-weight: bold;}
+.gudong_1 .div2 .lq_tip{overflow: hidden;margin-top: 1%;}
+.gudong_1 .div2 .lq_tip .lq_pos{background-color: #ffffff;width: 75%;border-radius: 5px;overflow: hidden;margin: 2% auto;padding: 10px 0;}
+.gudong_1 .div2 .lq_tip .lq_pos .left{float: left;width: 45%;}
+.gudong_1 .div2 .lq_tip .lq_pos .left img{width: 75%;}
+.gudong_1 .div2 .lq_tip .lq_pos .right{float: left;font-size: 0.8em;width: 52%;margin-top: 7%;text-align: left;}
+.gudong_1 .div2 .lq_tip .p4 input{width: 75%;margin: 0 auto;font-size:1em;background-color: #d93f2c;color: #fff;  font-weight: bold;}
+.gudong_1 .div2 .tishi{ width: 75%;margin: 5px auto;text-align: left;line-height: 20px;font-size: 0.75em;}
+.gudong_1 .div2 .tishi a{color: #f86c36;}
+.gudong_2{width: 100%;margin-top: -5px;}
+.gudong_2 img{width: 100%;}
+

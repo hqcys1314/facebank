@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+.cf_1{width: 100%;margin-bottom: -0.5em;}
+.cf_1 img{width: 100%;}
+.gameMcPos{position:fixed;bottom: 0;z-index: 21;  width: 100%;height:4em;    left: 0;     background: rgba(0,0,0,0.7);}
+.gameMcPos a{width: 80%;margin: 0.6em 10%; height: 43px;background-color: #dd2c3c;color: #fff;
+    font-size: 1.3em;border-radius: 5px;display: block;text-align: center;line-height: 43px;text-decoration: none;}

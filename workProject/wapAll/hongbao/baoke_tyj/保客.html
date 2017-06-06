@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>亿元大放送 注册即享</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/css/tongban.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    亿元大放送 注册即享
+</div>
+<div class="content-1">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/img/banner.jpg">
+    <p>规则></p>
+</div>
+<div class="content-2">
+    <div class="div_pos">
+        <p class="p_tip">您的好友<span>187****6269</span>正在笑脸金融投资，邀请您一起来赚钱！</p>
+        <p class="part1">
+            <span class="icon"><img src="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/img/phone.png"></span>
+            <input type="tel" placeholder="请输入您的手机号码"></p>
+        <div class="part2">
+            <p class="p1">
+                <span class="icon"><img src="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/img/code.png"></span>
+                <input type="tel"  placeholder="请输入验证码">
+            </p>
+            <input type="button" value="发送验证码"  id="msgCode" onclick="timePass()"></div>
+        <p class="part4">我有推荐人( 选填 )&nbsp;<font>></font></p>
+        <p class="part5">
+            <span class="icon"><img src="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/img/tjr.png"></span>
+            <input type="tel" placeholder="请输入推荐人的手机号码"></p>
+        <p class="part3"><input type="button" value="立即领取" id="rb_btn"></p>
+        <p class="part6">
+            <input type="checkbox" id="agreeBox" checked="">
+            <span>我已阅读和同意
+                <a href="http://m.facebank.cn/wap/agreementReg" data-event="wap_facebankAggrement" data-event-name="wap用户注册页-笑脸金融用户协议链接" data-event-category="wap_facebankAggrementLink">《笑脸金融用户协议》</a>
+            </span>
+        </p>
+    </div>
+</div>
+<div class="content-3">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/img/con_1.jpg">
+</div>
+<div class="content-4">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/baoke_tyj/img/bottom.jpg">
+</div>
+<!-----------------------规则弹框---------------------------->
+<div class="wapMc">
+
+</div>
+<div class="wapGz" id="guize">
+    <div class="gz_con">
+        <p class="p_title">活动规则</p>
+        <div class="content">
+            <h2>体验金活动规则</h2>
+            <p>体验金是笑脸金融为新注册用户提升产品体验而设计的虚拟投资本金。</p>
+            <h3>领取方式：</h3>
+            <p>活动开始后，注册成为笑脸金融用户即可获得15888元体验金。微信、APP注册成功后，成功分享活动给好友或朋友圈可再获得3000元体验金。每月限量1.8888亿元体验金。</p>
+            <h3>收益计算：</h3>
+            <p>本活动按年化收益10%，体验期限1天计算收益，当日领取，收益次日进入您在笑脸金融的账户，可以提现。</p>
+            <h3>体验金回收：</h3>
+            <p>在体验金收益到账后，体验金由系统进行自动回收。</p>
+            <h3>收益回收：</h3>
+            <p>收益到账后第30天，如果您未绑定银行卡对体验金收益进行提现或未进行真实投资操作，我们将回收收益。</p>
+            <h2 style="border-top:1px #fcba86 solid; ">新手专享活动规则</h2>
+            <h3>参与方式：</h3>
+            <p>仅限未在笑脸金融投资过的用户参加。</p>
+            <h3>收益说明：</h3>
+            <p>新手专享项目收益由两部分组成，项目收益和加息收益，加息收益由笑脸金融在新手专享项目付息时补贴给用户。</p>
+            <h3>限制条件：</h3>
+            <p>新手专享项目仅限制投资一次，并且不允许使用红包及加息券。</p>
+            <h2 style="border-top:1px #fcba86 solid; ">关于加息红包规则</h2>
+            <h3>领取方式：</h3>
+            <p>活动开始后，注册成为笑脸金融用户即可获得1%加息红包。</p>
+            <h3>有效期：</h3>
+            <p>领取后30天内有效。</p>
+            <h3>使用条件：</h3>
+            <p>仅可以用于购买30天以上产品，新手标、体验金不可用。</p>
+            <h2 style="border-top:1px #fcba86 solid; ">保客会员专享福利活动规则</h2>
+            <p>投资理财再送50元现金</p>
+            <h3>活动时间：</h3>
+            <p>10月20日-11月20日 </p>
+            <h3>参加用户：</h3>
+            <p>本活动仅限10月20日前在保客云集平台已注册且未在笑脸金融注册的用户参加,符合条件用户于活动期间在笑脸金融注册投资（除体验金外）的任意理财产品即可获得50元现金奖励。</p>
+            <h3>奖励发放：</h3>
+            <p>50元奖金将于活动结束后10个工作日内，打至个人在保客云集帐户，可在“保客APP—我的—我的钱包”中查收。 </p>
+        </div>
+        <p class="p_btn">上下滑动查看更多...</p>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+
+<!-----------------------领取成功---------------------------->
+<div class="wapTk" id="xs_oldUser_tip" >
+    <div class="tk_con">
+        <p class="p_title">温馨提示</p>
+        <p class="p_con">此活动仅限新用户参与</p>
+        <p class="p_con">您已经获得1%加息红包<br/>
+            ¥15,888.00体验金已自动体验投资，请注意查收哦~</p>
+        <!------跳转到首页---------->
+        <a class="p_btn" href="http://m.facebank.cn/wap/index">确定</a>
+        <div class="tiaozhuan">(<span id="tzNum">3</span>)秒之后自动跳转</div>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /* 模仿android里面的Toast效果*/
+    var Toast = function(config){
+        this.context = config.context==null?$('body'):config.context;//上下文
+        this.message = config.message;//显示内容
+        this.left = config.left;//距容器左边的距离
+        this.top = config.top;//距容器上方的距离
+        this.init();
+    }
+    var msgEntity;
+    Toast.prototype = {
+        //初始化显示的位置内容等
+        init : function(){
+            $("#toastMessage").remove();
+            //设置消息体
+            var msgDIV = new Array();
+            msgDIV.push('<div id="toastMessage">');
+            msgDIV.push('<span>'+this.message+'</span>');
+            msgDIV.push('</div>');
+            msgEntity = $(msgDIV.join('')).appendTo(this.context);
+            //设置消息样式
+            var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2-20: this.left;
+            var top = this.top == null ? '50%' : this.top;
+            msgEntity.css({position:'fixed',top:top,'z-index':'99',left:'26%','background-color':'#333333','color':'white','text-align':'center','font-size':'0.8em',padding:'7px 2%',width:'44%','border-radius':'5px','box-shadow': '0px 0px 5px #000'});
+            msgEntity.hide();
+        },
+        //显示动画
+        show :function(time){
+            msgEntity.fadeIn(time/4);
+            msgEntity.fadeOut(time/2);
+        }
+
+    }
+    /*规则弹框*/
+    $(".content-1 p").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapGz").show();
+            }
+    )
+    /*点击按钮，吐司错误提示*/
+   $("#rb_btn").click(
+           function(){
+               new Toast({context:$('body'),message:'XXXXXX'}).show("5000");
+           }
+    )
+    /*老用户提示*/
+//    $("#rb_btn").click(
+//            function(){
+//                $(".wapMc").show();
+//                $("#xs_oldUser_tip").show();
+//                /*领取成功，3秒后自动跳转到首页*/
+//                var djs=3;
+//                var djsClear=setInterval(
+//                        function(){
+//                            $("#tzNum").html(djs);
+//                            djs--;
+//                            if(djs< 0){
+//                                location.href="http://m.facebank.cn/wap/css";
+//                                clearInterval(djsClear);
+//                            }
+//                        },1000
+//                )
+//            }
+//    )
+
+    /*推荐人展示隐藏*/
+    $(".content-2 .div_pos .part4").click(
+            function(){
+                $(".content-2 .div_pos .part4").hide();
+                $(".content-2 .div_pos .part5").show();
+            }
+    )
+
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapTk").hide();
+                $(".wapGz").hide();
+            }
+    )
+
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#ff8955");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val("重获取("+miao+")");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#aaa");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+
+</script>
+</body>
+</html>

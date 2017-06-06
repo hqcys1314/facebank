@@ -1,0 +1,84 @@
+﻿/*公共*/
+.registerTitle{height: 60px;width: 1110px;margin: 50px auto;}
+.registerTitle ul{  width: 740px; margin: 0 auto;}
+.registerTitle ul li {list-style-type: none;border-bottom:1px #eaeaea solid;background-repeat:no-repeat;
+    background-image: url("../../common/img/comTip.png");float: left;height: 42px;line-height: 42px;width: 185px;text-align: center;}
+.register{width: 650px;margin: 20px auto;}
+.regList{position:relative;margin-bottom: 20px;}
+.regList .span1 {font-size: 14px;width: 120px;display: inline-block;
+    text-align: right;margin-right: 10px;}
+.regList input {color: #666;  padding-left: 10px;width: 230px;}
+.regDel{display: none;left: 345px;width: 26px;height: 26px;position: absolute;
+    background: url("../../common/img/comTip.png") no-repeat 0 -147px;top:10px;}
+.errtipReg{display: none;position: absolute;top: 5px;left: 384px; }
+.warmtipReg{display: none;position: absolute;top: 5px;left: 384px; }
+.successMark{display: none;position: absolute;top: 5px;left: 384px;height: 30px;width: 30px;
+    background: url("../../common/img/comTip.png") no-repeat 0 -283px;  padding-left: 20px;}
+.regList1{position:relative;margin-bottom: 20px;}
+.regList1 .span1 {font-size: 14px;width: 120px;display: inline-block;
+    text-align: right;margin-right: 10px;}
+.regList1 input {color: #666;  padding-left: 10px;width: 120px;}
+.regList1 .span2 {display: inline-block;vertical-align: middle;}
+.regList1 .span3{font-size: 12px; margin-left: 300px;}
+.register a{color: #f86c36;margin-left: 5px;}
+.register a:hover{text-decoration: underline;}
+.regList1 .span4 {font-size: 14px;display: inline-block;width: 120px;outline: 0;
+  text-align: center;font-family: "微软雅黑";  text-align: center;
+    background-color: #eaeaea;height: 42px;line-height: 42px;border: 3px;}
+.regList1 .span4:hover{cursor: pointer;}
+.registerBtn{height: 40px;line-height: 40px;width: 300px;text-align: center;
+    font-size: 20px;font-weight: bold;margin:20px 0 0 63px;}
+/*注册第一步--创建账户*/
+.regVoiceTip{  width: 290px;height: 40px;padding: 5px 10px; margin-left: 63px;
+    font-size: 12px;margin-top: 10px;line-height: 21px;background-color: #FFF5F6;
+    border: 1px #f86c36 solid;display:none;}
+.regContract{  margin-left: 65px;margin-top: 10px;}
+.regContract input[type="checkbox"] {vertical-align: middle;}
+.regContract span{ font-size: 12px;}
+.regLast{  font-size: 12px;margin-left: 240px;margin-top: 10px;}
+.regT1 .title1{ background-position:30px -374px;color: #000;border-bottom: 3px #f86c36 solid;}
+.regT1 .title2{background-position: 22px -579px;color: #666;}
+.regT1 .title3{background-position: 15px -715px;color: #666;}
+.regT1 .title4{background-position: 30px -861px;color: #666;}
+.regListImgcode{display:none;}
+.regVoiceWordTip{display:none;}
+.regList1 .span2 img{width: 102px;}
+
+/*注册第二步--银行卡认证*/
+.reg_title{text-align: center;font-size: 24px;    padding-top: 30px;    margin-bottom: 40px;}
+.regT2 .title1{ background-position:30px -440px;color: #000;}
+.regT2 .title2{background-position: 22px -515px;color: #666;border-bottom: 3px #f86c36 solid;}
+.regT2 .title3{background-position: 15px -715px;color: #666;}
+.regT2 .title4{background-position: 30px -861px;color: #666;}
+.regBankBindtip {width: 400px;font-size: 12px;  margin: 0 0 20px 134px;;border: 1px #f86c32 solid;
+   background-color: #FFF7EE;padding:5px 30px;background:url("../../common/img/comTip.png") no-repeat 5px -209px; }
+.regBankLimitText{font-size: 12px;color: #ff0000;margin-bottom: 10px;margin-left: 134px;}
+.regBankLimitText span{display:inline-block; background-image:url("../../common/img/comTip.png");
+    background-repeat: no-repeat;  background-position: 2px -1095px;width: 15px;height: 13px; }
+.regBankLimitText span:hover{cursor: pointer;}
+.regBankLimit{width: 580px;margin-left: 100px;}
+.regBankList{margin-left:60px;}
+.imgList{display: inline-block;margin: 0 5px 15px 0;  float: left;}
+.imgList p {width: 112px;text-align: center;font-size: 12px;}
+.imgSize{width: 112px; }
+.imgSize img{width: 100%;}
+.regBankIcon{display: none;left: 310px;width: 26px;height: 26px;position: absolute;top:8px;}
+.regList select{width: 242px;height: 40px;line-height: 40px; margin-right: 10px;
+    font-size: 14px;padding-left: 15px;border: 1px #eaeaea solid;font-family: "微软雅黑";vertical-align: middle;}
+/*注册第三步--支付密码设置*/
+.regT3 .title1{ background-position:30px -440px;color: #000;}
+.regT3 .title2{background-position: 22px -579px;color: #666;}
+.regT3 .title3{background-position: 15px -651px;color: #666;border-bottom: 3px #f86c36 solid;}
+.regT3 .title4{background-position: 30px -861px;color: #666;}
+/*注册第四步--注册成功*/
+.regT4 .title1{ background-position:30px -440px;color: #000;}
+.regT4 .title2{background-position: 22px -579px;color: #666;}
+.regT4 .title3{background-position: 15px -715px;color: #666;}
+.regT4 .title4{background-position: 30px -796px;color: #666;border-bottom: 3px #f86c36 solid;}
+.registerSuccess{font-size: 24px;padding-left: 60px;width: 275px;height: 60px;  padding-top: 10px;
+    margin: 70px auto 0px;background: url("../img/regSuccess.png") no-repeat;}
+.registerUrl{  width: 330px;margin: 40px auto 0;}
+.registerUrl a{color:#f86c36;margin: 0 10px; }
+.registerUrl a:hover{text-decoration: underline;}
+.registerSuccess span{color: #f86c32;font-weight: bold;}
+.registerSuccess p{font-size: 12px;color: #666;  margin-top: 3px;}

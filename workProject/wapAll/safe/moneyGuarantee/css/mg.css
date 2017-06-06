@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{background-color: #ffffff;}
+.banner{width: 100%;}
+.banner img{width: 100%;}
+.content{width: 90%;padding:5px 5%;overflow: hidden;}
+.content .title{margin: 8px 0;font-size: 1.2em;color: #666;font-weight: bold;border-left: 4px #ffae00 solid; padding-left: 10px;}
+.content .word{ font-size: 0.95em;line-height: 26px;text-indent: 30px;   }
+.content .pic{width: 95%;margin: 15px auto;}
+.content .pic img{width: 100%;}
+.color_gray{background-color: #f8f8f8;}
+.footer{text-align: center;font-size: 0.9em;color: #999;margin-bottom: 30px;}

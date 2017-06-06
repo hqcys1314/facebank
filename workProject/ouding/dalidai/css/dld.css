@@ -1,0 +1,20 @@
+.loanRecord{}
+.loanRecord .title{background-color: #f5f5f5;overflow: hidden;padding: 10px 0;color: #333333;padding-left: 4%;font-size: 0.95em;}
+.loanRecord .title li{float: left;text-align: center;width: 32%;}
+.loanRecord .list{margin-left: 4%;color: #666666;overflow: hidden;padding: 20px 0;border-bottom: 1px #dddddd solid;}
+.loanRecord .list li{float: left;text-align: center;width: 32%;font-size:0.85em;}
+.loanRecord .list li img{width: 8px;vertical-align: middle;margin-left: 6px;margin-top: -2px;}
+.loanRecord .list li.color-red{color: #f86c36;}
+.loanRecord .list .hk-jt{text-align: right;}
+
+
+.hk-detail{font-size: 0.9rem;width: 90%;margin: 0 auto;}
+.hk-detail .div1{margin-bottom: 10px;overflow: hidden;}
+.hk-detail .div1 p{display: inline-block;}
+.hk-detail .div1 span{color:#f86c36; float: right;}
+.hk-detail .div-hand{border-top: 1px #eaeaea solid;padding-top: 1.8rem;}
+.hk-detail .div-hand span{color: #f86c36;}
+.hk-detail .div-hand p{text-align:center;}
+.hk-detail .div-hand p img{width:40%;}
+.hk-detail .div-con{margin-top:2rem;color: #999999;border-top: 1px #eaeaea solid;padding-top:1rem;line-height: 1.3rem;font-size: 0.85rem;}
+

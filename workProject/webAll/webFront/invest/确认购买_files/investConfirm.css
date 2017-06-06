@@ -1,0 +1,255 @@
+﻿body{
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.row-inside{
+  margin: 0px auto;
+  width: 1110px;
+}
+body ul{
+  margin:0px;
+  padding:0px;
+}
+body ul li {
+  list-style-type: none;
+}
+body a {
+  list-style-type: none;
+}
+
+.myclearfix:after{
+ clear:both;
+ display:block;
+ visibility:hidden;
+ height:0;
+ line-height:0;
+ content:'';
+}
+.myclearfix{zoom:1;}
+
+.clear {
+    clear: both;
+}
+/*导航*/
+#sup-top {
+  height: 35px;
+  line-height:35px;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #616161;
+}
+#sup-top .top-menu1, #sup-top .top-menu2{
+  list-style: outside none none;
+  padding-left: 0;
+}
+#sup-top .phone{
+  font-family: Helvetica;
+}
+.sup-top-a-style{
+  color: #616161;
+}
+
+.sup-top-a-style:hover,
+.sup-top-a-style:focus, 
+.sup-top-a-style:active{
+  color: #f86025;
+  text-decoration:none;
+}
+
+#sup-top .top-menu1 li, #sup-top .top-menu2 li{
+  float: left;height: 35px;line-height:35px;
+}
+#sup-top .top-menu1 > li:first-child , #sup-top .top-menu1 > li:first-child  {
+    padding-left: 0;
+}
+#sup-top .top-menu1 > li ,#sup-top .top-menu2 > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#sup-top  .home{
+   padding-left: 35px;
+   display: inline-block;
+   background: url(../img/top-home.png) no-repeat left center;
+}
+#sup-top  .top-phone{
+   padding-left: 35px;
+   display: inline-block;
+   background: url(../img/iphone.png) no-repeat left center;
+}
+/*头部*/
+.myheader{
+	height: 83px;
+}
+.logo{
+	width: 307px;
+	height: 83px;
+	line-height: 83px;
+}
+#mainnav{
+  font-size: 16px;
+  font-family: "微软雅黑";
+  font-weight:bold;
+  height: 83px;
+  line-height: 83px;
+}
+#mainnav > ul{
+  height: 35px;
+  line-height: 35px;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+#mainnav > ul > li{
+  padding-left:7px;
+  padding-right:7px; 
+}
+#mainnav > ul > li > a{
+  width:118px;
+  height:35px;
+  line-height: 35px;
+  padding:0px;
+  border-radius: 0;
+  text-align:center;
+  background-color:#fff;
+  color:#616161;
+}
+#mainnav > ul > li > a:hover, #mainnav > ul > li > a:focus, #mainnav > ul > li  .active{
+  text-align:center;
+  background-color:#f86025;
+  color:#fff;
+  cursor:pointer;
+}
+.navbar-right .dropdown-menu {
+    left: auto;
+    right: 6px;
+}
+.dropdown-menu{
+	min-width: 118px;
+	text-align:center;
+	border-radius: 0;
+}
+.dropdown-menu >li > a:hover{
+  background-color:#f6eed1;
+  color:#f86025;
+}
+.hd2{border-bottom:1px solid #c9c9c9;}
+/*******************************
+  -------[=登录]-------
+********************************/
+.mybodybg{
+	background:#f8f8f8;
+	padding-top:20px;
+	margin-bottom:-27px;
+	padding-bottom:27px;
+}
+.investConfirm{
+	height:545px;
+	border-top:2px solid #f86025;
+	border-right:1px solid #eaeaea;
+	border-bottom:1px solid #eaeaea;
+	border-left:1px solid #eaeaea;
+}
+.investConfirm-title{
+	height:40px;
+	line-height: 40px;
+	background: #f8f8f8;
+	font-weight: bold;
+	color:#000;
+	font-size: 16px;
+	padding-left:25px;
+}
+.investConfirm-content{
+	background: #fff;
+	height:502px;
+}
+.investConfirm-Info{
+  width:806px;
+  margin:0 auto;
+  padding-top:48px;
+}
+.investConfirm-box{
+  margin:0 auto;
+  width:806px;
+  height:236px;
+  border:1px solid #d4d2d2;
+  margin-bottom: 10px;
+}
+.investConfirm-box-M1{
+  height:40px;
+  line-height:40px;
+  color:#000;
+  padding-left:20px;
+  border-bottom:1px solid #eaeaea;
+}
+.investConfirm-box-M2{
+  height:195px;
+  
+}
+.investConfirm-box-M2-1{
+  width:33.33%;
+  height:135px;
+  padding-top: 60px;
+  text-align: center;
+  border-right: 1px solid #eaeaea;
+}
+.investConfirm-box-M2-1 p{
+  color:#000;
+  margin:0px;
+}
+.investConfirm-box-M2-2{
+  width:33.3%;
+  height:135px;
+  padding-top: 60px;
+  text-align: center;
+  border-right: 1px solid #eaeaea;
+}
+.investConfirm-box-M2-2 p{
+  color:#000;
+  margin:0px;
+}
+.investConfirm-box-M2-3{
+  width:33.1%;
+  height:135px;
+  padding-top: 60px;
+  text-align: center;
+}
+.investConfirm-box-M2-3 p{
+  color:#000;
+  margin:0px;
+}
+.num{
+  font-size: 28px;
+  padding-top:15px;
+}
+.invcofchb{
+  color:#000;
+  margin:5px 0;
+  margin-left: 10px;
+}
+.invcofchb a{
+  color:#2932e1;
+  text-decoration: none;
+}
+#redMoney {
+    padding-right: 15px;
+}
+.ivtcfm{
+  width:806px;
+  margin-top: 10px;
+  text-align: center;
+}
+.ivtcfm-btn{
+  width:304px;outline: 0;
+  height:46px;  font-family:"Microsoft YaHei", "宋体", Verdana, Geneva, sans-serif;
+  line-height:46px;
+  color:#fff;
+  margin-top:5px;
+  border:medium none;
+  border-radius: 3px;
+  font-size:18px;
+  background: #f86025;
+}
+.ivtcfm-btn:hover{
+  background:#ffbc00;
+}
+.pull-left{float:left;}

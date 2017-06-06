@@ -1,0 +1,67 @@
+﻿.is-read{
+		color:#6A6A6A;
+	}
+	.not-read{
+		color:black;
+		font-weight: bold;
+	}
+.user-operaType{
+	margin-top:20px;
+}
+
+.typeInfo{
+	font-weight: bold;
+	margin:0px 10px 0px 15px;
+	color:#000;
+	font-size: 15px;
+}
+.selectType{
+    float: left;
+  line-height: 40px;
+  margin-left: 70px;
+}
+.selectType a{
+	font-weight: bold;
+	font-size: 15px;
+	color:#0b63cf;
+	text-decoration: none;
+	padding:0px 9px;
+}
+.operaInfo{
+	font-weight: bold;
+	margin:0px 10px 0px 15px;
+	color:#000;
+	font-size: 15px;
+}
+.user-mes-opera{
+	  margin-left: 420px;
+  float: left;
+  line-height: 40px;
+}
+.user-mes-opera a{
+	display: inline-block;
+	border-radius: 5px;font-size: 14px;
+	height:28px;
+	line-height:28px;
+	width:84px;
+	text-align: center;
+	color:#787878;
+	text-decoration:none;
+	border:1px solid #f0f0f0;
+}
+
+#user-message-table{
+  color:#000;  line-height: 30px;
+  
+  text-align: center;
+}
+#user-message-table > thead > tr{
+  font-size: 16px;
+  height:51px;
+}
+#user-message-table > tbody > tr{
+  height:81px;
+}
+#user-message-table > tbody > tr:hover{
+  background-color: #f8f8f8;border-left:1px solid #f8f8f8;
+}

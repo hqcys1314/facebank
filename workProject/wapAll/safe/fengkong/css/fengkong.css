@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{background-color: #ffffff;}
+.banner{width: 100%;}
+.banner img{width: 100%;}
+.footer{text-align: center;font-size: 0.9em;color: #999;margin-bottom: 20px;margin-top:10px;}
+.con_1{width: 100%;margin-bottom: -4px;}
+.con_1 img{width: 100%;}
+.cl_1{background-color: #f8f8f8;background-position:right 16px;}
+.cl_2{background-color: #ffffff;background-position:right -212px;}
+.cl_3{background-color: #f8f8f8;background-position:right -443px;}
+.cl_4{background-color: #ffffff;background-position:right -684px;}
+.content{padding-left: 5%;background-image: url("../img/fk_img.png");background-repeat: no-repeat;
+    padding-top: 20px;padding-bottom: 30px;background-size: 125px 860px;margin-top: -5px; }
+.content h3{color: #f86c36;font-size: 1em;font-weight: normal;margin-bottom: 5px;}
+.content h3 span{font-size: 1.2em;margin-right: 5px;}
+.content p{font-size: 0.8em;line-height: 22px;}
+.content p .span1{width: 3px;height:3px;border-radius: 50%;float: left;display: inline-block;border: 2px #fdc069 solid;margin-top: 8px;margin-right: 5px;}

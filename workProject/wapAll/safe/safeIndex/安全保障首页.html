@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>安全保障</title>
+    <link rel="stylesheet" href="../../common/css/commonAuto.css">
+    <link rel="stylesheet" href="css/safe.css">
+</head>
+<body>
+<div class="safe_1">
+  <img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safe_1.jpg">
+</div>
+<div class="safe_2">
+    <div class="div_com" onclick="location.href='http://cms.facebank.cn/qqianhe_0803.html'">
+        <p class="p3">
+            <img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safe_btn.png">
+        </p>
+        <p class="p1"><img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safeIcon_1.png"></p>
+        <p class="p2">
+            <span class="span1">500强联手打造</span>
+            <span class="span2">阳光保险+中国华电500强企业强强联手，给您最安心的保障</span>
+        </p>
+
+    </div>
+
+    <div class="div_com" onclick="location.href='http://cms.facebank.cn/fengkong.html'">
+        <p class="p3">
+            <img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safe_btn.png">
+        </p>
+        <p class="p1"><img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safeIcon_3.png"></p>
+        <p class="p2">
+            <span class="span1">专业风控体系</span>
+            <span class="span2">与知名金融机构合作，整合金融资源，专业的传统金融风控与大数据风控相结合，0逾期</span>
+        </p>
+
+    </div>
+    <div class="div_com" onclick="location.href='http://cms.facebank.cn/moneyGuarantee.html'">
+        <p class="p3">
+            <img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safe_btn.png">
+        </p>
+        <p class="p1"><img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safeIcon_4.png"></p>
+        <p class="p2">
+            <span class="span1">资金安全保障</span>
+            <span class="span2">平台资金采用第三方存管，并在技术上实行多重加密，确保资金安全</span>
+        </p>
+
+    </div>
+    <div class="div_com" onclick="location.href='http://cms.facebank.cn/team_0803.html'">
+        <p class="p3">
+            <img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safe_btn.png">
+        </p>
+        <p class="p1"><img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safeIcon_2.png"></p>
+        <p class="p2">
+            <span class="span1">优秀管理团队</span>
+            <span class="span2">知名金融与互联网企业核心管理团队，高效、规范</span>
+        </p>
+
+    </div>
+    <div class="div_com" onclick="location.href='http://cms.facebank.cn/legalGuarantee.html'">
+        <p class="p3">
+            <img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safe_btn.png">
+        </p>
+        <p class="p1"><img src="http://static.facebank.cn/static/wapFront/safe/safeIndex/img/safeIcon_5.png"></p>
+        <p class="p2">
+            <span class="span1">法律合规保障</span>
+            <span class="span2">运营资质齐全，投资人获得的投资理财收益为合法收益并受到法律保护</span>
+        </p>
+
+    </div>
+
+</div>
+<div class="empty" id="empty">
+
+</div>
+
+
+    <ul class="navFud" id="#wapFud">
+        <li>
+            <a href="http://m.facebank.cn/wap/index" data-event="wap_index" data-event-name="wap首页" data-event-category="wap_indexBtn">
+                <span class="nav-1">&nbsp;</span>
+                首页</a>
+        </li>
+        <li>
+            <a href="http://m.facebank.cn/wap/loanList" data-event="wap_invest" data-event-name="wap投资页" data-event-category="wap_investBtn">
+                <span class="nav-2">&nbsp;</span>
+                投资</a></li>
+        <li>
+            <a href="http://m.facebank.cn/wap/quickLogin?cburl=%2fwap%2faccount" data-event="wap_myAccount" data-event-name="wap我的账户页" data-event-category="wap_myAccountBtn">
+                <span class="nav-3">&nbsp;</span>
+                我的账户</a></li>
+        <li class="navOn-4">
+            <a href="http://cms.facebank.cn/safe.html" data-event="wap_safe" data-event-name="wap安全保障" data-event-category="wap_safeBtn">
+                <span class="navOn-4">&nbsp;</span>
+                安全保障</a></li>
+    </ul>
+
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script><script>
+    $(function(){
+        var params = location.search;
+        if(params&&params.indexOf('curDevice') > -1){
+            $("#empty").hide();
+            $("#wapFud").hide();
+        }else{
+            $("#empty").show();
+            $("#wapFud").show();
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,28 @@
+.content {
+  width: 1200px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+.content .ul-1 {
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+.content .ul-1 li {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.content .ul-2 {
+  font-size: 24px;
+  float: left;
+  display: none;
+  width: 800px;
+}
+.content .ul-2 li {
+  margin-bottom: 5px;
+}
+.content .ul-2 li .span-count {
+  margin-left: 30px;
+}

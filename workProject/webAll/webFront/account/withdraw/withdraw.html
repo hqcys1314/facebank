@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="刷脸金融">
+    <meta name="description" content="刷脸金融">
+    <title>刷脸金融www.facebank.net.cn-中国领先个人微金融服务平台！微理财，微信贷，云银行，专注小微信贷与个人金融服务！</title>
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/head_foot.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/common.css" />
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/account/accCom/css/account.css"/>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/account/withdraw/css/withdraw.css"/>
+    <link rel="stylesheet" href="css/withdraw_3.23.css">
+</head>
+<body>
+<!--百度统计异步代码-->
+<script src="../../common/js/baidujk.js"> </script>
+<!---------页头结束----------->
+<iframe src="../../common/head.html" width="100%" height="119px" style="overflow: hidden;"></iframe>
+<div class="account" id="acount">
+    <div class="accountNav">
+        <a href="">刷脸金融首页></a><a href="">我的账户></a><a id="breadbag" onclick="accClick();"></a>
+    </div>
+    <div class="clear"></div>
+    <div class="accountLeft" id="acountLeft">
+        <ul class="alList">
+            <li class="alYulan "><a href="#"> 账户概览</a></li>
+            <li class="alZjjl"><a href="#"> 资金记录</a></li>
+            <li class="alCz"><a href="#"> 我要充值</a></li>
+            <li class="altx"><a href="#"> 我要提现</a></li>
+            <li class="alTzjl"><a href="#"> 投资记录</a></li>
+            <li class="alHongbao"><a href="#"> 我的红包</a><img src="http://static.facebank.cn/static/webFront/account/accCom/img/accHot.png" alt=""/></li>
+            <li class="alJifen"><a href="#">积分兑换</a></li>
+            <li class="alAnquan"><a href="#"> 安全中心</a></li>
+            <li class="alXixin"><a href="#"> 消息中心</a><img src="http://static.facebank.cn/static/webFront/account/accCom/img/accCircle.png" alt="" id="alXixinImg"/></li>
+            <li class="alYqhy"><a href="#"> 邀请好友</a></li>
+            <li class="alZqzr"><a href="#"> 债权转让</a></li>
+            <li class="alZr"><a href="#"> 债权转让</a></li>
+
+        </ul>
+    </div>
+    <div class="accountRight" id="acountRight">
+         <div class="accountTitle">
+             <a href="#" class="accountTitleCharge" data-event="chgWithdrawCharge"
+                data-event-name="提现页面-充值按钮"
+                data-event-category="chgWithdrawChargeBtn">充值</a>
+             <span class="titleName">提现</span>
+         </div>
+
+
+ <!----------------------------修改开始---------------------------------------->
+        <div class="arList">
+            <span class="span1">持卡人</span>
+            <input type="text" value="" placeholder="请输入持卡人姓名" />
+        </div>
+        <div class="arList">
+            <span class="span1">身份证号</span>
+            <input type="text" value="" placeholder="请输入您的身份证号" />
+        </div>
+        <div class="arList">
+            <span class="span1">银行卡号</span>
+            <input type="text" value="" placeholder="请输入您的银行卡号" />
+        </div>
+        <div class="arList">
+            <span class="span1">开户行省份</span>
+            <select>
+                <option>省份</option>
+                <option>河北</option>
+            </select>
+            <select>
+                <option>城市</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+            </select>
+        </div>
+        <div class="arList">
+            <span class="span1">账户可用余额</span>
+            <span class="span3">1000.00</span><span class="yuan">元</span>
+        </div>
+        <div class="arList" style="margin-top: 0;">
+            <span class="span1" >提现金额</span>
+            <input type="text" value="" /><input type="button" value="全部提现" class="withdrawFee">
+            <span class="errortipCom errtip1">您的余额只有1000.00元</span>
+            <span class="warmtipCom warmtip1">您的余额只有1000.00元</span>
+        </div>
+        <div class="arList">
+            <span class="span1">支付密码</span>
+            <input type="text" value="" /><a class="forgetPwd" data-event="WithdrawForgetPassword"
+                                             data-event-name="提现页面-忘记密码"
+                                             data-event-category="WithdrawForgetPasswordLink">忘记密码？</a>
+            <span class="errortipCom errtip2">请输入6位数字支付密码</span>
+            <span class="warmtipCom warmtip2">请输入6位数字支付密码</span>
+        </div>
+        <div class="paypwdDis">请输入6位数字支付密码</div>
+        <div class="arList">
+            <span class="span1">手机号</span>
+            <input type="text" value="" placeholder="请输入您的银行预留手机号" />
+        </div>
+        <div class="arListTx">
+            <span class="span1">短信验证码</span>
+            <input type="text" placeholder="请输入验证码" value=""/>
+            <input class="span4" data-event="chgWithdrawMsgcard"
+                  data-event-name="提现页面-获取短信验证码"
+                  data-event-category="chgWithdrawMsgcardBtn" value="获取动态验证码" id="arMsgCode" type="button"
+                  onclick="timePass()"
+                    >
+        </div>
+        <div class="arVoiceTip" id="arVoiceTip">动态密码已发送至您的手机133****9873，
+            <br>请尽快输入，若收不到短信请<a data-event="chgWithdrawVoicecard"
+                                data-event-name="提现页面-获取语音验证码"
+                                data-event-category="chgWithdrawVoicecardBtn" id="arVoiceCode">语音获取</a></div>
+        <div class="arVoiceTip arVoiceWordTip">您的手机号133****9873将在60秒内收到021-1111111的电话，请接听并在120秒内输入</div>
+        <div class="arListTxBottom">预计到账日期提现之日起一个工作日内</div>
+        <div class="arListTxBtn improtant_button"  data-event="chgWithdrawButton"
+             data-event-name="提现页面-提现按钮"
+             data-event-category="chgWithdrawButton">
+            提现
+        </div>
+        <div class="wd_text">
+             <ul>
+                    <li>温馨提示：</li>
+                    <li> 1、平台最低充值/提现金额需≥1元；</li>
+                    <li> 2、充值免收手续费；</li>
+                    <li> 3、提现金额≥1000元时，免收手续费；提现金额＜1000元时，手续费2元/笔（每月可享1次免手续费提现）；</li>
+                    <li> 4、提现到账时间：客户提交提现申请后的T+1个工作日内（周末、节假日顺延）；</li>
+                    <li style="margin-top: 10px;">如您在充值和提现过程中遇到问题，请登录微信服务号“笑脸平台”咨询在线客服或拨打平台全国客服电话4008-900-766（工作时间：9：00-18：00）</li>
+             </ul>
+        </div>
+
+    </div>
+</div>
+<!--蒙版--->
+<div class="mask">
+</div>
+<!--使用免手续费--->
+<div class="maskBox noFee">
+    <div class="maskBoxCenter">
+        <div class="maskContent">
+            <p><span class="span1"></span><span class="span2">温馨提示</span></p>
+            <div class="maskCenter">您本次提现金额不足1000元，平台每个月赠送用户一次免手续费提现的机会，本次提现免手续费，请确认是否继续提现。</div>
+            <div class="mb_btn">
+                <div class="improtant_button">继续</div><div class="improtant_button confirm">返回</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/webFront/common/js/common.js"></script>
+<script>
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#arMsgCode").val("获取动态验证码");
+            $("#arMsgCode").css("color", "#333");
+            $("#arMsgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#arMsgCode").val(miao + "秒后重发");
+            $("#arMsgCode").attr('disabled',true);
+            $("#arMsgCode:hover").css("color", "#999");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+
+        }
+    }
+
+    $("#arVoiceCode").click(
+            function(){
+                $("#arVoiceTip").hide();
+                $(".arVoiceWordTip").show();
+                setTimeout(
+                        function () {
+                            $(".arVoiceWordTip").hide();
+                            $("#arVoiceTip").show();
+                        }, 120000)
+
+            }
+    )
+    function accClick(){
+        window.location.href="http://www.facebank.cn/index";
+    }
+    $(".withdrawFee").click(
+            function(){
+                $(".mask").show();
+                $(".noFee").show();
+            }
+    )
+    $('#breadbag').html("我要提现");
+    $("#alXixinImg").hide();
+    //$("#alXixinImg").show();
+    $('.altx').addClass("alChoosed");
+</script>
+</html>

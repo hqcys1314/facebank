@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>手持身份证横向拍照</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/certification/css/camera.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>手持身份证横向拍照</h3>
+</header>
+ <div class="photo">
+    <img src="http://static.facebank.cn/staticod/ouding/certification/img/photo.jpg" id="show-picture">
+     <p id="error"></p>
+ </div>
+<section id="first">
+    <div class="btnSection">
+        <div class="btn color-red">拍照</div>
+        <input type="file" id="take-picture" accept="image/*">
+    </div>
+</section>
+<input type="hidden" id="dataurl_yasuo">
+<section id="repeat">
+    <div class="btnSection" >
+        <input type="button" value="提交" class="btn color-red" id="take-picture-submit">
+    </div>
+    <div class="btnSection">
+        <div class="btn">重拍</div>
+        <input type="file" id="take-picture-re" accept="image/*">
+    </div>
+</section>
+<canvas id="canvas" style="">
+
+</canvas>
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script src="js/camera.js"></script>
+<script>
+    $("#take-picture-submit").click(
+            function(){
+                var canvas = document.getElementById("canvas");
+                /*图片压缩后上传的url*/
+                var dataurl_yasuo = canvas.toDataURL("image/*");
+                $("#dataurl_yasuo").value(dataurl_yasuo);
+                /*图片原始大小上传的url*/
+                var dataurl_yuanshi = $("#show-picture").attr("src");
+            }
+    )
+
+</script>
+</html>

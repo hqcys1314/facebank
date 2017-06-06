@@ -1,0 +1,137 @@
+@charset "UTF-8";
+html,body {
+  background-color: #ffffff;
+  font-size: 159%;
+}
+.part1 {
+  width: 90%;
+  padding: 0 5%;
+  overflow: hidden;
+}
+.part1 .title {
+  margin: 1.375rem auto 1rem;
+  font-size: 1.125rem;
+  color: #f86c36;
+  text-align: center;
+}
+.part1 .word {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+.part2 {
+  width: 100%;
+  overflow: hidden;
+}
+.part2 .title {
+  margin: 2.344rem auto 1.375rem;
+  font-size: 1.1rem;
+  color: #f86c36;
+  text-align: center;
+}
+.part2 .word {
+  width: 95%;
+  margin-left: 5%;
+  border-bottom: 1px #ddd solid;
+}
+.part2 .word .list {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px #ddd solid;
+  padding: 1.125rem 0;
+}
+.part2 .word .list .left {
+  float: left;
+  width: 20%;
+}
+.part2 .word .list .left img {
+  width: 2.4rem;
+  margin-left: 0.6rem;
+}
+.part2 .word .list .right {
+  float: left;
+  width: 72%;
+}
+.part2 .word .list .right .p1 {
+  color: #333333;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.part2 .word .list .right .p2 {
+  font-size: 0.75rem;
+  line-height: 1.188rem;
+  color: #999;
+}
+.part3 .title {
+  margin: 2.344rem auto 1.375rem;
+  font-size: 1.1rem;
+  color: #f86c36;
+  text-align: center;
+}
+.part3 .word {
+  text-align: center;
+}
+.part3 .word img {
+  width: 16rem;
+}
+.part4 .title {
+  margin: 2.344rem auto 1.375rem;
+  font-size: 1.1rem;
+  color: #f86c36;
+  text-align: center;
+}
+.part4 .word {
+  width: 95%;
+  margin-left: 5%;
+  border-bottom: 1px #ddd solid;
+}
+.part4 .word .problem {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px #ddd solid;
+  padding: 1.125rem 0;
+}
+.part4 .word .problem .ask {
+  width: 92%;
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+}
+.part4 .word .problem .ask .span1 {
+  float: left;
+  background-color: #f1f1f1;
+  padding: 0.3rem 0.56rem;
+  font-size: 0.938rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.part4 .word .problem .ask .span2 {
+  float: left;
+  background-color: #f1f1f1;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.9rem;
+  max-width: 68%;
+}
+.part4 .word .problem .ans {
+  width: 92%;
+  overflow: hidden;
+}
+.part4 .word .problem .ans .span1 {
+  float: right;
+  background-color: #fff0d2;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.9rem;
+  max-width: 68%;
+  margin-right: 0.5rem;
+}
+.part4 .word .problem .ans .span2 {
+  float: right;
+  background-color: #fff0d2;
+  padding: 0.3rem 0.56rem;
+  font-size: 0.938rem;
+  border-radius: 50%;
+  text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>6.1儿童节活动</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/61huodong/css/61huodong.css">
+    <meta name="page-name" content="活动首页"/>
+    <meta name="user-id" content=""/>
+
+</head>
+<body class="body_4">
+<div class="index_1">
+    <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/index_1.jpg">
+</div>
+<div class="index_2">
+      <a href="" data-event="kanpaihang" data-event-name="查看排行榜" data-event-category="kanpaihangLink"><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/index_paihang.png"></a>
+      <a  data-event="shareFriend" data-event-name="分享给好友" data-event-category="shareFriendLink" class="a_fenxiang"><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/index_fenxiang.png"></a>
+</div>
+<div class="index_3" data-event="canyu" data-event-name="我要参与" data-event-category="canyuBtn">
+    <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/index_canyu.png">
+</div>
+<div class="index_4">
+   <div class="content">
+       <h3>活动奖励:</h3>
+       <p>6.1儿童节【笑脸宝宝】评选活动，赢现金奖励！</p>
+       <h3>奖励方式如下:</h3>
+       <p><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/index_2.jpg"></p>
+       <h3>其他奖励:</h3>
+       <p>每位参与本次活动的用户均可在分享后获得平台推荐现金奖励5元；</p>
+       <h4>活动相关须知</h4>
+       <p> 1.	宝贝年龄要求：0-10岁<br/>
+           2.	活动时间：即日起——2016年6月6日23：59止<br/>
+           3.	获奖公布时间：2016年6月7日<br/>
+           4.	活动奖励将在活动结束后三天内统一进行发放；
+           现金奖励到账后可从平台账户中直接提现（将有短信通知）；
+           实物奖励将由笑脸客服与您电话联系后寄送到家；
+           免费儿童健康、心理在线讲座将客服在开课前联系（将有短信通知报名通道）；<br/>
+           5.	 为确保本次活动公平公正，系统将实时监控违规及作假行为，一经查实将直接取消活动资格！<br/>
+           6.	活动最终解释权归笑脸金融平台所有</p>
+   </div>
+</div>
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/mc_fenxiang.jpg">
+</div>
+<div class="limitMc">
+    <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/limitMc.png">
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jiankong.js"></script>
+<script>
+    $(document).ready(function(){
+        function mcLoad(){
+            var wapShare= document.body.scrollHeight;
+            $(".wapShare").css("height",wapShare);
+        }
+        window.onload=mcLoad();
+        $('.wapShare').click(
+                function(){
+                    $(".wapShare").hide();
+                }
+        );
+    });
+    $('.a_fenxiang').click(
+            function(){
+                $(".wapShare").show();
+            }
+    );
+</script>
+</html>

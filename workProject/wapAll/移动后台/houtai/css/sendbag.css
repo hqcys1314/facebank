@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.nav{overflow: hidden;height: 40px;line-height: 40px;background-color: #fff;margin-bottom: 10px;border-bottom: 1px #ddd solid;}
+.nav a{width: 49%;text-align: center;display: inline-block;float: left;color: #999999;}
+.nav a.on{color: #333333;border-bottom: 1px #f86c36 solid;height: 39px;}
+.part{background-color: #ffffff; border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;margin-bottom: 10px;}
+.part .line{margin-left: 5%;height: 45px;}
+.part .line .span1{float: left; height: 45px;line-height: 45px; display: inline-block;width:35%;}
+.part .line .span2{float: left;height: 45px;line-height: 45px; display: inline-block;}
+.part .line .text1{font-size: 1em;width: 37%;color: #333;    float: left;}
+.part .line .div1{float: left;width: 50%;overflow: hidden;}
+.part .line .div1 select{width: 110%;}
+.part .line .div2{display: inline-block;width: 12px;margin-left: 3%;float: left; margin-top: 15px;}
+.part .line .div2 img { width: 100%;}
+.infoborder{border-bottom: 1px #ddd solid;}
+.weimBtn {width: 70%;margin: 5% auto 0; }
+.weimBtn input{width: 100%;background-color: #f86c36;color: #fff; height: 40px;text-align: center;font-size: 1em;border-radius: 2em;}

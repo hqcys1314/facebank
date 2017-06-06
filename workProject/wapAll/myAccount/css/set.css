@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/*设置*/
+.set2{  background-color: #fff;color: #000;margin-bottom: 15px;margin-top: 15px;}
+.set2 .div1{overflow: hidden;padding: 15px 0;  margin-left: 5%;}
+.set2 .div1 a{display: block;overflow: hidden; }
+.set2 .div1 .span2{display: inline-block; width: 30%;float: left;  color: #666;}
+.set2 .div1 .span3{margin-left: 25%;float: left;color: #999;width: 36%;  text-align: center; }
+.set2 .div1 .span4{width:10px;display: inline-block;  margin-left: 3%;float: left;}
+.set2 .div1 .span4 img{width: 100%;  vertical-align: middle;}
+.infoborder{border-bottom: 1px #ddd solid;}
+.set3 {height: 40px; background-color: #fff;line-height: 40px; text-align: center;margin-bottom: 2em;color: #f86c36;}
+.waptanch {display:none;z-index: 22;position: fixed;bottom: 0;background-color: #fff;width: 100%;    left: 0;}
+.waptanch p{text-align: center;height: 40px;line-height: 40px;  font-size: 1em;}
+.waptanch .p1{color: #f86c36;  border-bottom: 1px #ddd solid;}
+.waptanch .p2{color: #0050CA;}
+.wapTip .p_phone a {  font-size: 1.1em; width: 100%;text-align: center;color: #f86c36;height: 40px;line-height: 40px;  border-top: 1px #ddd solid;display: block;margin-top: 10px;}

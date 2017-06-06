@@ -1,0 +1,379 @@
+/*列表页 */
+.listTab {
+  height: 3rem;
+  background-color: #fff;
+  margin-bottom: 0.75rem;
+}
+.listTab ul {
+  width: 100%;
+  overflow: hidden;
+}
+.listTab ul li {
+  float: left;
+  text-align: center;
+  font-size: 0.938rem;
+  height: 3rem;
+  line-height: 3rem;
+  width: 50%;
+}
+.listTabOn {
+  border-bottom: 1px #f86c36 solid;
+  color: #000;
+}
+.listTabOff {
+  color: #999;
+}
+.listShow3 {
+  display: none;
+}
+.listShow1 .investList {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+.listShow1 .investList .p_title {
+  width: 90%;
+  margin: 0 5%;
+  font-size: 0.938rem;
+  padding-top: 0.688rem;
+  padding-bottom: 0.688rem;
+  border-bottom: 1px #dddddd solid;
+  overflow: hidden;
+}
+.listShow1 .investList .p_title .span3 {
+  float: left;
+}
+.listShow1 .investList .p_title .span_over {
+  float: right;
+  font-size: 0.7rem;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  background-color: #999;
+  padding: 2px 5px;
+}
+.listShow1 .investList .p_title .span_sell {
+  float: right;
+  font-size: 0.7rem;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  background-color: #f86c36;
+  padding: 2px 5px;
+}
+.listShow1 .investList .investListLeft {
+  width: 85%;
+  float: left;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+}
+.listShow1 .investList .investListLeft ul {
+  width: 95%;
+  margin-left: 5%;
+  margin-top: 0.3rem;
+  font-size: 0.688rem;
+  overflow: hidden;
+}
+.listShow1 .investList .investListLeft ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.listShow1 .investList .investListLeft ul li .span4 {
+  font-size: 1.375rem;
+  color: #f86c36;
+}
+.listShow1 .investList .investListLeft ul li .span5 {
+  color: #f86c36;
+}
+.listShow1 .investList .investListLeft ul li .span6 {
+  font-size: 1.375rem;
+  color: #000;
+}
+.listShow1 .investList .investListRight {
+  width: 15%;
+  float: left;
+  padding-top: 0.7rem;
+}
+.listShow1 .investList .p_detail {
+  padding-top: 0;
+  margin: 0;
+  border-bottom: 1px #ddd solid;
+  background-color: #f8f8f8;
+  color: #999999;
+  font-size: 0.688rem;
+  width: 95%;
+  padding-left: 5%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.listShow2 {
+  display: none;
+}
+.listShow2 .banner {
+  width: 90%;
+  margin: 0 auto 0.6rem;
+  overflow: hidden;
+}
+.listShow2 .banner img {
+  width: 100%;
+}
+.listShow2 .investList {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.listShow2 .investList .p_title {
+  padding-top: 1rem;overflow: hidden;
+  color: #666666;
+  margin-left: 5%;
+}
+.listShow2 .investList .p_title .span3 {
+  float: left;
+  font-size: 0.938rem;
+}
+.investList .p_title .span-icon {
+  font-size: 0.688rem;
+  color: #f86c36;
+  border-radius: 3px;
+  border: 1px #f86c36 solid;
+  padding: 0.05rem 0.4rem;
+  margin-right: 0.4rem;
+  float: left;
+}
+.listShow2 .investList .investListLeft {
+  width: 70%;
+  float: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 5%;
+}
+.listShow2 .investList .investListLeft ul {
+  overflow: hidden;
+}
+.listShow2 .investList .investListLeft ul li {
+  float: left;
+  width: 49.5%;
+}
+.listShow2 .investList .investListLeft ul li .p1 {
+  font-size: 1.375rem;
+}
+.listShow2 .investList .investListLeft ul li .p1 .span-samll {
+  font-size: 0.75rem;
+}
+.listShow2 .investList .investListLeft ul li .p-cl-red {
+  color: #f86c36;
+}
+.listShow2 .investList .investListLeft ul li .p-cl-grey {
+  color: #666;
+}
+.listShow2 .investList .investListLeft ul li .p2 {
+  font-size: 0.75rem;
+  color: #999999;
+}
+.listShow2 .investList .investListRight {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.listShow2 .investList .investListRight .p_tip {
+  font-size: 0.75rem;
+}
+.listShow2 .investList .investListRight a{
+  color: #ffffff;
+  display: block;text-align: center;border-radius: 5px;
+  line-height: 2.25rem;
+  height: 2.25rem;
+  font-size: 0.938rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.listShow2 .investList .p_detail {
+  border-top: 1px #ddd solid;
+  color: #999999;
+  font-size: 0.75rem;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 2.25rem;
+  line-height: 2.25rem;
+}
+.listShow2 .investList .p_detail .span_right {
+  float: right;
+}
+.listShow2 .investList .p_detail .span_right font {
+  color: #f86c36;
+  margin-left: 3px;
+}
+
+.listShow3 .banner {
+  width: 90%;
+  margin: 0.75rem auto;
+}
+.listShow3 .banner img {
+  width: 100%;
+}
+.listShow3 .div_title {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #666666;
+  padding-left: 5%;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-bottom: 1px #dddddd solid;
+}
+.listShow3 .div_title .t-left {
+  float: left;
+  width: 60%;
+  font-size: 1.125rem;
+  color: #333333;
+}
+.listShow3 .div_title .t-left span {
+  font-size: 0.875rem;
+}
+.listShow3 .div_title .t-right {
+  float: left;
+  width: 40%;
+  padding-top: 0.5rem;
+}
+.listShow3 .div_title .t-right .process-bg {
+  float: left;
+  border-radius: 1rem;
+  background-color: #dddddd;
+  width: 70%;
+  height: 0.625rem;
+}
+.listShow3 .div_title .t-right .process-bg .process {
+  background-color: #f86c36;
+  height: 0.625rem;
+  border-radius: 1rem;
+}
+.listShow3 .div_title .t-right .process-value {
+  float: left;
+  margin-top: -0.2rem;
+  margin-left: 0.3rem;
+  font-size: 0.75rem;
+  color: #333333;
+}
+.listShow3 .investList {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 0.5rem;
+}
+.listShow3 .investList .investListPos {
+  overflow: hidden;
+  margin-left: 5%;
+  border-bottom: 1px #dddddd solid;
+}
+.listShow3 .investList .investListPos .investListLeft {
+  width: 70%;
+  float: left;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+.listShow3 .investList .investListPos .investListLeft ul {
+  overflow: hidden;
+}
+.listShow3 .investList .investListPos .investListLeft ul li {
+  float: left;
+  width: 49.5%;
+}
+.listShow3 .investList .investListPos .investListLeft ul li .p1 {
+  font-size: 1.375rem;
+}
+.listShow3 .investList .investListPos .investListLeft ul li .p1 .span-samll {
+  font-size: 0.75rem;
+}
+.listShow3 .investList .investListPos .investListLeft ul li .p-cl-red {
+  color: #f86c36;
+}
+.listShow3 .investList .investListPos .investListLeft ul li .p-cl-grey {
+  color: #666;
+}
+.listShow3 .investList .investListPos .investListLeft ul li .p2 {
+  font-size: 0.75rem;
+  color: #999999;
+}
+.listShow3 .investList .investListPos .investListRight {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.listShow3 .investList .investListRight .p_over{
+    padding-top: 0.6rem;
+}
+.listShow3 .investList .investListRight .p_over img{
+    width: 100%;
+}
+.listShow3 .investList .investListPos .investListRight .p_tip {
+  font-size: 0.75rem;
+  color: #f86c36;
+}
+.listShow3 .investList .investListPos .investListRight a.comBtn {
+  background-color: #f86c36;
+  display: block;
+  line-height: 2.25rem;
+  height: 2.25rem;
+  font-size: 0.938rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.listShow3 .color-1 {
+  border-left: 4px #ff9369 solid;
+}
+.listShow3 .color-2 {
+  border-left: 4px #f5aa49 solid;
+}
+.listShow3 .color-3 {
+  border-left: 4px #f6ca44 solid;
+}
+.listShow3 .color-4 {
+  border-left: 4px #e8db07 solid;
+}
+.listShow3 .color-5 {
+  border-left: 4px #8ddd4c solid;
+}
+.listShow3 .color-6 {
+  border-left: 4px #58e68e solid;
+}
+.listShow3 .color-7 {
+  border-left: 4px #54e2e4 solid;
+}
+.listShow3 .color-8 {
+  border-left: 4px #66c3f3 solid;
+}
+.listShow3 .color-9 {
+  border-left: 4px #6ea1f5 solid;
+}
+.listShow3 .color-10 {
+  border-left: 4px #9d8cf6 solid;
+}
+.listShow3 .color-11 {
+  border-left: 4px #d193f4 solid;
+}
+.listShow3 .color-12 {
+  border-left: 4px #f493d5 solid;
+}
+.foot-corner {
+  text-align: center;
+  margin-top: 1rem;
+}
+.foot-corner img {
+  width: 90%;
+  margin: 0 auto;
+}
+/*首购加息规则*/
+.wapGz{position: fixed;top: 10%;left: 50%;margin-left: -41%;z-index: 21;width: 82%;height: 395px;display: none;}
+.wapGz .gz_con{border-radius: 10px;position: relative;padding-bottom: 15px;background-color: #fff9da;height: 95%;}
+.wapGz .gz_con .p_title{height: 50px;line-height: 50px;margin: 0 auto;color: #f86c36;font-size: 1.2em;text-align: center;border-bottom: 1px #fcba86 solid;}
+.wapGz .gz_con .content{overflow-y: scroll;    height: 80%;}
+.wapGz .gz_con .content .mtop{margin-top: 1rem; }
+.wapGz .gz_con .content h3{color: #f86c36;font-size: 0.95em;font-weight: normal;width: 90%;margin: 10px auto 0;}
+.wapGz .gz_con .content p{color: #666666;font-size: 0.9em;width: 90%;margin: 3px auto 10px;}
+.wapGz .gz_con .p_con{width: 210px;margin: 0 auto;padding: 20px 0;text-align: center;}
+.wapGz .gz_con .p_btn{background-color:#feedcc;color: #999999;height: 35px;line-height: 35px;font-size: 0.9em;text-align: center;
+    position: absolute;bottom: 0; border-radius: 0 0 10px 10px;width: 100%;}
+.wapGz .gz_con .p_close{text-align: center;position: absolute;bottom: -42px;left: 50%;margin-left: -15px;}
+.wapGz .gz_con .p_close img{width: 30px;}

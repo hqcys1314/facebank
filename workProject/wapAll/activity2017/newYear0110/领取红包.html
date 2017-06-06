@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>新春抢红包</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/css/lingqu.css">
+</head>
+<body>
+<div class="content-1">
+    <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/banner.jpg">
+    <p class="p_guize">查看规则></p>
+    <!----------------------------改1---------------------->
+    <div class="jiaxi-1">您已获得<font>1</font><span>%</span>加息，<br/>还想再加吗？</div>
+    <div class="zadan">
+        <div class="paizi">
+            <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/paizi.png" id="paizi">
+        </div>
+        <!----------------------------改2---------------------->
+
+        <div class="dan-pos" id="zadan" data-event="newYear_zazan" data-event-name="春节红包-砸蛋动效" data-event-category="newYear_zazan_btn">
+            <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/mi_bg.png" class="guang">
+            <div class="dan">
+                <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/dan-1.png" class="dan-1">
+                <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/dan-2.png" class="dan-2">
+                <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/dan-3.png" class="dan-3">
+                <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/dan-4.png" class="dan-4">
+                <!----------------------------改3---------------------->
+                <div class="zd-value">
+                    <span class="span1">0.5</span><span class="span2">%</span>
+                </div>
+                <div class="zd-jiaxi">
+                    <span class="span1">0.1%</span>
+                    <span class="span2">0.2%</span>
+                    <span class="span3">0.5%</span>
+                </div>
+            </div>
+        </div>
+        <div class="chuizi">
+            <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/chuizi.png" class="cz-dh">
+        </div>
+    </div>
+    <!----------------------------改4---------------------->
+
+    <div class="jiaxi-2">
+        <div class="left">
+            <span class="span2">恭喜</span>获得
+        </div>
+        <div class="center">
+            <span class="span2">1.5%</span><br/>
+            鸿运当头
+        </div>
+        <div class="right">
+            加息红包呦
+        </div>
+    </div>
+
+</div>
+<div class="content-2">
+    <div class="div_pos">
+        <p class="p_title">输入手机号领取红包</p>
+        <p class="p_tip">您的好友<span>187****6269</span>正在笑脸金融投资，邀请您一起来赚钱！</p>
+        <p class="part1">
+            <span class="icon"><img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/phone.png"></span>
+            <input type="tel" placeholder="请输入您的手机号码"></p>
+        <div class="part2">
+            <p class="p1">
+                <span class="icon"><img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/code.png"></span>
+                <input type="tel"  placeholder="请输入验证码">
+            </p>
+            <input type="button" value="发送验证码"  id="msgCode" onclick="timePass()"></div>
+        <p class="part3"><input type="button" value="立即领取" id="rb_btn"></p>
+        <p class="part6">
+            <input type="checkbox" id="agreeBox" checked="">
+            <span>我已阅读和同意
+                <a href="http://m.facebank.cn/wap/agreementReg" data-event="wap_facebankAggrement" data-event-name="wap用户注册页-笑脸金融用户协议链接" data-event-category="wap_facebankAggrementLink">《笑脸金融用户协议》</a>
+            </span>
+        </p>
+    </div>
+</div>
+<div class="content-4">
+    <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/bottom.jpg">
+</div>
+
+<div class="wapMc">
+
+</div>
+<!-----------------------规则弹框---------------------------->
+<div class="wapGz" id="guize">
+    <div class="gz_con">
+        <p class="p_title">活动规则</p>
+        <div class="content">
+                <h3>活动时间：2016年1月12日（00：00）- 2016年2月28日（23：59）</h3>
+                <ol>
+                    <li>活动对象：新春红包仅限未投资过的新用户领取</li>
+                    <li>红包有效期：须在成功领取之日起45天之内使用，过期失效</li>
+                    <li>新春红包：砸金蛋后的叠加效果可使加息红包达到（1.1%~1.5%）</li>
+                    <li>使用红包：请从【笑脸金融】客户端（PC\APP\微信公众号均可）登录后进入【我的红包】中查看并使用；</li>
+                    <li>新春红包不可与其他红包叠加使用，可用于非新手标以及其他限制使用红包的投资项目；</li>
+                    <li>加息红包产生的收益不与正常投资收益合并显示，待投资项目期满后将会以【红包奖励】的形式发放至您的平台账户中；</li>
+                </ol>
+            <p class="p_btn">上下滑动查看更多...</p>
+            <p class="p_con">活动最终解释权归笑脸金融所有</p>
+        </div>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<!-----------------------老用户注册提示,---------------------------->
+<div class="wapTk" id="xs_oldUser_tip" >
+    <div class="tk_con">
+        <p class="p_title">温馨提示</p>
+        <p class="p_con">还是把领红包的机会让给新手吧
+            <br/>
+            ~予人玫瑰，手留余香~</p>
+        <!------跳转到首页---------->
+        <a class="p_btn" href="http://m.facebank.cn/wap/index">确定</a>
+        <div class="tiaozhuan">(<span id="tzNum">3</span>)秒之后自动跳转</div>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<!-----------------------分享蒙层 微信内---------------------------->
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/shareContent.png">
+</div>
+<!-----------------------分享蒙层 微信外---------------------------->
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/shareContent1.png">
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        $('<audio id="chatAudio"><source src="audio/notify.ogg" type="audio/ogg"><source src="audio/notify.mp3" type="audio/mpeg"><source src="audio/notify.wav" type="audio/wav"></audio>').appendTo('body');
+    });
+
+    /* 模仿android里面的Toast效果*/
+    var Toast = function(config){
+        this.context = config.context==null?$('body'):config.context;//上下文
+        this.message = config.message;//显示内容
+        this.left = config.left;//距容器左边的距离
+        this.top = config.top;//距容器上方的距离
+        this.init();
+    }
+    var msgEntity;
+    Toast.prototype = {
+        //初始化显示的位置内容等
+        init : function(){
+            $("#toastMessage").remove();
+            //设置消息体
+            var msgDIV = new Array();
+            msgDIV.push('<div id="toastMessage">');
+            msgDIV.push('<span>'+this.message+'</span>');
+            msgDIV.push('</div>');
+            msgEntity = $(msgDIV.join('')).appendTo(this.context);
+            //设置消息样式
+            var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2-20: this.left;
+            var top = this.top == null ? '50%' : this.top;
+            msgEntity.css({position:'fixed',top:top,'z-index':'99',left:'26%','background-color':'#333333','color':'white','text-align':'center','font-size':'0.8em',padding:'7px 2%',width:'44%','border-radius':'5px','box-shadow': '0px 0px 5px #000'});
+            msgEntity.hide();
+        },
+        //显示动画
+        show :function(time){
+            msgEntity.fadeIn(time/4);
+            msgEntity.fadeOut(time/2);
+        }
+
+    }
+    /*点击按钮，吐司错误提示*/
+    $("#rb_btn").click(
+            function(){
+                new Toast({context:$('body'),message:'XXXXXX'}).show("5000");
+            }
+    )
+    /*老用户提示*/
+    //    $("#rb_btn").click(
+    //            function(){
+    //                $(".wapMc").show();
+    //                $("#xs_oldUser_tip").show();
+    //                /*领取成功，3秒后自动跳转到首页*/
+    //                var djs=3;
+    //                var djsClear=setInterval(
+    //                        function(){
+    //                            $("#tzNum").html(djs);
+    //                            djs--;
+    //                            if(djs< 0){
+    //                                location.href="http://m.facebank.cn/wap/css";
+    //                                clearInterval(djsClear);
+    //                            }
+    //                        },1000
+    //                )
+    //            }
+    //    )
+    /*规则弹框*/
+    $(".content-1 .p_guize").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapGz").show();
+            }
+    )
+
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapTk").hide();
+                $(".wapGz").hide();
+            }
+    )
+
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#ff8955");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val("重获取("+miao+")");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#aaa");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+        /*砸蛋*/
+    $("#zadan").click(
+            function(){
+                $('#chatAudio')[0].play(); //播放声音
+                $(".zd-jiaxi").hide();
+                $(".dan-1").animate({opacity:"0"},50);
+                $(".dan-2").animate({opacity:"1"},50,function(){
+                    $(this).animate({opacity:"0"},50);
+                });
+                $(".dan-3").animate({opacity:"1"},50,function(){
+                    $(this).animate({opacity:"0"},50);
+                });
+                $(".dan-4").animate({opacity:"1"},50);
+                $(".chuizi img").removeClass("cz-dh");
+                $(".zd-value").addClass("zd-value-dh").css("opacity","1");
+                $(".jiaxi-2").fadeIn();
+                $("#paizi").attr("src","https://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/paizi_1.png");
+            }
+    )
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.mainPart2{width: 100%;margin:10px auto 5px;background-color: #fff;overflow: hidden;     padding-bottom: 5px;}
+.mainPart2 .p_title{width:90%;margin:0 5%;height:25px;font-size: 0.9em;   padding-top: 10px;overflow: hidden;}
+.mainPart2 .p_title .span_title{float: left;font-size: 1.1em;font-family: arial,"microsoft yahei";}
+.mainPart2 .p_title .span_jiaxi{display: block;float: left;width: 16px;margin-left: 2px;    margin-top: 2px;}
+.mainPart2 .p_title .span_jiaxi img{width: 100%;}
+.mainPart2 .p_title .span_fanxian{width: 16px;float: left;margin-left:2px;display: block;    margin-top: 2px;}
+.mainPart2 .p_title .span_fanxian img{width: 100%;}
+.mainPart2 .mp_left{width:65%;margin-left: 5%;float: left;margin-top: 2px;overflow: hidden; }
+.mainPart2 .mp_left ul{overflow: hidden;}
+.mainPart2 .mp_left ul li{ float: left;text-align: center;width: 50%;}
+.mainPart2 .mp_left .ul_1{height: 30px;line-height: 30px;margin-top: 10px;}
+.mainPart2 .mp_left .ul_1 .span1{  font-size: 1.3em;color: #f86c36;}
+.mainPart2 .mp_left .ul_1 .span2{ font-size: 1em;color: #f86c36;}
+.mainPart2 .mp_left .ul_1 .span3{ font-size: 1.4em;}
+.mainPart2 .mp_left .ul_1 .span4{ font-size: 0.9em;font-family:"黑体";color: #999999;}
+.mainPart2 .mp_left .ul_2{font-size: 0.75em;height: 20px;line-height: 20px;color: #999999;}
+.mainPart2 .mp_right{width:27%;float: left;margin-left: 2%;overflow: hidden; padding-bottom: 10px;    margin-top: 4px;}
+.mainPart2 .p_detail{border-bottom: 1px #ddd solid;background-color: #f8f8f8;color: #999999;font-size: 0.7em;width:95%;padding-left: 5%;-webkit-box-shadow: 3px 3px 5px #ddd;
+    box-shadow: 3px 3px 5px #ddd;-moz-box-shadow: 3px 3px 5px #ddd;height:30px;line-height: 30px;}
+
+.part1{width:90%;background-color:#fff;margin:20px auto;padding: 15px 0 20px;overflow: hidden;}
+.part1 .p_img{width:100%;line-height: 25px;text-align: center;margin: 5px 0 20px;}
+.part1 .p_img img{width:80px;}
+.part1 .p_text{text-align: center;color: #f86c36;font-size: 1.3em;margin-bottom: 20px;}
+.part1 ul{width: 90%;margin: 0 auto;border-bottom: 1px #dddddd solid;overflow: hidden;font-size: 0.9em;padding-bottom: 15px;}
+.part1 ul li{float: left;width:49.5%;text-align: center;color: #999999;border-right: 1px #dddddd solid;}
+.part1 ul li:last-child{border: 0;}
+.part1 ul li .p1{color: #f86c36;}
+.part1 ul li .p2{color: #999999;margin-top: 5px;font-size: 0.9em;}
+.part1 ul li .p2 img{width: 15px;margin-left:3px;vertical-align: -3px; }
+.part1 .result{width: 90%;margin: 20px auto 0;font-size: 0.9em;}
+.part1 .result p{margin-top: 5px;}
+.part1 .result .span1{}
+.part1 .result .i{width:15px;display: inline-block;margin-left: 3px;}
+.part1 .result .i img{width: 100%;vertical-align: -2px;}
+#suc3{width: 90%;}
+.wapPos .p1{text-align: center;}

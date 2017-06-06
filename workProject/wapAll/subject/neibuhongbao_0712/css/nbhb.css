@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+/* edm */
+.gudong_1{width: 100%;position: relative}
+.gudong_1 .div1{width: 100%;}
+.gudong_1 .div1 img{width: 100%;}
+.gudong_1 .div2{position: absolute;width: 100%;  top: 29%;}
+.gudong_1 .div2 img{width: 80%;  margin-left: 10%;}
+.gudong_1 .div2 p{position:absolute;text-align: center;font-size: 1.8em;color: #e6e598;font-weight: bold; top: 15%;width: 100%;}
+.gudong_1 .div2 .lq_btn{width: 80%;margin:10px 0 10px 10%;border:1px #cd3f2c solid; border-radius: 2em; background-color: #fff;}
+.gudong_1 .div2 .lq_btn input[type="text"]{border-radius: 2em;   font-size: 1em; padding-left: 10%;  width: 54%;}
+.gudong_1 .div2 .lq_btn input[type="button"]{  font-size: 1em;background-color: #cd3f2c;padding: 8px;color: #ffffff;border-radius: 2em;width: 35%;}
+.gudong_1 .div2 .lq_tip {text-align: center;font-size: 0.75em;width: 80%;
+    margin: 0 auto;background-color: #d93f2c;color: #fff;padding: 6px 0;border-radius: 5px;line-height: 18px;}
+.gudong_2{width: 100%;}
+.gudong_2 img{width: 100%;}
+.staffTipPos{display:none;position: fixed;top: 20%;width: 100%;z-index: 22;left: 0;}
+.staffTip{background-color: #e6e6e6;width: 75%;margin:0 auto;padding-bottom: 1.5em;  border-radius: 0.2em;}
+.staffTip .staffhead{text-align: center;width: 180px;margin: 0 auto;}
+.staffTip .staffhead img{width: 100%;margin-top: 1em;}
+.staffTip .staffhead span{font-size: 1.4em;color: #D84033;}
+.staffTip .btn{text-align:center; font-size: 1.4em;background-color: #D84033;color: #fff;border-radius: 1em;
+    width: 75%;height: 2em;line-height: 2em;margin: 1em auto 0; }
+/* msg */
+.gameMc{background-color: #000;position:fixed;bottom: 0;opacity: 0.7;z-index: 20;  width: 100%;height: 4em;max-width: 600px;}
+.gameMcPos{position:fixed;bottom: 0;z-index: 21;  width: 100%;height:4em; max-width: 600px;}
+.gameMcPos a{width: 80%;margin: 0.6em 10%; height: 43px;background-color: #ffde00;color: #75351c;font-weight: bold;
+    font-size: 1.2em;border-radius: 5px;display: block;text-align: center;line-height: 43px;text-decoration: none;}

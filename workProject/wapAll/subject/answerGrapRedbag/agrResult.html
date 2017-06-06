@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/css/agr.css">
+</head>
+<body>
+<div class="agrrPart1">
+    <img src="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/img/agr3.png">
+</div>
+<div class="agrrPart2">
+    恭喜您在本次春节问答中成功答对了<br/>
+    X道题，获得XXXX称号；<br/>
+    特此为您奉上笑脸春节达人加息红包
+</div>
+<div class="agrrPart3"><img src="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/img/agr4.png"><p>+0.2%</p></div>
+<div class="agrrPart4">
+    <ul><li><a href="agrRecieve.html">领取红包</a></li><li><p class="comBtnBig">已领取</p></li><li><a href="">重新答题</a></li></ul>
+</div>
+<a class="agrrPart5">
+    分享好友一起答题
+</a>
+<div class="wapShare">
+        <img src="http://static.facebank.cn/static/wapFront/subject/answerGrapRedbag/img/shareJiantou.png">
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function mcLoad(){
+            var wapShare=document.body.scrollHeight;
+            $(".wapShare").css("height",wapShare);
+        }
+        window.onload=mcLoad();
+        $(".agrrPart5").click(
+                function(){
+                    $(".wapMc").show();
+                    $(".wapShare").show();
+                }
+        )
+        $('.wapShare').click(
+                function(){
+                    $(".wapShare").hide();
+                }
+        );
+    });
+
+</script>
+</html>

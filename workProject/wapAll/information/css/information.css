@@ -1,0 +1,87 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*账户信息*/
+.infoPart1{height: 45px;background-color: #fff;padding: 15px 0;margin: 15px 0 20px; border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;}
+.infoPart1 .left{float: left;width:38px;  margin: 0 5%; }
+.infoPart1 .left img{width: 100%;}
+.infoPart1 .right{float: left;}
+.infoPart1 .right .p1{font-size: 0.875rem;}
+.infoPart1 .right .p2{  font-size: 0.75rem;margin-top: 2px;}
+.infoPart2{  background-color: #fff;color: #000;  border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;margin-bottom: 20px;}
+.infoPart2 .div1{padding: 1rem 0;  margin-left: 5%;font-size: 0.75rem;overflow: hidden;}
+.infoPart2 .div1 a{display: block;overflow: hidden;position: relative;}
+.infoPart2 .div1 .span1{  width:1rem;display: inline-block;margin-left: 2%;margin-right: 3%;float: left;}
+.infoPart2 .div1 .span1 img{width: 100%;}
+.infoPart2 .div1 .span2{display: inline-block; width: 30%;float: left;  color: #666;}
+.infoPart2 .div1 .span3{float: left;color: #999;width: 50%;  text-align: right; }
+.infoPart2 .div1 .span4{width:0.5rem;position: absolute;right: 5%;top: 0;}
+.infoPart2 .div1 .span4 img{width: 100%;vertical-align: middle;}
+.infoborder{border-bottom: 1px #ddd solid;}
+.infoPart3 {height: 40px; background-color: #fff;line-height: 40px; text-align: center;border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;margin-bottom: 2em;}
+.waptanch {display:none;z-index: 22;position: fixed;bottom: 0;background-color: #fff;width: 100%;    left: 0;}
+.waptanch p{text-align: center;height: 40px;line-height: 40px;  font-size: 1em;}
+.waptanch .p1{color: #f86c36;  border-bottom: 1px #ddd solid;}
+.waptanch .p2{color: #0050CA;}
+.wapTip .p_phone a {  font-size: 1.1em; width: 100%;text-align: center;color: #f86c36;height: 40px;line-height: 40px;  border-top: 1px #ddd solid;display: block;margin-top: 10px;}
+/*银行卡认证*/
+.bcbMargin{margin-top: 15px;}
+.bcbPart1{position: relative;background-color: #fff;color: #000;  border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;margin-bottom: 20px;}
+.bcbPart1 input[type="text"]{font-size: 0.75rem;width: 70%;}
+.bcbPart1 input[type="password"]{font-size: 0.75rem;width: 70%;}
+.bcbPart1 .div1{margin-left: 5%;  height: 45px;}
+.bcbPart1 .div1 input[type="tel"]{font-size: 0.75rem;width: 70%;height: 45px;}
+.bcbPart1 .div1 .span1{float: left;height: 45px;line-height: 45px;  display: inline-block;width: 27%;font-size: 0.75rem}
+.bcbPart1 .div1 .span2{float: left;width: 50%;display: inline-block;  overflow: hidden;}
+.bcbPart1 .div1 .span2 select{color: #999;width: 110%;}
+.bcbPart1 .div1 .span3{display: inline-block;  width: 12px;margin-left: 3%;float: left;  line-height: 45px;}
+.bcbPart1 .div1 .span3 img{width: 100%;vertical-align: middle;}
+.bcbPart1 .msgCode{  position: absolute;border: 1px #f86c36 solid;outline: 0;background-color: #fff; color: #f96c36;
+    right: 10px;width: 83px;text-align: center;height: 25px; margin-top: 10px;border-radius: 2em;}
+.bcbPart2{width: 100%;}
+.bcbPart2 input[type="button"]{width: 70%;margin: 0 15%;}
+.bcbPart3{}
+.bcbPart3 p{  width: 90%;margin: 10px auto;font-size: 0.8em;}
+.bcbPart3 p .span1{  width:18px;display: inline-block;float: left;  margin-right: 5px;}
+.bcbPart3 p .span1 img{width: 100%;}
+.bcbPart3 p .span2{display: inline-block;float: left;width: 90%;  margin-bottom: 5px;}
+.bcbPart4 {text-align: right;  margin: 10px;font-size: 0.9em;float: right;width: 50%;}
+.bcbLimit {margin-top: -10px;margin-bottom: 15px; margin-left: 5%;color: #f86c36;font-size: 0.8em;}
+.bank_limit {font-size: 0.8em;text-align: right;display: block; margin-right: 5%;height: 35px;line-height: 35px;color: #f86c36;}
+/*认证结果*/
+.bindSuc1 {width: 30%;margin:50px auto 30px;}
+.bindSuc1 img{width: 100%;}
+.bindSuc2 {text-align: center;}
+.bindSuc3 {width: 70%;margin:30px auto 10px;display: block;}
+.bindSuc3 a{width: 100%;display: block;line-height: 45px;background-color: #f86c36;}
+/*密码管理*/
+.pwdMa1{  background-color: #fff;color: #000;  border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;margin-bottom: 20px;}
+.pwdMa1 .div1{height: 25px;padding: 10px 0;  margin-left: 5%;font-size: 0.75rem;}
+.pwdMa1 .div1 .span1{display: inline-block;float: left;}
+.pwdMa1 .div1 .span2{width:0.5rem;display: inline-block; margin-right: 15px;float: right;}
+.pwdMa1 .div1 .span2 img{width: 100%;  vertical-align: middle;}
+.com_forget{color: #666;font-size: 0.75rem;padding-right: 1.5em;width: 60%; margin: 10px auto;  text-align: right;}
+.com_forget a{}
+.zh_tip{font-size: 0.9em;text-align: center;margin-top: 10px;}
+
+/*关于我们*/
+.auBack{  position: relative;text-align: center;background-color: #f86c36;height:1.7em;line-height: 1.7em;font-size: 1.6em;color: #fff;}
+.auBackImg{  position: absolute;left: 1%;}
+.auBackImg img{  width: 100%;}
+.auLogo{width:28%;margin:3% auto;}
+.auLogo img{width:100%; }
+.au1{margin-bottom: 10px;overflow: hidden;}
+.au1 h3{padding: 2px 5% 5px;font-size:0.97em;}
+.au1 p{padding: 0 5%; text-indent:28px;font-size:0.9em;color: #666666;  margin-bottom: 2%;}
+.au5{width: 100%;}
+.au5 img{width: 100%;}
+/*支持银行列表*/
+.list_1{overflow: hidden;width: 90%;margin: 5% auto;font-size: 0.9em;}
+.list_1 ul{}
+.list_1 ul li{border:1px #ddd solid;overflow: hidden;padding: 8px 0; margin-bottom: 6px;background-color: #ffffff; }
+.list_1 ul li .span1{float: left;display: block;height: 40px;line-height: 40px;width: 45%;border-right:1px #ddd dashed; }
+.list_1 ul li .span1 img{width: 135px;vertical-align: middle;}
+.list_1 ul li .span2{float: left;height: 40px;line-height: 40px;width: 25%;margin-left: 4%;}
+.list_1 ul li .span3{float: left;width: 20%;height: 20px;margin-top: 10px;padding-left: 4%;border-left:1px #ddd solid; }
+.list_2{overflow: hidden;width: 90%;margin: 0 auto 20px;}
+.list_2 h3{font-size: 0.95em;margin-bottom: 5px;font-weight: normal;}
+.list_2 ol{padding-left: 20px;font-size: 0.95em;}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #ffe7dd;}
+.hhr_1{width: 100%;overflow: hidden;position: relative;}
+.hhr_1 img{width: 100%;}
+.hhr_1 a{color: #fff;position: absolute;right: 10px;top: 10px;font-size: 0.85em;}
+.hhr_2{overflow: hidden;width: 100%;background-color: #fff2ed; padding-bottom: 20px;position: relative;}
+.hhr_2 li{float: left;width: 49.5%;text-align: center;padding-bottom: 18px;}
+.hhr_2 li:first-child{border-right: 1px #fdc4af solid;}
+.hhr_2 li img{width: 80px;margin: 25px auto 5px;}
+.hhr_2 li h3{color: #f86c36;font-weight: bold;font-size: 1em;margin-bottom: 2px;}
+.hhr_2 li p{text-align: center;font-size: 0.9em;color: #666;line-height: 20px;}
+.hhr_2 a{color: #f86c36;position: absolute;right: 4px;top: 5px;font-size: 0.85em;}
+.hhr_3{text-align: center;background-color: #ffe7dd;position: relative;}
+.hhr_3 img{width:150px;left: 50%;position: absolute;top: -75px;margin-left: -75px;}
+.hhr_3 p{font-size: 0.92em;margin-top: 45px;}
+.hhr_3 p font{color:#f86c36;font-weight: bold; font-size: 1em;}
+.hhr_4{background-color: rgba(0,0,0,0.5);position: fixed;bottom: 0;width: 100%;max-width: 600px;}
+.hhr_4 a{display: block;background-color: #f86c36;text-align: center;height: 45px;line-height: 45px;font-size: 1.1em;
+    color: #ffffff;border-radius: 5px;width: 85%;margin: 15px auto;}

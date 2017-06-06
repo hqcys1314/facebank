@@ -1,0 +1,45 @@
+﻿.arList{position:relative;  margin: 20px 25px 0;  height: 42px;color: #666;}
+.arList .span1 {font-size: 14px;width: 245px;display: inline-block;
+    text-align: right;margin-right: 10px;}
+.arList .span2{font-size: 14px;color: #666}
+.arList input {color: #666;  padding-left: 10px;width: 247px;}
+.arList select{ width:83px;height:40px;line-height:40px;margin-right: 10px;font-size: 14px;
+    padding-left: 15px;border: 1px #eaeaea solid; font-family:"微软雅黑";vertical-align: middle;}
+.arList a{color:#f86c36;}
+.arList a:hover{text-decoration: underline;}
+.arList .bankInput{text-align: right;}
+.arList .bankLogo{  display: inline-block;vertical-align: middle;}
+.arList .span3{  font-size: 16px;color: #f86c36;font-weight: bold;}
+.arList .yuan{font-size: 14px;  color: #f86c36;}
+.arList .withdrawFee{margin-left: 10px;padding: 0;outline:0;border-radius: 3px;width: 80px;height: 32px;border: 0;background-color: #f86c36;color: #fff;font-family:"microsoft yahei";}
+.arList .withdrawFee:hover{cursor: pointer;}
+.arList .forgetPwd{font-size: 12px;margin-left: 10px;}
+.arList .errtip1{ display: none;position: absolute;top: 5px;left: 614px; }
+.arList .warmtip1{display: none;position: absolute;top: 5px;left: 614px; }
+.arList .errtip2{ display: none;position: absolute;top: 5px;left: 614px; }
+.arList .warmtip2{display: none;position: absolute;top: 5px;left: 614px;}
+.paypwdDis {color:#666;font-size: 12px;margin-left: 290px;margin-top: 10px;}
+.arListTx{color: #666;position:relative;  margin: 10px 25px 0;  height: 42px;}
+.arListTx .span1 {font-size: 14px;width: 245px;display: inline-block;text-align: right;margin-right: 10px;}
+.arListTx input {color: #666;  padding-left: 10px;width:120px;}
+.arListTx .span4{ padding: 0;font-family: 'Microsoft YaHei';display: inline-block;font-size: 14px;background-color: #eaeaea;height: 40px;line-height: 40px;width: 115px;margin-left: 5px;text-align: center;outline: 0; border: 1px #eaeaea solid;}
+.arListTx .span4:hover{cursor: pointer;}
+.arVoiceTip{ color: #666;width: 290px;height: 40px;padding: 5px 10px; margin-left: 230px;font-size: 12px;margin-top: 10px;line-height: 21px;background-color: #FFF5F6;border: 1px #f86c36 solid;display:none;}
+.arVoiceTip a{color:#f86c36;  margin-left: 5px;}
+.arVoiceTip a:hover{text-decoration: underline;}
+.arListTxBottom {color: #666;font-size: 14px;margin: 20px 0 20px 200px;}
+.arListTxBtn{height: 40px;line-height: 40px;width: 300px;text-align: center;font-size: 18px;margin: 30px 0 20px 240px;}
+.arVoiceWordTip{display:none;}
+.arListTxBottom span{margin-left:20px;}
+.withdrawTip {width: 380px;font-size: 12px;margin: 0 0 20px 240px;
+  border: 1px #f86c32 solid;background-color: #fff5f4; padding: 5px 30px;
+  background-image: url("../../../common/img/comTip.png");background-repeat: no-repeat; background-position: 5px -209px;}
+.wd_text{margin-left: 200px;font-size: 13px; width: 500px;padding: 6px;color: #666666;line-height: 20px;}
+/*提现成功*/
+.withdrawSuccess{font-size: 24px;padding-left: 60px;width: 275px;height: 60px;  padding-top: 10px;
+    margin: 70px auto 0px;background: url("../../safeCenter/img/setlpSuccess.png") no-repeat;}
+.withdrawUrl{  width: 330px;margin: 40px auto 0;}
+.withdrawUrl a{color:#f86c36;margin: 0 10px; }
+.withdrawUrl a:hover{text-decoration: underline;}
+.withdrawSuccess span{color: #f86c32;font-weight: bold;}
+.withdrawSuccess p{font-size: 12px;color: #666;  margin-top: 3px;}

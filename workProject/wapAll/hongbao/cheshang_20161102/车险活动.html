@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>注册活动模板</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/css/cheshang.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    注册活动模板
+</div>
+<div class="content-1">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/img/banner.jpg">
+    <p>详细规则>></p>
+</div>
+<div class="content-2">
+    <div class="div_pos">
+        <p class="p_tip">您的好友<span>187****6269</span>正在笑脸金融投资，邀请您一起来赚钱！</p>
+        <p class="part1">
+            <span class="icon"><img src="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/img/phone.png"></span>
+            <input type="tel" placeholder="请输入您的手机号码"></p>
+        <div class="part2">
+            <p class="p1">
+                <span class="icon"><img src="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/img/code.png"></span>
+                <input type="tel"  placeholder="请输入验证码">
+            </p>
+            <input type="button" value="发送验证码"  id="msgCode" onclick="timePass()"></div>
+        <p class="part4">我有推荐人( 选填 )&nbsp;<font>></font></p>
+        <p class="part5">
+            <span class="icon"><img src="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/img/tjr.png"></span>
+            <input type="tel" placeholder="请输入推荐人的手机号码"></p>
+        <p class="part3"><input type="button" value="立即领取" id="rb_btn"></p>
+        <p class="part6">
+            <input type="checkbox" id="agreeBox" checked="">
+            <span>我已阅读和同意
+                <a href="http://m.facebank.cn/wap/agreementReg" data-event="wap_facebankAggrement" data-event-name="wap用户注册页-笑脸金融用户协议链接" data-event-category="wap_facebankAggrementLink">《笑脸金融用户协议》</a>
+            </span>
+        </p>
+    </div>
+</div>
+<div class="content-3">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/img/con_1.png">
+</div>
+<div class="content-4">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/cheshang_20161102/img/bottom.jpg">
+</div>
+
+<div class="wapMc">
+
+</div>
+<!-----------------------规则弹框---------------------------->
+<div class="wapGz" id="guize">
+    <div class="gz_con">
+        <p class="p_title">活动规则</p>
+        <div class="content">
+            <h2>车险投标用户专享活动规则：</h2>
+            <p>购买阳光车险的用户，可享受笑脸金融赠送的2%vip加息券一张。</p>
+            <h3>领取方式：</h3>
+            <p>活动开始后，购买过阳光车险的用户注册成为笑脸金融用户，即可获得一张2%加息券一张。</p>
+            <h3>使用方式：</h3>
+            <p>投资笑脸金融推荐的理财项目，默认使用此加息券加息。</p>
+            <h2 style="border-top:1px #fcba86 solid; ">体验金活动规则</h2>
+            <p>体验金是笑脸金融为新注册用户提升产品体验而设计的虚拟投资本金。</p>
+            <h3>领取方式：</h3>
+            <p>活动开始后，注册成为笑脸金融用户即可获得15888元体验金。微信、APP注册成功后，成功分享活动给好友或朋友圈可再获得3000元体验金。</p>
+            <h3>收益计算：</h3>
+            <p>本活动按年化收益10%，体验期限1天计算收益，当日领取，收益次日进入您在笑脸金融的账户，可以提现。</p>
+            <h3>体验金回收：</h3>
+            <p>在体验金收益到账后，体验金由系统进行自动回收。</p>
+            <h3>收益回收：</h3>
+            <p>收益到账后第30天，如果您未绑定银行卡对体验金收益进行提现或未进行真实投资操作，我们将回收收益。</p>
+        </div>
+        <p class="p_btn">上下滑动查看更多...</p>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<!-----------------------未购买过车险---------------------------->
+<div class="wapPos" id="noBuy">
+    <div class="wapTip">
+        <p class="p_title">提示</p>
+        <p class="p1">只有活动上线后购买车险的用户可参与此活动</p>
+        <p class="p2">
+            <span class="span1">取消</span><span class="span2"><a href="">购买车险</a></span>
+        </p>
+    </div>
+</div>
+<!-----------------------分享蒙层 微信内---------------------------->
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/shareContent.png">
+</div>
+<!-----------------------分享蒙层 微信外---------------------------->
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/shareContent1.png">
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /* 模仿android里面的Toast效果*/
+    var Toast = function(config){
+        this.context = config.context==null?$('body'):config.context;//上下文
+        this.message = config.message;//显示内容
+        this.left = config.left;//距容器左边的距离
+        this.top = config.top;//距容器上方的距离
+        this.init();
+    }
+    var msgEntity;
+    Toast.prototype = {
+        //初始化显示的位置内容等
+        init : function(){
+            $("#toastMessage").remove();
+            //设置消息体
+            var msgDIV = new Array();
+            msgDIV.push('<div id="toastMessage">');
+            msgDIV.push('<span>'+this.message+'</span>');
+            msgDIV.push('</div>');
+            msgEntity = $(msgDIV.join('')).appendTo(this.context);
+            //设置消息样式
+            var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2-20: this.left;
+            var top = this.top == null ? '50%' : this.top;
+            msgEntity.css({position:'fixed',top:top,'z-index':'99',left:'26%','background-color':'#333333','color':'white','text-align':'center','font-size':'0.8em',padding:'7px 2%',width:'44%','border-radius':'5px','box-shadow': '0px 0px 5px #000'});
+            msgEntity.hide();
+        },
+        //显示动画
+        show :function(time){
+            msgEntity.fadeIn(time/4);
+            msgEntity.fadeOut(time/2);
+        }
+
+    }
+    /*点击按钮，吐司错误提示*/
+    $("#rb_btn").click(
+            function(){
+                new Toast({context:$('body'),message:'XXXXXX'}).show("5000");
+            }
+    )
+    /*未购买过车险*/
+    //    $("#rb_btn").click(
+    //            function(){
+    //                $(".wapMc").show();
+    //                $("#noBuy").show();    //
+    //            }
+    //    )
+    /*未购买过车险 取消按钮*/
+    $("#noBuy .span1").click(
+            function(){
+                $(".wapMc").hide();
+                $("#noBuy").hide();
+            }
+    )
+    /*规则弹框*/
+    $(".content-1 p").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapGz").show();
+            }
+    )
+    /*推荐人展示隐藏*/
+    $(".content-2 .div_pos .part4").click(
+            function(){
+                $(".content-2 .div_pos .part4").hide();
+                $(".content-2 .div_pos .part5").show();
+            }
+    )
+
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapTk").hide();
+                $(".wapGz").hide();
+            }
+    )
+
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#ff8955");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val("重获取("+miao+")");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#aaa");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+
+</script>
+</body>
+</html>

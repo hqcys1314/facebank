@@ -1,0 +1,41 @@
+body{background-color: #fc7873;}
+.cd-head{width: 100%;position: relative;}
+.cd-head .bg{width: 100%;}
+.cd-head .hudie{width:2rem;position: absolute;top: 50%;right: 15%; }
+.cd-head .flower{width: 100%;position: absolute;bottom: 0;left: 0;}
+.cd-con{position: relative;margin-top: 1rem;
+    width:100%;color: #666666;margin-bottom: 3rem;
+}
+.cd-con .cd-con-f1{
+    position: absolute;right: 0;top:0.5rem;z-index: 2;
+}
+.cd-con .cd-con-f1 img{
+    width:2rem;
+}
+.cd-con .cd-con-f2{
+    position: absolute;left: 0;top:0.5rem;z-index: 2;
+}
+.cd-con .cd-con-f2 img{
+    width: 2rem;
+}
+.cd-con .cd-con-pos{
+    position: relative;border-radius: 5px;border: 1px #ffebb7 solid;width: 90%;margin: 0 auto;
+}
+.cd-con .cd-con-pos h3{
+    color: #ffeb79;font-size: 1.125rem;text-align: center;font-weight: bold;padding-top:0.938rem;margin-bottom: 0.938rem;
+}
+.cd-con .cd-con-pos p{
+    font-size: 0.75rem;color: #FFFFFF;margin: 0 auto 0.875rem;width: 92%;
+    line-height: 1.25rem;padding-bottom:1.5rem;
+}
+.cd-con .cd-con-pos p span{
+   color: #ffeb79;font-size: 0.813rem;
+}
+.cd-con .cd-btn{
+    font-size: 0.938rem;height: 2.75rem;line-height: 2.75rem;width: 100%;
+    position: absolute;text-align: center;bottom: -1.375rem;
+}
+.cd-con .cd-btn a{border-radius: 2em;
+    background-color: #ffeb79;width: 38%;display: block;margin: 0 auto;color: #f8746f;
+ }
+.cd-foot{width: 100%;text-align: center;font-size: 0.8em;color: #999999;margin-bottom: 20px;}

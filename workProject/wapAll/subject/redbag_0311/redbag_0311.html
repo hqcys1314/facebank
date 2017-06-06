@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>邀请好友•新手红包</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/redbag_0311.css">
+</head>
+<body>
+
+<div class="rb_0311_up">
+    <img src="img/rb_0311_img1.png">
+    <div>
+        <div class="part1"><img src="http://static.facebank.cn/static/wapFront/subject/redbag_0311/img/rb_0311_img2.png"><p>+0.3%</p></div>
+        <p class="part2"><input type="text" placeholder="输入手机号码，即可领取使用"></p>
+        <p class="part3"><input type="button" value="收入囊中" class="comBtn" id="rb_btn"></p>
+    </div>
+</div>
+<div class="rb_0311_bottom">
+    <img src="http://static.facebank.cn/static/wapFront/subject/redbag_0311/img/rb_0311_img3.png">
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="rb_result_pos">
+    <div class="rb_result">
+        <div class="rb_head">
+            <span class="close"><img src="http://static.facebank.cn/static/wapFront/subject/redbag_0311/img/close_white.png"></span>
+            <span class="span1">温馨提示</span>
+        </div>
+        <div class="rb_content_old" >
+            您是一个老用户，不满足领取新手红包领取条件，系统赠送您一个0.1%的红包，快快领取吧
+        </div>
+        <div class="rb_content_new" style="display: none;">
+            恭喜您成功领取新手红包<br/>
+            立即去投资吧
+        </div>
+        <div class="rb_num">
+            <img src="http://static.facebank.cn/static/wapFront/subject/redbag_0311/img/rb_0311_img4.png">
+            <p>+0.1%</p>
+        </div>
+        <div class="rb_bottom">
+            <a class="a1">去投资吧</a><a class="a2">果断放弃</a>
+        </div>
+    </div>
+</div>
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/shareContent.png">
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        function mcLoad(){
+            var wapShare= document.body.scrollHeight;
+            $(".wapShare").css("height",wapShare);
+        }
+        window.onload=mcLoad();
+        $('.wapShare').click(
+                function(){
+                    $(".wapShare").hide();
+                }
+        );
+    });
+    $('#rb_btn').click(
+            function(){
+                $('.wapMc').show();
+                $('.rb_result_pos').show();
+
+            }
+    )
+    $('.rb_result .rb_head .close').click(
+            function(){
+                $('.rb_result_pos').hide();
+                $('.wapMc').hide();
+            }
+    );
+    $('.rb_result .rb_bottom .a2').click(
+            function(){
+                $('.rb_result_pos').hide();
+                $('.wapMc').hide();
+
+            }
+    );
+</script>
+
+</html>

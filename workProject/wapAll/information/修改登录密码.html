@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>修改登录密码</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/information/css/information.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    修改登录密码
+</div>
+<div class="bcbPart1 bcbMargin">
+    <div class="div1 infoborder">
+        <span class="span1">原密码</span><input type="text" placeholder="请输入原登录密码">
+    </div>
+    <div class="div1 infoborder">
+        <span class="span1">新密码</span><input type="text" placeholder="请输入新登录密码">
+    </div>
+    <div class="div1">
+        <span class="span1">重复新密码</span><input type="text" placeholder="请重复输入新登录密码">
+    </div>
+</div>
+<div class="bcbPart2">
+    <input type="button" value="完成" class="comBtn">
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="wapPos">
+    <div class="wapTip">
+        <p class="p1">登录密码修改成功</p>
+        <p class="p3">确定</p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    /*点击完成弹出弹框*/
+    $(".bcbPart2").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapPos").show();
+            }
+    )
+    /*点击取消关闭弹框*/
+    $(".wapTip .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapPos").hide();
+            }
+    )
+</script>
+</html>

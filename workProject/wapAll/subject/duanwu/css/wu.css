@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #ffffff;}
+.div1{width: 100%;}
+.div1 img{width: 100%;}
+.div2{width: 92%;margin:0 auto;}
+.div2 h3{color: #f86c36;font-size: 1em;margin: 10px 0;}
+.div2 .p1{text-indent: 30px;font-size: 0.9em;line-height: 21px;}
+.div2 .p2{text-align: right;font-size: 0.9em;line-height: 21px;}
+.div3{text-align: center;color: #999999;font-size: 0.9em;line-height: 40px;}

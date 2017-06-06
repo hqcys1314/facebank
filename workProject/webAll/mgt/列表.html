@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://mgt.facebank.cn/admin/financeapply.action -->
+<html class="" style="min-height: 627px;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>企业借款申请</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://mgt.facebank.cn/admin/loadIcon.action">
+    <link rel="icon" href="http://mgt.facebank.cn/admin/loadIcon.action" type="image/x-icon">
+    <link rel="stylesheet" href="http://mgt.facebank.cn/libs/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://mgt.facebank.cn/libs/AdminLTE/1.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://mgt.facebank.cn/libs/AdminLTE/1.2/css/ionicons.min.css">
+    <!-- 插件css -->
+    <link rel="stylesheet" href="http://mgt.facebank.cn/libs/AdminLTE/1.2/css/iCheck/minimal/blue.css"><link rel="stylesheet" href="http://mgt.facebank.cn/libs/AdminLTE/1.2/css/AdminLTE.css">
+    <link rel="stylesheet" href="http://mgt.facebank.cn/themes/default/css/app.css?v=1.0">
+    <!-- 页面css -->
+    <style type="text/css">
+    </style><!--[if lt IE 9]>
+    <script src="/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="/libs/respondjs/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="./企业借款申请_files/WdatePicker.css" rel="stylesheet" type="text/css"></head>
+<body class="skin-blue  pace-done" style="min-height: 627px;"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<header class="header">
+    <a href="http://mgt.facebank.cn/admin/index.action" class="logo">刷脸金融</a>
+    <nav class="navbar navbar-static-top" role="navigation">
+        <a href="http://mgt.facebank.cn/admin/financeapply.action#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="dropdown user user-menu">
+                    <a href="http://mgt.facebank.cn/admin/financeapply.action#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span>admin<i class="caret"></i></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="user-header bg-light-blue">
+                            <img src="./企业借款申请_files/avatar3.png" class="img-circle" alt="User Image">
+                        </li>
+                        <li class="user-footer">
+                            <!--                   <div class="pull-left"> -->
+                            <!--                     <a href="#" class="btn btn-default btn-flat">Profile</a> -->
+                            <!--                   </div> -->
+                            <div class="pull-right" style="margin-left: 10px;">
+                                <a href="http://mgt.facebank.cn/admin/logout.action" class="btn btn-default btn-flat">退出</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="http://mgt.facebank.cn/admin/showupdatePassword.action" class="btn btn-default btn-flat">修改密码</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="wrapper row-offcanvas row-offcanvas-left" style="min-height: 627px;">
+<aside class="left-side sidebar-offcanvas" style="min-height: 627px;">
+<section class="sidebar">
+<div class="user-panel">
+    <div class="pull-left image">
+        <img src="./企业借款申请_files/avatar3.png" class="img-circle" alt="User Image">
+    </div>
+    <div class="pull-left info">
+        <p>Hello, admin</p>
+        <a href="http://mgt.facebank.cn/admin/financeapply.action#"><i class="fa fa-circle text-success"></i> Online</a>
+    </div>
+</div>
+<!-- <form action="#" method="get" class="sidebar-form">
+  <div class="input-group">
+    <input type="text" name="q" class="form-control" placeholder="Search..."/>
+    <span class="input-group-btn">
+      <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+</form> -->
+<ul class="sidebar-menu">
+<!-- 树形菜单 -->
+<!-- 工作面板 -->
+<li>
+    <a href="http://mgt.facebank.cn/admin/index.action">
+        <i class="fa fa-1"></i>
+        <span>工作面板</span>
+    </a>
+</li>
+<!-- 借贷管理 -->
+<li class="treeview active">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>借贷管理</span>
+        <i class="fa pull-right fa-angle-down"></i>
+    </a>
+    <ul class="treeview-menu" style="display: block;">
+        <!-- 借款检查 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanQuery2.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>借款检查</span>
+            </a>
+        </li>
+        <!-- 初审 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/query1stVerify.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>初审</span>
+            </a>
+        </li>
+        <!-- 复审 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/query2ndVerifyNew.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>复审</span>
+            </a>
+        </li>
+        <!-- 开标 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanQuery6.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>开标</span>
+            </a>
+        </li>
+        <!-- 满标放款 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanQuery10.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>满标放款</span>
+            </a>
+        </li>
+        <!-- 逾期列表 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/getOverDue.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>逾期列表</span>
+            </a>
+        </li>
+        <!-- 企业借款申请列表 -->
+        <li>
+            <a href="./企业借款申请_files/企业借款申请.html" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>企业借款申请列表</span>
+            </a>
+        </li>
+        <!-- 自动投标 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/autoInvestor.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>自动投标</span>
+            </a>
+        </li>
+        <!-- 还款管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/repaymentManage.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>还款管理</span>
+            </a>
+        </li>
+        <!-- 还款计划管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanPhaseManage.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>还款计划管理</span>
+            </a>
+        </li>
+        <!-- 募集中 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanInviteQuery.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>募集中</span>
+            </a>
+        </li>
+        <!-- 结标 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanQuery102.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>结标</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 资金管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>资金管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 充值查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/rechargeLogListNew.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>充值查询</span>
+            </a>
+        </li>
+        <!-- 提现查询(网关) -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/queryCashWithdrawRequestPageNew1.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>提现查询(网关)</span>
+            </a>
+        </li>
+        <!-- 平台账户流水查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/findPlatformFundNew.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>平台账户流水查询</span>
+            </a>
+        </li>
+        <!-- 流水管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/moneyRecordListNew.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>流水管理</span>
+            </a>
+        </li>
+        <!-- 调账 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/changeCash.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>调账</span>
+            </a>
+        </li>
+        <!-- 银行卡管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/bankcard_list.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>银行卡管理</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 产品管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>产品管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 借款产品 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/borrowProductAction.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>借款产品</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 客户管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>客户管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 个人客户管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/personalLoanList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>个人客户管理</span>
+            </a>
+        </li>
+        <!-- 企业客户管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/BizLoanAction.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>企业客户管理</span>
+            </a>
+        </li>
+        <!-- 信用等级管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/getCreditGradeList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>信用等级管理</span>
+            </a>
+        </li>
+        <!-- 实名认证 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/checkRealName.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>实名认证</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 担保公司 -->
+<li>
+    <a href="http://mgt.facebank.cn/admin/assureOrganizationList.action">
+        <i class="fa fa-1"></i>
+        <span>担保公司</span>
+    </a>
+</li>
+<!-- 账户管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>账户管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 平台盈利账户 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/earnAccountList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>平台盈利账户</span>
+            </a>
+        </li>
+        <!-- 营销管理账户 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/marketAccountList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>营销管理账户</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 网站管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>网站管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 关于我们 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goAboutUsList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>关于我们</span>
+            </a>
+        </li>
+        <!-- 专家顾问 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goExpertAdvisorList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>专家顾问</span>
+            </a>
+        </li>
+        <!-- 公司公告 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goCompanyNoticeList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>公司公告</span>
+            </a>
+        </li>
+        <!-- 行业资讯 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goIndustryNewsList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>行业资讯</span>
+            </a>
+        </li>
+        <!-- 合作伙伴 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goPartnerList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>合作伙伴</span>
+            </a>
+        </li>
+        <!-- 招贤纳士 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goTalentsList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>招贤纳士</span>
+            </a>
+        </li>
+        <!-- 联系我们 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goContactUsList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>联系我们</span>
+            </a>
+        </li>
+        <!-- Icon管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goChangeIcon.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>Icon管理</span>
+            </a>
+        </li>
+        <!-- 合作伙伴(首页) -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/copeerAdmin.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>合作伙伴(首页)</span>
+            </a>
+        </li>
+        <!-- 首页LOGO -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goChangeLogo.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>首页LOGO</span>
+            </a>
+        </li>
+        <!-- 首页Banner -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goBanners.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>首页Banner</span>
+            </a>
+        </li>
+        <!-- 留言管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/listMessage1.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>留言管理</span>
+            </a>
+        </li>
+        <!-- 消息中心 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/go-tpl.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>消息中心</span>
+            </a>
+        </li>
+        <!-- 帮助中心 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goHelpCenterList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>帮助中心</span>
+            </a>
+        </li>
+        <!-- 活动专区 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/getActivityList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>活动专区</span>
+            </a>
+        </li>
+        <!-- 安全保障 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/goSafeEnsureList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>安全保障</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 查询统计 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>查询统计</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 借款状态查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/loanSerch.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>借款状态查询</span>
+            </a>
+        </li>
+        <!-- 放款记录查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/releaseMoneyListNew.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>放款记录查询</span>
+            </a>
+        </li>
+        <!-- 还款记录查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/repaymentLogListNew.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>还款记录查询</span>
+            </a>
+        </li>
+        <!-- 债权转让查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/getCreditRightByParam.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>债权转让查询</span>
+            </a>
+        </li>
+        <!-- 交易统计 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/queryTransStatis.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>交易统计</span>
+            </a>
+        </li>
+        <!-- 用户统计 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/userStatisticByDayAction.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>用户统计</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 营销管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>营销管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 积分管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/QueryScoreStatisticAction.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>积分管理</span>
+            </a>
+        </li>
+        <!-- 红包查询 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/queryRedMoney.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>红包查询</span>
+            </a>
+        </li>
+        <!-- 积分兑换物品管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/ScoreExchangeViewAction.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>积分兑换物品管理</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 系统管理 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>系统管理</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 部门管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/departmentView.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>部门管理</span>
+            </a>
+        </li>
+        <!-- 角色权限管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/roleList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>角色权限管理</span>
+            </a>
+        </li>
+        <!-- 员工管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/listStaff.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>员工管理</span>
+            </a>
+        </li>
+        <!-- app版本管理 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/nowVersionNumList.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>app版本管理</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 参数设置 -->
+<li class="treeview">
+    <a href="http://mgt.facebank.cn/admin/financeapply.action#">
+        <i class="fa fa-1"></i>
+        <span>参数设置</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <!-- 业务参数 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/bizParam.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>业务参数</span>
+            </a>
+        </li>
+        <!-- 其他参数 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/bizParam.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>其他参数</span>
+            </a>
+        </li>
+        <!-- 红包设置 -->
+        <li>
+            <a href="http://mgt.facebank.cn/admin/redMoneySet.action" style="margin-left: 10px;">
+                <i class="fa fa-1"></i>
+                <span>红包设置</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- 日志管理 -->
+<li>
+    <a href="http://mgt.facebank.cn/admin/log_list.action">
+        <i class="fa fa-1"></i>
+        <span>日志管理</span>
+    </a>
+</li>
+</ul>
+</section>
+</aside>
+<aside class="right-side">
+
+
+
+
+
+
+
+
+
+
+<!------------------------10.22日开始--------------------------->
+<link rel="stylesheet" href="css/list.css">
+
+<section class="listContent">
+<p >标的名称:<input type="text" value="" class="listInput1">
+    标的ID:<input type="text" value="" class="listInput1">
+    收益率:<input type="text" value=""class="listInput2">-<input type="text" value=""class="listInput2">
+</p>
+<p> 期限(天):<input type="text" value=""class="listInput2">-<input type="text" value=""class="listInput2">
+    期限(月):<input type="text" value=""class="listInput2">-<input type="text" value=""class="listInput2">
+    <select class="listSelect">
+        <option>标的状态</option><option>2</option><option>3</option>
+    </select>
+</p>
+<p> 起息日:<input type="text" value=""class="listInput2">-<input type="text" value=""class="listInput2">
+    止息日:<input type="text" value=""class="listInput2">-<input type="text" value=""class="listInput2">
+    <input type="button" value="搜索"><input type="button" value="导出">
+</p>
+    <table>
+        <thead>
+        <tr>
+            <td>标的名称</td>
+            <td>标的ID</td>
+            <td>起息日</td>
+            <td>止息日</td>
+            <td>期限</td>
+            <td>收益率</td>
+            <td>本金</td>
+            <td>标的状态</td>
+            <td>合同1</td>
+            <td>合同2</td>
+            <td>合同3</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>标的名称标的</td>
+            <td>534234</td>
+            <td>2015.01.01</td>
+            <td>2015.01.01</td>
+            <td>12个月</td>
+            <td>9.45%</td>
+            <td>100,000,000</td>
+            <td>标的状态</td>
+            <td><a>债权转让</a></td>
+            <td><a>催款合同</a></td>
+            <td><a>信托合同</a></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<!------------------------10.22日结束--------------------------->
+
+
+
+
+
+
+
+
+
+
+</aside>
+</div>
+<!-- 基础js -->
+<script src="./企业借款申请_files/handlebars.js"></script>
+<script src="./企业借款申请_files/WdatePicker.js"></script>
+<script src="./企业借款申请_files/jquery.min.js"></script>
+<script src="./企业借款申请_files/jquery-ui-1.10.4.min.js"></script>
+<script src="./企业借款申请_files/bootstrap.min.js"></script>
+<script src="./企业借款申请_files/app.js"></script>
+<!-- jquery.validation 验证框架 -->
+<link rel="stylesheet" href="http://mgt.facebank.cn/libs/validation/form.min.css">
+<script type="text/javascript" src="./企业借款申请_files/jquery.validationEngine.min.js"></script>
+<script type="text/javascript" src="./企业借款申请_files/jquery.validationEngine-zh_CN.js"></script>
+<!-- 插件js -->
+<script src="./企业借款申请_files/icheck.min.js"></script>
+<script src="./企业借款申请_files/regExp.js"></script><script>
+    var app = {
+        base: '',
+        version: '1.0',
+        loginName: 'admin',
+        displayPages: 10,
+        termUnit:{"1":"天","3":"个月" },
+        currencySymbol:'$',
+        products:["按月付息，到期还本", "一次性还本付息", "等额本息"]
+    };
+</script>
+<script src="./企业借款申请_files/app(1).js"></script>
+<!-- 页面js -->
+<script>
+
+    +function($, app) { "use strict";
+        if( !app ) {
+            return;
+        }
+
+        app.buildPage = function( data ) {
+            var page = {}, start, end;
+            page.size = data.pageSize;
+            page.content = data.voList;
+            page.pages = [];
+            if ( data.currentPage ) {
+                page.number = data.currentPage - 1;
+                page.totalPages = data.pageCount;
+                page.firstPage = (data.currentPage == 1);
+                page.lastPage = (data.currentPage == data.pageCount);
+                start = Math.max(0, page.number - app.displayPages / 2);
+                end = Math.min(Math.max(page.number + app.displayPages / 2 - 1, app.		            displayPages - 1), page.totalPages - 1);
+                page.visible = (end-start > 0);
+                for( var i = start; i <= end; i++ ) {
+                    page.pages.push(i);
+                }
+            } else {
+                page.number = 0;
+                page.totalPages = 0;
+                page.firstPage = true;
+                page.lastPage = true;
+            }
+
+            return page;
+        };
+
+    }(window.jQuery, window.app);
+
+    +function($, app) { "use strict";
+        if( !app ) {
+            return;
+        }
+
+        app.beforeSubmitPagination = function( form, pageNumber ) {
+            if( !$(form).find('input[name="PAGE_NO_KEY"]').length ) { // 添加分页参数
+                $('<input type="hidden" name="PAGE_NO_KEY" value="1">').appendTo(form);
+                $('<input type="hidden" name="PAGE_COUNT_KEY" value="0">').appendTo(form);
+                $('<input type="hidden" name="PAGE_SIZE_KEY" value="10">').appendTo(form);
+                $('<input type="hidden" name="PAGE_RECORDCOUNT_KEY" value="0">').appendTo(form);
+            }
+            $(form).find('input[name="PAGE_NO_KEY"]').val( parseInt(pageNumber) + 1 );
+        }
+
+    }(window.jQuery, window.app);
+</script>
+<script>
+    var reg = new RegExp("^[0-9]*$");
+    $(function() {"use strict";
+        $('#listform').appGrid();
+
+    });
+</script>
+<div class="no-print" style="padding: 10px; position: fixed; top: 130px; right: -200px; border: 3px solid rgba(0, 0, 0, 0.701961); width: 200px; z-index: 999999; background: rgb(255, 255, 255);"><h4 style="margin: 0 0 5px 0; border-bottom: 1px dashed #ddd; padding-bottom: 3px;">Layout Options</h4><div class="form-group no-margin"><div class=".checkbox"><label><input type="checkbox" onchange="change_layout();"> Fixed layout</label></div></div><h4 style="margin: 0 0 5px 0; border-bottom: 1px dashed #ddd; padding-bottom: 3px;">Skins</h4><div class="form-group no-margin"><div class=".radio"><label><input name="skins" type="radio" onchange="change_skin(&quot;skin-black&quot;);"> Black</label></div></div><div class="form-group no-margin"><div class=".radio"><label><input name="skins" type="radio" onchange="change_skin(&quot;skin-blue&quot;);" checked="checked"> Blue</label></div></div></div></body></html>

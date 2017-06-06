@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸金融</title>
+    <link rel="stylesheet" href="../common/css/commonAuto.css">
+    <link rel="stylesheet" href="css/index_2017.css">
+    <link rel="stylesheet"  href="../common/fonts/iconfont.css">
+    <link rel="Shortcut Icon" href="//static.ouding.com/staticod/ouding/common/img/favicon.ico">
+</head>
+<body>
+<div class="tip_load">
+    <a href="" class="a_app">立即下载</a>
+    <span class="span1"><i class="iconfont icon-ic_close"></i>
+        </span>
+    <span class="span2">下载客户端，轻松理财</span>
+</div>
+<div id="banner-play" class="banner-slider">
+    <a href="https://www.baidu.com/"><img src="img/banner.jpg" /></a>
+    <a href="https://www.baidu.com/"><img src="img/banner.jpg" /></a>
+    <a href="https://www.baidu.com/"><img src="img/banner.jpg" /></a>
+</div>
+<div class="guide">
+    <ul>
+        <li>
+            <i class="iconfont icon-ic_help"></i>
+            <p>帮助中心</p>
+        </li>
+        <li>
+            <i class="iconfont icon-ic_guarantee"></i>
+            <p>安全保障</p>
+        </li>
+        <li id="sign">
+            <i class="iconfont icon-ic_sign"></i>
+            <p>签到</p>
+        </li>
+    </ul>
+</div>
+<div id="bid-play" class="bid-slider">
+    <div class="bid">
+        <div class="bid-title">
+            <span class="span1">消费宝-SY-2017</span>
+            <span class="span-icon">新手专享</span>
+        </div>
+        <div class="bid-content">
+            <ul>
+                <li>
+                    <p class="p1">6.3<span class="span-samll">%</span>+3.7<span class="span-samll">%</span></p>
+                    <p class="p2">预期年化收益</p>
+                </li>
+                <li>
+                    <p class="p1">30<span class="span-samll">天</span></p>
+                    <p class="p2">封闭期</p>
+                </li>
+            </ul>
+            <div class="start-line">
+                1,000.00起投
+            </div>
+            <div class="invest-btn comBtn">
+                立即投资
+            </div>
+        </div>
+    </div>
+    <div class="bid">
+        <div class="bid-title">
+            <span class="span1">定存计划-180天</span>
+            <span class="span-icon">热销</span>
+        </div>
+        <div class="bid-content">
+            <ul>
+                <li>
+                    <p class="p1">6<span class="span-samll">%</span></p>
+                    <p class="p2">预期年化收益</p>
+                </li>
+                <li>
+                    <p class="p1">30<span class="span-samll">天</span></p>
+                    <p class="p2">封闭期</p>
+                </li>
+            </ul>
+            <div class="start-line">
+                1,000.00起投
+            </div>
+            <div class="invest-btn comBtn">
+                立即投资
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="bid-category">
+   <a class="list" href="">
+       <span class="span3">
+           <i class="iconfont icon-ic_rightarrow"></i>
+       </span>
+        <span class="span2">
+          项目多样，自主灵活
+       </span>
+       <span class="span1"><img src="img/ic_direct.svg"></span>
+   </a>
+    <a class="list" href="">
+       <span class="span3">
+            <i class="iconfont icon-ic_rightarrow"></i>
+       </span>
+        <span class="span2">
+          省心省力，智能分散
+       </span>
+        <span class="span1"><img src="img/ic_regular.svg"></span>
+    </a>
+    <a class="list" href="" style="border: 0;">
+       <span class="span3">
+            <i class="iconfont icon-ic_rightarrow"></i>
+       </span>
+        <span class="span2">
+         12个月、12种选择
+       </span>
+        <span class="span1"><img src="img/ic_rainbow.svg"></span>
+    </a>
+</div>
+<div class="empty">
+
+</div>
+<section class="nav">
+    <ul>
+        <li>
+            <a href="" class="on">
+                <i class="iconfont icon-ic_home_selected"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="iconfont icon-ic_investment"></i>
+                <p>投资</p>
+            </a>
+        </li>
+        <li>
+            <a href="" >
+                <i class="iconfont icon-ic_personal"></i>
+                <p>我的</p>
+            </a>
+        </li>
+        <li>
+            <a href="" >
+                <i class="iconfont icon-ic_safeGuarantee"></i>
+                <p>安全保障</p>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<div class="wapMc" id="wapMc"></div>
+<!---签到弹框--->
+<div class="wapPos" id="signShow">
+    <div class="wapTip">
+        <p class="p1">本周第X次签到<br/>已领取X个笑脸币</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/bid.js"></script>
+<script>
+    /* 模仿android里面的Toast效果*/
+    var Toast = function(config){
+        this.context = config.context==null?$('body'):config.context;//上下文
+        this.message = config.message;//显示内容
+        this.left = config.left;//距容器左边的距离
+        this.top = config.top;//距容器上方的距离
+        this.init();
+    }
+    var msgEntity;
+    Toast.prototype = {
+        //初始化显示的位置内容等
+        init : function(){
+            $("#toastMessage").remove();
+            //设置消息体
+            var msgDIV = new Array();
+            msgDIV.push('<div id="toastMessage">');
+            msgDIV.push('<span>'+this.message+'</span>');
+            msgDIV.push('</div>');
+            msgEntity = $(msgDIV.join('')).appendTo(this.context);
+            //设置消息样式
+            var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2-20: this.left;
+            var top = this.top == null ? '50%' : this.top;
+            msgEntity.css({position:'fixed',top:top,'z-index':'99',left:'26%','background-color':'#333333','color':'white','text-align':'center','font-size':'0.8em',padding:'7px 2%',width:'44%','border-radius':'5px','box-shadow': '0px 0px 5px #000'});
+            msgEntity.hide();
+        },
+        //显示动画
+        show :function(time){
+            msgEntity.fadeIn(time/4);
+            msgEntity.fadeOut(time/2);
+        }
+
+    }
+    /*
+     * banner轮播
+     * */
+    $(document).ready(function(){
+        $("#banner-play").excoloSliderBanner();
+        $("#bid-play").excoloSliderBid();
+    });
+
+    /*
+    * 点击XX关闭下载app浮框
+    * */
+    $(".tip_load .span1").click(
+            function(){
+                $(".tip_load").hide();
+            }
+    )
+    /*
+     * 点击签到有弹框
+     * */
+   $("#sign").click(
+           function(){
+               $("#wapMc").show();
+               $("#signShow").show();
+               //吐司“已签到”
+               //new Toast({context:$('body'),message:'已签到'}).show("5000");
+           }
+   )
+    /*点击确定按钮关闭弹框*/
+    $(".wapPos .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapPos").hide();
+            }
+    )
+
+
+ </script>
+</body>
+</html>

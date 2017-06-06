@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>投资记录</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    投资记录
+</div>
+<div class="invReTab">
+    <ul>
+        <li class="invReTabOn" id="list1" onclick="listTab(1)">回款中</li>
+        <li class="invReTabOff" id="list2" onclick="listTab(2)">投标中</li>
+        <li class="invReTabOff" id="list3" onclick="listTab(3)">已完成</li>
+    </ul>
+</div>
+<div class="regresh">
+    放开以刷新..
+</div>
+<div class="listShow1">
+    <div class="invReTitle">
+        <ul>
+            <li class="li1" style="padding-left:5%;">项目名称</li><li class="li2" style="padding-right: 5%;">待收本息</li>
+        </ul>
+    </div>
+    <div class="invReList">
+        <section class="huikuan_1">
+            <ul class="mx_detail"  onclick="huikuan_display(1)">
+                <li class="li1">加薪宝2015-0074
+                    <div class="zhuan"><img src="http://static.facebank.cn/static/wapFront/common/img/tyj_icon.png"></div>
+                </li>
+                <li class="li2">100,000.00元
+                    <div class="mx_detail_img"><img src="http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png"></div>
+                </li>
+            </ul>
+            <section class="mx_detail_content">
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">1</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">止息日:2016-05-04<img src="http://static.facebank.cn/static/wapFront/account/img/ic_i.png" id="endDate"></div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                </div>
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">2</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                </div>
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num_red">3</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:未还款</div>
+                    </div>
+                </div>
+                <a class="xieyi" href="#">
+                    点此查看电子协议
+                </a>
+            </section>
+        </section>
+        <section class="huikuan_2" >
+            <ul class="mx_detail"  onclick="huikuan_display(2)">
+                <li class="li1">加薪宝2015-0074</li>
+                <li class="li2">100,000.00元
+                    <div class="mx_detail_img"><img src="http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png"></div>
+                </li>
+            </ul>
+            <section class="mx_detail_content">
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">1</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                    <div class="three">
+                        <a href="">点此查看电子协议</a>
+                    </div>
+                </div>
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">2</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                </div>
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num_red">3</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:未还款</div>
+                    </div>
+                </div>
+                <a class="xieyi" href="#">
+                    点此查看电子协议
+                </a>
+            </section>
+        </section>
+    </div>
+</div>
+
+<div class="listShow2">
+    <div class="invReTitle">
+        <ul>
+            <li class="li1" style="padding-left:5%;">项目名称/时间</li><li class="li2" style="padding-right: 5%;">投资金额</li>
+        </ul>
+    </div>
+    <div class="invReList">
+        <ul>
+            <li class="li1">2015-0074<p>2015-05-02</p></li><li class="li2">100,000.00元</li>
+        </ul>
+        <ul>
+            <li class="li1">2015-0074<p>2015-05-02</p></li><li class="li2">100,000.00元</li>
+        </ul>
+    </div>
+</div>
+
+<div class="listShow3">
+    <div class="invReTitle">
+        <ul>
+            <li class="li1" style="padding-left:5%;">项目名称/时间</li><li  class="li2" style="padding-right: 5%;">净收益/投资金额</li>
+        </ul>
+    </div>
+    <div class="invReList">
+        <section class="wancheng_1">
+            <ul class="mx_detail" onclick="wancheng_display(1)">
+                <li class="li1">2015-0074<p>2015-05-02</p>
+                    <div class="zhuan"><img src="http://static.facebank.cn/static/wapFront/common/img/zhuan.png"></div>
+                </li>
+                <li  class="li2">1000.00元<p>100,000.00元</p>
+                    <div class="mx_detail_img"><img src="http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png"></div>
+                </li>
+            </ul>
+            <section class="mx_detail_content">
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">1</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                </div>
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">2</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                </div>
+                <div class="mxd">
+                    <div class="one">
+                        <div class="div_num">3</div>
+                        <div class="div_content">
+                            <div class="div_1">1000.00</div>
+                            <div class="div_2">本金(元)</div>
+                        </div>
+                        <div class="div_content">
+                            <div class="div_1">8.73</div>
+                            <div class="div_2">利息(元)</div>
+                        </div>
+                        <div class="div_content" style="border: 0;">
+                            <div class="div_1">1008.73</div>
+                            <div class="div_2">总额(元)</div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="div_date">还款日:2016-05-04</div><div class="div_date">实际还款日:2016-05-04</div>
+                    </div>
+                </div>
+                <a class="xieyi" href="#">
+                    点此查看电子协议
+                </a>
+            </section>
+        </section>
+
+
+    </div>
+</div>
+<div class="wapMc" id="wapMc"></div>
+<!--加息提示-->
+<div class="wapPos" id="endDateShow">
+    <div class="wapTip">
+        <p class="p-head">说明</p>
+        <p class="p1" style="text-align: center;">止息后三个工作日内还款到账</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    $("#endDate").click(
+            function(){
+                $("#wapMc").show();
+                $("#endDateShow").show();
+            }
+    )
+    /*点击错误提示框的确定按钮关闭弹框*/
+    $("#endDateShow .p3").click(
+            function(){
+                $("#wapMc").hide();
+                $("#endDateShow").hide();
+            }
+    )
+    function listTab(num){
+        for(var i=1;i<=3;i++){
+            if(i==num){
+                $(".listShow"+i).show();
+                $("#list"+i).removeClass("invReTabOff").addClass("invReTabOn");
+            }
+            else{
+                $(".listShow"+i).hide();
+                $("#list"+i).removeClass("invReTabOn").addClass("invReTabOff");
+
+            }
+        }
+    }
+
+function huikuan_display(num){
+    for(var i=1;i<=100;i++){
+        if(i==num){
+            var status=$(".huikuan_"+i+" .mx_detail_content").is(":hidden");
+            if(status){
+                $(".huikuan_"+i+" .mx_detail_content").slideDown();
+                $(".huikuan_"+i+" .mx_detail_img img").attr("src","http://static.facebank.cn/static/wapFront/account/img/jiantou_xia.png")
+            }else{
+                $(".huikuan_"+i+" .mx_detail_content").slideUp();
+                $(".huikuan_"+i+" .mx_detail_img img").attr("src","http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png")
+            }
+        }
+    }
+}
+    function wancheng_display(num){
+        for(var i=1;i<=100;i++){
+            if(i==num){
+                var status=$(".wancheng_"+i+" .mx_detail_content").is(":hidden");
+                if(status){
+                    $(".wancheng_"+i+" .mx_detail_content").slideDown();
+                    $(".wancheng_"+i+" .mx_detail_img img").attr("src","http://static.facebank.cn/static/wapFront/account/img/jiantou_xia.png")
+                }else{
+                    $(".wancheng_"+i+" .mx_detail_content").slideUp();
+                    $(".wancheng_"+i+" .mx_detail_img img").attr("src","http://static.facebank.cn/static/wapFront/account/img/jiantou_you.png")
+                }
+            }
+        }
+    }
+
+</script>
+</html>

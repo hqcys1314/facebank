@@ -1,0 +1,10 @@
+@charset "UTF-8";
+body{background-color: #ffffff;}
+.banner{width: 100%;}
+.banner img{width: 100%;}
+.content{width: 90%;margin: 0 auto;}
+.content img{width: 100%;}
+.content .title{margin: 10px 0;font-size: 1.2em;color: #666;font-weight: bold;border-left: 4px #ffae00 solid; padding-left: 10px;}
+.content .word{ font-size: 0.95em;text-indent: 30px;    line-height: 26px;}
+.content .picture{    margin: 13px 0 25px;}
+.footer{text-align: center;font-size: 0.9em;color: #999;margin-bottom: 30px;}

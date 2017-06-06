@@ -1,0 +1,37 @@
+html{height: 100%;}
+body{ font-family:"微软雅黑";height: 100%;width: 100%;}
+*{margin: 0;padding: 0;}
+.regTransUp{background-color: #f86c36;overflow: hidden;height:84%; }
+.regTransUpPos1{height:23%; }
+.regTransP1{text-align: center;color: #fff;  font-size: 1.8em;  padding-top: 6.4%;}
+.regTransP1 span{font-weight: bold;  margin-left: 1%;}
+.regTransP2{text-align: center;color: #fff;font-size: 1em;  margin-bottom: 5.9%;}
+.regTransUpPos2{height:23%;}
+.regTransBtn{text-align: center;background-color: #ffffff;text-decoration: none;
+    height: 2.4em;line-height: 2.4em;width:65%;  margin: 0 auto 5%;  font-size: 1.2em;
+    border-radius: 2em; color: #f86c36;display: block;}
+.regTransBtn:hover{cursor: pointer;}
+.regtransBa{width: 100%;height: 54%;}
+.regtransBa img{width: 100%;height: 100%;}
+.regTransLogo{width: 100%;background-color: #ffffff;height: 16%;}
+.regTransLogoPos{width:36.5%;  margin: 0 auto;padding-top: 7%;}
+.regTransLogoPos img {width: 100%;}
+.regErrMc{display:none;background-color: #000;opacity: 0.4;position: absolute;top: 0;width: 100%;}
+.regMc{background-color: #000;opacity: 0.6;filter:alpha(opacity=60);position: absolute;top: 0;width: 100%;}
+.regMc img{width: 100%;}
+/*关于我们*/
+.auBack{  position: relative;text-align: center;background-color: #f86c36;height:1.7em;line-height: 1.7em;font-size: 1.6em;color: #fff;}
+.auBackImg{  position: absolute;left: 1%;}
+.auBackImg img{  width: 100%;}
+.auLogo{width:30%;margin:3% auto;}
+.auLogo img{width:100%; }
+.au1 p{padding: 0 5%; text-indent: 9%;font-size:0.9em;color: #666666;  margin-bottom: 2%;}
+.au2{width: 100%;  margin: 5% 0;}
+.au2 img{width: 100%;}
+.au3{margin: 0 6%;}
+.au3 img{width: 100%;}
+.au4{text-align: center;}
+.au4 .p1 {font-size: 1.3em; font-weight: bold;margin: 5% 0 1%;}
+.au4 .p2{font-size: 0.9em;margin-bottom: 5%;}
+.au5{width: 100%;}
+.au5 img{width: 100%;}

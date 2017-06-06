@@ -1,0 +1,111 @@
+<link href="http://static.facebank.cn/static/webFront/jifenshop/css/integral.css" rel="stylesheet" />
+<div class="integral">
+    <div class="intTitle">
+        <div class="intTitleCenter">
+            <div class="intInvite">
+                &nbsp;</div>
+            <div class="intExchange">
+                &nbsp;</div>
+        </div>
+        <div class="intTitle-little">
+            笑脸礼品兑换大换装，更多礼品更多惊喜！</div>
+    </div>
+    <div class="intCenter">
+        <div class="intContent">
+            <div class="exProduct intposition1">
+                <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg1.png" />
+                <div class="exProHide intShow1">
+                    <div class="exProductText1">
+                        兑换笑脸币：20000<span>笑脸币</span></div>
+                    <div class="exProductBtn1 improtant_button">
+                        <a href="#exTip">笑脸币兑换</a></div>
+                </div>
+            </div>
+            <div class="exProduct intposition2">
+                <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg2.png" />
+                <div class="exProHide intShow2">
+                    <div class="exProductText1">
+                        兑换笑脸币：30000<span>笑脸币</span></div>
+                    <div class="exProductBtn1 improtant_button">
+                        <a href="#exTip">笑脸币兑换</a></div>
+                </div>
+            </div>
+            <div class="clear">
+                &nbsp;</div>
+            <div class="intdivleft">
+                <div class="exProduct intposition3">
+                    <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg3.png" />
+                    <div class="exProHide intShow3">
+                        <div class="exProductText2">
+                            兑换笑脸币：10000<span>笑脸币</span></div>
+                        <div class="exProductBtn2 improtant_button">
+                            <a href="#exTip">笑脸币兑换</a></div>
+                    </div>
+                </div>
+                <div class="exProduct intposition3">
+                    <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg4.png" />
+                    <div class="exProHide intShow3">
+                        <div class="exProductText2">
+                            兑换笑脸币：20000<span>笑脸币</span></div>
+                        <div class="exProductBtn2 improtant_button">
+                            <a href="#exTip">笑脸币兑换</a></div>
+                    </div>
+                </div>
+                <div class="exProduct intposition3">
+                    <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg5.png" />
+                    <div class="exProHide intShow3">
+                        <div class="exProductText2">
+                            兑换笑脸币：250000<span>笑脸币</span></div>
+                        <div class="exProductBtn2 improtant_button">
+                            <a href="#exTip">笑脸币兑换</a></div>
+                    </div>
+                </div>
+                <div class="exProduct intposition3">
+                    <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg6.png" />
+                    <div class="exProHide intShow3">
+                        <div class="exProductText2">
+                            兑换笑脸币：600000<span>笑脸币</span></div>
+                        <div class="exProductBtn2 improtant_button">
+                            <a href="#exTip">笑脸币兑换</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="intdivright">
+                <div class="exProduct intposition4">
+                    <img src="http://static.facebank.cn/static/webFront/jifenshop/img/intimg7.png" />
+                    <div class="exProHide intShow4">
+                        <div class="exProductText1">
+                            兑换笑脸币：40000<span>笑脸币</span></div>
+                        <div class="exProductBtn1 improtant_button">
+                            <a href="#exTip">笑脸币兑换</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="int_bottom" id="exTip">
+            &nbsp;</div>
+    </div>
+</div>
+<!--内容结束--><!--清除浮动-->
+<div class="clear">
+    &nbsp;</div>
+<script>
+    //积分兑换蒙版
+    $(function(){
+        $(".exProduct").hover(
+                function () {
+                    $(this).find('.exProHide').show();
+                },
+                function () {
+                    $(this).find('.exProHide').hide();
+                }
+        );
+        $(".intInvite").click(function(){
+            location.href="#exTip";
+        });
+        $(".intExchange").click(function(){
+            location.href="#exTip";
+        });
+
+    })
+</script>

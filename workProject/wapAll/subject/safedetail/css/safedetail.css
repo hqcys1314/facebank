@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.banner{width: 100%;}
+.banner img{width: 100%;}
+.banner .title{width: 90%;margin: 0 auto;}
+.banner .title img{width: 100%;}
+
+.content{width: 96%;margin:0 auto;overflow: hidden;}
+.content .title{margin: 13px 0 10px;    text-align: center;color: #a06822;}
+.content .detail{width:96%;margin:0 auto 10px;background-color: #ffffff;padding: 20px 3%;border-top: 5px #f1e7d9 solid;}
+.content .detail ul{overflow: hidden;margin-bottom: 5px;}
+.content .detail ul li{width: 47%;float: left;margin-right: 3%;}
+.content .detail ul li img{width: 100%;}
+.content .detail .word{ font-size: 0.8em;margin-top: 10px;}
+.content .detail_star{width:94%;margin:0 auto 10px;background-color: #ffffff;padding: 0 3% 20px;border-top: 5px #f1e7d9 solid;}
+.content .detail_star .star{text-align: center;margin-top: -10px;}
+.content .detail_star .star img{width: 110px;}
+.content .detail_star .vs{overflow: hidden;margin-top: 10px;position: relative;}
+.content .detail_star .vs ul{overflow: hidden;width: 44%;float: left;background-color: #ffffff;}
+.content .detail_star .vs ul li{border-left: 5px #fed1c0 solid;padding: 10px 10px 10px 20px;font-size: 0.9em;margin-bottom: 5px;height: 55px;}
+.content .detail_star .vs .vs_title{overflow: hidden;margin-bottom: 10px;}
+.content .detail_star .vs .vs_title p{width: 44%;float: left;font-weight: bold;text-align: center;}
+.content .detail_star .vs .vs_title .p1{margin-right: 11%;color: #f86c36;}
+.content .detail_star .vs .vs_title .p2{color: #666;}
+.content .detail_star .vs ul.ul_xiaolian{margin-right: 11%;}
+.content .detail_star .vs ul.ul_xiaolian li{background-color: #ffebe3;}
+.content .detail_star .vs ul.ul_other li{background-color: #fcf8f1;}
+.content .detail_star .vs .vs_img{position: absolute;top: 25px;left: 39%;width: 22%;}
+.content .detail_star .vs .vs_img img{width:100%;}
+.content .detail_star .word{font-size: 0.8em;line-height: 20px;margin-top: 10px;}
+.content .detail_star .woshou{text-align: center;margin-top: 20px;}
+.content .detail_star .woshou img{width: 70%;}
+.content_goucheng{background-color: #fff9f0;}
+.content_goucheng h3{border-bottom: 1px #fdd1be solid;;padding-top: 30px;padding-bottom: 10px;text-align: center;color: #a06822;width: 90%;margin: 0 auto 10px;}
+.content_goucheng .goucheng{width: 80%;margin: 0 auto;padding-bottom: 10px;}
+.content_goucheng .goucheng img{width:100%; }
+.footer{text-align: center;font-size: 0.9em;color: #999;margin-bottom: 20px;margin-top: 10px;}

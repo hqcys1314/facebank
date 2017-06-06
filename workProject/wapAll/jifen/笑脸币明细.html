@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸币明细</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/jifen/css/mingxi.css">
+    <meta name="page-name" content="笑脸币明细"/>
+    <meta name="user-id" content=""/>
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    笑脸币明细
+</div>
+<div class="mx_tab">
+    <ul>
+        <li class="mx_on" id="list1" onclick="listTab(1)" data-event="jf_detail_get" data-event-name="积分-笑脸币明细-已获得" data-event-category="jf_detail_getBtn">已获得</li>
+        <li class="mx_off" id="list2" onclick="listTab(2)" data-event="jf_detail_exchange" data-event-name="积分-笑脸币明细-已兑换" data-event-category="jf_detail_exchangeBtn">已兑换</li>
+    </ul>
+</div>
+<div class="regresh">
+    放开以刷新..
+</div>
+<div id="listShow1">
+    <div class="mx_total">
+        <div class="circle">
+            <p class="p1">16500</p>
+            <p class="p2">累计获得笑脸币</p>
+        </div>
+        <div class="bg_white">
+
+        </div>
+    </div>
+    <div class="mx_list">
+        <div class="left">
+            <p class="p1">首次投资</p>
+            <p class="p2">2015-05-02 11:00</p>
+        </div>
+        <div class="right">
+            <span class="span1">+1000</span>
+        </div>
+    </div>
+    <div class="mx_list">
+        <div class="left">
+            <p class="p1">邀请用户注册成功</p>
+            <p class="p2">2015-05-02 11:00</p>
+        </div>
+        <div class="right">
+            <span class="span1">+1000</span>
+        </div>
+    </div>
+    <div class="more">
+        没有更多了
+    </div>
+</div>
+
+<div id="listShow2">
+    <div class="mx_total">
+           <div class="circle">
+               <p class="p1">16500</p>
+               <p class="p2">累计兑换笑脸币</p>
+           </div>
+        <div class="bg_white">
+
+        </div>
+    </div>
+    <div class="mx_list">
+        <div class="left">
+            <p class="p1">兑换50元话费</p>
+            <p class="p2">2015-05-02 11:00</p>
+        </div>
+        <div class="right">
+           <div class="jiantou"><img src="http://static.facebank.cn/static/wapFront/jifen/img/you_red.png"></div>
+            <span class="span1">-1000</span>
+        </div>
+    </div>
+    <div class="mx_list">
+        <div class="left">
+            <p class="p1">兑换50元话费</p>
+            <p class="p2">2015-05-02 11:00</p>
+        </div>
+        <div class="right">
+            <div class="jiantou"><img src="http://static.facebank.cn/static/wapFront/jifen/img/you_red.png"></div>
+            <span class="span1">-1000</span>
+        </div>
+    </div>
+    <div class="more">
+        没有更多了
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    function listTab(num){
+        for(var i=1;i<=2;i++){
+            if(i==num){
+                $("#listShow"+i).show();
+                $("#list"+i).removeClass("mx_off").addClass("mx_on");
+            }
+            else{
+                $("#listShow"+i).hide();
+                $("#list"+i).removeClass("mx_on").addClass("mx_off");
+
+            }
+        }
+    }
+
+</script>
+</html>

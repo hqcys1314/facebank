@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>定存计划大解析</title>
+    <link rel="stylesheet" href="https://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="https://static.facebank.cn/static/wapFront/invest/css/dcGuide.css">
+</head>
+<body>
+<div class="dcg-1">
+   <img src="https://static.facebank.cn/static/wapFront/invest/img/dc_guide.jpg">
+</div>
+<div class="dcg-2">
+      <div class="dcg-pos">
+          <h3>笑脸定存计划大解析</h3>
+          <p class="p-content p1">
+              定存计划就是您的私人财产管家，你只需拼手速抢到了，接下来就妥妥地坐等到期收钱，其余的都交给笑脸就行了。
+          </p>
+          <p class="p-title">1、你负责投资，我负责分散风险</p>
+          <p class="p-content">定存计划原理是小额分散，不同分散的借款项目之间保持绝对的独立性，意味着发生违约的概率会非常小。同时，定存计划在借款项目特征上也做到分散，避免出现地域性、行业性等集体违约现象的出现。</p>
+          <p class="p-title">2、整存整取，何其便利</p>
+          <p class="p-content">经用户授权后，系统自动匹配借款项目，项目回款自动复投，到期后一次性还本付息。</p>
+          <p class="p-title">3、期限灵活，任君选择</p>
+          <p class="p-content">提供封闭期90天以上的各期限定存计划，总有一款适合你。</p>
+      </div>
+</div>
+<div class="dcg-2">
+    <div class="dcg-pos">
+        <h3>购买方式</h3>
+        <p class="p-content p1">定存计划数量有限，仅限app购买哦！</p>
+        <div class="div-buy">
+            <img src="https://static.facebank.cn/static/wapFront/invest/img/dcg-1.jpg">
+        </div>
+    </div>
+</div>
+<div class="dcg-3">
+    笑脸小贴士：目前定存计划不支持使用红包。不过笑脸的技术宅们马不停蹄的开发2.0版本将于3月3日上线，各大应用商店陆续上架，届时请大家关注更新哦~<br/>
+    新版上线，红包一个都不能少！给您带来的不便，笑脸深感抱歉~
+</div>
+<div class="dcg-4" id="dcg-4">
+    现在下载 抢购投资
+</div>
+</body>
+<script src="https://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        browser = {
+            versions : function() {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident : u.indexOf('Trident') > -1, //IE内核
+                    presto : u.indexOf('Presto') > -1, //opera内核
+                    webKit : u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko : u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile : !!u.match(/AppleWebKit.*Mobile.*/)
+                            || !!u.match(/AppleWebKit/), //是否为移动终端
+                    ios : !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android : u.indexOf('Android') > -1
+                            || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone : u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad : u.indexOf('iPad') > -1, //是否iPad
+                    webApp : u.indexOf('Safari') == -1
+                    //是否web应该程序，没有头部与底部
+                };
+            }(),
+            language : (navigator.browserLanguage || navigator.language)
+                    .toLowerCase()
+        }
+        function isWeiXin(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        var params = location.search;
+        if(params&&params.indexOf('curDevice') > -1){
+            $("#dcg-4").html("快来抢购投资吧").click(
+                    function(){
+                        if (isAndroid) {
+                            android.closeAndToInvestmentList();
+                        }
+                        if (isIOS) {
+                            appdo("loanList");
+                        }
+                    }
+            )
+
+        }else{
+            $("#dcg-4").html("现在下载 抢购投资").click(
+                    function(){
+                        if (browser.versions.ios || browser.versions.iPhone
+                                || browser.versions.iPad) {
+                            if(isWeiXin()){
+                                window.location = "http://a.app.qq.com/o/simple.jsp?pkgname=com.ghph.smile";
+                            }else{
+                                window.location = "https://itunes.apple.com/cn/app/xiao-lian-jin-rong-li-cai/id1038803512?mt=8";
+                            }
+                        } else if (browser.versions.android) {
+                            window.location = "http://static.facebank.cn/fb/FaceSmile-PRO-release_130_jiagu_sign/FaceSmile-PRO-release_130_jiagu_sign.apk";
+                        } else {
+                            alert("当前浏览器非Android或IOS");
+                        }
+                    }
+            )
+        }
+    });
+</script>
+</html>

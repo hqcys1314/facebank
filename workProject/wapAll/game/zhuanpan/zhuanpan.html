@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="html_1">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>微信客户端抽奖转盘效果</title>
+        <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+        <link href="css/slyderadventures.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body class="activity-lottery-winning">
+		<div class="main">
+			<div id="outercont">
+				<div id="outer-cont">
+					<div id="outer">
+					<img src="http://static.facebank.cn/static/wapFront/game/zhuanpan/img/activity-lottery-1.png">
+					</div>
+				</div>
+				<div id="inner-cont">
+					<div id="inner">
+						<img src="http://static.facebank.cn/static/wapFront/game/zhuanpan/img/activity-lottery-2.png">
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="gameMc">
+             <div class="tankuang">
+                 <span class="span1"><img src="http://static.facebank.cn/static/wapFront/game/zhuanpan/img/title.png"></span>
+                 <p class="p1">恭喜您</p>
+                 <p class="p2">中了<span>10</span>元现金红包哦~</p>
+                 <a class="a1" href="">果断领取</a>
+             </div>
+        </div>
+    </body>
+
+		<script src="http://static.facebank.cn/static/wapFront/game/zhuanpan/js/ajaxjs/jquery.js"></script>
+		<script type="text/javascript">
+
+            (function() {
+                var lastTime = 0;
+                var vendors = ['ms', 'moz', 'webkit', 'o'];
+                for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                    window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+                    window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+                            || window[vendors[x]+'CancelRequestAnimationFrame'];
+                }
+
+                if (!window.requestAnimationFrame)
+                    window.requestAnimationFrame = function(callback, element) {
+                        var currTime = new Date().getTime();
+                        var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                        var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+                                timeToCall);
+                        lastTime = currTime + timeToCall;
+                        return id;
+                    };
+
+                if (!window.cancelAnimationFrame)
+                    window.cancelAnimationFrame = function(id) {
+                        clearTimeout(id);
+                    };
+            }());
+
+            var totalDeg = 360 * 3 + 0;
+				var steps = [];
+				var lostDeg = [66,126,186,246,306];
+				var prizeDeg = [];
+				var prize,
+					sncode;
+				var count = 0;
+				var now = 0;
+				var a = 0.01;
+				var outter,
+					inner,
+					timer,
+					running = false;
+
+				function countSteps() {
+					var t = Math.sqrt(2 * totalDeg / a);
+					var v = a * t;
+					for (var i = 0; i < t; i++) {
+						steps.push((2 * v * i - a * i * i) / 2)
+					}
+					steps.push(totalDeg)
+				}
+
+				function step() {
+					outter.style.webkitTransform = 'rotate(' + steps[now++]+ 'deg)';
+					outter.style.MozTransform = 'rotate(' + steps[now++]+ 'deg)';
+					if (now < steps.length) {
+						requestAnimationFrame(step)
+					} else {
+						running = false;
+						setTimeout(function() {
+								if (prize != null) {
+									$("#sncode").text(sncode);
+									var type = "";
+									if (prize == 1) {
+										type = "一等奖"
+									} else if (prize == 2) {
+										type = "二等奖"
+									} else if (prize == 3) {
+										type = "三等奖"
+									}
+									$("#prizetype").text(type);
+									$("#result").slideToggle(500);
+									$("#outercont").slideUp(500)
+								} else {
+									alert("谢谢您的参与，下次再接再厉")
+								}
+							},
+							200)
+					}
+				}
+
+				function start(deg) {
+					deg = deg || lostDeg[parseInt(lostDeg.length * Math.random())];
+					running = true;
+					clearInterval(timer);
+					totalDeg = 360 * 3 + deg;
+					steps = [];
+					now = 0;
+					countSteps();
+					requestAnimationFrame(step)
+				}
+				window.start = start;
+				outter = document.getElementById('outer');
+				inner = document.getElementById('inner');
+				i = 10;
+				$("#inner").click(function() {
+					if (running) return;
+					if (count >= 3) {
+						alert("您已经抽了 3 次奖。");
+						return
+					}
+					if (prize != null) {
+						alert("亲，你不能再参加本次活动了喔！下次再来吧~");
+						return
+					}
+					$.ajax({
+						url: "index.php",
+						dataType: "json",
+						data: {
+							token: "o7MB9ji5fQRsE0ZoVAMU7SlnRyMI",
+							ac: "activityuser",
+							tid: "5",
+							t: Math.random()
+						},
+						beforeSend: function() {
+							running = true;
+							timer = setInterval(function() {
+									i += 5;
+									outter.style.webkitTransform = 'rotate(' + i + 'deg)';
+									outter.style.MozTransform = 'rotate(' + i + 'deg)'
+								},
+								1)
+						},
+						success: function(data) {
+							if (data.error == "invalid") {
+								alert("您已经抽了 3 次奖。");
+								count = 3;
+								clearInterval(timer);
+								return
+							}
+							if (data.error == "getsn") {
+								alert('本次活动你已经中过奖，本次只显示你上次抽奖结果!兑奖SN码为:' + data.sn);
+								count = 3;
+								clearInterval(timer);
+								prize = data.prizetype;
+								sncode = data.sn;
+								start(prizeDeg[data.prizetype - 1]);
+								return
+							}
+							if (data.success) {
+								prize = data.prizetype;
+								sncode = data.sn;
+								start(prizeDeg[data.prizetype - 1])
+							} else {
+								prize = null;
+								start()
+							}
+							running = false;
+							count++
+						},
+						error: function() {
+							prize = null;
+							start();
+							running = false;
+							count++
+						},
+						timeout: 4000
+					})
+				})
+
+		</script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/loanStatus.css">
+</head>
+<body>
+<section class="loanCondition">
+    <div class="listContent">
+        <p class="p1">
+            <span class="span1" >起息日：</span><input type="text" value="" onfocus="WdatePicker()" readonly="readonly">-<input type="text" value=""  onfocus="WdatePicker()" readonly="readonly">
+        </p>
+        <p class="p2">
+            <span class="span1">止息日：</span><input type="text" value="" onfocus="WdatePicker()" readonly="readonly">-<input type="text" value="" onfocus="WdatePicker()" readonly="readonly">
+        </p>
+    </div>
+    <div class="listContent">
+        <span class="span1">借款标题：</span><input type="text" value=""> <span class="span1">借款ID：</span><input type="text" value=""> <span class="span1">标的状态：</span><select class="select_1"><option>全部</option><option>已售罄</option></select>
+    </div>
+    <div class="listContent">
+        <p class="p1">
+            <span class="span1">满标日：</span><input type="text" value="" onfocus="WdatePicker()" readonly="readonly">-<input type="text" value="" onfocus="WdatePicker()" readonly="readonly">
+        </p>
+        <p class="p2">
+            <span class="span1">应还款日：</span><input type="text" value="" onfocus="WdatePicker()" readonly="readonly">-<input type="text" value="" onfocus="WdatePicker()" readonly="readonly">
+        </p>
+    </div>
+    <div class="listContent">
+        <p class="p1">
+            <span class="span1">实际还款日：</span><input type="text" value="" onfocus="WdatePicker()" readonly="readonly">-<input type="text" value="" onfocus="WdatePicker()" readonly="readonly">
+        </p>
+        <p class="p2">
+            <span class="span1">投资期限：</span><input type="text" value="">-<input type="text" value=""><select class="select_2"><option>天</option><option>月</option></select>
+        </p>
+    </div>
+    <div class="listContent">
+        <span class="span1">购买条件：</span><select class="select_1"><option>全部</option><option>部分</option></select>    <span class="span1">产品类型：</span><select class="select_1"><option>全部</option><option>部分</option></select><span class="span1">用户名：</span><input type="text" value="">
+        <input type="button" value="搜索"><input type="button" value="导出">
+    </div>
+</section>
+</body>
+<script src="http://static.facebank.cn/static/libs/My97DatePicker/4.8/WdatePicker.js"></script>
+</html>

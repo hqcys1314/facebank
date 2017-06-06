@@ -1,0 +1,39 @@
+body{background-color: #ffdbd5;}
+.cd-head{width: 100%;}
+.cd-head img{width: 100%;}
+.cd-con{position: relative;
+    width:100%;color: #666666;margin-bottom: 40px;
+}
+.cd-con .cd-con-f1{
+    position: absolute;right: 0;top:-6px;z-index: 2;
+}
+.cd-con .cd-con-f1 img{
+    width: 36px;
+}
+.cd-con .cd-con-f2{
+    position: absolute;left: 0;top:-6px;z-index: 2;
+}
+.cd-con .cd-con-f2 img{
+    width: 36px;
+}
+.cd-con .cd-con-pos{
+   position: relative;border-radius: 5px;background-color: #FFFFFF;width: 90%;margin: 0 auto;
+}
+.cd-con .cd-con-pos h3{
+   color: #f7525e;font-size: 0.9em;text-align: center;font-weight: bold;padding-top: 15px;
+}
+.cd-con .cd-con-pos p{
+   font-size: 0.8em;color: #666666;margin: 15px auto;width: 90%;
+    line-height: 20px;padding-bottom: 42px;
+}
+.cd-con .cd-con-pos p span{
+   color: #ff6c76;font-size: 1.15em;
+}
+.cd-con .cd-btn{
+    font-size: 1em;height: 40px;line-height: 40px;width: 100%;
+    position: absolute;text-align: center;bottom: -20px;
+}
+.cd-con .cd-btn a{border-radius: 2em;
+    background-color: #ff6c76;width: 38%;display: block;margin: 0 auto;color: #FFFFFF;
+ }
+.cd-foot{width: 100%;text-align: center;font-size: 0.8em;color: #999999;margin-bottom: 20px;}

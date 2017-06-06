@@ -1,0 +1,221 @@
+/* slider
+----------------------------------------------------------*/
+html,
+body {
+    height: 100%;
+}
+/* flexslider */
+#currentUserInfo{display: block;}
+.banner-play{position: relative;height: 35%;overflow: hidden;}
+.banner-play a{display: block}
+.banner-play a img{width: 100%;}
+.flexslider{position:relative;width:100%;overflow:hidden;zoom:1;height: 100%;}
+.flexslider .slides{overflow: hidden;}
+.flexslider .slides li{overflow: hidden;}
+.flexslider .slides li .img{width: 100%;display: block;}
+.flexslider .slides li .img img{width: 100%;height: auto;}
+.flex-viewport{-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease;}
+.flexslider .slides{zoom:1;}
+.flex-direction-nav{display: none;}
+.flex-direction-nav a{width:60px;height:90px;line-height:99em;overflow:hidden;margin:-60px 0 0;display:block;background:url(../images/ad_ctr.png) no-repeat;position:absolute;top:50%;z-index:10;cursor:pointer;opacity:0;filter:alpha(opacity=0);-webkit-transition:all .3s ease;}
+.flex-direction-nav .flex-next{background-position:0 -90px;right:0;}
+.flex-direction-nav .flex-prev{left:0;}
+.flexslider:hover .flex-next{opacity:0.8;filter:alpha(opacity=25);}
+.flexslider:hover .flex-prev{opacity:0.8;filter:alpha(opacity=25);}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover{opacity:1;filter:alpha(opacity=50);}
+.flex-control-nav{position:absolute;top:50%;right: 5%;}
+.flex-control-nav li{;zoom:1;margin-bottom: 1%;}
+.flex-control-paging li a{background:url(../img/dot.png) no-repeat 0 -16px;display:block;height:16px;overflow:hidden;text-indent:-99em;width:16px;cursor:pointer;}
+.flex-control-paging li a.flex-active{background-position:0 0;}
+.banner-play .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner-play .logo img{
+    width: 1.5rem;
+    margin: 1rem;
+}
+.content {
+    margin-top: 5%;
+}
+.content h2 {
+    width: 90%;
+    margin: 25px auto;
+}
+.content h2 img {
+    width: 100%;
+}
+.content .content-jine {
+    width: 92%;
+    margin: 2% 0 0 8%;
+    overflow: hidden;
+}
+.content .content-jine .part {
+    display: block;
+    width: 40%;
+    float: left;
+    position: relative;
+    height: 30px;
+    text-align: center;
+    margin: 8px 0 8px 25%;
+}
+.content .content-jine .part input[type="radio"] {
+    width: 100%;
+    position: absolute;
+    height: 36px;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    opacity: 0;
+}
+.content .content-jine .part input[type="radio"]:active + .btn-show {
+    background-color: #ff4830;
+    border: 1px #ff4830 solid;
+    color: #fff;
+}
+.content .content-jine .part input[type="radio"]:checked + .btn-show {
+    color: #ff4830;
+    border: 1px #ff4830 solid;
+}
+.content .content-jine .part .btn-show {
+    height: 36px;display: block;
+    line-height: 36px;
+    width: 100%;
+    color: #666;
+    border: 1px #ddd solid;
+    border-radius: 2em;
+    font-size: 0.8em;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.content .content-jine .part .btn-show span {
+    font-size: 0.7em;
+    margin-left: 2px;
+}
+.content .content-qixian {
+    width: 90%;
+    height: 48px;
+    margin-top: 7%;
+    border-bottom: 1px #ddd solid;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.content .content-qixian .part {
+    display: block;margin-left: 25%;
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 48px;
+    text-align: center;
+}
+.content .content-qixian .part input[type="radio"] {
+    width: 100%;
+    position: absolute;
+    height: 48px;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    opacity: 0;
+}
+.content .content-qixian .part input[type="radio"]:checked + .qixian-show {
+    color: #ff4830;
+    border-bottom: 1px #ff4830 solid;
+}
+.content .content-qixian .part input[type="radio"]:checked + .qixian-show .line {
+    border-left: 1px #ff4830 solid;
+}
+.content .content-qixian .part input[type="radio"]:checked + .qixian-show .circle {
+    background-color: #ff4830;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.content .content-qixian .part .qixian-show {
+    height: 48px;display: block;
+    line-height: 48px;
+    width: 100%;
+    color: #666;
+    border-bottom: 0 #ddd solid;
+    font-size: 1.2em;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.content .content-qixian .part .qixian-show span {
+    font-size: 0.6em;
+    margin-left: 2px;
+}
+.content .content-qixian .part .qixian-show .line {
+    position: absolute;
+    border-left: 1px #ddd solid;
+    height: 10px;
+    width: 1px;
+    left: 50%;
+    bottom: 0;
+}
+.content .content-qixian .part .qixian-show .circle {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #f86c36;
+    left: 50%;
+    bottom: -4px;
+    margin-left: -3px;
+    opacity: 0;
+}
+.content .content-submit {
+    margin-top: 6%;
+    text-align: center;
+}
+.content .content-submit input {
+    background-color: #ff4830;margin-top:10%;
+    color: #fff;
+    height: 46px;
+    text-align: center;
+    width: 60%;
+    border-radius: 2em;
+    font-size: 1em;
+}
+.content .content-submit div {
+    color: #333;
+    font-size: 0.9em;
+    margin-top: 2%;
+}
+.content .bid{
+    background: url("../img/bidbackground.png") no-repeat center;background-size: 100% 100%;width: 70%;margin: 0 auto;padding: 1rem 0;color: #2e2e2e;
+}
+.content .bid ul{
+    overflow: hidden;
+}
+.content .bid ul li{float: left;width: 50%;text-align: center;}
+.content .bid ul li .p1{font-size: 1rem;}
+.content .bid ul li .p1 .span1{width: 1.6rem;vertical-align: text-bottom;}
+.content .bid ul li .p2{color: #f86c36;margin-top: 0.5rem;}
+.content .bid ul li .p2 .span1{font-size: 1.8rem;}
+.content .bid ul li .p2 .span2{font-size:1.125rem; }
+.content .fee{text-align: center;margin-top: 1rem;}
+.content .fee span{border-left: 1px #666 solid;margin-left: 0.3rem;}
+.foot-bs{font-size: 0.6em;text-align: center;color: #999999;margin-top: 1rem;
+    max-width: 600px;
+    width: 100%;
+}
+.qrcode{
+    text-align: center;margin-top: 2rem;margin-bottom: 1rem;
+}
+.qrcode p{
+    font-size: 0.8rem;color: #666666;
+}
+.qrcode img{
+    width: 30%;
+}
+/*# sourceMappingURL=index.css.map */

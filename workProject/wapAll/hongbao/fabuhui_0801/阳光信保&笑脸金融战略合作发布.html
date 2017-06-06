@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>喜迎周年庆</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/hongbao/fabuhui_0801/css/fabuhui.css">
+</head>
+<body>
+<div class="gudong_1">
+    <div class="div1">
+        <img src="http://static.facebank.cn/static/wapFront/hongbao/fabuhui_0801/img/gudong_1.jpg">
+    </div>
+    <div class="div2">
+        <div class="hb">
+            <img src="http://static.facebank.cn/static/wapFront/hongbao/fabuhui_0801/img/gudong_3.png">
+            <p class="p1">1%</p>
+            <p class="p2">理财加息券</p>
+        </div>
+        <!--领取按钮-->
+        <div class="lq">
+            <p class="p2"><input type="text" placeholder="输入您的手机号"></p>
+            <p class="p3"><input type="text"  placeholder="输入短信验证码"><input type="button" value="发送验证码"  id="msgCode" onclick="timePass()"></p>
+            <p class="p_error" style="display: none;">验证码错误</p>
+            <p class="p4"><input type="button" value="立即领取" class="comBtn"></p>
+        </div>
+        <!--领取成功-->
+        <div class="lq_tip" style="display: none;">
+            <div class="lq_pos">
+                <div class="left">
+                    <img src="http://static.facebank.cn/static/wapFront/hongbao/fabuhui_0801/img/lq_suc.png">
+                </div>
+                <div class="right">
+                    恭喜您!<br/>
+                    红包领取成功~
+                </div>
+            </div>
+            <p class="p4"><input type="button" value="确定" class="comBtn"></p>
+        </div>
+        <!--领取失败-->
+        <div class="lq_tip" style="display: none;">
+            <div class="lq_pos">
+                <div class="left">
+                    <img src="http://static.facebank.cn/static/wapFront/hongbao/fabuhui_0801/img/lq_err.png">
+                </div>
+                <div class="right">
+                    您已经领取过了!<br/>
+                    还是把机会给别人吧
+                </div>
+            </div>
+            <p class="p4"><input type="button" value="确定" class="comBtn"></p>
+        </div>
+        <div class="tishi">
+            活动规则：超级星期8加息券仅针对阳光员工发放；加息券随时领取
+            每月8日-18日可使用，每人每月只限使用1张。
+        </div>
+    </div>
+</div>
+<div class="gudong_2">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/fabuhui_0801/img/gudong_2.jpg">
+</div>
+
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#ff8955");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val("重获取("+miao+")");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#aaa");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+</script>
+</html>

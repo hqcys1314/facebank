@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>豪礼大放送 注册即享</title>
+    <link rel="stylesheet" href="https://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/shuangdan.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="https://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    双旦狂欢 豪礼相送
+</div>
+<div class="sd-1">
+    <img src="img/sd_banner.jpg">
+    <div class="star-1">&nbsp;</div>
+    <div class="star-2">&nbsp;</div>
+    <div class="star-3">&nbsp;</div>
+    <div class="sd-guang"><img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/guang.png"> </div>
+    <div class="sd-jinbi">
+       <img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/jinbi.png">
+    </div>
+    <div class="sd-lihe">
+        <img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/lihe.png">
+    </div>
+    <a class="guize" href="#sd-5">活动规则> </a>
+    <div class="mi-1 sd-mi">&nbsp; </div>
+    <div class="mi-2 sd-mi">&nbsp;</div>
+    <div class="mi-3 sd-mi">&nbsp; </div>
+    <div class="mi-4 sd-mi">&nbsp;</div>
+    <div class="mi-5 sd-mi">&nbsp; </div>
+    <div class="btn" id="btn"><img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/btn.png"></div>
+</div>
+<!------------已登录 ------------------->
+<div class="sd-2">
+   您还有<font>3</font>次抽奖机会！
+</div>
+<!------------已登录未投资 ------------------->
+<div class="sd-2-1" style="display: none">
+    您还没有抽奖机会<br/>
+    <a href="">立即投资></a>
+</div>
+<!------------未登录 ------------------->
+<div class="sd-2-2" style="display: none;">
+    不登录怎么玩啊<br/>
+    <a href="">立即登录></a>
+</div>
+<div class="sd-3">
+    <span class="laba"><img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/laba.png"></span>
+    <div class="gd-out">
+        <ul class="mp_ul">
+            <li>
+                138****7328刚刚获得了1.5%加息红包
+            </li>
+            <li>
+                138****7328刚刚获得了1.5%加息红包
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="sd-4">
+    <img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/sd_jp.png">
+</div>
+<div class="sd-5" id="sd-5">
+    <section class="content">
+        <div class="title">活动时间</div>
+        <div class="word">2016-12-22 00:00:00～2017-01-05 23:59:59</div>
+    </section>
+    <section class="content">
+        <div class="title">活动说明</div>
+         <ol>
+                <li>在活动期间内，用户单笔投资超过5万元即可获得抽奖机会1次。</li>
+                <li>单笔投资金额越大，投资期限越长，获得大奖机率越高，有机会抽出高最高1.8%加息红包哦。</li>
+                <li>活动100%中奖，每次抽奖最少可抽出50%投资金额对应的笑脸币。</li>
+         </ol>
+    </section>
+    <section class="content">
+        <div class="title">温馨提示</div>
+        <ol>
+                <li>红包有效期为：抽中红包起30天内有效。</li>
+                <li>在获取和使用奖品过程中，如果出现违规行为（如作弊领取、恶意套现、虚假交易等），笑脸金融将取消用户参加本活动的资格，并有权撤销违规交易、收回红包（包含已使用的及未使用的红包），必要时追究法律责任。
+                </li>
+                <li>本活动的最终解释权归笑脸金融所有。</li>
+        </ol>
+    </section>
+</div>
+<div class="wapMc">
+    &nbsp;
+</div>
+<div class="tk">
+    <img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/tk_bg.png" class="tk-bg">
+    <div class="close">
+        <img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/close.png">
+    </div>
+    <div class="con">
+        <font>1.5%</font>加息红包
+    </div>
+    <a class="lingqu" href="">
+        <img src="https://static.facebank.cn/static/wapFront/hongbao/shuangdan_20161208/img/shiyong.png">
+    </a>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+/*    $(".guize").click(
+            function(){
+               location.href="#sd-5";
+            }
+    )*/
+    //获奖信息滚动
+    function AutoScroll(obj){
+        $(obj).animate({
+            marginTop:"-30px"
+        },1000,function(){
+            $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+        });
+    }
+    // 加载后执行的
+    $(function(){
+        setInterval('AutoScroll(".mp_ul")',3000);
+    });
+  //点击按钮弹出弹框
+    $("#btn").click(
+            function(){
+                $('.wapMc').fadeIn();
+                $('.tk').animate(
+                        {
+                          width:"70%",opacity:'1',left:'50%','top':'30%'
+                        },500,function(){
+                            $('.tk .con').fadeIn();
+                        } );
+            }
+    )
+    //点击X关闭弹框
+    $(".close").click(
+            function(){
+                $('.wapMc').fadeOut();
+                $('.tk').animate(
+                        {
+                            opacity:'0'
+                        },100,function(){
+                            $('.tk').css({width:'0',left:'75%','top':'70%'});
+                            $('.tk .con').fadeOut();
+                        } );
+            }
+    )
+</script>
+</html>

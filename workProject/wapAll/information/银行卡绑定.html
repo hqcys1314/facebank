@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>银行卡认证</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/information/css/bindcard.css">
+</head>
+<body>
+
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    银行卡认证
+</div>
+<div class="setPwdTip1">
+    <a>
+        <span class="span1"><img src="http://img.facebank.net.cn/static/wapFront/account/img/tip_i.png"></span>
+        <span class="span2">招行手机充值限额1000元，建议选择其他银行</span>
+    </a>
+</div>
+<div class="bindCardBanner">
+    <img src="img/bindCardBanner.png">
+</div>
+<div class="bcbPart1">
+    <div class="div1 infoborder">
+      <input type="text" placeholder="请输入真实姓名">
+    </div>
+    <div class="div1">
+       <input type="number" placeholder="请输入正确的身份证号码" id="idCardNo">
+    </div>
+    <div class="big_card">&nbsp;</div>
+</div>
+
+<div class="bcbPart1">
+    <div class="div1 infoborder" id="bc_start">
+        <input type="text" placeholder="请选择开户银行" class="span2" readonly="true" id="bankListDiv">
+        <span class="span3"><img src="http://static.facebank.cn/static/wapFront/information/img/infoJiantou.png"></span>
+    </div>
+    <div class="div_choose" id="bc_end">
+
+    </div>
+    <div class="div1 ">
+       <input type="number" placeholder="请输入银行卡号" id="bankCardNo">
+    </div>
+    <div class="big">&nbsp;</div>
+</div>
+
+
+<div class="bcbPart1"  style="margin-bottom: 0;">
+
+    <!----------------------------------------------改动3-------------------------------------->
+    <div class="div1 infoborder">
+        <input type="tel" placeholder="请输入银行预留的手机号" class="span2" >
+        <span class="span4" id="phone_tip"><img src="http://static.facebank.cn/static/wapFront/information/img/bcbIcon.png"></span>
+    </div>
+    <!----------------------------------------------改动3结束-------------------------------------->
+    <div class="div1">
+       <input type="text" placeholder="请输入手机验证码"><input type="button" value="获取验证码" class="msgCode" id="msgCode" onclick="timePass()">
+    </div>
+</div>
+<div class="bcbPart4">
+    接收不到验证码？
+</div>
+<div class="bcbPart2">
+    <input type="button" value="下一步" class="comBtn" id="btnBind">
+</div>
+<div class="bcbPart3">
+    <p><span class="span1"><img src="http://static.facebank.cn/static/wapFront/information/img/bcbIcon.png"></span><span class="span2">实名认证需要验证身份信息、卡号和预留手机的一致性，过程中会
+        扣款5元，成功后5元返还至您的账户余额。</span></p>
+    <div class="clear"></div>
+    <p><span class="span1"><img src="http://static.facebank.cn/static/wapFront/information/img/bcbIcon.png"></span><span class="span2">添加的银行卡必须是持卡人所有，同卡进出保证您的资金安全。</span></p>
+</div>
+<div class="bc_tip">
+    <h3></h3>
+    <ol>
+        <li></li>
+    </ol>
+</div>
+<div class="wapMc" id="wapMc"></div>
+<!----------------------------------------------改动4-------------------------------------->
+
+<div class="bc_limit">
+    <div class="head">
+        <a id="bc_back">
+            <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+        </a>
+        银行卡列表
+    </div>
+    <div class="list_2">
+        <h3>温馨提示：<br/>建议选择支付限额较大的银行且已开通网银业务</h3>
+    </div>
+    <div class="list_1">
+        <ul id="bc_list">
+            <li>
+                <span class="span1"><img src="../common/img/bankLogoImg/jianshe.png"></span>
+	            <span class="span2">					
+					5万/笔					
+				</span>
+	            <span class="span3">
+					5万/天
+				</span>
+                <p class="p_tip">(需开通无卡支付功能)</p>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/jianshe.png"></span>
+	            <span class="span2">					
+					20万/笔					
+				</span>
+	            <span class="span3">
+					50万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/zhongguo.png"></span>
+	            <span class="span2">					
+					5万/笔					
+				</span>
+	            <span class="span3">
+					50万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/nongye.png"></span>
+	            <span class="span2">					
+					20万/笔					
+				</span>
+	            <span class="span3">
+					50万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/jiaotong.png"></span>
+	            <span class="span2">					
+					2万/笔					
+				</span>
+	            <span class="span3">
+					2万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/zhaoshang.png"></span>
+	            <span class="span2">					
+					5万/笔					
+				</span>
+	            <span class="span3">
+					1亿/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/zhongxin.png"></span>
+	            <span class="span2">					
+					100万/笔					
+				</span>
+	            <span class="span3">
+					100万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/minsheng.png"></span>
+	            <span class="span2">					
+					50万/笔					
+				</span>
+	            <span class="span3">
+					1亿/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/xingye.png"></span>
+	            <span class="span2">					
+					10万/笔					
+				</span>
+	            <span class="span3">
+					30万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/pingan.png"></span>
+	            <span class="span2">					
+					50万/笔					
+				</span>
+	            <span class="span3">
+					1亿/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/guangfa.png"></span>
+	            <span class="span2">					
+					100万/笔					
+				</span>
+	            <span class="span3">
+					100万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/guangda.png"></span>
+	            <span class="span2">					
+					20万/笔					
+				</span>
+	            <span class="span3">
+					1亿/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/pufa.png"></span>
+	            <span class="span2">					
+					10万/笔					
+				</span>
+	            <span class="span3">
+					10万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/huaxia.png"></span>
+	            <span class="span2">					
+					10万/笔					
+				</span>
+	            <span class="span3">
+					10万/天
+				</span>
+            </li>
+            <li>
+                <span class="span1"><img src="http://static.facebank.cn/static/wapFront/common/img/bankLogoImg/youzheng.png"></span>
+	            <span class="span2">					
+					0.5万/笔					
+				</span>
+	            <span class="span3">
+					0.5万/天
+				</span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!----------------------------------------------改动4结束-------------------------------------->
+<!--充值成功弹框-->
+<div class="wapPos" id="rechargeSuc_tip">
+    <div class="wapTip">
+        <p id="titleRet" class="p_title">充值成功</p>
+        <p class="p1">
+            本次充值：5,000.00元<br/>
+            奖励50笑脸币<br/>
+            首次投资再送100笑脸币
+        </p>
+        <p class="p2">
+            <span class="span1">去投资</span><span class="span2"><a href="">再看看</a></span>
+        </p>
+
+    </div>
+</div>
+<!----------------------------------------------改动5-------------------------------------->
+
+<div class="wapPos" id="phone_tip_tk">
+    <div class="wapTip">
+        <p class="p_title">提示</p>
+        <p class="p1">办理该储蓄卡时所填写的手机号码，如没有填写、忘记、停机等情况，请联系银行客服处理。</p>
+        <p class="p3">
+            知道了
+        </p>
+    </div>
+</div>
+<!----------------------------------------------改动5结束-------------------------------------->
+
+
+<div class="wapPos wapVoice">
+    <div class="wapTip">
+        <p class="p1">我们会以刷脸金融指定021号段为您发送验证码，请放心接听..</p>
+        <p class="p2">
+            <span class="span1">确定</span><span class="span2">取消</span>
+        </p>
+    </div>
+</div>
+<div class="wapPos wapErr">
+    <div class="wapTip">
+        <p class="p1">XX错误..</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+
+
+ /* 模仿android里面的Toast效果*/
+ var Toast = function(config){
+     this.context = config.context==null?$('body'):config.context;//上下文
+     this.message = config.message;//显示内容
+     this.time = config.time==null?3000:config.time;//持续时间
+     this.left = config.left;//距容器左边的距离
+     this.top = config.top;//距容器上方的距离
+     this.init();
+ }
+ var msgEntity;
+ Toast.prototype = {
+     //初始化显示的位置内容等
+     init : function(){
+         $("#toastMessage").remove();
+         //设置消息体
+         var msgDIV = new Array();
+         msgDIV.push('<div id="toastMessage">');
+         msgDIV.push('<span>'+this.message+'</span>');
+         msgDIV.push('</div>');
+         msgEntity = $(msgDIV.join('')).appendTo(this.context);
+         //设置消息样式
+         var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2-20: this.left;
+         var top = this.top == null ? '50%' : this.top;
+         msgEntity.css({position:'fixed',top:top,'z-index':'99',left:'30%','background-color':'#333333','color':'white','text-align':'center','font-size':'0.9em',padding:'7px 0',width:'40%','border-radius':'20px','box-shadow': '0px 0px 5px #000'});
+         msgEntity.hide();
+     },
+     //显示动画
+     show :function(){
+         msgEntity.fadeIn(this.time/4);
+         msgEntity.fadeOut(this.time/2);
+     }
+
+ }
+ /*点击按钮，吐司错误提示*/
+ $("#btnBind").click(
+         function(){
+             new Toast({context:$('body'),message:'Toast效果显示'}).show();
+         }
+ )
+
+/*预留手机号后面icon，提示信息*/
+$("#phone_tip").click(
+            function(){
+                $(".wapMc").show();
+                $("#phone_tip_tk").show();
+            }
+)
+ /*点击知道了关闭弹框*/
+    $(".wapTip .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $("#phone_tip_tk").hide();
+            }
+  )
+ /*点击选择开户银行，展开银行限额列表*/
+ $("#bc_start").click(
+         function(){
+             $(".bc_limit").show();
+         }
+ )
+ $("#bc_end").click(
+         function(){
+             $(".wapMc").show();
+             $(".bc_limit").show();
+         }
+ )
+ /*点击选择开户银行，展开银行限额列表*/
+ $("#bc_back").click(
+         function(){
+             $(".bc_limit").hide();
+         }
+ )
+
+ /*选择银行事件*/
+$("#bc_list li").each(
+        function(){
+            $(this).click(
+                    function(){
+                        var status=$(this).html();
+                        $("#bc_end").html(status);
+                        $(".bc_limit").hide();
+                        $(".wapMc").hide();
+                        $("#bc_start").hide();
+                        $("#bc_end").show();
+                    }
+            )
+        }
+);
+/* *//*页面上移*//*
+ $("#bankCardNo").focus(
+         function(){
+             var hgt=$("#bankCardNo").offset().top;
+             $("body").css("margin-top",-hgt);
+         }
+ )
+ $("#bankCardNo").blur(
+         function(){
+             $("body").css("margin-top","0");
+         }
+ )*/
+ <!----------------------------------------------改动6结束-------------------------------------->
+ $("#bankCardNo").blur(
+         function(){
+             $(".big").hide();
+         }
+ )
+ $("#bankCardNo").keyup(
+         function(){$(".big").html(this.value); $(".big").show();}
+ )
+
+ $("#idCardNo").blur(
+         function(){
+             $(".big_card").hide();
+         }
+ )
+ $("#idCardNo").keyup(
+         function(){
+            var f=this.value;
+            for(i = 0; i < f.length; i++) {
+                 if(i==5){
+                     $("#idCardNo").attr("type","text");
+                 }
+                $(".big_card").html(f);
+                $(".big_card").show();
+             }
+
+         }
+ )
+</script>
+</html>

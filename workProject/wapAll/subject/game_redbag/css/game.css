@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+/*游戏专题页*/
+body{background-color: #f4471e;}
+.game_con{width: 100%; }
+.game_con img{width: 100%;}
+.gameMc{background-color: #000;position:fixed;bottom: 0;opacity: 0.7;z-index:19;  width: 100%;height: 4em;}
+.gameMcPos{position:fixed;bottom: 0;z-index: 20;  width: 100%;height:4em; }
+.gameMcPos a{width: 80%;margin: 0.4em 10%; height: 2em;background-color: #dec907;color: #f4471e;
+    font-size: 1.5em;border-radius: 2em;display: block;text-align: center;line-height: 2em;text-decoration: none;}
+.wapTip .p1 .span_title{margin-bottom: 5px;display: block;font-size: 1.1em;color: #333;font-weight: bold;}
+.wapTip .p1 .span_con{display: block;text-indent: 2.2em;font-size: 1em;color: #333;}

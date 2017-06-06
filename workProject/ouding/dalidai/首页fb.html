@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="indexfb.css">
+</head>
+<body>
+<!----------------banner轮播--------------------->
+<section class="banner-play">
+    <a href="#">
+        <img src="http://static.facebank.cn/staticod/ouding/dalidai/img/banner.jpg">
+    </a>
+    <div class="logo" id="logoMeau">
+        <img src="http://static.facebank.cn/staticod/ouding/index/img/logo.png">
+    </div>
+</section>
+<section class="content">
+    <h2><img src="http://static.facebank.cn/staticod/ouding/dalidai/img/qx.jpg">
+    </h2>
+    <section class="content-jine">
+        <input type="radio" value="1000" name="jine" class="jine-btn-1" checked>
+        <div class="btn-show">1000<span>元</span></div>
+        <input type="radio" value="2000" name="jine" class="jine-btn-2">
+        <div class="btn-show">2000<span>元</span></div>
+
+    </section>
+    <section class="content-qixian">
+        <!--        <div class="part">
+                    <input type="radio" value="7" name="qixian">
+                    <div class="qixian-show">7<span>天</span>
+                        <div class="line">&nbsp;</div>
+                        <div class="circle">&nbsp;</div>
+                    </div>
+
+                </div>-->
+            <input type="radio" value="15" name="qixian" checked class="qixian-btn-1">
+            <div class="qixian-show">15<span>天</span>
+                <div class="line">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
+            </div>
+
+            <input type="radio" value="30" name="qixian" class="qixian-btn-2">
+            <div class="qixian-show">30<span>天</span>
+                <div class="line">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
+            </div>
+
+    </section>
+    <section class="content-submit">
+        <div>手续费:<span id="shouxufei">60.00</span>元&nbsp;&nbsp;每日利息:<span id="lixi">2.00</span>元</div>
+        <input type="button" value="立即借款">
+    </section>
+    <p class="foot-bs">©2017 www.dalidai.com</p>
+</section>
+<div class="qrcode">
+    <p>关注微信公众号及二维码图片</p>
+    <img src="img/qrcode.jpg">
+</div>
+<div class="zl-mc">&nbsp;</div>
+<!------------------------------菜单栏--------------------------------->
+<div class="meau-tk" id="meau_tk">
+    <a class="meau-fanhui">
+        <img src="http://static.facebank.cn/staticod/ouding/index/img/headImg.png">
+    </a>
+    <div class="meau-choose">
+        <ul>
+            <li>
+                <a href="" data-event="meau-index" data-event-name="菜单-首页" data-event-category="meau-index-link">
+                    <span class="item item-on">首页</span>
+                      <span class="icon">
+                           <img src="http://static.facebank.cn/staticod/ouding/common/img/icon-1.svg">
+                      </span>
+                </a>
+            </li>
+            <li>
+                <a href="" data-event="meau-login" data-event-name="菜单-登录" data-event-category="meau-login-link">
+                    <span class="item">登录</span>
+                      <span class="icon">
+                           <img src="http://static.facebank.cn/staticod/ouding/common/img/icon-2.svg">
+                      </span>
+                </a>
+            </li>
+            <li>
+                <a href="" data-event="meau-register" data-event-name="菜单-注册" data-event-category="meau-register-link">
+                    <span class="item">注册</span>
+                      <span class="icon">
+                           <img src="http://static.facebank.cn/staticod/ouding/common/img/icon-3.svg">
+                      </span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="item" data-event="meau-help" data-event-name="菜单-帮助" data-event-category="meau-help-link">帮助</span>
+                      <span class="icon">
+                           <img src="http://static.facebank.cn/staticod/ouding/common/img/icon-4.svg">
+                      </span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="item" data-event="meau-suggestions" data-event-name="菜单-意见反馈" data-event-category="meau-suggestions-link">意见反馈</span>
+                      <span class="icon">
+                           <img src="http://static.facebank.cn/staticod/ouding/common/img/icon-5.svg">
+                      </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="connect">
+        联系客服<br/>
+        400-3210-0000
+    </div>
+    <div class="meau-close" data-event="meau-close" data-event-name="菜单-关闭" data-event-category="meau-close-link">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/close.svg">
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://static.facebank.cn/staticod/ouding/index/js/slider.js"></script>
+<script>
+    //banner轮播
+    $(function(){
+        $(".zl-mc").click(
+                function(){
+                    $(".zl-mc").animate({
+                        marginLeft:"0"
+                    },500);
+                    $(".meau-tk").animate({
+                        marginLeft:"0"
+                    },500);
+                    $(".common-tk").animate({
+                        marginLeft:"0"
+                    },500);
+                }
+        )
+        $('#demo02').flexslider({
+            animation: "slide",
+            direction:"vertical",
+            easing:"swing"
+        });
+        var hg1=$(".flex-control-nav").height();
+        var top=hg1/2;
+        $(".flex-control-nav").css("margin-top",-top);
+    });
+    //banner上的logo展开
+    $("#logoMeau").click(
+            function(){
+                $(".zl-mc").animate({
+                    marginLeft:"100%"
+                },500);
+                $("#meau_tk").animate({
+                    marginLeft:"100%"
+                },500);
+            }
+    )
+    $(".meau-fanhui").click(
+            function(){
+                $(".zl-mc").animate({
+                    marginLeft:"0"
+                },500);
+                $(".meau-tk").animate({
+                    marginLeft:"0"
+                },500);
+            }
+    )
+    $(".meau-close").click(
+            function(){
+                $(".zl-mc").animate({
+                    marginLeft:"0"
+                },500);
+                $(".meau-tk").animate({
+                    marginLeft:"0"
+                },500);
+            }
+    )
+    /*每月还款金额
+     * 本金 * 0.04% *30 + 本金/ 期数
+     * */
+    $("input[type='radio']").click(
+            function(){
+                var jine=$(".content-jine input[type=radio]:checked").val();
+                var date=$(".content-qixian input[type=radio]:checked").val();
+                var shouxufei=jine*0.06;
+                var lixi=jine*0.002;
+                $("#shouxufei").html(shouxufei.toFixed(2));
+                $("#lixi").html(lixi.toFixed(2));
+            }
+    )
+
+</script>
+</html>

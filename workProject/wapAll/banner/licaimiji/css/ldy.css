@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #ffecdb;}
+.lc_1{width: 100%;}
+.lc_1 img{width: 100%;}
+.lc_3{width: 90%;margin: 0 auto;border-radius: 3px;position: relative;margin-top: 40px;}
+.lc_3 .title{overflow: hidden;position: absolute;top:-16px;width:150px;left: 50%;margin-left: -75px;padding: 0 5px;
+    color: #ffffff;border-radius: 2em;font-size: 1em;height: 32px;
+    line-height: 32px;text-align: center;display: block;}
+.lc_3 .p1{width: 90%;font-size: 0.9em;color: #666;margin: 20px auto 10px;}
+.lc_3 .p_img{width: 90%;margin:0 auto 10px;}
+.lc_3 .p_img img{width: 100%;}
+.lc_3 ul{padding: 30px 0 12px;overflow: hidden;}
+.lc_3 ul li{width: 50%;float: left;text-align: center;}
+.lc_3 ul li .con{font-size: 0.8em;}
+.lc_3 ul li .con span{font-size: 0.95em;}
+.lc_4{width: 100%;margin-top: 20px;}
+.lc_4 img{width: 100%;}
+.lc_5{font-size: 1em;text-align: center;color: #999;margin: 10px 0 20px;}
+.color1{color: #ff7900;}
+.color2{color: #ec2e24;}
+.color3{color: #ec2479;}
+.color_border1{border: 1px #ff7900 solid;}
+.color_border2{border: 1px #ec2e24 solid;}
+.color_border3{border: 1px #ec2479 solid;}
+.color_bg1{background-color: #ff7900;}
+.color_bg2{background-color: #ec2e24;}
+.color_bg3{background-color: #ec2479;}

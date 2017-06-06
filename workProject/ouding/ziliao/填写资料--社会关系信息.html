@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>社会关系信息</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/ziliao/css/ziliao_gongzuo.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>社会关系信息</h3>
+</header>
+<section class="content">
+    <div class="part" >
+        <p>亲属关系</p>
+        <div class="ziliao" id="qinshu">请选择亲属关系</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part">
+        <p>亲属手机</p>
+        <input type="text" placeholder="请填写亲属的手机号" value="">
+    </div>
+    <div class="part" >
+        <p>社会关系1</p>
+        <div class="ziliao" id="shehui_1">请选择社会关系</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part">
+        <p>联系手机</p>
+        <input type="text" placeholder="请输入该关系人的手机号码" value="">
+    </div>
+    <div class="part" >
+        <p>社会关系2</p>
+        <div class="ziliao" id="shehui_2">请选择社会关系</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part">
+        <p>联系手机</p>
+        <input type="text" placeholder="请输入该关系人的手机号码" value="">
+    </div>
+    <!----------------------按钮为红色--------------------->
+    <input type="button" value="提交" class="tijiao color-red" style="display: none"
+           data-event="ziliao-shehui-tijiao" data-event-name="填写资料-社会关系-提交" data-event-category="ziliao-shehui-tijiao-btn">
+    <!----------------------按钮为灰色-------------------->
+    <input type="button" value="提交" class="tijiao">
+</section>
+<!------------------------------选择框蒙层--------------------------------->
+<div class="zl-mc">&nbsp;</div>
+<!------------------------------亲属关系选择框--------------------------------->
+<div class="common-tk" id="qinshu_tk">
+    <a class="common-fanhui">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>亲属关系</h3>
+    <div class="common-choose">
+        <ul>
+            <li>
+                <span class="item">父亲</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+            <li>
+                <span class="item">母亲</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+            <li>
+                <span class="item">妻子</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!------------------------------社会关系1选择框--------------------------------->
+<div class="common-tk" id="shehui_1_tk">
+    <a class="common-fanhui">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>社会关系1</h3>
+    <div class="common-choose">
+        <ul>
+            <li>
+                <span class="item">同学</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+            <li>
+                <span class="item">同事</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!------------------------------社会关系2选择框--------------------------------->
+<div class="common-tk" id="shehui_2_tk">
+    <a class="common-fanhui">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>社会关系2</h3>
+    <div class="common-choose">
+        <ul>
+            <li>
+                <span class="item">同学</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+            <li>
+                <span class="item">同事</span>
+                <span class="zhankai">
+                     <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!---错误提示弹框--->
+<div class="wapMc"></div>
+<div class="wapPos">
+    <div class="wapTip">
+        <p class="p1">XX错误</p>
+        <p class="p_btn" id="p_btn">
+            确定
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/staticod/ouding/ziliao/js/comtk.js"></script>
+<script>
+
+    $("#p_btn").click(
+            function(){
+                $(".wapMc").fadeOut();
+                $(".wapPos").fadeOut();
+            }
+    )
+</script>
+</html>

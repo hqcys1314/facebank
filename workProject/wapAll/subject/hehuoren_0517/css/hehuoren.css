@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+.body_1{background-color: #ffe7dd;}
+.hhr_1{width: 100%;overflow: hidden;position: relative;}
+.hhr_1 img{width: 100%;}
+.hhr_1 a{color: #fff;position: absolute;right: 10px;top: 10px;}
+.hhr_2{overflow: hidden;width: 100%;background-color: #fff2ed; padding-bottom: 20px;}
+.hhr_2 li{float: left;width: 49.5%;text-align: center;padding-bottom: 18px;}
+.hhr_2 li:first-child{border-right: 1px #fdc4af solid;}
+.hhr_2 li img{width: 80px;margin: 10px auto 5px;}
+.hhr_2 li h3{color: #f86c36;font-weight: bold;font-size: 1em;margin-bottom: 2px;}
+.hhr_2 li p{text-align: center;font-size: 0.9em;color: #666;line-height: 20px;}
+.hhr_3{background-color: #ffe7dd;}
+.hhr_3 img{width:100%;}
+.hhr_3 p{font-size: 0.92em;    display: none;}
+.hhr_3 p font{color:#f86c36;font-weight: bold; font-size: 1em;}
+.hhr_3 a{display: block;background-color: #f86c36;text-align: center;height: 45px;line-height: 45px;font-size: 1.1em;
+    color: #ffffff;border-radius: 5px;width: 90%;margin: 0 auto 20px;}

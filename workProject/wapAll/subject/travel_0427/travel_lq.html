@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸与您约定的保障</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/travel_0427/css/travel.css">
+</head>
+<body>
+
+<div class="tr_lq_1">
+    <ul>
+        <li>
+            <p class="p1">100,0000</p>
+            <p class="p2">累积已送出最高保额(元)</p>
+        </li>
+        <li>
+            <p class="p1">1000</p>
+            <p class="p2">活动剩余份数(份)</p>
+        </li>
+    </ul>
+</div>
+<div class="tr_hd_1">
+    <img src="http://static.facebank.cn/static/wapFront/subject/travel_0427/img/tr_lq_3.jpg">
+</div>
+<div class="tr_lq_3">
+     <div class="content">
+     <!---------------------------------改1------------------------------------------------->
+         <p class="p3">投保信息</p>
+         <p class="p4">投保人(默认为本人)</p>
+         <p class="p5">
+             <input type="checkbox"><span class="span1">投保人与被保险为同一人</span>
+         </p>
+         <p class="p1">被投保人信息<font>（如投保人与被保险人为同一人，则无需填写）</font></p>
+      <!---------------------------------改1结束------------------------------------------------->
+         <p class="p2">
+             <span class="span1">姓名</span><input type="text" value="" placeholder="请填写用户本人真实姓名">
+         </p>
+         <p class="p2">
+             <span class="span1">身份证号</span><input type="text" value="" placeholder="请填写大陆居民身份证号">
+         </p>
+         <p class="p2">
+             <span class="span1">手机号码</span><input type="text" value="" placeholder="请填写本人手机号码">
+         </p>
+         <p class="p2">
+             <span class="span1">电子邮箱</span><input type="text" value="" placeholder="此邮箱为接受电子保单使用，可选填">
+         </p>
+         <p class="p2">
+             <span class="span1">点此查看</span><a href="">【阳光“笑一夏”全球交通工具意外<br>伤害险投保须知】</a>
+         </p>
+     </div>
+</div>
+<!---------------------------------改2------------------------------------------------->
+<div class="tr_lq_4">
+    <p>本次活动最终解释权归笑脸金融平台所有</p>
+</div>
+<div style="height: 4em;">
+
+</div>
+<div class="gameMc"></div>
+<div class="gameMcPos">
+    <a href="" style="background-color: #f7e800;color: #c54600;">确认信息</a>
+</div>
+<!---------------------------------改2结束------------------------------------------------->
+
+<div class="wapMc" id="wapMc"></div>
+<!---错误提示--->
+<div class="wapPos wapUser">
+    <div class="wapTip">
+        <p class="p_title">主人，非常抱歉</p>
+        <!---新用户多次领取--->
+        <p class="p_center">您已经领取过笑脸金融赠送的  <br>
+            夏日赠险和新手现金红包啦~~  <br>
+            点击右上角或生成合伙人海报 <br>均可分享给好友哦~</p>
+        <!--老用户领取 -->
+        <p class="p_center">仅限新用户首次注册领取<br>
+            邀请好友，赚取每日奖金！<br>
+            点击右上角或生成合伙人海报<br>均可分享给好友哦~</p>
+        <p class="p_btn">
+            确定
+        </p>
+    </div>
+</div>
+<!---错误提示--->
+<div class="wapPos wapErr">
+    <div class="wapTip">
+        <p class="p1">XX错误</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+<!---------------------------------改3------------------------------------------------->
+<div class="wapPos tr_lq_tip" style="display: block;">
+    <div class="wapTip">
+        <p class="p1">尊敬的老用户，参与本次活动需要在平台累计邀请好友投资人数达到5人，方可享受笑脸金融的福利哦
+            <br/>
+            <br/>累计邀请好友:XXX
+            <br/>
+            <br/>还需邀请人数:XXX
+        </p>
+
+        <p class="p2">
+            <span class="span1"><a href="">立即邀请</a></span><span class="span2" ><a href=""  style="color: #666">我知道了</a></span>
+        </p>
+    </div>
+</div>
+<!---------------------------------改3结束------------------------------------------------>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    $(".tr_lq_4 a").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapUser").show();
+            }
+    )
+    $(".wapUser .p_btn").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapUser").hide();
+            }
+    )
+    $(".wapErr .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapErr").hide();
+            }
+    )
+</script>
+</html>

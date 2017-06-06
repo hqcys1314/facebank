@@ -1,0 +1,58 @@
+body {
+    background-color: #e62537;
+}
+.bf-banner{width: 100%;}
+.bf-banner img{width: 100%;}
+.bf-con {
+    position: relative;
+    width: 100%;
+    color: #666666;border-radius: 5px;
+}
+
+.bf-con .bf-con-pos {
+   background-color: #ffffff;
+    border-radius: 5px;padding-bottom: 1rem;
+    width: 94%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+}
+.bf-con .bf-con-pos h3 {
+    color: #d40909;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.938rem;
+    margin-bottom: 0.938rem;
+}
+
+
+.bf-con .bf-con-pos .p-title {
+    font-size: 0.875rem;color: #666666;margin-left: 5%;margin-bottom: 0.3rem;margin-top: 1rem;
+}
+.bf-con .bf-con-pos .p-title span{font-size: 0.813rem;}
+.bf-con .bf-con-pos ol{width: 86%;margin-left: 10%;font-size: 0.813rem;color: #666666;line-height: 1.3rem;}
+.bf-con .bf-con-pos .mp {
+    font-size: 0.75rem;
+    margin: 0 auto;
+    width: 96%;
+    overflow: hidden;
+}
+.bf-con .bf-con-pos .mp table{width: 100%;color: #666666;
+}
+.bf-con .bf-con-pos .mp table td{width: 50%;text-align: center;height: 2rem;}
+.bf-con .bf-con-pos .mp table thead{background-color: #f1737f;color: #ffffff;}
+.bf-con .bf-con-pos .mp table tbody{background-color: #f1f1f1;}
+
+.bf-foot {
+    margin-bottom: 1rem;margin-top: 1rem;text-align: center;color: #eaa2a4;font-size: 0.813rem;
+}
+.bf-foot p{color: #fde800;margin-bottom: 0.5rem;}
+
+/*底部浮动按钮*/
+.emptyFootFudBtn{height: 4rem;}
+.footFudBtn{
+    background-color: rgba(102,102,102,0.1);position: fixed;width: 100%;bottom: 0;left: 0;padding: 0.8rem 0;
+}
+.footFudBtn .div1{
+    background-color: #f4d007;color: #e02436;line-height: 2.75rem;
+}

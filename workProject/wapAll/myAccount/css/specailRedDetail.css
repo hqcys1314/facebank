@@ -1,0 +1,35 @@
+/*我的红包*/
+.head a.new1 {left: 76%;top: 0;font-size: 0.75em;width: 23%;color: #fff;}
+.redPart{width: 95%;margin: 15px auto 0;border-bottom: 1px #eaeaea solid;border-left: 1px #eaeaea solid;border-right: 1px #eaeaea solid;}
+.redPart .color1{}
+.redPart .color2{background-color: #cccccc;}
+.redPart .color3{background-color: #FEF8F0;}
+.redPart .rp_1{overflow: hidden;    padding-bottom: 10px;padding-top: 15px;background-repeat: no-repeat;background-position:top right;background-size:50px 45px;}
+.redPart .rp_1 .left{float: left;width: 41%;padding-left: 4%;}
+.redPart .rp_1 .left .span1{display: block;font-size: 0.9em;}
+.redPart .rp_1 .left .span2{display: block;font-size: 1.8em;margin-top: 5px;}
+.redPart .rp_1 .left .span2 font{font-size: 0.7em;    margin-left: 3px;}
+.redPart .rp_1 .right{float: left;width: 50%;    }
+.redPart .rp_1 .right .span1{display: block;font-size: 0.75em;line-height:20px;}
+.redPart .rp_1 .right .span2{display: block;font-size: 0.75em;line-height:20px;}
+.redPart .rp_1 .right .span3{display: block;color: #999999;font-size: 0.7em;margin-top: 2px;}
+.redPart .p3{height: 5px;}
+.redPart .p3 img{width: 100%;  vertical-align: top;}
+.redPart .p4{background-color: #ffffff;border-radius:0 0 3px 3px;  padding: 6px 0;}
+.redPart .p4 .span1{margin-left: 10px;font-size: 0.75em;}
+.redPart .p4 .span2{float: right;margin-right: 20px;}
+.redPart_3{border-top: 1px #F67676 solid; }
+.redPart_3 .rp_1 .left{color: #ED7373;}
+.redPart_3 .rp_1{background-color: #FEF0F0;background-image: url("../img/jiaxi_special_jiao.png");}
+
+/*转赠红包详情页*/
+.sr-1{
+    text-align: center;
+}
+.sr-1 img{width: 46%;margin: 2rem 0 0;}
+.sr-1 p{font-size: 0.8rem;}
+.sr-2{width: 90%;margin: 2rem auto;background-color: #f86c36;line-height: 2.75rem;}
+.sr-3{
+  width: 90%;margin: 1.5rem auto;color: #999999;font-size: 0.95rem;
+}
+.sr-3 ol{padding-left: 1rem;line-height: 1.4rem;margin-top: 0.3rem;}

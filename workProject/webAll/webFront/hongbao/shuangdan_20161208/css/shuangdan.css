@@ -1,0 +1,155 @@
+/*星星*/
+@keyframes star {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes star {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes star {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-ms-keyframes star {
+  0% {
+    -ms-transform: scale(1);
+  }
+  50% {
+    -ms-transform: scale(1.2);
+  }
+  100% {
+    -ms-transform: scale(1);
+  }
+}
+@-o-keyframes star {
+  0% {
+    -o-transform: scale(1);
+  }
+  50% {
+    -o-transform: scale(1.2);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+body {
+  background: #007b38;
+}
+.sd-1 {
+  width: 100%;
+  height: 1221px;
+  position: relative;
+  z-index: 1;
+  background: url("../img/sd_banner.jpg") no-repeat center;
+}
+.sd-1 .star-1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: 70px;
+  margin-left: -430px;
+  background: url('../img/star.png') no-repeat;
+  background-size: 100% 100%;
+  animation: star 1s linear infinite;
+  -moz-animation: star 1s linear infinite;
+  -o-animation: star 1s linear infinite;
+  -ms-animation: star 1s linear infinite;
+  -webkit-animation: star 1s linear infinite;
+}
+.sd-1 .star-2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  top: 150px;
+  margin-left: 380px;
+  background: url('../img/star.png') no-repeat;
+  background-size: 100% 100%;
+  animation: star 1s linear infinite;
+  -moz-animation: star 1s linear infinite;
+  -o-animation: star 1s linear infinite;
+  -ms-animation: star 1s linear infinite;
+  -webkit-animation: star 1s linear infinite;
+  animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+.sd-1 .star-3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 410px;
+  margin-left: -330px;
+  background: url('../img/star.png') no-repeat;
+  background-size: 100% 100%;
+  animation: star 1s linear infinite;
+  -moz-animation: star 1s linear infinite;
+  -o-animation: star 1s linear infinite;
+  -ms-animation: star 1s linear infinite;
+  -webkit-animation: star 1s linear infinite;
+  animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+.sd-1 .guize {
+  position: absolute;
+  width: 835px;
+  bottom: 45px;
+  color: #666;
+  left: 50%;
+  margin-left: -417px;
+  line-height: 30px;
+}
+.sd-1 .guize .content {
+  width: 90%;
+  padding: 0px 5%;
+  overflow: hidden;
+}
+.sd-1 .guize .content .title {
+  margin: 7px 0;
+  font-size: 24px;
+  color: #666;
+  font-weight: bold;
+  border-left: 3px #666 solid;
+  padding-left: 10px;
+}
+.sd-1 .guize .content .word {
+  font-size: 20px;
+}
+.sd-1 .guize .content ol {
+  padding-left: 20px;
+  font-size: 20px;
+}
+.sd-2 {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,228 @@
+
+.content {
+  width: 95%;
+  margin-left: 5%;
+}
+.content .part {
+  position: relative;
+  margin-bottom: 18px;
+}
+.content .part p {
+  font-size: 0.8em;
+  color: #666;
+}
+.content .part input {
+  width: 100%;
+  font-size: 1.1em;
+  border-bottom: 1px #ddd solid;
+  height: 50px;
+  color: #333;
+}
+.content .part .city {
+  width: 100%;
+  font-size: 1.1em;
+  border-bottom: 1px #ddd solid;
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+}
+.content .part .zhankai {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 13px;
+  right: 15px;
+}
+.content .part .chepai .cp-zhankai {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 11px;
+  right: 15px;
+}
+.content .part-1 {
+  position: relative;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.content .part-1 p {
+  font-size: 0.95em;
+  color: #666;
+}
+.content .part-1 input {
+  width: 80%;
+  font-size: 1.1em;
+  border-bottom: 1px #ddd solid;
+  height: 45px;
+  color: #333;
+  float: left;
+}
+.content .part-1 .chepai {
+  float: left;
+  width: 18%;
+  font-size: 1.1em;
+  border-bottom: 1px #ddd solid;
+  height: 45px;
+  line-height: 45px;
+  color: #000;
+  padding-left: 2%;
+}
+.content .part-1 .chepai .cp-zhankai {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.content .tijiao {
+  width: 95%;
+  margin: 10px auto;
+  height: 45px;
+  border-radius: 2em;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1em;
+
+}
+.content .color-red{
+    background: #f86c36;
+}
+.city-tk {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  width: 70%;
+  background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+  left: -100%;
+}
+.city-tk a {
+  margin-left: 3%;
+  display: block;
+  width: 34px;
+  margin-top: 5%;
+}
+.city-tk h3 {
+    height:2%;
+    width:90%;
+    margin:5% auto 0;
+    color:#333;
+    font-weight:normal;
+    font-size:1.5em;
+}
+.city-tk .city-choose {
+  width: 300%;
+  height: 76%;
+  position: absolute;
+  bottom: 0;
+  left: -200%;
+}
+.city-tk .city-choose ul {
+  overflow-y: scroll;
+  height: 100%;
+  width: 33%;
+  float: right;
+}
+.city-tk .city-choose ul li {
+  width: 93%;
+  margin-left: 7%;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  position: relative;
+  color: #333;
+  border-bottom: 1px #ddd solid;
+  padding-bottom: 15px;
+}
+.city-tk .city-choose ul li .zhankai {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  right: 5%;
+  display: block;
+}
+.city-tk .city-choose ul .on {
+  color: #ff4830;
+}
+.chepai-tk {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  width: 70%;
+  background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+  left: -100%;
+}
+.chepai-tk a {
+  margin-left: 3%;
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin-top: 5%;
+}
+.chepai-tk h3 {
+  height: 6%;
+  width: 90%;
+  margin: 10% auto;
+  color: #333;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.chepai-tk .chepai-choose {
+  width: 100%;
+  height: 76%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.chepai-tk .chepai-choose ul {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  float: right;
+}
+.chepai-tk .chepai-choose ul li {
+  width: 93%;
+  margin-left: 7%;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  position: relative;
+  color: #333;
+  border-bottom: 1px #ddd solid;
+  padding-bottom: 15px;
+}
+.chepai-tk .chepai-choose ul li .zhankai {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  right: 5%;
+  display: block;
+}
+.chepai-tk .chepai-choose ul .on {
+  color: #ff4830;
+}
+#camera{
+    width: 120%;
+}
+#cry{
+
+}
+#cry select{
+    font-size: 1em;color: #333;text-align: center;float: left;height: 50px;width: 20%;overflow: hidden;
+}
+#cry .zhankai_d{
+    width: 20px;display: block;float: left;margin-right: 5px;
+}
+#cry .zhankai_d img{
+    width: 100%;vertical-align: middle;
+}
+.content .part .ziliao {
+    width: 100%;
+    font-size: 1.1em;
+    border-bottom: 1px #ddd solid;
+    height: 50px;
+    line-height: 50px;
+    color: #999;
+}

@@ -1,0 +1,73 @@
+﻿.accountLogintip{font-size: 14px;width:100%;background-color:#fff8ed;height:45px;line-height:45px;}
+.accountLogintip a{color:#f86c32;margin:0 5px;}
+.accountLogintip img{  margin-top: 13px;float:right;}
+.accountLogintip img:hover{cursor:pointer;}
+.accountLogintipPos{width:1110px;margin:0 auto;  text-align: center;}
+.myclearfix:after{clear:both;display:block; visibility:hidden;
+	 height:0;line-height:0;content:'';}
+.myclearfix{zoom:1;}
+.user-accountInfo{margin-top:25px;}
+.userMetitleT{border-bottom: 1px solid #f86025;width:700px;color: #434343; height:37px;}
+.userMetitleT span{font-size: 20px;display: inline-block; color: #000;}
+.accOneLeft{float:left;margin-left:50px;}
+.accOneRight{float:left;margin-left:10px;}
+.ableAccount{height:60px;line-height: 60px;color:#000;font-size: 18px;}
+.ableAccount .orange{color:#f57a20;font-size: 20px;letter-spacing: 1px;
+	padding-left:10px;line-height: 60px;}
+.verinfoasbtn{height:38px;line-height: 38px;margin-top: 10px;}
+.verinfoasbtn a {float: left;margin-left: 10px;}
+.sbtn-rethd{display: inline-block;margin-left:30px;  float: left;}
+.sbtn-recharge{width:75px;height:30px;
+  line-height: 30px;text-align: center;background: #f2f8fe;
+  color:#6f90bc; font-weight: bold;border: 1px solid #a0b8d5;
+  border-radius: 5px;display: inline-block;text-decoration: none;}
+.sbtn-recharge:hover{color:#6f90bc;text-decoration: none;}
+.sbtn-withd{width:75px;height:30px;line-height: 30px;text-align: center;
+  background: #f3fdf8;color:#39b379;font-weight: bold;
+  border: 1px solid #a9dfc6;border-radius: 5px;
+  display: inline-block;text-decoration: none;}
+.sbtn-withd:hover{color:#39b379; text-decoration: none;}
+.s-account{width:870px;height:111px;margin-top:10px;margin-bottom:20px;margin-left:50px;
+	overflow: hidden;text-align: center;background:url(../img/ylcback.png);}
+.s-account li{width: 174px;height:111px;float: left;}
+.s-ico1{width:174px;margin-top: 27px;}
+.s-ico2{width:174px;margin-top: 27px;}
+.s-ico3{width:174px;margin-top: 27px;}
+.s-ico4{width:174px;margin-top: 27px;}
+.s-ico5{width:174px;margin-top: 27px;}
+.s-account .txt{color:#666;}
+.s-ico-ques{position: relative;top: -5px;}
+.s-ico-ques{display: inline-block;text-align: center;margin: 0 10px;}
+.s-account .Accamount{font-size: 20px;color:#000;}
+.userlist-il{margin-bottom: 10px;}
+#list-uail-box  .userlist-il-M:last-child{border-bottom: 0;}
+.userlist-il-M{ border-bottom: 1px solid #eaeaea;width: 90%; height:140px;margin: 0 auto;color:#000;} 
+#list-uail-box  .userlist-il-M:hover{background:#fef8e2;}
+.userlist-il-M-1{width: 460px;  float: left;margin-top:10px;margin-bottom:10px;border-right:1px dashed #ececec;}
+.userlist-il-M-1-1{font-size:18px;font-weight:bold;height:55px;line-height:55px;padding-left:30px;}
+.userlist-il-M-1-1 a{color:#000;text-decoration:none;}
+.userlist-il-M-1-1 a:hover{color:#f86025; text-decoration:none;}
+.userlist-il-M-1-2{height:65px;padding-left:30px;}
+.userlist-il-M-1-2 .item{width:136px;float:left;}
+.userlist-il-M-1-2 .item p{margin:0px;text-align:center;color:#787878;}
+.userlist-il-M-1-2 .item .numerical{font-family:Helvetica;
+ 	 font-size:24px;font-weight:bold; color:#f86025;}
+.userlist-il-M-1-2 .item .month{font-size:20px;color:#000;}
+.userlist-il-M-2{  float: left; width: 363px; height:140px;padding-left:25px;}
+.userlist-il-M-2-1{height:55px;line-height:55px;}
+.userlist-il-M-2-pro-out{ background: none repeat scroll 0 0 #fff;
+  	 border:1px solid #dfdfdf; height: 10px;
+  	 margin-top: 35px;  float: left;width: 265px;}
+.userlist-il-M-2-pro-in{ background: none repeat scroll 0 0 #ffbc00;height: 10px;width: 0;}
+ .userlist-il-M-2-pro-text{ width:50px;  float: left;text-indent: 5px;
+	margin-top: 10px;margin-right:20px;color:#f86025;}
+ .userlist-il-M-2-2{margin-top:8px; }
+ .userlist-il-M-2-2 .item{width:130px;  float: left;}
+ .userlist-il-M-2-2 .item p{margin:0px;color:#787878; }
+.userlist-il-M-2-2 .item .numerical{font-family:Helvetica;font-size:24px;font-weight:bold;color:#000;}
+.list-uail-btn{background:#f86025;border:medium none; color:#fff;
+	 padding:0px 45px;font-weight:bold;height:30px;line-height:30px;
+ 	border-radius:5px;  outline: 0;margin-top:22px; font-size: 14px; font-family: 微软雅黑; }
+ .list-uail-btn-gray{border:medium none;color:#fff;padding:0px 45px;
+	 font-weight:bold; height:30px;line-height:30px;border-radius:5px; margin-top:22px;  }
+.list-uail-btn:hover{background:#ffbc00;  cursor: pointer;}

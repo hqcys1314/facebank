@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/common/css/head_foot.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/hongbao/xinshou/css/xinshou.css">
+</head>
+<body>
+   <div class="xs_banner">
+<!----------------------改动1开始------------------------------------------------------------------------------------------>
+       <div class="rule" id="rule">
+           详细规则
+       </div>
+<!----------------------改动1结束------------------------------------------------------------------------------------------>
+       <div class="lingqu">
+           <p class="p1">
+               <input type="text" placeholder="请输入您的手机号">
+           </p>
+           <p class="p2">
+               <input type="text" placeholder="请输入短信验证码">
+               <input type="button" value="发送验证码" id="regMsgCode" onclick="timePass()">
+           </p>
+           <p class="p3">
+<!----------------------改动2开始------------------------------------------------------------------------------------------>
+               <input type="button" value="立即注册领取">
+ <!----------------------改动2结束------------------------------------------------------------------------------------------>
+
+           </p>
+           <div class="error" style="display: none;">
+               你输入的手机号码格式不对
+           </div>
+       </div>
+   </div>
+  <div class="xs_bid">
+      <div class="bid_img">
+          <img src="http://static.facebank.cn/static/webFront/hongbao/xinshou/img/xs_1.png">
+      </div>
+      <div class="bid_profit">
+          <p class="p1">
+              <span class="span1">10</span>
+              <span class="span2">%</span>
+          </p>
+          <p class="p2">预计年化收益率</p>
+      </div>
+      <div class="bid_start">
+          <p class="p1">
+              <span class="span1">1000</span>
+              <span class="span2">元</span>
+          </p>
+          <p class="p2">起投金额(仅限新用户)</p>
+      </div>
+  </div>
+  <div class="xs_safe">
+        <img src="http://static.facebank.cn/static/webFront/hongbao/xinshou/img/xs_safe.jpg">
+  </div>
+  <div class="xs_tj">
+      <img src="http://static.facebank.cn/static/webFront/hongbao/xinshou/img/xs_2.jpg">
+  </div>
+  <div class="xs_media">
+      <p class="title">媒体报道</p>
+      <p class="p1">
+          <img src="http://static.facebank.cn/static/webFront/hongbao/xinshou/img/media.jpg">
+      </p>
+      <p class="p2">
+          《笑脸金融荣膺“2016互联网金融典范企业奖”》<br/>
+          《良币驱劣币，陆金所、笑脸金融等保险系互金平台受追捧》
+      </p>
+  </div>
+   <div class="xs_shuoming">
+       <p class="title">活动说明</p>
+       <p class="p1">
+           本活动仅适用于新注册用户参加，新用户注册后30天内投资1000元以上任何产品即可返现4.53元体验金红包、如注册后30天内不投资，则系统自动将体验金回收。
+       </p>
+       <p class="p2">理财有风险 投资需谨慎</p>
+       <p class="p3">本活动最终解释权归笑脸金融所有</p>
+   </div>
+   <div class="mask">
+   </div>
+   <div class="xs_tk">
+        <div class="tk_con">
+               <p class="p_title">
+                   <img src="http://static.facebank.cn/static/webFront/hongbao/xinshou/img/xs_tk.png">
+               </p>
+               <p class="p_con">恭喜你成功领取15元现金红包+1%加息红包</p>
+               <p class="p_btn">
+                   <a href="">确定</a>
+               </p>
+               <p class="p_tz">(<span id="tzNum">3</span>)秒之后自动跳转</p>
+              <p class="p_close">
+                   <img src="http://static.facebank.cn/static/webFront/hongbao/xinshou/img/close.png" id="tk_close">
+               </p>
+        </div>
+   </div>
+<!----------------------改动3开始------------------------------------------------------------------------------------------>
+   <!-----------------------规则弹框---------------------------->
+   <div class="mask_guize" id="guize">
+       <div class="gz_con">
+           <p class="p_title">活动规则</p>
+           <div class="content">
+               <h2>新手专享活动规则</h2>
+               <h3>参与方式：</h3>
+               <p>仅限未在笑脸金融投资过的用户参加。</p>
+               <h3>收益说明：</h3>
+               <p>新手专享项目收益由两部分组成，项目收益和加息收益，加息收益由笑脸金融在新手专享项目付息时补贴给用户。</p>
+               <h3>限制条件：</h3>
+               <p>新手专享项目仅限制投资一次，并且不允许使用红包及加息券。</p>
+               <h2 style="border-top:1px #fcba86 solid; ">体验金活动规则</h2>
+               <p>体验金是笑脸金融为新注册用户提升产品体验而设计的虚拟投资本金。</p>
+               <h3>领取方式：</h3>
+               <p>活动开始后，注册成为笑脸金融用户即可获得15888元体验金。微信、APP注册成功后，成功分享活动给好友或朋友圈可再获得3000元体验金。</p>
+               <h3>收益计算：</h3>
+               <p>本活动按年化收益10%，体验期限1天计算收益，当日领取，收益次日进入您在笑脸金融的账户，可以提现。</p>
+               <h3>体验金回收：</h3>
+               <p>在体验金收益到账后，体验金由系统进行自动回收。</p>
+               <h3>收益回收：</h3>
+               <p>收益到账后第30天，如果您未绑定银行卡对体验金收益进行提现或未进行真实投资操作，我们将回收收益。</p>
+           </div>
+           <p class="p_btn">上下滑动查看更多...</p>
+           <p class="p_close">
+               <img src="http://static.facebank.cn/static/webFront/register/img/close.png" class="tk_close">
+           </p>
+       </div>
+   </div>
+  <script>
+      $("#rule").click(
+              function(){
+                  $(".mask").show();
+                  $("#guize").show();
+              }
+      )
+      $(".tk_close").click(
+              function(){
+                  $(".mask").hide();
+                  $("#guize").hide();
+              }
+      )
+  </script>
+<!----------------------改动3结束------------------------------------------------------------------------------------------>
+
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*倒计时*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#regMsgCode").val("获取验证码");
+            $("#regMsgCode").css("color", "#fff");
+            $("#regMsgCode").css("background-color", "#f86c36");
+            $("#regMsgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#regMsgCode").val(miao + "秒后重发");
+            $("#regMsgCode").attr('disabled',true);
+            $("#regMsgCode").css("color", "#999");
+            $("#regMsgCode").css("background-color", "#eaeaea");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+
+        }
+    }
+    $("#tk_close").click(
+            function(){
+                $(".mask").hide();
+                $(".xs_tk").hide();
+                $("#guize").hide();
+            }
+    )
+
+
+</script>
+</html>

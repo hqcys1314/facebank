@@ -1,0 +1,24 @@
+.cer-tip{font-size: 0.8em;width: 90%;margin: 0 auto;}
+.cer-survey{width: 90%;margin: 50px auto;}
+.cer-survey table{border-top: 1px #dddddd solid;border-left: 1px #dddddd solid;width: 100%;color: #333;border-spacing: 0;}
+.cer-survey table td{border-bottom: 1px #dddddd solid;border-right: 1px #dddddd solid;font-size: 0.8em;
+    height: 48px;border-spacing: 0; }
+.cer-survey table thead{background: #f2f2f2;}
+.cer-survey table thead td{text-align: center;font-size: 1.3em;padding-top: 5px;}
+.cer-survey table thead td p{font-size: 0.6em;margin-bottom: 10px;margin-top: 3px;}
+.cer-survey table tbody{}
+.cer-survey table tbody td{text-align: center;width: 33%;position: relative;}
+.choose-duigou{width: 13px;position: absolute;bottom: 2px;right: 2px;}
+input.tijiao{
+    width: 95%;
+    margin: 30px auto;
+    height: 45px;
+    border-radius: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1em;background: #ccc;
+
+}
+input.color-red{
+    background: #ff4830;
+}

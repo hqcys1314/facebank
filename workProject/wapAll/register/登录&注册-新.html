@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸金融</title>
+    <link rel="stylesheet" href="https://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="https://static.facebank.cn/static/wapFront/register/css/regOrlogin.css">
+</head>
+<body>
+<div class="rl-title">
+    注册/登录
+</div>
+<div class="rl-con">
+    <div class="rl-con-list">
+         <input type="tel" id="telPhone" name="telPhone" placeholder="请输入手机号码" class="rl-input">
+         <span class="rl-del" id="rl-del-phone">
+             <img src="https://static.facebank.cn/static/wapFront/register/img/del.png">
+         </span>
+    </div>
+    <!-----------图形验证码--------------------------------------->
+    <div class="rl-con-list" style="display: none;">
+        <input type="text"  placeholder="请输入图片中字符" class="rl-input">
+         <span class="rl-img">
+             <img src="https://static.facebank.cn/static/wapFront/register/img/token.png" onclick="reloadImg();" id="verifyCodeImg" name="verifyCodeImg" >
+         </span>
+    </div>
+    <div class="rl-sy" style="display: none;">
+        剩余输入次数：<span>3</span>
+    </div>
+</div>
+
+<div class="rl-btn">
+    <input type="button" value="下一步" data-event="wap_regLog_next"
+           data-event-name="wap注册/登录-下一步"
+           data-event-category="wap_regLog_nextBtn">
+</div>
+<div class="rl-kefu">
+    <img src="https://static.facebank.cn/static/wapFront/register/img/telIcon.png"><a href="tel:4008-900-766">4008-900-766</a>  (工作日：9:00-18:00)
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="wapPos wapErr">
+    <div class="wapTip">
+        <p class="p1">XXX错误</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*清空内容*/
+    $("#rl-del-phone").click(
+            function(){
+                $("#telPhone").val("").focus();
+            }
+    )
+    /*点击按钮弹出弹框*/
+    $(".rl-btn input").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapErr").show();
+            }
+    )
+    /*点击确定关闭弹框*/
+    $(".wapTip .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapErr").hide();
+            }
+    )
+
+</script>
+</html>

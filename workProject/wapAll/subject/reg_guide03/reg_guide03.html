@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/reg_guide03/css/reg_guide03.css">
+</head>
+<body>
+<div class="content">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/reg_guide03.png">
+    <a href="#"><img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/reg_guide03_btn.png"></a>
+</div>
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/shareContent.png">
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function mcLoad(){
+            var wapShare= document.body.scrollHeight;
+            $(".wapShare").css("height",wapShare);
+        }
+        window.onload=mcLoad();
+        $('.wapShare').click(
+                function(){
+                    $(".wapShare").hide();
+                }
+        );
+    });
+
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>填写资料</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/ziliao/css/ziliao_main.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>填写资料</h3>
+</header>
+<section class="content">
+    <div class="tip"></div>
+    <div class="part" id="jibenLink" data-event="ziliao-jiben" data-event-name="填写资料-基本信息" data-event-category="ziliao-jiben-link">
+        <p>基本信息</p>
+        <div class="jieshao">方便我们更好地了解您</div>
+        <!---------------------填写未完成icon状态---------------------------->
+        <span class="zhankai" style="display: none">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+        <!---------------------填写完成icon状态---------------------------->
+        <span class="duigou">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/duigou_kong.svg">
+        </span>
+    </div>
+    <div class="part" id="gongzuoLink" data-event="ziliao-gongzuo" data-event-name="填写资料-工作及生活" data-event-category="ziliao-gongzuo-link">
+        <p>工作及生活</p>
+        <div class="jieshao">了解您的工作及生活状态</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part" id="guanxiLink" data-event="ziliao-shehui" data-event-name="填写资料-社会关系" data-event-category="ziliao-shehui-link">
+        <p>社会关系信息</p>
+        <div class="jieshao">了解您的社会关系</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>btn
+    <!----------------------按钮为红色--------------------->
+    <input type="button" value="提交" class="tijiao color-red" style="display: none"
+           data-event="ziliao-tijiao" data-event-name="填写资料主页-提交" data-event-category="ziliao-tijiao-btn">
+    <!----------------------按钮为灰色-------------------->
+    <input type="button" value="提交" class="tijiao">
+</section>
+
+
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/staticod/ouding/ziliao/js/textOut.js"></script>
+<script>
+    $("#jibenLink").click(
+            function(){
+                location.href="填写资料--基本信息.html"
+            }
+    )
+    $("#gongzuoLink").click(
+            function(){
+                location.href="填写资料--工作及生活信息.html"
+            }
+    )
+    $("#guanxiLink").click(
+            function(){
+                location.href="填写资料--社会关系信息.html"
+            }
+    )
+</script>
+</html>

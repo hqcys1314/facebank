@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.table a{color: #f86c36;}
+/* 还款计划弹窗 */
+.hkjhtc{ background:#fff; width:885px; position:fixed; top:170px; left:50%; margin-left:-442px;}
+.hkjhtc h2{ margin-bottom:0; width:885px; height:36px; background:#f5f5f5; border:1px solid #b9b9b9; border-radius:5px 5px 0 0;}
+.hkjhtc h2 span{ font-size:18px; line-height:36px; color:#333333; font-weight:bold; padding-left:26px; float:left;}
+.hkjhtc h2 a{ float:right; width:16px; height:16px; background:url(../img/hk_X.png) no-repeat; position:relative; right:19px; top:12px;}
+.hkjhtc .dl{  margin-bottom:0;width:885px; height:auto; border:1px solid #b9b9b9;  border-top:none;border-radius:0 0 5px 5px;}
+.hkjhtc dl{ width:835px; clear:both; overflow:hidden; padding:25px 0 20px 15px;}
+.hkjhtc dl dt{ font-size:14px; background:#f5f5f5; line-height:32px;color:#000000; width:860px; height:32px;}
+.hkjhtc dl dd{ width:836px; height:252px;overflow-y: scroll; font-size:14px; line-height:42px; color:#666666;overflow-x: hidden;}
+.hkjhtc span{ float:left; text-align:center;}
+.hkjhtc .span1{width:88px; margin-right:11px; }
+.hkjhtc .span2{width:118px;}
+.hkjhtc .span4{width:95px; margin-left:11px;}
+.hkjhtc .span5{width:93px; margin-left:9px;position: relative;}
+.hkjhtc .span6{width:180px;}
+.hkjhtc .span7{width:84px;}
+.hkjhtc dl dt .span1,.hkjhtc dl dt .span2{letter-spacing:3px;}
+.endIcon{position: absolute;right: 14px;bottom: 9px;}
+.endTk{background-image: url("../img/endTk.png");background-repeat: no-repeat;font-size: 14px;text-align: center;display: none;
+    position: absolute;top: 93px;right: 246px;width: 200px;height: 53px;line-height: 53px;color: #FFFFFF;}

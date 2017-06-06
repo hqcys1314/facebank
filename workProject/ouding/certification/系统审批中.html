@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>系统审批中</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/certification/css/cer.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>系统审批中...</h3>
+</header>
+<div class="cer-tip">
+    请不要离开，大约需要15秒~1分钟，此过程中您可以完成下方小调查方便我们更快地放款给您。
+</div>
+<div class="cer-survey">
+    <table>
+        <thead>
+            <tr>
+                <td colspan="3">
+                    小调查<p>您本次借款用途是？</p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span>还信用卡</span></td> <td><span>家居/家装</span></td> <td><span>留学/教育/培训</span></td>
+            </tr>
+            <tr>
+                <td><span>买房买车</span></td> <td><span>旅游</span></td> <td><span>结婚</span></td>
+            </tr>
+            <tr>
+                <td><span>经营周转</span></td> <td><span>自由创业</span></td> <td><span>日常消费</span></td>
+            </tr>
+            <tr>
+                <td><span>医疗支出</span></td> <td><span>偿还债务</span></td> <td><span>其它</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="提交" class="tijiao" data-event="submit" data-event-name="系统审批中-提交" data-event-category="submit-btn">
+</div>
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $("table tbody td").each(
+            function(){
+                $(this).click(
+                        function(){
+                                $("table tbody td").find("img").remove();
+                                $(this).children().append(" <img src='http://static.facebank.cn/staticod/ouding/certification/img/choose-duigou.png' class='choose-duigou'>");
+
+                        }
+                )
+            }
+    )
+</script>
+</html>

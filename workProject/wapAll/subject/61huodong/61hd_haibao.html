@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>6.1儿童节活动</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/61huodong/css/61huodong.css">
+    <meta name="page-name" content="宣传海报"/>
+    <meta name="user-id" content=""/>
+</head>
+<body class="body_3">
+<div class="haibao_1">
+    <a href="" data-event="paihang" data-event-name="排行榜" data-event-category="paihangLink">排行榜></a>
+    <p class="p1">目前排名，第<span>100</span>名 <font>编号10010</font></p>
+</div>
+
+<div class="haibao_3">
+   <p>笑脸宝宝：<font>"小靖靖"</font><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/woman.png"></p>
+   <p>宝宝年龄：3岁</p>
+   <p>宝宝特长：会画画，唱歌，跳舞，和惊人的表达力</p>
+</div>
+<div class="haibao_6">
+    已获得100人支持
+</div>
+<div class="haibao_2">
+    <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/photo.jpg">
+</div>
+<div class="haibao_4">
+    <a data-event="fenxiang" data-event-name="我要分享" data-event-category="fenxiangbtn"><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/fenxiang.png"></a>
+    <a href="" data-event="liaojie" data-event-name="了解活动" data-event-category="liaojieLink"><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/liaojie.png"></a>
+</div>
+<div style="height: 4em;">
+
+</div>
+<div class="gameMc"></div>
+<div class="gameMcPos">
+    <div class="haibao_5" data-event="toupiao" data-event-name="我要投票" data-event-category="toupiaoBtn">
+        <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/toupiao.png">
+    </div>
+</div>
+
+<div class="wapMc" id="wapMc"></div>
+<div class="rb_result_pos">
+    <div class="rb_result">
+        <p class="p1"><span class="close"><img src="http://static.facebank.cn/static/wapFront/common/img/closed.png"></span></p>
+        <p class="p2">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+       <p class="p3">
+           <a data-event="fenxiang" data-event-name="我要分享" data-event-category="fenxiangbtn">我要分享</a>
+           <a href="" data-event="liaojie" data-event-name="了解活动" data-event-category="liaojieLink">了解活动</a>
+       </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+
+<script>
+    $('.haibao_5').click(
+            function(){
+                $(".wapMc").show();
+                $(".rb_result_pos").show();
+            }
+    );
+    /*点击关闭按钮关闭弹框*/
+    $(".close").click(
+            function(){
+                $(".wapMc").hide();
+                $(".rb_result_pos").hide();
+            }
+    )
+    $(".rb_result .p2").html("XX错误");
+
+</script>
+</html>

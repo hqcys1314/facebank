@@ -1,0 +1,62 @@
+
+.content {
+    width: 95%;
+    margin-left: 5%;
+}
+.content .tip {
+    font-size: 0.8em;
+    color: #999999;
+    margin-bottom: 7px;
+    width: 90%;
+    height: 60px;margin-top: -10px;
+}
+.content .part {
+    position: relative;    border-bottom: 1px #ddd solid;
+    margin-bottom: 15px;padding-left: 65px;background-repeat: no-repeat;
+    background-size: 56px 56px;background-position:0 3px ;
+}
+#phoneLink{background-image:url("../img/cer_1.png");}
+#bankLink{background-image:url("../img/cer_2.png");}
+#zhimaLink{background-image:url("../img/cer_3.png");}
+#shebaoLink{background-image:url("../img/cer_4.png");}
+#gongjijinLink{background-image:url("../img/cer_5.png");}
+#youxiangLink{background-image:url("../img/cer_6.png");}
+#qqLink{background-image:url("../img/cer_7.png");}
+.cer_identitycard{background-image:url("../img/cer_identitycard.png");}
+.content .part p {
+    font-size: 1.1em;padding-top: 5px;
+    color: #000;
+}
+.content .part .jieshao {
+    width: 100%;
+    font-size: 0.8em;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    padding-bottom: 10px;
+}
+.content .part .zhankai {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 39px;
+    right: 15px;
+}
+.content .part .duigou {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: 36px;
+    right: 15px;
+}
+.content .tijiao {
+    width: 95%;
+    margin: 10px auto;
+    height: 45px;
+    border-radius: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.more{width: 100%;text-align: center;display: block;margin-top: 13px}
+.more img{width: 26px;}

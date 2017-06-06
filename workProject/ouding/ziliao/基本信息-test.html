@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="css/ziliao_jiben.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>基本信息</h3>
+</header>
+<section class="content">
+    <div class="part">
+        <p>真实姓名</p>
+        <input type="text" placeholder="请输入您的真实姓名" value="">
+    </div>
+    <div class="part">
+        <p>身份证</p>
+        <input type="tel" placeholder="请输入您的身份证号" value="" name="idCardNo" id="idCardNo" maxlength="18">
+    </div>
+    <div class="part">
+        <p>居住地详细地址</p>
+        <input type="text" placeholder="输入所在街道、小区、门牌号">
+    </div>
+    <div class="part-1">
+        <p>车牌号</p>
+        <div class="chepai" id="chepai"><font>鲁</font>
+            <img src="../common/img/zhankai.svg" class="cp-zhankai">
+        </div>
+        <input type="tel" placeholder="输入车牌号" id="carCard">
+    </div>
+    <div class="part">
+        <p>电子邮箱</p>
+        <input type="text" placeholder="输入电子邮箱" value="" id="email">
+    </div>
+    <div class="part">
+        <p>QQ号码</p>
+        <input type="tel" placeholder="输入QQ号码" id="qqCard">
+    </div>
+    <input type="button" value="提交" class="tijiao" id="tijiao">
+</section>
+
+<div class="zl-mc">&nbsp;</div>
+<!------------------------------车牌号选择框--------------------------------->
+<div class="chepai-tk">
+    <a id="cp-fanhui">
+        <img src="../common/img/fanhui.svg">
+    </a>
+    <h3>车牌号</h3>
+    <div class="chepai-choose">
+        <ul>
+            <li>
+                <span class="chepai-name">京</span>
+                    <span class="zhankai">
+                        <img src="../common/img/zhankai.svg">
+                    </span>
+            </li>
+            <li>
+                <span class="chepai-name">津</span>
+                    <span class="zhankai">
+                        <img src="../common/img/zhankai.svg">
+                    </span>
+            </li>
+            <li>
+                <span class="chepai-name">冀</span>
+                    <span class="zhankai">
+                        <img src="../common/img/zhankai.svg">
+                    </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!---错误提示弹框--->
+<div class="wapMc"></div>
+<div class="wapPos">
+    <div class="wapTip">
+        <p class="p1" id="errorContent">XX错误</p>
+        <p class="p_btn" id="p_btn">
+            确定
+        </p>
+    </div>
+</div>
+</body>
+<script src="../common/js/jquery-1.11.3.min.js"></script>
+<script src="js/tk.js"></script>
+<script>
+    $("#tijiao").click(
+            function(){
+                $("#tijiao").css("background","#f86c36");
+                $(".wapMc").fadeIn();
+                $(".wapPos").fadeIn();
+            }
+    )
+    $("#p_btn").click(
+            function(){
+                $(".wapMc").fadeOut();
+                $(".wapPos").fadeOut();
+            }
+    )
+    /*
+    **身份证号校验
+    * */
+    $("#idCardNo").blur(function(){
+        var idCardNo = $.trim($("#idCardNo").val()).replace(/\s/ig,'');
+        if ((idCardNo == "") || (!isIdCard(idCardNo)))
+        {
+            $("#errorContent").html("身份证号码填写有误");
+            $(".wapMc").fadeIn();
+            $(".wapPos").fadeIn();
+        }
+    });
+    function isIdCard(idCard){
+        var maxOld = 100;
+        var now = (new Date()).getFullYear();
+        //判断18位身份证
+        if(idCard.length==18){
+            var year = parseInt(idCard.substring(6,10),10);
+            if(maxOld+year<now){
+                return false;
+            }
+            var idCardReg = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$/;
+            if(!idCardReg.test(idCard)){//基本正则
+                return false;
+            }
+            var wi=[7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2];//权列表
+            var ex=[1,0,'x',9,8,7,6,5,4,3,2];//校验码列表
+            var su=0;
+            for(var i=0,wil=wi.length;i<wil;i++){
+                su+=parseInt(idCard.charAt(i),10)*wi[i];
+            }
+            return idCard.charAt(17).toLowerCase()==ex[su%11];
+        }else if(idCard.length==15){//判断15位身份证
+            var maxId = 2003-16;//2003年前是15位证，但办证也得最少16岁吧
+            var minId = now-maxOld;
+            var year = parseInt("19"+idCard.substring(6,8),10);
+            if(minId>maxId || year<minId || year>maxId){
+                return false;
+            };
+            var idCardReg = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/;
+            return  idCardReg.test(idCard);
+        }else{
+            return false;
+        }
+    }
+    /*
+     **车牌号校验
+     * */
+    $("#carCard").blur(function(){
+        var carCard = $.trim($("#chepai").text()+$("#carCard").val()).replace(/\s/ig,'');
+        if ((carCard == "") || (!isVehicleNumber(carCard)))
+        {
+            $("#errorContent").html("车牌号填写有误");
+            $(".wapMc").fadeIn();
+            $(".wapPos").fadeIn();
+        }
+    });
+    function isVehicleNumber(vehicleNumber) {
+        var result = false;
+        if (vehicleNumber.length == 7){
+            var express = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-Z0-9]{4}[A-Z0-9挂学警港澳]{1}$/;
+            result = express.test(vehicleNumber);
+        }
+        return result;
+    }
+    /*
+     **电子邮箱校验
+     * */
+    $("#email").blur(function(){
+        var email = $.trim($("#email").val()).replace(/\s/ig,'');
+        if ((email == "") || (!isEmail(email)))
+        {
+            $("#errorContent").html("邮箱填写有误");
+            $(".wapMc").fadeIn();
+            $(".wapPos").fadeIn();
+        }
+    });
+    function isEmail(email) {
+        var result1 = false;
+        var reg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;//邮箱
+        result1 = reg.test(email);
+        return result1;
+    }
+    /*
+     **QQ号校验
+     * */
+    $("#qqCard").blur(function(){
+        var qqCard = $.trim($("#qqCard").val()).replace(/\s/ig,'');
+        if ((qqCard == "") || (!isQqCard(qqCard)))
+        {
+            $("#errorContent").html("QQ号码填写有误");
+            $(".wapMc").fadeIn();
+            $(".wapPos").fadeIn();
+        }
+    });
+    function isQqCard(qqCard) {
+        var result2 = false;
+        var reg = /^[1-9][0-9]{4,9}$/;//QQ
+        result2 = reg.test(qqCard);
+        return result2;
+
+    }
+</script>
+</html>

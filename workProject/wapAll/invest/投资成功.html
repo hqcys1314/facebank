@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>投资成功页</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/investConfirmOld.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    投资成功
+</div>
+<div class="part1">
+    <p class="p_img"><img src="http://static.facebank.cn/static/wapFront/invest/img/sc_ok.png"></p>
+    <p class="p_text">投资成功!</p>
+    <ul>
+        <li>
+            <p class="p1">8,000.00</p>
+            <p class="p2">投资金额(元)</p>
+        </li>
+        <li>
+            <p class="p1">480.00+320.00</p>
+            <p class="p2">预计收益(元)<span><img src="img/suc_wenhao.png" id="shouyi-tip"></span></p>
+        </li>
+    </ul>
+    <div class="result">
+        <p>
+            获得笑脸币：<span class="span1">2000+300</span>（会员加成15%）
+        </p>
+        <p>增加成长值：<span class="span1">80</span></p>
+    </div>
+</div>
+<a class="part2" href="">
+    <img src="img/suc_img.jpg">
+</a>
+<div style="height: 4em;">
+
+</div>
+<div class="part3">
+    <a href="">继续投资</a><a href="">我的账户</a>
+</div>
+<div class="wapMc">
+</div>
+<div class="dj-tk">
+     <h3>会员等级</h3>
+     <div class="card">
+         <div class="card-1">
+             <img src="../vipCenter/img/v4_card.png">
+         </div>
+         <div class="card-jt">
+             <img src="img/card-jt.png">
+         </div>
+         <div class="card-2">
+             <img src="../vipCenter/img/v5_card.png">
+         </div>
+     </div>
+     <p class="title"><font>黄金会员权限解锁</font></p>
+     <div class="quanli">
+         <p>
+             生日祝福：生日当天短信送上祝福
+         </p>
+         <p>
+             生日赠礼：生日当天获赠年化 1%加息红包
+         </p>
+         <p>
+             专享加息：购买 90 天及以上理财产品加息年化 0.1%
+         </p>
+         <p>
+             积分加成：购买理财产品获得积分提高 15%
+         </p>
+         <p>
+             专享加息：购买 90 天及以上理财产品加息年化 0.1%
+         </p>
+         <p>
+             积分加成：购买理财产品获得积分提高 15%
+         </p>
+     </div>
+    <p class="p_close">
+        <img src="http://static.facebank.cn/static/wapFront/vipCenter/img/close.png" class="tk_close">
+    </p>
+</div>
+<div class="loading" style="display: none;">
+    <img src="http://static.facebank.cn/static/wapFront/common/img/loading.gif">
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").fadeOut();
+                $(".dj-tk").fadeOut();
+            }
+    )
+    $("#shouyi-tip").click(
+            function(){
+                new Toast({context:$('body'),message:'0.1%黄金会员专享加息:29.09元<br>1%加息红包:290.91元'}).show("10000");
+            }
+    )
+    /* 模仿android里面的Toast效果*/
+    var Toast = function(config){
+        this.context = config.context==null?$('body'):config.context;//上下文
+        this.message = config.message;//显示内容
+        this.left = config.left;//距容器左边的距离
+        this.top = config.top;//距容器上方的距离
+        this.init();
+    }
+    var msgEntity;
+    Toast.prototype = {
+        //初始化显示的位置内容等
+        init : function(){
+            $("#toastMessage").remove();
+            //设置消息体
+            var msgDIV = new Array();
+            msgDIV.push('<div id="toastMessage">');
+            msgDIV.push('<span>'+this.message+'</span>');
+            msgDIV.push('</div>');
+            msgEntity = $(msgDIV.join('')).appendTo(this.context);
+            //设置消息样式
+            msgEntity.css({position:'fixed',top:'46%','z-index':'99',left:'15%','line-height':'22px','background-color':'#333333','text-align':'center','color':'white','font-size':'0.85em',padding:'13px 2%',width:'66%','border-radius':'5px','box-shadow': '0px 0px 5px #000'});
+            msgEntity.hide();
+        },
+        //显示动画
+        show :function(time){
+            msgEntity.fadeIn(time/6);
+            msgEntity.fadeOut(time/3);
+        }
+
+    }
+</script>
+</html>

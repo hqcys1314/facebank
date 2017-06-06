@@ -1,0 +1,7 @@
+body{background-color: #FFFFFF;}
+.buy-list{margin-left: 5%;height: 2.5rem;padding: 1rem 0;border-bottom: 1px #dddddd solid;padding-right: 5%;}
+.buy-list .left{float:left;}
+.buy-list .left .number{font-size:0.938rem;}
+.buy-list .left .date{font-size: 0.688rem;}
+.buy-list .right{float:right;font-size:0.938rem;color:#f86c36;line-height: 2.5rem;height: 2.5rem;}
+.more{margin: 2rem 0;text-align: center;background-color: #f5f5f5;color: #666;font-size: 0.85rem;height: 2rem;line-height: 2rem;}

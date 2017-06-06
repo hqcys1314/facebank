@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://www.facebank.cn/goRegister -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="笑脸金融">
+    <meta name="description" content="笑脸金融">
+    <meta name="page-name" content="注册页">
+    <meta name="event-trans-id" content="ZC201608171421553333053">
+    <title>笑脸金融www.facebank.cn-中国领先个人微金融服务平台！微理财，微信贷，云银行，专注小微信贷与个人金融服务！</title>
+</head>
+<body>
+
+<!----------------------改动1 开始-------------------------->
+<link rel="stylesheet" href="http://static.facebank.cn/static/webFront/common/css/head_foot.css">
+<link rel="stylesheet" href="http://static.facebank.cn/static/webFront/common/css/common.css">
+<link rel="stylesheet" href="http://static.facebank.cn/static/webFront/register/css/reg.css">
+<div class="reg_bg">
+    <form class="form-horizontal" id="regForm" action="http://www.facebank.cn/register/new" method="post">
+        <input type="hidden" name="invitedCode" value="" id="invitedCode">
+        <input type="hidden" name="ref" value="">
+        <input type="hidden" name="baseValue" id="baseValue" value="/">
+        <input type="hidden" name="easyservURL" id="easyservURL" value="http://easyserv.facebank.cn/">
+        <input type="hidden" name="permanentId" id="permanentId" value="D9D2EAF4-CB53-AE5D-13DA-EF881D550F67">
+        <input type="hidden" name="pute" id="pute" value="1">
+        <input type="hidden" name="channel" id="channel" value="">
+        <input type="hidden" name="perrMsg" id="perrMsg" value="">
+        <input type="hidden" name="businessflow" value="ZC201608171421553333053">
+    </form>
+
+    <div class="reg_pos">
+        <div class="reg_title">
+            用户注册
+        </div>
+        <div class="reg_content">
+            <div class="reg_list">
+                <span class="span1 span_icon"></span>
+                <input type="text" id="mobile" name="mobile" value="" placeholder="请输入您的手机号码">
+                <span class="regDel" id="regDel"></span>
+                <div class="clear"></div>
+                <p class="errortipCom errtipReg" id="mobileError">请输入您的常用手机号码</p>
+                <p class="warmtipCom warmtipReg" id="mobileWarning">请输入您的常用手机号码</p>
+                <p class="successMark" id="mobileSuccess"></p>
+            </div>
+            <div class="reg_list reg_list1 regListImgcode">
+                <span class="span4 span_icon"></span>
+                <input type="text" class="input_1" id="imgVerifyCode" name="imgVerifyCode" value="" placeholder="请输入图形验证码"/>
+                <span class="input_2"><img onclick="reloadImg();" id="verifyCodeImg" name="verifyCodeImg" src="http://static.facebank.cn/static/webFront/register/img/token.png"></span>
+                <div class="span_change">看不清？<a data-event="registerImgcodeChange" data-event-name="注册页面-切换图形验证码" data-event-category="registerImgcodeChangeLink" onclick="reloadImg();">换一张</a></div>
+                <p class="errortipCom errtipReg" id="imgError">图形验证码错误</p>
+                <p class="warmtipCom warmtipReg" id="imgWarning">请输入图形验证码</p>
+                <p class="successMark"></p>
+            </div>
+            <div class="reg_list reg_list1">
+                <span class="span2 span_icon"></span>
+                <input type="text" class="input_1" id="verifyCode" name="verifyCode" value="" data-log-value="true" placeholder="请输入短信验证码">
+                <input type="button" class="input_2" data-event="regMsgcard" data-event-name="注册页面-短信验证码按钮" data-event-category="regMsgcardBtn" id="regMsgCode" value="获取验证码">
+            </div>
+            <div class="regVoiceTip" id="regVoiceTip"><div id="checkWord"></div>
+                请尽快输入，若收不到短信请<a data-event="regVoicecard" data-event-name="注册页面-语音验证码按钮" data-event-category="regVoicecardBtn" id="regVoiceCode">语音获取</a></div>
+            <div class="regVoiceTip regVoiceWordTip">您的手机号<span id="mobileWord"></span>将在60秒内收到电话，请接听并在120秒内输入</div>
+
+            <div class="reg_list">
+                <span class="span3 span_icon"></span>
+                <input type="password" id="passwd" name="passwd" placeholder="请输入6-20位密码" class="login-field login-field-password">
+                <div class="clear"></div>
+                <p class="errortipCom errtipReg" id="passwdError">请输入6-20位密码</p>
+                <p class="warmtipCom warmtipReg" id="passwdWarning">请输入6-20位密码</p>
+                <p class="successMark" id="passwdSuccess"></p>
+            </div>
+
+            <div class="regTj">
+                我有推荐人(选填)
+            </div>
+            <div class="reg_list" id="referDiv">
+                <span class="span5 span_icon"></span>
+                <input type="text" id="referrer" name="referee" placeholder="请输入推荐人手机号码">
+                <span class="regDel"></span>
+                <span class="successMark"></span>
+            </div>
+            <div class="regContract">
+                <input type="checkbox" id="pagreement" checked=""><span>我已阅读并同意<a href="http://cms.facebank.cn/smile_contract_reg.html" data-event="regUserAgreement" data-event-name="注册页面-用户协议按钮" data-event-category="regUserAgreementBtn" target="blank">《笑脸金融用户协议》</a></span>
+            </div>
+            <div class="registerBtn improtant_button" data-event="regRegister" data-event-name="注册页面-立即注册按钮" data-event-category="regRegisterBtn" id="reg-phone-btn">
+                立即注册
+            </div>
+            <div class="regLast">我已注册，<a href="http://www.facebank.cn/login" data-event="regLogin" data-event-name="注册页面-登录按钮" data-event-category="regLoginBtn">立即登录</a></div>
+        </div>
+    </div>
+
+
+    <!-------------------------改动1开始---------------------------------------------------------------------------------------------------------->
+    <div class="guize">
+        详情规则
+    </div>
+    <div class="mask">
+    </div>
+    <!-----------------------规则弹框---------------------------->
+    <div class="mask_guize" id="guize">
+        <div class="gz_con">
+            <p class="p_title">活动规则</p>
+            <div class="content">
+                <h2>新手专享活动规则</h2>
+                <h3>参与方式：</h3>
+                <p>仅限未在笑脸金融投资过的用户参加。</p>
+                <h3>收益说明：</h3>
+                <p>新手专享项目收益由两部分组成，项目收益和加息收益，加息收益由笑脸金融在新手专享项目付息时补贴给用户。</p>
+                <h3>限制条件：</h3>
+                <p>新手专享项目仅限制投资一次，并且不允许使用红包及加息券。</p>
+                <h2 style="border-top:1px #fcba86 solid; ">体验金活动规则</h2>
+                <p>体验金是笑脸金融为新注册用户提升产品体验而设计的虚拟投资本金。</p>
+                <h3>领取方式：</h3>
+                <p>活动开始后，注册成为笑脸金融用户即可获得15888元体验金。微信、APP注册成功后，成功分享活动给好友或朋友圈可再获得3000元体验金。</p>
+                <h3>收益计算：</h3>
+                <p>本活动按年化收益10%，体验期限1天计算收益，当日领取，收益次日进入您在笑脸金融的账户，可以提现。</p>
+                <h3>体验金回收：</h3>
+                <p>在体验金收益到账后，体验金由系统进行自动回收。</p>
+                <h3>收益回收：</h3>
+                <p>收益到账后第30天，如果您未绑定银行卡对体验金收益进行提现或未进行真实投资操作，我们将回收收益。</p>
+            </div>
+            <p class="p_btn">上下滑动查看更多...</p>
+            <p class="p_close">
+                <img src="http://static.facebank.cn/static/webFront/register/img/close.png" class="tk_close">
+            </p>
+        </div>
+    </div>
+    <script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+    <script>
+        /*详情规则展开隐藏*/
+        $(".tk_close").click(
+                function(){
+                    $(".mask").hide();
+                    $(".mask_guize").hide();
+                }
+        )
+        $(".guize").click(
+                function(){
+                    $(".mask").show();
+                    $(".mask_guize").show();
+                }
+        )
+    </script>
+    <!-------------------------改动1结束---------------------------------------------------------------------------------------------------------->
+
+
+
+</div>
+<div class="tb_1">
+    <img src="http://static.facebank.cn/static/webFront/register/img/tb_1.png">
+</div>
+
+
+
+
+<script src="http://static.facebank.cn/static/webFront/register/js/modernizr.custom.js"></script>
+<script src="http://static.facebank.cn/static/webFront/register/js/hideShowPassword.js"></script>
+<script>
+
+
+    /*眼睛*/
+    document.write('<script src=js/' +
+            ('__proto__' in {} ? 'zepto.custom' : 'jquery') +
+            '.js><\/script>')
+
+    $('#passwd').hideShowPassword({
+        innerToggle: true,
+        touchSupport: Modernizr.touch
+    });
+    /*倒计时*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#regMsgCode").val("获取验证码");
+            $("#regMsgCode").css("color", "#fff");
+            $("#regMsgCode").css("background-color", "#f86c36");
+            $("#regMsgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#regMsgCode").val(miao + "秒后重发");
+            $("#regMsgCode").attr('disabled',true);
+            $("#regMsgCode").css("color", "#999");
+            $("#regMsgCode").css("background-color", "#eaeaea");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+
+        }
+    }
+
+    /*点击展开推荐人*/
+    $(".regTj").click(
+            function(){
+                var displayNow=$("#referDiv").css("display");
+                if(displayNow=="none"){
+                    $("#referDiv").show();
+                    $(".regTj").css("background-position","105px -723px");
+
+                }else{
+                    $("#referDiv").hide();
+                    $(".regTj").css("background-position","105px -622px");
+                }
+            }
+    )
+</script>
+
+<!----------------------改动1 结束-------------------------->
+
+
+<script>
+
+$("#mobile").focus(function(){
+    $("#mobileError").hide();
+    $("#mobileSuccess").hide();
+    $("#mobileWarning").show();
+})
+$("#mobile").blur(function(){
+    var mobile = $("#mobile").val();
+    $("#mobileWarning").hide();
+    if(mobile==""||!testPhone(mobile)){
+        $("#mobileError").html("请输入您的常用手机号码");
+        $("#mobileError").show();
+        return
+    }else{
+        $("#mobileError").hide();
+    }
+    $.post("/checkReferee",{'mobileNum':mobile},function(data, type) {
+        if (data.responseText == 1) {
+            $("#mobileError").html("手机号码已经注册");
+            $("#mobileError").show();
+        }else{
+            $("#mobileSuccess").show();
+        }
+    });
+});
+$("#passwd").focus(function(){
+    $("#passwdError").hide();
+    $("#passwdWarning").show();
+    $("#passwdSuccess").hide();
+});
+$("#passwd").blur(function(){
+    $("#passwdWarning").hide();
+    $("#passwdSuccess").hide();
+    var passwd = $("#passwd").val();
+    if(passwd==""||!checkPassword(passwd)){
+        $("#passwdError").show();
+    }else{
+        $("#passwdError").hide();
+        $("#passwdSuccess").show();
+    }
+})
+$("#ppdwuri").focus(function(){
+    $("#ppdwuriError").hide();
+    $("#ppdwuriWarning").show();
+    $("#ppdwuriSuccess").hide();
+});
+$("#ppdwuri").blur(function(){
+    $("#ppdwuriWarning").hide();
+    $("#ppdwuriSuccess").hide();
+    var passwd = $("#passwd").val();
+    var ppdwuri = $("#ppdwuri").val();
+    if(ppdwuri==""){
+        $("#ppdwuriError").html("请输入6-20位密码");
+        $("#ppdwuriError").show();
+        return
+    }
+    if(passwd!=ppdwuri){
+        $("#ppdwuriError").html("确认密码和登录密码不一致");
+        $("#ppdwuriError").show();
+    }else{
+        $("#ppdwuriError").hide();
+        $("#ppdwuriSuccess").show();
+    }
+})
+function accClick(){
+    window.location.href="http://app.facebank.cn";
+}
+function testPhone(phone){
+    var reg = /((^13[0-9]|14[0-9]|15[0-9]|18[0-9]|17[0-9])\d{8}$)/;
+    if(!reg.test(phone))
+    {
+        return  false;
+    }else{
+        return true;
+    }
+}
+function checkPassword(password){
+    if(password.length>=6&&password.length<=20){
+        return true;
+    }else{
+        return false;
+    }
+}
+$('#navTitle').html("用户注册");
+$("#alXixinImg").hide();
+var invite = $("#invitedCode").val();
+if (invite == "") {
+    document.getElementById("referDiv").style.display = "";
+} else {
+    document.getElementById("referDiv").style.display = "none";
+}
+$("#imgVerifyCode").focus(function(){
+    $("#imgError").hide();
+    $("#imgWarning").show();
+});
+$("#imgVerifyCode").blur(
+        function(){
+            $("#imgWarning").hide();
+            var imgcode=$("#imgVerifyCode").val();
+            if(imgcode.length>0)
+            {
+                var imgVerifyCode = $("#imgVerifyCode").val();
+                //不为空的时候，使用ajax校验
+                if(imgVerifyCode!=undefined && imgVerifyCode!="")
+                {
+                    $.get('/register/simpleCheck?imgVerifyCode='+imgVerifyCode+'&cookieValue='+$("#permanentId").val(),function(data)
+                    {
+                        if(data!="")
+                        {
+                            var result = eval("(" + data + ")");
+                            if(result.statusCode==0)
+                            {
+                                $("#imgError").hide();
+                            }else{
+                                $("#imgError").html("图形验证码错误");
+                                $("#imgError").show();
+                            }
+                        }else{
+                            $("#imgError").html("图形验证码错误");
+                            $("#imgError").show();
+                        }
+                    });
+                }
+            }else{
+                $("#imgError").html("图形验证码不能为空");
+                $("#imgError").show();
+            }
+        }
+);
+var miao=60;
+function timePass() {
+    if (miao == 0) {
+        $("#regMsgCode").val("获取验证码");
+        $("#regMsgCode").css("color", "#333");
+        $("#regMsgCode").attr('disabled',false);
+        miao = 60;
+    } else {
+        $("#regMsgCode").val(miao + "秒后重发");
+        $("#regMsgCode").attr('disabled',true);
+        $("#regMsgCode:hover").css("color", "#999");
+        miao--;
+        setTimeout(
+                function () {
+                    timePass()
+                }, 1000)
+
+    }
+}
+$("#regMsgCode").click(function(){
+    var pute = parseInt($("#pute").val());
+    var telPhone = $("#mobile").val();
+    var imgVerifyCode = $("#imgVerifyCode").val();
+    var permanentId = $("#permanentId").val();
+    var url="/sendVerifyCodeWithLogin";
+    $.post(url,{"telPhone":telPhone,"imgVerifyCode":imgVerifyCode,"permanentId":permanentId,"pute":pute,"sendType":"zcyz"},function(data){
+        pute = pute+1;
+        $("#pute").val(pute);
+        var d = eval('(' + data + ')');
+        if(!d.status){
+            $(".regListImgcode").show();
+            $(".maskCenter").html(d.message);
+            $(".mask").show();
+            $(".maskBox").show();
+        }else{
+            $("#checkWord").html("验证码已发送至您的手机"+telPhone+"，");
+            $("#regVoiceTip").show();
+            timePass();
+        }
+    });
+});
+$("#regVoiceCode").click(function(){
+    $("#regVoiceTip").hide();
+    setTimeout(
+            function () {
+                $(".regVoiceWordTip").hide();
+                $("#regVoiceTip").show();
+            }, 120000)
+    var pute = parseInt($("#pute").val());
+    var telPhone = $("#mobile").val();
+    var imgVerifyCode = $("#imgVerifyCode").val();
+    var permanentId = $("#permanentId").val();
+    var url="/sendVerifyCodeWithLogin";
+    $.post(url,{"telPhone":telPhone,"imgVerifyCode":imgVerifyCode,"permanentId":permanentId,"pute":1,"sendType":"voice"},function(data){
+        pute = pute+1;
+        $("#pute").val(pute);
+        var d = eval('(' + data + ')');
+        if(!d.status){
+            $(".regListImgcode").show();
+            $(".maskCenter").html(d.message);
+            $(".mask").show();
+            $(".maskBox").show();
+        }else{
+            $("#mobileWord").html(telPhone);
+            $(".regVoiceWordTip").show();
+        }
+    });
+});
+function reloadImg() {
+    var verifyCodeImg = document.getElementById('verifyCodeImg');
+    verifyCodeImg.setAttribute('src',
+                    $("#easyservURL").val()+'image/token.png?'
+                    + Math.random()+"&permanent_id="+$("#permanentId").val());
+}
+$("#reg-phone-btn").click(function(){
+    if ($("#pagreement").is(':checked')) {
+        var mobile = $("#mobile").val();
+        if(mobile==""||!testPhone(mobile)){
+            $("#mobileError").html("请输入您的常用手机号码");
+            $("#mobileError").show();
+            return;
+        }
+        var passwd = $("#passwd").val();
+        if(passwd==""||!checkPassword(passwd)){
+            $("#passwdError").show();
+            return;
+        }
+        var ppdwuri = $("#ppdwuri").val();
+        if(ppdwuri==""){
+            $("#ppdwuriError").html("请输入6-20位密码");
+            $("#ppdwuriError").show();
+            return
+        }
+        if(passwd!=ppdwuri){
+            $("#ppdwuriError").html("确认密码和登录密码不一致");
+            $("#ppdwuriError").show();
+            return;
+        }
+        var verifyCode = $("#verifyCode").val();
+        if(verifyCode==""){
+            $(".maskCenter").html("验证码不能为空");
+            $(".mask").show();
+            $(".maskBox").show();
+            return;
+        }
+        $("#regForm").submit();
+    }else{
+        $(".maskCenter").html("请勾选用户协议");
+        $(".mask").show();
+        $(".maskBox").show();
+    }
+});
+$(function(){
+    var perrMsg = $("#perrMsg").val();
+    if(perrMsg!=""){
+        $(".maskCenter").html(perrMsg);
+        $(".mask").show();
+        $(".maskBox").show();
+    }
+});
+//$("#alXixinImg").show();
+</script>
+</body></html>

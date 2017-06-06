@@ -1,0 +1,191 @@
+/* slider
+----------------------------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+.banner-play {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 34%;
+}
+.banner-play .mp_ul {
+  width: 100%;
+}
+.banner-play .mp_ul li {
+  width: 100%;
+  height: 100%;
+}
+.banner-play .mp_ul li a {
+  display: block;
+}
+.banner-play .mp_ul li a img {
+  width: 100%;
+}
+.content {
+  height: 65%;
+  margin-top: 5%;
+}
+.content h2 {
+  width: 90%;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 auto 3%;
+  color: #333;
+  line-height: 30px;
+  height: 30px;
+}
+.content h2 span {
+  font-size: 0.7em;
+  float: right;
+  color: #999;
+}
+.content .content-jine {
+  width: 93%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content .content-jine .part {
+  display: block;
+  width: 27.2%;
+  float: left;
+  position: relative;
+  height: 36px;
+  text-align: center;
+  margin: 8px 3%;
+}
+.content .content-jine .part input[type="radio"] {
+  width: 100%;
+  position: absolute;
+  height: 36px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+}
+.content .content-jine .part input[type="radio"]:active + .btn-show {
+  background-color: #ff4830;
+  border: 1px #ff4830 solid;
+  color: #fff;
+}
+.content .content-jine .part input[type="radio"]:checked + .btn-show {
+  color: #ff4830;
+  border: 1px #ff4830 solid;
+}
+.content .content-jine .part .btn-show {
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  color: #666;
+  border: 1px #ddd solid;
+  border-radius: 2em;
+  font-size: 1em;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.content .content-jine .part .btn-show span {
+  font-size: 0.7em;
+  margin-left: 2px;
+}
+.content .content-qixian {
+  width: 90%;
+  height: 48px;
+  margin-top: 8%;
+  border-bottom: 1px #ddd solid;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.content .content-qixian .part {
+  display: block;
+  width: 33.3%;
+  float: left;
+  position: relative;
+  height: 48px;
+  text-align: center;
+}
+.content .content-qixian .part input[type="radio"] {
+  width: 100%;
+  position: absolute;
+  height: 48px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+}
+.content .content-qixian .part input[type="radio"]:checked + .qixian-show {
+  color: #ff4830;
+  border-bottom: 1px #ff4830 solid;
+}
+.content .content-qixian .part input[type="radio"]:checked + .qixian-show .line {
+  border-left: 1px #ff4830 solid;
+}
+.content .content-qixian .part input[type="radio"]:checked + .qixian-show .circle {
+  background-color: #ff4830;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.content .content-qixian .part .qixian-show {
+  height: 48px;
+  line-height: 48px;
+  width: 100%;
+  color: #666;
+  border-bottom: 0 #ddd solid;
+  font-size: 1.2em;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.content .content-qixian .part .qixian-show span {
+  font-size: 0.6em;
+  margin-left: 2px;
+}
+.content .content-qixian .part .qixian-show .line {
+  position: absolute;
+  border-left: 1px #ddd solid;
+  height: 10px;
+  width: 1px;
+  left: 50%;
+  bottom: 0;
+}
+.content .content-qixian .part .qixian-show .circle {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #f86c36;
+  left: 50%;
+  bottom: -4px;
+  margin-left: -3px;
+  opacity: 0;
+}
+.content .content-submit {
+  margin-top: 10%;
+  text-align: center;
+}
+.content .content-submit input {
+  background-color: #ff4830;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  width: 60%;
+  border-radius: 2em;
+  font-size: 1em;
+}
+.content .content-submit div {
+  color: #333;
+  font-size: 0.9em;
+  margin-top: 2%;
+}
+.foot-bs{font-size: 0.6em;text-align: center;color: #999999;margin-top:15px; }
+
+/*# sourceMappingURL=index.css.map */

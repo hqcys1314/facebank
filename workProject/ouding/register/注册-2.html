@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/register/css/login.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>    <a href="" class="right">登录</a>
+    <h3>已注册成功，继续完善</h3>
+    <p class="tip">密码由数字、字母组成，要求最少6位。</p>
+</header>
+<section class="content">
+    <div class="part">
+        <p>创建密码</p>
+        <input type="password" placeholder="请创建您的密码" value="">
+        <span class="icon">
+                <img src="http://static.facebank.cn/staticod/ouding/register/img/delate.png">
+         </span>
+    </div>
+    <div class="part">
+        <p>填写邮箱</p>
+        <input type="text" placeholder="请填写邮箱" value="">
+        <span class="icon">
+                <img src="http://static.facebank.cn/staticod/ouding/register/img/right.png">
+         </span>
+    </div>
+
+</section>
+<div class="error">
+    已存在关联此电话号码的账号，请尝试登录
+</div>
+<!-----------------------登录按钮为红色---------------------------------->
+<input type="button" value="登录" class="login-btn color-red" style="display: none;" data-event="registerSuccess-login" data-event-name="注册成功-登录" data-event-category="registerSuccess-login-btn">
+<!-----------------------登录按钮为灰色---------------------------------->
+<input type="button" value="登录" class="login-btn">
+<div class="other-tz">
+    <a href="">跳过此步</a>
+</div>
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script>
+
+</script>
+</html>

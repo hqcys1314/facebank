@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>十月钜惠</title>
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/head_foot.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/common.css" />
+    <script>
+        var browser={
+            versions:function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                };
+            }(),
+            language:(navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+
+        if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||
+                browser.versions.iPhone || browser.versions.iPad){
+            window.location = "http://cms.facebank.cn/juhui_20160918.html";
+        }
+
+    </script>
+    <style>
+        .bk_1{background:url("http://static.facebank.cn/static/webFront/banner/guoqing/img/gq2_1.jpg") no-repeat center;width:100%;height:764px;margin-bottom: 15px; }
+        .bk_2{margin: 0 auto 50px;width: 900px;border-radius: 10px;background-color: #ffffff;}
+        .bk_2 h3{font-size:30px;color: #df4e46;text-align: center;height: 70px;line-height: 70px;border-bottom: 1px #df4e46 dashed;width:840px;margin: 0 auto 20px;;  }
+        .bk_2 p{color: #666666;font-size: 20px;margin: 0 auto;width:840px; }
+        .bk_2 p strong{color: #df4e46;font-size: 22px;font-weight: bold;}
+        .bk_2 .p1{margin-top: 30px;}
+        .bk_2 .div1{text-align: right;margin-top: -20px;}
+        .bk_2 .div1 img{margin-right: 130px;}
+        .bk_2 .div2{text-align: center;margin-top:10px;margin-bottom: 10px;}
+        .bk_2 .p2{padding-bottom: 25px;}
+        .bk_foot{color: #ffffff;text-align: center;font-size: 24px;padding-bottom: 20px;}
+    </style>
+</head>
+<body>
+
+<div style="background-color:#e23636;">
+    <div class="bk_1">
+        &nbsp;
+    </div>
+    <div class="bk_2">
+        <h3>献礼一：任性买买买，翻倍赚取笑脸币</h3>
+        <p>黄金十月，假期回馈。笑脸金融与您共欢度。我们准备了贴心的福利，让您的假期更任性！凡是在 9月22日至10月7日 投资任何产品即可获得<strong>双倍笑脸币</strong>，商城商品随心畅买！</p>
+        <p class="p1">什么是笑脸币：不要小瞧我们的笑脸币哦。在笑脸商城中，用笑脸币即可换取加息红包、话费、现金好礼哦。还等什么快来投资获得吧~</p>
+        <div class="div1"><img src="http://static.facebank.cn/static/webFront/banner/guoqing/img/gq2_2.png"></div>
+    </div>
+    <div class="bk_2">
+        <h3>献礼二：笑脸商城，真情回馈八折优惠</h3>
+        <div class="div2"><img src="http://static.facebank.cn/static/webFront/banner/guoqing/img/gq2_3.png"></div>
+        <p class="p2">十一七天乐，笑脸币商城八折不限购。10月1日至7日期间，商城开启全面折扣，加息红包任意买,心动不如行动。</p>
+    </div>
+    <div class="bk_2">
+        <h3>献礼三：全民开心购，0.5%红包随心用 </h3>
+        <div class="div2"><img src="http://static.facebank.cn/static/webFront/banner/guoqing/img/gq2_4.png"></div>
+        <p class="p2">金秋十月，笑脸金融开启假日全民狂欢。9月22日前注册的用户，即可获得0.5%的加息红包。畅买产品，让收益不停涨。</p>
+    </div>
+    <div class="bk_foot">
+        ·本活动最终解释权归笑脸金融所有·
+    </div>
+</div>
+
+</body>
+</html>

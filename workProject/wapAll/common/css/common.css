@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{margin: 0;padding: 0;}
+html{font-size:16px;}
+body{font-family: 'Microsoft YaHei',arial,'Hiragino Sans GB',sans-serif,"宋体";font-size: 16px;color: #666;background-color: #f1f1f1;margin: 0 auto;max-width: 600px;}
+.clear{clear: both;}
+img {border:0}
+ul li{list-style-type:none;}
+a{color: #666666;text-decoration:none;}
+select{-webkit-appearance: none;-moz-appearance:none;appearance:none;background-color: #fff;display: inline-block;border: 0;outline: 0;font-size: 1em;height: 45px;font-family: 'Microsoft YaHei',arial,'Hiragino Sans GB',sans-serif,"宋体";}
+select option{width: 100%;}
+select::-ms-expand { display: none; }
+input{font-family: 'Microsoft YaHei',arial,'Hiragino Sans GB',sans-serif,"宋体";border: 0;outline: 0;border-radius: 0;}
+input[type="text"],input[type="password"]{height: 45px;background-color: #ffffff;}
+input[type=button]{-webkit-appearance:none;outline:none;background-color: #cccccc;}
+input:focus{outline: none;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #cccccc;}
+input:-moz-placeholder, textarea:-moz-placeholder {color:#cccccc;}
+input::-moz-placeholder, textarea::-moz-placeholder {color:#cccccc;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#cccccc;}
+
+.button{ border-radius: 0; }
+.head{width: 100%;height:2.7rem;line-height:2.7rem;font-size: 1.125rem;text-align: center;color: #fff;background-color: #f86c36;position: relative;}
+.head a{position: absolute;  left: 2%;top:0.3rem;width:0.9rem;  height: 0.9rem;}
+.head a img{width: 100%;}
+.head font{font-size: 0.8em;  font-family:arial;  margin-left: 5px;}
+.empty{margin-bottom: 1em;height: 50px;}
+.regresh{width: 100%;text-align: center;display: none;margin-bottom: 10px;}
+.comBtn{height: 45px;text-align: center;  border: 0;outline: 0;color: #fff;font-size: 1.1em;border-radius: 2em;}
+.comBtnBig{height: 45px;text-align: center;  border: 0;outline: 0;color: #fff;font-size: 1.1em;border-radius: 5px;}
+/*底部浮动框*/
+.wapFud{width: 100%;background-color: #fff;position: fixed;bottom: 0;z-index: 2;max-width: 600px;}
+.wapFud .nav{border-top: 1px #ccc solid;}
+.wapFud .nav li{width: 24.9%;text-align: center;float: left;font-size: 0.8em;background-repeat: no-repeat;
+    background-image:url("../../common/img/navIcon.svg");background-size: 1.5rem 18.5rem;}
+.wapFud .nav li a{display: block;padding: 40px 0 5px 0;}
+.wapFud .nav .nav-1{background-position: 59% -4px;}
+.wapFud .nav .nav-2{background-position: 59% -62px;}
+.wapFud .nav .nav-3{background-position: 59% -122px;}
+.wapFud .nav .nav-4{background-position: 59% -184px;}
+.wapFud .nav .navOn-1{background-position: 59% -245px;}
+.wapFud .nav .navOn-2{background-position: 59% -305px;}
+.wapFud .nav .navOn-3{background-position: 59% -362px;}
+.wapFud .nav .navOn-4{background-position: 59% -423px;}
+.wapFud .nav .navOn-1 a{color: #f86c36;}
+.wapFud .nav .navOn-2 a{color: #f86c36;}
+.wapFud .nav .navOn-3 a{color: #f86c36;}
+.wapFud .nav .navOn-4 a{color: #f86c36;}
+
+
+/*蒙层+蒙层弹框*/
+.wapMc{display:none;background-color: #000;position:fixed;width: 100%;top: 0;opacity: 0.5;z-index: 20;left: 0;height: 100%;}
+/*微信分享弹框*/
+.wapShare{background-color: #000;opacity: 0.85;position: fixed;top: 0;width: 100%;z-index: 30;display: none; left: 0;}
+.wapShare img{ width: 100%; }
+/*提示框*/
+.wapPos{display:none;position:fixed;top: 40%;z-index: 22;  width: 100%;left: 0;}
+.wapTip{width: 80%;margin: 0 auto;background-color: #fff;border-radius: 5px;}
+.wapTip .p1{font-size: 0.9em;width: 90%;margin: 0 auto;padding: 30px 0;position: relative;}
+.wapTip .p1 .close{position: absolute; right: -6px;width: 17px;top: 5px;}
+.wapTip .p1 .close img{width: 100%;vertical-align: middle;}
+.wapTip .p2{border-top: 1px #ddd solid;}
+.wapTip .p2 span{width: 49.5%;text-align: center;color: #f86c36;  display: inline-block;height: 40px;line-height: 40px;}
+.wapTip .p2 .span1{border-right: 1px #ddd solid;}
+.wapTip .p2 .span2 a{color: #f86c36;}
+.wapTip .p2 .span3{border-right: 1px #ddd solid;}
+.wapTip .p3{width: 100%;text-align: center;color: #f86c36;height: 40px;line-height: 40px;  border-top: 1px #ddd solid;}
+.wapTip .p4{border-top: 1px #ddd solid;}
+.wapTip .p4 span{width: 49.5%;text-align: center;color: #f86c36;  display: inline-block;height: 40px;line-height: 40px;}
+.wapTip .p4 .span1{border-right: 1px #ddd solid;}
+.wapTip .p_link{font-size: 0.9em;text-align: center;padding-bottom: 12px;}
+.wapTip .p_link a{color: #999;}
+.wapTip .p-head{text-align: center;font-size: 1rem;}
+
+/*成功页面*/
+.suc1 {width: 30%;margin:50px auto 30px;}
+.suc1 img{width: 100%;  color: #999;}
+.suc2 {text-align: center;}
+.suc3 {width: 70%;margin:30px auto 10px;display: block;}
+.suc3 a{width: 100%;display: block;line-height: 45px;background-color: #f86c36;}
+.suc_wd{width: 70%; margin: 30px auto 10px;color:#BD4B1E;font-size:0.9em;display: block;}
+/*按钮变红*/
+.redBtnUse{background-color: #f86c36;}
+/*边框线*/
+.borBottomCom{border-bottom: 1px #dddddd solid;}
+.mainMore{  margin: 15px 0;display:none;text-align: center;color: #666;background-color: #fff;height: 30px;line-height: 30px;font-size: 0.9em;}
+/*暂无记录*/
+.noRecord {height: 200px;line-height: 200px;text-align: center;}
+/*客服热线*/
+.log_suc5{width: 50%;margin:10px auto; }
+.log_suc5 img{width: 100%;}
+/*问号*/
+.askicon{display: inline-block;  width: 17px;margin-left: 5px;position: relative;}
+.askicon img{width: 100%;vertical-align: -3px;}
+/*.ask_content{display: block;position: absolute;width: 210px;background-color: #f5f5f5;font-size: 0.8em;color: #666666;
+    border: 1px #ddd solid;border-radius: 5px;line-height: 30px;padding: 10px; left: -10px;}*/
+/*成功页面新*/
+.suc-page-con{text-align: center;background-color: #FFFFFF;font-size: 0.8em;margin: 20px auto 50px;width: 88%;padding-bottom: 40px;border-radius: 5px; }
+.suc-page-con .spc-img{width:45px;padding-top: 40px;margin: 0 auto; }
+.suc-page-con .spc-img img{width: 100%;}
+.suc-page-con .spc-con{margin-top: 30px;margin-bottom: 20px;}
+.suc-page-con .spc-con .span1{color: #f86c36;font-size: 1.1em;}
+.suc-page-con .spc-a{color: #999999;display: block;}
+.suc-page-btn{width: 100%;text-align: center;}
+.suc-page-btn .tip{font-size: 0.8em;color: #f86c36;line-height: 20px;margin-bottom: 10px;}
+.suc-page-btn a{display: block;background-color: #f86c36;height: 44px;line-height: 44px;width: 88%;margin: 0 auto;
+    text-align: center;font-size: 1.1em;color: #FFFFFF;border-radius: 5px;}

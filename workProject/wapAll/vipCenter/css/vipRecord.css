@@ -1,0 +1,83 @@
+.record h3 {
+  height: 42px;
+  line-height: 42px;
+  width: 95%;
+  margin-left: 5%;
+  font-weight: normal;
+  color: #333333;
+  font-size: 0.9em ;
+}
+.record .list-content {
+  background-color: #fff;
+  overflow: hidden;
+}
+.record .list-content ul {
+  width: 95%;
+  padding-left: 5%;
+}
+.record .list-content ul li {
+  border-bottom: 1px #ddd solid;
+  overflow: hidden;
+  text-align: center;
+  color: #666;
+}
+.record .list-content ul li .list-content-record {
+  height: 48px;
+  line-height: 48px;
+  font-size: 0.9em;
+}
+.record .list-content ul li .list-content-record .date {
+  float: left;
+  width: 35%;
+}
+.record .list-content ul li .list-content-record .change {
+  width: 25%;
+  float: left;
+  color: #f86c36;
+}
+.record .list-content ul li .list-content-record .change img {
+  width: 11px;
+  margin-right: 2px;
+}
+.record .list-content ul li .list-content-record .value {
+  width: 30%;
+  float: left;
+}
+.record .list-content ul li .list-content-record .arrow {
+  width: 10%;
+  float: left;
+}
+.record .list-content ul li .list-content-record .arrow img {
+  width: 14px;
+  vertical-align: -2px;
+}
+.record .list-content ul li p {
+  font-size: 0.8em;
+  background-color: #f5f5f5;
+  width: 94%;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 5px;
+  display: none;
+  color: #333333;
+}
+.record .list-content ul li p span {
+  margin-right: 10px;
+}
+.record .list-content ul li:last-child {
+  border: 0;
+}
+.record .list-content ul li.title {
+  font-size: 1em;
+  color: #999999;
+}
+.record .list-content ul li.title .change {
+  color: #999999;
+}
+/*暂无成长记录*/
+.change-no{text-align: center;margin-top: 100px;}
+.change-no .p1{margin-bottom: 10px;}
+.change-no .p1 img{width: 130px;}
+.change-no .p2{color: #999999;font-size: 1em;}
+#loading{width: 100%;text-align: center;padding-top: 10px;font-size: 0.9em;display: none;}
+#no-more{width: 100%;text-align: center;padding-top: 10px;font-size: 0.9em;display: none;}

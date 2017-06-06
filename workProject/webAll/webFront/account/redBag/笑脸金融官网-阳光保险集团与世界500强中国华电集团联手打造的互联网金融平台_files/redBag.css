@@ -1,0 +1,5 @@
+﻿
+#user-redenvelope-table > thead > tr{height:53px;}
+#user-redenvelope-table > tbody > tr{ height:83px;}
+#user-redenvelope-table > tbody > tr:hover{background: #f8f8f8;}
+.redenvelope-invest a{color:#2932e1;text-decoration: none;font-weight: bold;}

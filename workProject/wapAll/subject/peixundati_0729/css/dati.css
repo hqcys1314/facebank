@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*培训反馈--答题页*/
+.body_dati{background-color: #f86c36;}
+.da1{ width: 100%;position: relative; }
+.da1 .jindu{width: 40%;height: 40px;line-height: 40px;background-color: #e95a1b;border-radius:2em 0 0 2em;float: right;text-align: center;
+     color: #ffffff;margin-top:15px;}
+.da1 .div1{color: #fff2bb;  padding-top: 20%; width: 90%; margin: 0 auto;}
+.da1 .div1 .p1{ font-size: 1.3em;margin-bottom: 10px;  font-weight: bold;}
+.da1 .div1 .p2{}
+.da2{margin-bottom: 70px;}
+.da2 p{width: 90%; margin: 0 auto;background-color: #fc8f65;border-radius: 5px;  margin-top: 10px;overflow: hidden;}
+.da2 p input{  width: 15px;height: 15px;margin-left: 10px;margin-right: 10px;float: left;    margin-top: 16px;}
+.da2 p label{display: inline-block;  padding:9px 0;  width: 86%;float: left;}
+.da2 p .span2{height: 30px;line-height: 30px;display: inline-block;color:#fff;}
+.da3 { position: fixed;bottom: 0; width: 100%; left: 0;background-color: rgba(0,0,0,0.5);}
+.da3 a{width:70%;margin: 10px auto;display: block;border-radius: 2em;background-color: #fc8f65;color: #ffffff;font-size: 1.2em;
+    height: 40px;line-height: 40px;text-align: center;}

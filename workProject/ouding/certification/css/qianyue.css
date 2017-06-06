@@ -1,0 +1,27 @@
+.qy-tip{font-size: 0.9em;width: 90%;margin: 0 auto;line-height: 22px;}
+.qy-content{width: 80%;background-color: #f5f5f5;border-radius: 5px;margin: 30px 10%;padding: 15px 0;}
+.qy-content p{margin-left:20px;font-size: 0.9em;margin-bottom: 5px;color: #333333;}
+.qy-content .p1{width: 100%;text-align: center;color: #ff4830;}
+.qy-content .line{border-top: 1px #dddddd solid;margin: 10px 20px;height: 0;}
+.qy-content span{margin-left: 3px;}
+.qy-foot {
+    width: 95%;
+    margin-left: 5%;
+}
+.qy-foot .tijiao {
+    width: 95%;
+    margin: 10px auto;
+    height: 45px;
+    border-radius: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.qy-foot .color-red{
+    background: #ff4830;
+}
+.font-red{color: #ff4830;}
+.xieyi{font-size: 0.8em;color: #999999;}
+.xieyi input{margin-right: 3px;margin-top: 3px;float: left;}
+.xieyi a{color: #ff4830;float: left;}
+.xieyi font{float: left;}

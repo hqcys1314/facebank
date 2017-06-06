@@ -1,0 +1,84 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*银行卡认证*/
+.bindCardBanner{width: 100%;text-align: center;}
+.bindCardBanner img{width: 90%;margin: 0 auto;}
+.infoborder{border-bottom: 1px #ddd solid;}
+.bcbMargin{margin-top: 15px;}
+.bcbPart1{position: relative;background-color: #fff;color: #000;font-size: 0.9em;  border-top: 1px #ddd solid;border-bottom: 1px #ddd solid;margin-bottom: 10px;}
+.bcbPart1 input[type="text"]{font-size: 1em;width: 74%;}
+.bcbPart1 .div1{margin-left: 5%;  height: 45px;position: relative;}
+.bcbPart1 .div1 .span1{float: left;height: 45px;line-height: 45px;  display: inline-block;width: 25%;}
+.bcbPart1 .div1 .span2{float: left;width: 85%;display: inline-block;  overflow: hidden;}
+.bcbPart1 .div1 .span2 select{color: #999;width: 110%;}
+.bcbPart1 .div1 .span3{display: inline-block;  width: 12px;margin-left: 3%;float: left;  line-height: 45px;}
+.bcbPart1 .div1 .span3 img{width: 100%;vertical-align: middle;}
+.bcbPart1 .div1 .span4{display: inline-block;  width: 20px;margin-left: 3%;float: left;  line-height: 45px;}
+.bcbPart1 .div1 .span4 img{width: 100%;vertical-align: middle;}
+.bcbPart1 .big{z-index: 2;font-size: 1.4em;color: #f86c36;padding: 8px 0 8px 5%;
+    background-color: #fff5b4;width: 95%;font-weight: bold;display: none;}
+.bcbPart1 .big_card{z-index: 2;font-size: 1.4em;color: #f86c36;padding: 8px 0 8px 5%;
+    background-color: #fff5b4;width: 95%;font-weight: bold;display: none;}
+.bcbPart1 .bank_mobile{z-index: 2;font-size: 1.4em;color: #f86c36;padding: 8px 0 8px 5%;
+    background-color: #fff5b4;width: 95%;font-weight: bold;display: none;}
+.bcbPart1 input[type="text"].bigNum{font-size: 1.2em;font-weight: bold;color: #333333;}
+.bcbPart1 input[type="number"],.bcbPart1 input[type="tel"]  {font-size: 1em;width: 74%;height: 45px;-moz-appearance:textfield;text-align: left;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+.bcbPart1 .div_choose{overflow: hidden;background-color: #ffffff;font-size: 0.9em; position: relative;display: none;border-bottom: 1px #dddddd solid;}
+.bcbPart1 .div_choose .span1{float: left;display: block;height: 45px;line-height: 45px;width: 50%;border-right:1px #ddd dashed; }
+.bcbPart1 .div_choose .span1 img{height: 100%;margin-left: 10px;}
+.bcbPart1 .div_choose .span2{float: left;height: 45px;line-height: 45px;width: 20%;margin-right: 4%;text-align: right;}
+.bcbPart1 .div_choose .span3{float: left;width: 20%;height: 45px;line-height: 45px;padding-left: 4%; }
+.bcbPart1 .div_choose .p_tip{position: absolute;bottom:1px;right:0;font-size: 0.8em;width: 50%;text-align: center;color: #f86c36;}
+.bcbPart1 .msgCode{position: absolute;border: 1px #f86c36 solid;outline: 0;background-color: #fff; color: #f96c36;
+    right: 10px;width: 83px;text-align: center;height: 25px; margin-top: 10px;border-radius: 2em;}
+.bcbPart2{width: 100%;}
+.bcbPart2 input[type="button"]{width: 70%;margin: 0 15%;}
+.bcbPart3{overflow: hidden;margin-bottom: 40px;}
+.bcbPart3 p{  width: 90%;margin: 10px auto;font-size: 0.8em;}
+.bcbPart3 p .span1{  width:18px;display: inline-block;float: left;  margin-right: 5px;}
+.bcbPart3 p .span1 img{width: 100%;}
+.bcbPart3 p .span2{display: inline-block;float: left;width: 90%;  margin-bottom: 5px;}
+.bcbPart4 {text-align: right;  margin: 10px;font-size: 0.9em;float: right;width: 50%;}
+.bcbLimit {margin-top: -10px;margin-bottom: 15px; margin-left: 5%;color: #f86c36;font-size: 0.8em;}
+.bank_limit {font-size: 0.8em;text-align: right;display: block; margin-right: 5%;height: 35px;line-height: 35px;color: #f86c36;}
+/*支持银行列表*/
+.bc_limit{height: 100%;max-width: 600px;z-index:21; display:none;
+position:fixed;background-color: #f5f5f5;top: 0; width: 100%;}
+.list_1{overflow: hidden;width: 90%;margin: 0 auto;font-size: 0.9em;height:85%;}
+.list_1 .title{overflow: hidden;height:30px;line-height: 30px;}
+.list_1 .title p{float: left;}
+.list_1 .title .p1{width:39%;text-align: center;}
+.list_1 .title .p2{width: 50%;text-align: center;}
+.list_1 ul{overflow-y: scroll;height: 90%;}
+.list_1 ul li{border:1px #ddd solid;overflow: hidden; margin-bottom: 6px;background-color: #ffffff;font-size: 0.8em; position: relative;}
+.list_1 ul li .span1{float: left;display: block;height: 40px;line-height: 40px;width: 50%;border-right:1px #ddd dashed; }
+.list_1 ul li .span1 img{width: 106px;vertical-align: middle;}
+.list_1 ul li .span2{float: left;height: 40px;line-height: 40px;width: 23%;text-align:center;}
+.list_1 ul li .span3{float: left;width: 23%;height: 20px;line-height:20px;margin-top: 10px;text-align: center;border-left:1px #ddd solid; }
+.list_1 ul li .p_tip{position: absolute;bottom:1px;right:0;font-size: 0.8em;width: 50%;text-align: center;color: #f86c36;}
+.bc_limit .p_close{text-align: center;position: absolute;bottom: -42px;left: 50%;margin-left: -15px;}
+.bc_limit .p_close img{width: 30px;}
+.list_2{overflow: hidden;width: 90%;margin: 0 auto 10px;padding-top:5%;}
+.list_2 h3{font-size: 0.9em;font-weight: normal;overflow: hidden;height: 40px;}
+.list_2 ol{padding-left: 20px;font-size: 0.95em;}
+
+.wapTip .p_title{text-align: center;padding-top: 15px;}
+#phone_tip_tk .wapTip .p1{padding:15px 0; }
+.p_bk{width: 100%;text-align: center;color: #f86c36;height: 40px;line-height: 40px;  border-top: 1px #ddd solid;}
+
+.setPwdTip1{background-color: #fefcec;font-size: 0.9em;overflow: hidden;}
+.setPwdTip1 a{display: block;color: #f86c36;}
+.setPwdTip1 .span1{float: left;display: inline-block;width: 15px;margin-left: 20px;margin-right: 5px;height: 40px;line-height: 36px;}
+.setPwdTip1 .span1 img{width: 100%;vertical-align: middle;}
+.setPwdTip1 .span2{float: left;display: inline-block;margin-top: 10px;width: 80%;}
+.setPwdTip1 .span3{float: right;display: inline-block;width: 10px;margin-right: 20px;}
+.setPwdTip1 .span3 img{width: 100%;vertical-align: middle;}
+
+#redirect_tip .p1{text-align: center;}
+#redirect_tip .p2 span{color: #666666;}
+#redirect_tip .p2 a{color: #666666;display: block;}

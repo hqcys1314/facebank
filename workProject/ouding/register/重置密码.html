@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/register/css/login.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>重置密码</h3>
+    <p class="tip">密码由数字、字母组成，要求最少6位。</p>
+</header>
+<section class="content">
+    <div class="part">
+        <p>新密码</p>
+        <span class="eye" id="pwdEye"><img src="img/wink.svg"></span>
+        <input type="password" placeholder="请设置您的新密码" value="" id="password">
+        <span class="icon">
+                <img src="http://static.facebank.cn/staticod/ouding/register/img/delate.png">
+         </span>
+    </div>
+    <div class="part">
+        <p>再次输入新密码</p>
+        <input type="password" placeholder="请再次输入您的新密码" value="">
+        <span class="icon">
+                <img src="http://static.facebank.cn/staticod/ouding/register/img/right.png">
+         </span>
+    </div>
+
+</section>
+<div class="error">
+    两次密码不一致
+</div>
+<!-----------------------登录按钮为红色---------------------------------->
+<input type="button" value="确定" class="login-btn color-red" style="display: none;"
+       data-event="reset" data-event-name="重置密码-确定" data-event-category="reset-btn">
+<!-----------------------登录按钮为灰色---------------------------------->
+<input type="button" value="确定" class="login-btn">
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    var i = 0;
+    $("#pwdEye").click(
+            function(){
+                i++;
+                var a = i%2;
+                if(a==0){
+                    $(this).find("img").css("margin-left","-34px");
+                    $("#password").attr('type','password');
+                }else{
+                    $(this).find("img").css("margin-left","0");
+                    $("#password").attr('type','text');
+                }
+            }
+    );
+</script>
+</html>

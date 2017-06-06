@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*奖励详情*/
+.list{background-color: #ffffff;padding-left: 5%;}
+.list li{overflow: hidden;padding: 15px 5% 6px 0;border-bottom: 1px #dddddd solid;}
+.list li .left{float: left;}
+.list li .left .p1{font-size: 1em;}
+.list li .left .p2{font-size: 0.8em;color: #999999;}
+.list li .right{float: right;color: #f86c36;margin-top: 10px;}
+.list li .right .span1{font-size: 0.8em;}
+.list li .right .span2{font-size: 1.2em;}
+.jl_btn{height: 30px;line-height: 30px;font-size:0.9em;text-align: center;margin-top: 10px;}
+/*奖励为空*/
+.ph_empty{text-align: center;margin-top: 50px;}
+.ph_empty .p1{}
+.ph_empty .p1 img{width: 150px;}
+.ph_empty .p2{color: #999999;font-size: 0.9em;}
+.ph_empty .yq{display: block;width: 40%;border: 1px #f86c36 solid;height: 40px;line-height: 40px;color: #f86c36;margin: 20px auto 0;}

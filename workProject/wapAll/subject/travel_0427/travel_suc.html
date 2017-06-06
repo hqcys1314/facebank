@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸金融夏日迎新活动</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/travel_0427/css/travel.css">
+</head>
+<body>
+<div class="tr_suc_1">
+    <img src="img/tr_suc_1.jpg">
+    <div class="pos">
+        <p class="p1">恭喜您</p>
+        <p class="p2">已经成功领取了最高价值100万的交通意外保障</p>
+        <p class="p3">电子保单号：805072012150400003215</p>
+        <p class="p4"><font>*</font> 保单号已通过短信及邮件形式发送给您，如有保险相关疑问请拨打阳光保险官方客服电话95510，
+            如有活动相关疑问请拨打笑脸金融官方客服电话400-890-766。</p>
+    </div>
+</div>
+<div class="tr_suc_2">
+    <img src="http://static.facebank.cn/static/wapFront/subject/travel_0427/img/tr_suc_2.jpg">
+</div>
+<div class="tr_suc_3">
+    <img src="http://static.facebank.cn/static/wapFront/subject/travel_0427/img/tr_suc_3.jpg">
+    <div class="pos">
+         <a class="a_1">邀请朋友</a><a href="">生成我的海报</a>
+    </div>
+</div>
+<div style="height: 4em;">
+
+</div>
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/shareContent.png">
+</div>
+<div class="gameMc"></div>
+<div class="gameMcPos">
+    <a href="">立即查看</a>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function mcLoad(){
+            var wapShare= document.body.scrollHeight;
+            $(".wapShare").css("height",wapShare);
+        }
+        window.onload=mcLoad();
+        $('.tr_suc_3 .pos .a_1').click(
+                function(){
+                    $(".wapShare").show();
+                }
+        );
+        $('.wapShare').click(
+                function(){
+                    $(".wapShare").hide();
+                }
+        );
+    });
+
+</script>
+</html>

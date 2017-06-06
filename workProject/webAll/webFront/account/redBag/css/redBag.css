@@ -1,0 +1,17 @@
+﻿
+#user-redenvelope-table > thead > tr{height:53px;}
+#user-redenvelope-table > tbody > tr{ height:83px;}
+#user-redenvelope-table > tbody > tr:hover{background: #f8f8f8;}
+.redenvelope-invest a{color:#2932e1;text-decoration: none;font-weight: bold;}
+/*我的红包（无）*/
+.table .no_hb_1{width: 100%;text-align: center;margin-top: 60px;}
+.table .no_hb_1 img{width: 175px;}
+.table .no_hb_2{text-align: center;}
+.table .no_hb_2 .p1{color: #666;font-size: 1.2em;margin: 15px 0 5px;text-align: center;}
+.table .no_hb_2 .p2{color: #999;font-size: 0.9em;margin: 0;text-align: center;    margin-bottom: 70px;}
+
+.shuoming{border: 1px #FFFF00 solid;background-color: #FFF8DC;width: 90%;margin: 0 auto;color: #333;}
+.shuoming h3{width: 87%; margin: 10px auto 5px;font-size: 1em;}
+.shuoming ol{width: 85%;margin: 0px auto 10px;line-height: 28px; padding-left: 15px;}
+.shuoming ol li{}
+.shuoming p{text-align: center;width: 100%;margin-bottom: 20px;}

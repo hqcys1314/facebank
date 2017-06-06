@@ -1,0 +1,31 @@
+body{background-color: #f5600e;}
+.content-1{width: 100%;}
+.content-1 img{width: 100%;}
+.content-2{width: 100%;padding-bottom: 20px;}
+.content-2 .div_pos{width: 82%;margin: 0 auto;background-color: #ffffff;padding:30px 4% 25px;border-radius: 5px;}
+.content-2 .div_pos input{border-radius: 10px;height: 36px;font-size: 0.95rem;}
+.content-2 .div_pos .p_tip{color: #f25600; font-size: 0.85rem;border-top: 1px #f25600 solid;position: relative;margin-bottom: 25px;}
+.content-2 .div_pos .p_tip span{background-color: #ffffff;position: absolute;width: 50%;left: 50%;margin-left: -25%;top: -10px;text-align: center;display: block;}
+.content-2 .div_pos .part1{ margin-bottom:10px;overflow: hidden;border-radius: 10px;border: 1px #dadada solid;padding: 4px 0;}
+.content-2 .div_pos .part1 .icon{float: left;display: inline-block;width: 12%;height: 36px;line-height: 36px;text-align: center;
+  }
+.content-2 .div_pos .part1 .icon img{width: 14px;margin-top: 6px;}
+.content-2 .div_pos .part1 input{width: 86%;float: left;}
+.content-2 .div_pos .part2 {margin-bottom: 16px;overflow: hidden;}
+.content-2 .div_pos .part2 .p1{float: left;border-radius: 10px;border: 1px #dadada solid;padding: 4px 0;width: 57%;}
+.content-2 .div_pos .part2 .p1 .icon{float: left;display: inline-block;width: 20%;height: 36px;line-height: 36px;text-align: center;
+   }
+.content-2 .div_pos .part2 .p1 .icon img{width: 18px;margin-top: 10px;}
+.content-2 .div_pos .part2 .p1 input[type="tel"]{width: 78%;}
+.content-2 .div_pos .part2 input[type="button"]{color: #ffffff;width: 37%;margin-left: 5%;background-color: #19c0dc;height: 45px;}
+.content-2 .div_pos .part3 input{width: 100%;font-size:1rem;background-color: #f5600e;color: #ffffff;height: 44px;}
+.content-2 .div_pos .part4{color: #666666;    margin: 8px 0;font-size: 0.9rem;}
+.content-2 .div_pos .part4 font{color: #f86c36;font-size: 1rem;}
+
+.content-3{background-color: #f53b04;overflow: hidden;padding:0.5rem 0;}
+.content-3 .left{float: left;width: 38%;margin-left: 10%;}
+.content-3 .left img{width: 100%}
+.content-3 .right{float: left;width: 42%;text-align: right;margin-top: 2%;}
+.content-3 .right a{background-color: #ffd307;border-radius: 2rem;color: #f71100;font-size: 0.9rem;padding: 0.4rem 0.8rem;}
+
+.content-4{margin-top: 1.1rem;font-size: 0.75rem;color: #ffffff;margin-bottom: 1.5rem;text-align: center;}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>提现</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/rechargeWithdraw.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    提现
+</div>
+<div class="rw-1">
+    <img src="http://static.facebank.cn/static/wapFront/account/img/bigbankIcon/beijing_bank.png">
+    <div class="pos">
+        <p class="p1">
+            <span>工商银行</span>
+        </p>
+        <p class="p2">
+            ****&nbsp;****&nbsp;****&nbsp;****&nbsp;2472
+        </p>
+        <p class="p3">
+            孙**
+        </p>
+    </div>
+</div>
+<div class="rw-2">可提现余额:6,125.00元</div>
+<div class="rw-3">
+    <div class="pos">
+        <div class="div1"><select><option style="color: #cccccc">选择开户城市</option><option>北京</option></select></div>
+        <div class="div2"><img src="img/infoJiantou.png"></div>
+    </div>
+</div>
+<div class="rw-4">
+    <div class="pos">
+        <input type="text" placeholder="输入提现金额"><input type="button" value="全部提现">
+    </div>
+</div>
+<div class="rw-4">
+    <div class="pos" style="border: 0;">
+        <input type="text" placeholder="输入验证码"><input type="button" value="获取验证码" id="msgCode" onclick="timePass()">
+    </div>
+</div>
+<div class="rw-5" id="rw-5">
+    收不到短信？使用<span id="voiceCode">语音验证码</span>
+</div>
+<div class="rw-6">
+    <input type="button" value="提现" class="color-red">
+</div>
+<div class="rw-7">
+    <input type="checkbox"><span>本人已阅读和同意<a>《代收代付业务授权书》</a></span>
+</div>
+<div class="rw-8">
+    <p>提现说明：</p>
+    <ol>
+        <li>提现金额≥1000元时，免收手续费；</li>
+        <li>提现金额<1000元时，当月首次免费，以后2元/笔；</li>
+        <li>到账时间：提现申请提交后的T+1个工作日内到账（周末、节假日顺延）。</li>
+    </ol>
+    <p>联系客服：</p>
+    <p class="p1"><img src="img/ic_tel.png"><a href="tel:4008-900-766">4008-900-766</a>(工作日：9:00-18:00)  </p>
+    <p class="p2"><a href=""><img src="img/ic_weixin.png">微信中搜索“笑脸平台”<img src="img/ic_i.png"></a></p>
+</div>
+<div class="wapPos" id="debaseWidthdraw">
+    <div class="wapTip">
+       <p class="p-head">温馨提示</p>
+        <p class="p1">为了帮您获得更多收益，提醒您余额可以获得笑脸币哦~可在笑脸商城中兑换红包、话费等好礼，<a href="http://cms.facebank.cn/licaimiji_20161114.html">查看详情</a></p>
+        <p class="p2">
+            <span class="span3" style="color: #666;">继续</span><span class="span2"><a>取消</a></span>
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $("#voiceCode").click(
+            function(){
+              $("#rw-5").html("语音呼叫已发出，请在120秒内完成输入")
+            }
+    )
+</script>
+</html>

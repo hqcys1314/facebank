@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #ffffff;    color: #333;}
+ol{width: 85%;margin: 20px auto 10px;line-height: 28px; padding-left: 15px;}
+ol li span{color: #999999;}
+p{text-align: center;width: 100%;margin-bottom: 20px;}
+h3{margin-left: 5%;color: #f86c36;margin-top: 2rem;}

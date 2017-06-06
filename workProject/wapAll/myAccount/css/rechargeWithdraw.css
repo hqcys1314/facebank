@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+/*充值+提现*/
+.setPwdTip{background-color: #fefcec;font-size: 0.9em;height: 40px;line-height: 36px;margin-bottom: 15px;border-bottom:1px #eaeaea solid;}
+.setPwdTip a{display: block;color: #f86c36;overflow: hidden;width: 86%;}
+.setPwdTip .span1{float: left;display: inline-block;width: 15px;margin-left: 20px;margin-right: 5px;    margin-top: 12px;}
+.setPwdTip .span1 img{width: 100%;vertical-align: top;}
+.setPwdTip .span2{float: left;display: inline-block;margin-top: 2px;}
+.setPwdTip .span3{float: right;display: inline-block;width: 13px;margin-right: 20px;margin-top: 14px;}
+.setPwdTip .span3 img{width: 100%;vertical-align: top;}
+/*招商银行提示*/
+.setPwdTip1{background-color: #fefcec;font-size: 0.9em;overflow: hidden;    padding-bottom: 10px;}
+.setPwdTip1 a{display: block;color: #f86c36;}
+.setPwdTip1 .span1{margin-top: 11px;float: left;display: inline-block;width: 15px;margin-left: 20px;margin-right: 5px;}
+.setPwdTip1 .span1 img{width: 100%;}
+.setPwdTip1 .span2{float: left;display: inline-block;margin-top: 10px;width: 80%;}
+.setPwdTip1 .span3{float: right;display: inline-block;width: 10px;margin-right: 20px;}
+.setPwdTip1 .span3 img{width: 100%;vertical-align: middle;}
+#rechargeSuc_tip .p_title{text-align: center;padding-top: 15px;}
+#rechargeSuc_tip .p1{text-align: center;}
+#rechargeSuc_tip .p2 span{color: #666666;}
+#rechargeSuc_tip .p2 a{color: #666666;display: block;}
+
+/*余额不足提示*/
+.rw-tip{color: #f86c36;}
+.rw-tip p{  width: 90%;margin: 10px auto 0;font-size: 0.8em;overflow: hidden;}
+.rw-tip p .span1{  width:18px;display: inline-block;float: left;  margin-right: 5px;}
+.rw-tip p .span1 img{width: 100%;}
+.rw-tip p .span2{display: inline-block;float: left;width: 90%;  margin-bottom: 5px;}
+
+.rw-1{width: 90%;background-color: #ff0000; margin: 1rem auto 0;border-radius: 5px;color: #fff;position: relative;}
+.rw-1 img{width: 100%;}
+.rw-1 .pos{position: absolute;top: 0;height: 100%;width: 100%;}
+.rw-1 .pos .p1{height: 45%;position: relative;}
+.rw-1 .pos .p1 span{top: 22%;left: 12%;position: absolute;font-size: 0.9rem;}
+.rw-1 .pos .p2{height: 30%;text-align: right;font-size: 1.4rem;    margin-right: 1rem;}
+.rw-1 .pos .p3{height: 25%;  margin-left: 12px;font-size: 0.688rem;}
+.rw-2{font-size: 0.688rem;color: #999;margin: 0.8rem 0 0.8rem 5%;}
+
+.rw-3{height:3rem;background-color: #fff;width: 100%;position: relative;margin-bottom:1rem; }
+.rw-3 .pos{margin-left: 5%;width: 95%;overflow: hidden;}
+.rw-3 .pos .div1{float: left;width: 88%;overflow: hidden;}
+.rw-3 .pos .div1 select{  color: #999;width: 110%;font-size:0.938rem;}
+.rw-3 .pos .div2{ display: inline-block;width: 12px; margin-left: 3%;float: left;margin-top: 15px;}
+.rw-3 .pos .div2 img{width: 100%;}
+.rw-4{height:3rem;background-color: #fff;width: 100%;position: relative;}
+.rw-4 .pos{margin-left: 5%;width: 95%;border-bottom: 1px #dddddd solid;overflow: hidden;}
+.rw-4 .pos input[type="password"],input[type="text"],input[type="number"],input[type="tel"]{width: 95%;font-size: 0.938rem;color: #333333;height: 45px;
+    background-color: #ffffff;}
+.rw-4 .pos input[type="button"]{width:4.5rem;text-align: center;font-size: 0.75rem;background-color: #fff;top:0.6rem;
+    border: 1px #f86c36 solid;padding: 4px 0;border-radius:5px;color: #f86c36;position: absolute;right: 5%;}
+.rw-4-send{font-size: 0.7em;color: #999;margin: 7px 5%;}
+.rw-5{font-size: 0.75rem;text-align: right;margin: 1rem 5% 1rem 0;}
+.rw-5 span{color: #f86c36;}
+
+.rw-6{text-align: center;margin-top: 1rem;}
+.rw-6 input{width: 90%;margin: 0 auto 0.688rem;text-align: center;font-size:0.938rem;height:2.75rem;color: #FFFFFF;border-radius: 5px;  }
+.rw-6 input.color-red{background-color: #f86c36;}
+
+.rw-7{font-size: 0.688rem;margin-bottom: 1.188rem;}
+.rw-7 input{margin-left: 5%;  vertical-align:-2px;margin-right: 4px;}
+.rw-7 span{}
+.rw-7 span a{color: #f86c36;}
+
+.rw-8{font-size:0.75rem;color: #999999;margin-left: 5%; line-height: 1.5rem;margin-bottom: 1.188rem;}
+.rw-8 img{width: 0.875rem;vertical-align: -4px;margin-right: 4px;}
+.rw-8 .p1 a{color: #999999;margin-right: 3px;}
+.rw-8 .p2 a{color: #999999;}
+.rw-8 ol{margin-left: 0.8rem;width: 90%;margin-bottom: 1.188rem;}

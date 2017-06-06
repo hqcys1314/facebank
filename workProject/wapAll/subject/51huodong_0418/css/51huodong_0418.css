@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #f8e7bc;}
+.cy_1{width: 100%;}
+.cy_1 img{width: 100%;}
+.cy_2{width: 100%;overflow: hidden;background:url("../img/cy_2.jpg") repeat center;}
+.cy_2 .content{width: 80%;margin: 20px auto;font-size:0.95em;overflow: hidden;}
+.cy_2 .content .p1{color: #9e2214;font-weight: bold;}
+.cy_2 .content .p2{color: #333333;}
+.cy_2 .content .p2 label{display: block;margin-top: 10px;position: relative;}
+.cy_2 .content .p2 label input[type="checkbox"]{margin-right: 5px;}
+.cy_2 .content .p2 label input[type="text"]{background-color:#f8e7bc;width: 83%;height: 40px;border: 1px #333333 solid; padding-left: 5px;font-size:0.95em;}
+.cy_2 .content .p3{color: #ffffff;text-align: center;overflow: hidden;margin: 10px 0;border-bottom: 1px #333333 solid;}
+.cy_2 .content .p3 input[type="text"]{float: left;width: 80%;background-color: #f8e7bc;color: #e1201b;height: 40px; font-size: 0.95em;}
+.cy_2 .content .p3 input[type="text"]:-moz-placeholder{color: #e1201b;}
+.cy_2 .content .p3 input[type="text"]:-ms-input-placeholder{color: #e1201b;}
+.cy_2 .content .p3 input[type="text"]::-webkit-input-placeholder{color: #e1201b;}
+.cy_2 .content .p3 span{float: left;display: inline-block;width: 30px;margin-top:7px;}
+.cy_2 .content .p3 span img{width: 100%;}
+.cy_2 .content .p4{border-bottom: 1px #ddd solid;margin: 20px 0;display: block;border-radius:5px;background-color: #e1201b;height: 45px;line-height: 45px;color: #ffffff;text-align: center;font-size: 1.3em;}
+.cy_3{width: 100%;position: fixed;bottom:0;overflow: hidden;padding-bottom: 5%;}
+.cy_3 .left{float: left;margin: 5% 0 0 2%;text-align: center;width: 18%;}
+.cy_3 .left img{width: 50px;}
+.cy_3 .right{float: left;margin-top: 5%;width: 77%;}
+.cy_3 .right .span1{float: left;font-weight: bold;width:100%;position: relative;color: #ffffff;    margin-bottom: -5px;}
+.cy_3 .right .span1 a{width:100%;display: block;}
+.cy_3 .right .span1 a img{width: 100%;}
+.cy_3 .right .span1 .span_zi{top:15%;position: absolute;font-size: 0.85em;font-weight: bold;    margin-left: 5%;}
+.cy_3 .right .span1 .span_zi font{display: block;font-size: 0.7em;font-weight: normal;margin-top: 3px;}
+.cy_3 .right .span2{display: block;clear:both;margin-left: 3%; padding-left: 2%;font-size: 0.7em;background-color: #ffffff;    height: 25px;line-height: 25px;}
+.cy_5{width: 100%;position: fixed;bottom:0;overflow: hidden;opacity: 0.8;background-color:#d6c39c; }
+
+/*活动结果页面*/
+.hd_1{width: 100%;position: fixed;top: 0;background: url("../img/cy_5.png") repeat center;line-height: 25px;z-index: 2;
+    font-size: 1em;text-align: center; color: #fff;padding: 15px 0;overflow: hidden;}

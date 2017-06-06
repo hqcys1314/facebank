@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+/*笑脸币明细*/
+.mx_tab{height: 40px;background-color: #fff; margin-bottom: 0.5em;}
+.mx_tab ul{width: 100%;}
+.mx_tab ul li{float: left;text-align: center;font-size: 1em;height: 40px;line-height:40px;width: 50%; }
+.mx_on{border-bottom: 1px #f86c36 solid;color: #000;}
+.mx_off{color: #999;}
+.mx_total{color: #ffffff;margin-top: 20px;}
+.mx_total .circle{border-radius: 50%;width: 120px;height: 120px;text-align: center;margin: 0 auto;background-color: #ffad00;position: relative;}
+.mx_total .circle .p1{font-size: 1.1em;padding-top: 40px;}
+.mx_total .circle .p2{font-size: 0.8em;}
+.mx_total .bg_white{background-color: #ffffff;height: 100px;margin-top: -60px;}
+.mx_list{background-color: #fff;color: #000;overflow: hidden;position: relative;}
+.mx_list .left{float: left;width: 60%;margin-left: 4%;border-bottom: 1px #ddd solid;height:40px;padding:15px 0;}
+.mx_list .left .p1{font-size: 1em;margin-bottom: 3px;}
+.mx_list .left .p2{height: 20px;font-size: 0.8em;color: #999;}
+.mx_list .right{float: left;width: 32%;margin-right:4%;text-align: right;border-bottom: 1px #ddd solid;height:40px;padding:15px 0;line-height: 40px;}
+.mx_list .right .span1{display: block;float: right;font-size: 1.3em;color: #f86c36;    margin-right: 5px;}
+.mx_list .right .jiantou{float: right;width: 12px;}
+.mx_list .right .jiantou img{width: 100%;vertical-align: middle;}
+.more{text-align: center;font-size: 1em;height: 50px;line-height: 50px;color: #999999;background-color: #ffffff;}
+#listShow2{display: none;}
+.mx_empy{text-align: center;}
+.mx_empy .p1{width: 50%;margin: 50px auto 30px;}
+.mx_empy .p1 img{width: 100%;}
+.mx_empy .p2{color: #666666;font-size: 1em;}
+.mx_empy .mx_btn{width: 50%;background-color: #f86c36;height: 45px;line-height: 45px;text-align: center;display: block;
+    color: #ffffff;margin: 20px auto 0;border-radius: 5px;}
+
+/*订单详情*/
+.dd_title{text-align: center;margin-top: 10px;background-color: #ffffff;padding: 10px 0;margin-bottom: 10px;}
+.dd_title .p1{text-align: center;}
+.dd_title .p1 img{width: 50px;}
+.dd_title .p2{font-size: 1.2em;color: #f86c36;}
+.dd_con{background-color: #ffffff;margin-top: 10px;font-size: 0.9em;}
+.dd_con .dd_list{width: 92%;margin: 0 auto;padding: 10px 0;border-bottom: 1px #ddd solid;height: 30px;line-height: 30px;}
+.dd_con .dd_list .p1{color: #666666;float: left;width: 35%;}
+.dd_con .dd_list .p2{color: #000000;float: left;}
+.dd_con .dd_list .p2 .span1{color: #f86c36;font-family: arial, "microsoft yahei";}
+.dd_con .dd_list:last-child{border: 0;}
+/*笑脸币攻略*/
+.gl{background-color: #ffffff;margin-top: 10px;font-size: 0.9em;}
+.gl .gl_list{width: 92%;margin: 0 auto;padding: 10px 0;border-bottom: 1px #ddd solid;}
+.gl .gl_list .gl_q{color: #000000;margin-bottom: 5px;}
+.gl .gl_list .gl_a{color: #666666;}
+.gl .gl_list:last-child{border: 0;}

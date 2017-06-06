@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.choose{width: 100%;background-color: #ffffff;position:absolute;top:50px;left: 0; display: none; z-index: 21;}
+.choose ul{width: 90%;margin: 0 auto;text-align: center;overflow: hidden;}
+.choose ul li{color: #666666;font-size: 1em;border-bottom: 1px #eaeaea solid;padding: 10px 0;}
+.choose ul li.on{color: #f86c36;}
+#chooseBtn{display: block;width: 50%;margin: 0 auto;}
+.infoborder{border-bottom: 1px #eaeaea solid;}
+.tdDate{height:38px;line-height:38px;font-size:0.9em;color: #000;width: 90%;margin: 0 auto;}
+.tdList{background-color: #ffffff;}
+.tdList .tdListPos{width: 95%;overflow: hidden;margin-left: 5%;padding: 17px 0;}
+.tdList .tdListPos .posLeft{float: left;}
+.tdList .tdListPos .posLeft .p1{font-size: 1em;color: #333;height: 25px;line-height: 25px;}
+.tdList .tdListPos .posLeft .p2{font-size: 0.8em; color: #999999;height: 20px;line-height: 20px;}
+.tdList .tdListPos .posRight{float: right;padding-right: 5%;text-align: right;}
+.tdList .tdListPos .posRight .p1{font-size: 1.05em;height: 25px;line-height: 25px;}
+.tdList .tdListPos .posRight .p2{font-size: 0.8em; color: #999999;height: 20px;line-height: 20px;}
+.tdList .tdListPos .posRight .p_center{font-size: 1.1em;height: 45px;line-height: 45px;}
+.tdList .tdListPos .posRight .jia{color: #f86c36;}
+.tdList .tdListPos .posRight .jian{color:#24be4c; }
+
+/*暂无交易明细*/
+.change{text-align: center;margin-top: 100px;}
+.change .p1{margin-bottom: 10px;}
+.change .p1 img{width: 130px;}
+.change .p2{color: #999999;font-size: 1em;}

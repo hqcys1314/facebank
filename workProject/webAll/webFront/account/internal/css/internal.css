@@ -1,0 +1,22 @@
+.integralTitle{margin: 0px 35px;height: 117px;line-height: 117px;color: #f86c36;font-size: 16px;font-weight: bold;font-family: Arial;}
+.integralValue{font-size: 36px;width:180px;display:inline-block;}
+.integralValueUnit{font-family: 'Microsoft YaHei', arial, 'Hiragino Sans GB';}
+.integralTitle img {   margin-left: 310px;  vertical-align: middle;}
+.integralContent{  border-top: 2px solid #f86c36;margin: 0px 35px 50px;}
+.icDate{margin: 0 40px;font-size: 12px; height: 60px;line-height: 60px;}
+.icDateTitle{display: inline-block;margin-right: 10px;color:#000;}
+.icDateNum{display: inline-block; margin-left: 10px;}
+.icDateNum a{display: inline-block;border-radius: 5px;border: 1px solid #f0f0f0;height: 28px; line-height: 28px;
+    width: 70px;text-align: center; margin-left: 3px;color: #666;}
+.icDateNum a:hover{background-color: #ffbc00;color: #fff;border-color: #ffbc00;text-decoration: none;}
+.icDateNum .on{background-color: #ffbc00;color: #fff;border-color: #ffbc00;}
+.icDateBtn{display: inline-block;height: 28px; line-height: 28px;width: 70px;text-align: center; margin-left: 3px;}
+.improtant_button{background-color:#f86c36;color:#FFF; border-radius:5px;}
+.improtant_button:hover{background-color:#ffbb41; color:#FFF;cursor: pointer;}
+.icTitle{font-size: 14px;color:#000;height: 50px;border-bottom: 1px #f0f0f0 solid;border-top: 1px #f0f0f0 solid;}
+.icTitle li{float: left;width: 25%;text-align: center;height: 50px;line-height: 50px;}
+.icList{font-size: 14px;height: 80px;border-bottom: 1px #f0f0f0 solid;}
+.icList li{float: left;width: 25%;text-align: center;height: 80px;line-height: 80px;}
+.icListRed{color:#f86c36;}
+.icListGreen{color:#40bd29;}
+input.icDateInput{background:url(../../accCom/img/accCalendar.png) no-repeat 135px 5px;border: 1px solid #bbb;height: 30px; line-height: 30px;padding: 0 10px;width: 150px;}

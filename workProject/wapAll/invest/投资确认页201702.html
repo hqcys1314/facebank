@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>投资确认页</title>
+    <link rel="stylesheet" href="../common/css/commonAuto.css">
+    <link rel="stylesheet" href="css/investConfirm.css?1">
+</head>
+<body>
+<div class="inv-confirm-detail">
+    <div class="ketou"><span class="span1">可投金额</span>¥1,100,000.00</div>
+    <div class="yuE"><a href="">充值</a><span class="span1">账户余额</span>¥50.00</div>
+</div>
+<div class="inv-confirm-money">
+    <span class="span-btn">全投</span>
+    <span class="span1">¥</span>
+    <input type="number" placeholder="100元起投，100元递增">
+</div>
+<div class="expectedReturn">
+    预期收益<span class="span1">¥3.45</span><span class="span2"><i class="iconfont icon-ic_personal_vip"></i></span>
+</div>
+<div class="redPacket">
+    <span class="span5"><img src="http://static.facebank.cn/static/wapFront/invest/img/nid_youjiantou.png"></span>
+    <span class="span4" id="choose"><font class="font2">加息红包+0.88%</font></span>
+    <span class="span1">红包优惠</span>
+    <span class="span3">共5张，</span>
+    <span class="span2">15</span>
+    <span class="span3">张可用</span>
+</div>
+<!----------
+<div class="redPacket">
+    <span class="span1">红包优惠</span>
+    <span class="span6">无可用红包</span>
+</div>
+------------>
+
+
+
+<div class="inv-confirm-btn">
+    <input type="button" value="确认投资" class="color-red">
+</div>
+<div class="inv-confirm-xieyi">
+    <input type="checkbox"><span>本人已仔细阅读<a>《投资服务协议》</a></span>
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="redbagTk">
+    <div class="title"><img src="http://static.facebank.cn/static/wapFront/invest/img/title.png"></div>
+    <div class="rb_jiaxi rb_com">
+        <div class="left">
+            +0.88<font>%</font>
+        </div>
+        <div class="center">
+            <p class="p1">加息红包</p>
+            <p class="p2">2016.07.20到期</p>
+        </div>
+        <div class="right">
+            <img src="http://static.facebank.cn/static/wapFront/invest/img/xuanzhong.png">
+        </div>
+
+    </div>
+    <div class="rb_jiaxi rb_com">
+        <div class="left">
+            +0.88<font>%</font>
+        </div>
+        <div class="center">
+            <p class="p1">加息红包</p>
+            <p class="p2">2016.07.20到期</p>
+        </div>
+        <div class="right">
+            <img src="http://static.facebank.cn/static/wapFront/invest/img/weixuanzhong.png">
+        </div>
+
+    </div>
+    <div class="rb_fanxian rb_com">
+        <div class="left">
+            50.00<font>元</font>
+        </div>
+        <div class="center">
+            <p class="p1">返现红包</p>
+            <p class="p2">2016.07.20到期</p>
+        </div>
+        <div class="right">
+            <img src="http://static.facebank.cn/static/wapFront/invest/img/weixuanzhong.png" id="a">
+        </div>
+    </div>
+    <div class="rb_fanxian rb_com">
+        <div class="left">
+            40.00<font>元</font>
+        </div>
+        <div class="center">
+            <p class="p1">返现红包</p>
+            <p class="p2">2016.07.20到期</p>
+        </div>
+        <div class="right">
+            <img src="http://static.facebank.cn/static/wapFront/invest/img/weixuanzhong.png">
+        </div>
+    </div>
+    <div class="rb_wu rb_com">
+        <div class="left">
+            无可用红包
+        </div>
+        <div class="center">
+            &nbsp;
+        </div>
+        <div class="right">
+            <img src="http://static.facebank.cn/static/wapFront/invest/img/weixuanzhong.png" id="ab">
+        </div>
+    </div>
+</div>
+<div class="wapPos" id="expectedReturnShow">
+    <div class="wapTip">
+        <div class="div-value">
+            <p>基本收益(6%)<span class="span-right"><font>1008.54</font>元</span></p>
+            <p>加息红包收益(2%)<span class="span-right"><font>33.44</font>元</span></p>
+            <p>)返现红包收益<span class="span-right"><font>3.33</font>元</span></p>
+            <p>首购加息收益(0.2%)<span class="span-right"><font>1.33</font>元</span></p>
+        </div>
+        <p class="p3">
+            知道了
+        </p>
+    </div>
+</div>
+
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(".expectedReturn .span2").click(
+            function(){
+                $(".wapMc").show();
+                $("#expectedReturnShow").show();
+            }
+    )
+    $(".wapPos .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $("#expectedReturnShow").hide();
+            }
+    )
+    $("#choose").click(
+            function(){
+                $(".wapMc").show();
+                $(".redbagTk").show();
+            }
+    );
+    $("#wapMc").click(
+            function(){
+                $(".wapMc").hide();
+                $(".redbagTk").hide();
+            }
+    );
+    $('.rb_com .right').click(
+            function(){
+                var parentNode=$(this).parent();
+                var leftNode=parentNode.find('.left');
+                var centerNode=parentNode.find('.p1');
+                var status=$('.rb_com .right').find('img');
+                status.each(
+                        function(){
+                            $(this).attr('src','http://static.facebank.cn/static/wapFront/invest/img/weixuanzhong.png')
+                        } );
+                $(this.childNodes).attr('src','http://static.facebank.cn/static/wapFront/invest/img/xuanzhong.png');
+
+                $("#choose").html('<font class="font2">'+centerNode.text()+leftNode.text()+'</font>');
+                $(".wapMc").hide();
+                $(".redbagTk").hide();
+            }
+    )
+</script>
+</html>

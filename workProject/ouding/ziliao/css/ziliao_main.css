@@ -1,0 +1,52 @@
+
+.content {
+  width: 95%;
+  margin-left: 5%;
+}
+.content .tip {
+  font-size: 0.8em;display: none;
+  color: #ff4830;
+  margin-bottom: 7px;
+  width: 90%;
+  height: 60px;margin-top: -10px;
+}
+.content .part {
+  position: relative;
+  margin-bottom: 26px;
+}
+.content .part p {
+  font-size: 1em;
+  color: #ff4830;
+}
+.content .part .jieshao {
+  width: 100%;
+  font-size: 1.1em;
+  border-bottom: 1px #ddd solid;
+  height: 45px;
+  line-height: 45px;
+  color: #999;
+  padding-bottom: 10px;
+}
+.content .part .zhankai {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 44px;
+  right: 15px;
+}
+.content .part .duigou {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: 36px;
+  right: 15px;
+}
+.content .tijiao {
+  width: 95%;
+  margin: 10px auto;
+  height: 45px;
+  border-radius: 2em;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1em;
+}

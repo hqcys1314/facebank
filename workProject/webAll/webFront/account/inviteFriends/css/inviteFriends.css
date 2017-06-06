@@ -1,0 +1,90 @@
+.invite_list {overflow: hidden;  margin: 40px 100px 0;}
+.invite_list1{margin-top: 31px;}
+.invite_list2{margin-top: 31px;}
+.invite_list p{float: left;line-height: 40px;font-size: 16px;color: #333;}
+.invite_list span {float: left;padding-left: 11px;padding-top: 10px;color: #999;font-size: 15px;overflow: hidden;}
+.security-tb-but{ margin-left: 250px;width:291px;height:40px;float:left; line-height:40px;background:#f86025; font-size:18px;color:#FFF;border-radius:3px;border: medium none;}
+.invite_list ul{float: left;margin-left: 322px;}
+.invite_list ul li {float:left;padding-right: 31px;}
+.inviteFud{ display: none; width: 500px;position: absolute; top: 200px;left: 500px;  font-size: 14px;}
+.inviteFud-title{  background: #eaeaea; height: 35px;line-height: 35px;text-indent: 20px; }
+.inviteFud-title img {  float: right; margin: 10px;}
+.inviteFud-pt_award_con{background: #faffbd;  height: 150px;padding-left:20px;padding-top: 20px;}
+.inviteFud-text{line-height: 25px; }
+.inviteFud-button{  margin: 20px auto 0px;text-align: center;height: 30px;line-height: 30px;width: 120px;  display: block;}
+.inviteFud-tip{  text-align: center;color: #F86C31;display: none;}
+#closeDialog:hover{cursor: pointer;}
+
+
+.pt_banner{margin: 30px;overflow: hidden;}
+.pt_award{margin-left: 30px;width: 930px;margin-bottom: 25px;}
+.pt_award .pt_award_tip{overflow: hidden;margin: 0 auto;font-size: 18px;color: #f86c36;font-weight: bold;padding-bottom: 10px;border-bottom: 1px #e6e6e6 solid;}
+.pt_award .pt_award_con{overflow: hidden;}
+.pt_award .pt_award_con .part{border: 1px #f86c36 solid;width: 300px;margin-top: 33px;border-radius: 3px;float: left;
+    position: relative;background-color: #FFFFFF;margin-right:10px; }
+.pt_award .pt_award_con .part .title{overflow: hidden;background-color: #ffffff;position: absolute;top:-11px;font-weight: bold;
+    left: 50%;margin-left: -50px;padding: 0 5px;}
+.pt_award .pt_award_con .part .title .span_num{color: #ffffff;background-color: #f86c36;border-radius: 50%;font-size: 0.9em;width: 22px;height: 22px;
+    line-height: 22px;text-align: center;display: block;float: left;}
+.pt_award .pt_award_con .part .title .span_con{font-size: 1em;color: #f86c36;float: left;display: block;height: 24px;line-height: 24px;margin-left: 3px;}
+.pt_award .pt_award_con .part .p_text{width: 90%;font-size: 0.9em;color: #333333;margin: 25px auto 10px;}
+.pt_award .pt_award_con .part .p_img{width: 90%;margin:0 auto 10px;overflow: hidden;height: 117px;}
+.pt_award .pt_award_con .part .p_img img{width: 100%;}
+.pt_award .notice{font-size: 12px;color: #666666;line-height: 17px;margin-top: 10px;}
+
+.pt_cal{margin-left: 30px;width: 930px;}
+.pt_cal .pt_cal_tip{overflow: hidden;margin: 0 auto;font-size: 18px;color: #f86c36;font-weight: bold;padding-bottom: 10px;border-bottom: 1px #e6e6e6 solid;}
+.pt_cal .pt_cal_con{overflow: hidden;margin-top: 25px;}
+.pt_cal .pt_cal_con .pt_cal_left{width:590px;border: 1px #f86c36 solid;float: left;height: 352px;position: relative;}
+.pt_cal .pt_cal_con .pt_cal_left ul{overflow: hidden;}
+.pt_cal .pt_cal_con .pt_cal_left ul li{position: relative;width: 50%;text-align: center;height: 40px;font-size: 16px;
+    border-bottom: 1px #f86c36 solid;float: left;}
+.pt_cal .pt_cal_con .pt_cal_left ul li .btn-show{width: 100%;color:#f86c36;height: 40px;line-height: 40px;position: absolute;left: 0;top: 0; }
+.pt_cal .pt_cal_con .pt_cal_left ul li input[type="radio"]{width: 100%;
+    position: absolute;height: 40px;left: 0;top: 0; z-index: 100;
+    -webkit-opacity: 0;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 0;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 0;
+    /* IE9 + etc...modern browsers */
+    opacity: 0;
+    /* IE 4-9 */
+    filter:alpha(opacity=0);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);  }
+.pt_cal .pt_cal_con .pt_cal_left ul li input[type="radio"]:checked+div.btn-show{
+    background-color: #f86c36;color: #FFFFFF;height: 354px;
+    overflow: hidden;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process{margin-left:25px;margin-top:20px;padding-top: 50px;position: relative;font-size:12px;overflow: hidden;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .title{float: left;font-size: 16px;color: #666666;margin-top: -9px}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process #jine_value{position: absolute;top: 20px;font-size: 16px;color: #f86c36;left: 65px;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .scale_panel{color:#999;width:440px;float: left;margin-left: 10px;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .scale_panel .p1 .r{float:right;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .scale_panel .p1{font-size: 12px;color: #f86c36;margin-top: 7px;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .scale_panel .scale span{border-radius: 50%;background-color: #f86c36;width:15px;height:15px;position:absolute;left:0;top:-5px;cursor:pointer;}
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .scale_panel .scale{ background-repeat: repeat-x; background-position: 0 100%; background-color: #E4E4E4; width: 440px; height: 6px; position: relative; font-size: 0px; border-radius: 3px; }
+.pt_cal .pt_cal_con .pt_cal_left .pt_cal_process .scale_panel .scale div{ background-repeat: repeat-x; background-color: #f86c36; position: absolute; height: 6px; width: 0; left: 0; bottom: 0; }
+#date_value{position: absolute;top: 20px;font-size: 16px;color: #f86c36;left: 65px;}
+
+.pt_cal .pt_cal_con .pt_cal_right{width: 310px;border: 1px #f86c36 solid;float: right;text-align:center; height: 354px;
+    overflow: hidden;}
+.pt_cal .pt_cal_con .pt_cal_right .p1{font-size: 14px;color: #f86c36;padding: 20px 0 15px;}
+.pt_cal .pt_cal_con .pt_cal_right .p2 img{width: 150px;height: 150px;}
+.pt_cal .pt_cal_con .pt_cal_right .p3{font-size: 14px;color: #666666;padding: 15px 0;}
+.pt_cal .pt_cal_con .pt_cal_right .p4{width:275px;margin: 0 auto 25px; font-size: 14px;color: #666666;border-bottom: 1px #E6E6E6 solid;position: relative;}
+.pt_cal .pt_cal_con .pt_cal_right .p4 span{position: absolute;top:-10px;left: 97px;background-color: #FFFFFF;padding: 0 6px; }
+.pt_cal .pt_cal_con .pt_cal_right .p5{margin-bottom: 15px;}
+.pt_cal .pt_cal_con .pt_cal_right .p5 img{margin: 0 5px;}
+.pt_cal .pt_cal_con .pt_cal_result{height: 100px;background-color: #fff8f5; position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;}
+.pt_cal .pt_cal_con .pt_cal_result img{float:left;margin-left: 50px;margin-top: 20px;}
+.pt_cal .pt_cal_con .pt_cal_result .span1{float: left;font-size: 18px;margin-top: 45px;color: #666666;margin-left: 50px;}
+.pt_cal .pt_cal_con .pt_cal_result .span2{float: left;font-size:36px;color: #f86c36;margin-top: 28px;font-weight: bold;margin-left: 20px; }
+.pt_cal .pt_cal_con .pt_cal_result .span3{float: left;font-size: 18px;margin-top: 45px;color: #666666;}
+.pt_cal .notice{margin-top: 10px;font-size: 14px;color: #666666;line-height: 22px;margin-bottom: 10px;}
+.pt_cal .notice .p1{color: #f86c36;}

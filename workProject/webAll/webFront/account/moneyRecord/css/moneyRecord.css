@@ -1,0 +1,19 @@
+﻿.caseFlow-filter{margin:20px 75px; font-size: 14px;}
+.inftex-date{display: inline-block;font-weight: bold;margin-right: 20px;fload:left;}
+.date-to{color:#999;fload:left;}
+.date-btn{display: inline-block;margin-left: 10px;fload:left;}
+.s-filter-date { clear:both;}
+.s-filter-date a{display: inline-block;border-radius: 5px;height:28px;line-height:28px;
+        width:74px;text-align: center;color:#787878;text-decoration:none;border:1px solid #f0f0f0;}
+.s-filter-date a.on,.s-filter-date a:hover{background: #f7f7f7;border-color: #ccc;}
+.inp-date{border: 1px solid #e9e9e9;height: 30px;
+	line-height: 30px;padding: 0 10px;width: 120px;
+	background: url(../../accCom/img/accCalendar.png) no-repeat 110px center;fload:left;}
+.trade{margin-top: 20px;font-weight: bold;}
+.inftex-tratype{display: inline-block;font-weight: bold;margin-right: 20px;}
+#user-session-recordtable{color:#787878;text-align: center;}
+#user-session-recordtable tr{height:55px;}
+.odd-tr{background-color: #f8f8f8;}
+.digital{font-weight: bold;}
+.green{color:#5fc461;}
+.orange{color:#ffbc00;}

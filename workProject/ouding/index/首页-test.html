@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+<!----------------banner轮播--------------------->
+<section class="banner-play">
+    <ul class="mp_ul">
+        <li>
+            <a><img src="img/banner.jpg"></a>
+        </li>
+    </ul>
+</section>
+<section class="content">
+    <h2>选择额度和期限
+        <span>等额本息月利率1.2%</span>
+        <span></span>
+    </h2>
+    <section class="content-jine">
+        <div class="part">
+            <input type="radio" value="300" name="jine">
+            <div class="btn-show">1000<span>元</span></div>
+        </div>
+        <div class="part">
+            <input type="radio" value="500" name="jine">
+            <div class="btn-show">2000<span>元</span></div>
+        </div>
+        <div class="part">
+            <input type="radio" value="1000" name="jine" checked>
+            <div class="btn-show">5000<span>元</span></div>
+        </div>
+        <div class="part">
+            <input type="radio" value="2000" name="jine">
+            <div class="btn-show">1<span>万元</span></div>
+        </div>
+
+    </section>
+    <section class="content-qixian">
+        <div class="part">
+            <input type="radio" value="1" name="qixian">
+            <div class="qixian-show">1<span>个月</span>
+                <div class="line">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
+            </div>
+
+        </div>
+        <div class="part">
+            <input type="radio" value="2" name="qixian" checked>
+            <div class="qixian-show">2<span>个月</span>
+                <div class="line">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
+            </div>
+        </div>
+        <div class="part">
+            <input type="radio" value="3" name="qixian">
+            <div class="qixian-show">3<span>个月</span>
+                <div class="line">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
+            </div>
+        </div>
+    </section>
+    <section class="content-submit">
+        <input type="button" value="我们继续吧">
+        <div>预计每月还款<span id="huankuan">2560.00</span>元</div>
+    </section>
+    <p class="foot-bs">©2017 www.ouding.com|<br/>藕丁科技(北京)有限公司 版权所有</p>
+</section>
+</body>
+<script src="../common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*每月还款金额
+    * 本金 * 0.04% *30 + 本金/ 期数
+    * */
+    $("input[type='radio']").click(
+            function(){
+                var jine=$(".content-jine input[type=radio]:checked").val();
+                var date=$(".content-qixian input[type=radio]:checked").val();
+                var huankuan=jine*0.04*30/100+jine/date;
+                $("#huankuan").html(huankuan.toFixed(2));
+            }
+    )
+
+</script>
+</html>

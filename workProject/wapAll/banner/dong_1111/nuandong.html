@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title> 暖心福利 相伴寒冬</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/banner/dong_1111/css/nuandong.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    暖心福利 相伴寒冬
+</div>
+<div class="nd_1">
+    <img src="http://static.facebank.cn/static/wapFront/banner/dong_1111/img/banner.jpg" class="banner_img">
+    <div class="xuehua">
+        <canvas width="100%" height="100%" class="snow"></canvas>
+    </div>
+</div>
+<div class="nd_2">
+    11月14日-11月28日期间，您购买投资期限两个月以上产品(包括两个月)您即可获得相应加息红包。投资金额越大红包越大~超长使用期限让您畅买今冬~
+</div>
+<div class="nd_3">
+    <table>
+        <thead>
+        <tr>
+            <td>活动期间投资金额 </td>
+            <td>获得加息红包(年化)</td>
+            <td>红包有效期 </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>大于等于100万</td>
+            <td class="big">1.50%</td>
+            <td>30天</td>
+        </tr>
+        <tr>
+            <td>大于等于60万元<br>小于100万元</td>
+            <td class="big">1.20%</td>
+            <td>30天</td>
+        </tr>
+        <tr>
+            <td>大于等于35万元<br>小于60万元</td>
+            <td class="big">1.00%</td>
+            <td>30天</td>
+        </tr>
+        <tr>
+            <td>大于等于10万元<br>小于35万元</td>
+            <td class="big">0.50%</td>
+            <td>30天</td>
+        </tr>
+        </tbody>
+    </table>
+    <ol>
+        <li>红包于2016年11月29日由笑脸金融统一下发，届时会有短信通知，请注意查收；</li>
+        <li>红包按用户实际达成最高档位发放。</li>
+    </ol>
+</div>
+<div class="nd_4">
+    活动最终解释权归笑脸金融所有
+</div>
+</body>
+<script type="text/javascript" src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://static.facebank.cn/static/wapFront/banner/dong_1111/js/let_it_snow.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("canvas.snow").let_it_snow({
+            windPower: 1,
+            speed: 1,
+            count: 15,
+            size: 10,
+            image: "http://static.facebank.cn/static/wapFront/banner/dong_1111/img/white-snowflake.png"
+        });
+
+    });
+</script>
+</html>

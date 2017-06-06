@@ -1,0 +1,22 @@
+body{background-color: #e0242f;}
+.suc_head{width: 100%;position: relative;}
+.suc_head .bg{width: 100%;}
+.suc_head .jiaxi{position:absolute;top: 50%;width: 100%;text-align: center; }
+.suc_head .jiaxi img{width: 280px;}
+.suc_head .jiaxi .con{position: absolute;top:49px;width: 100%;text-align: center;color: #e22631;font-size: 1.2em;}
+.suc_head .jiaxi .con font{font-size: 1.5em;font-weight: bold;}
+.suc_btn{text-align: center;margin-top: 10%;}
+.suc_btn a{
+    border: 1px #ffd800 solid;
+    border-radius: 3px;
+    width: 84%;
+    margin-bottom: 5%;
+    height: 40px;
+    line-height: 40px;
+    color: #ffd800;
+    display: block;
+    margin-left: 8%;
+    }
+.suc_bottom{width: 100%;}
+.suc_bottom img{width: 100%;}
+.suc_con{font-size: 0.8em;color: #FFFFFF;text-align: center;margin-bottom: 10px;}

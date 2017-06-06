@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>庆中秋 迎国庆</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/guoqing/css/guoqing.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    庆中秋 迎国庆
+</div>
+<div class="gq-1">
+    <img src="img/gq_1.jpg">
+    <div class="div_pos">
+        <p class="part2"><input type="text" placeholder="输入手机号码领取红包"></p>
+        <p class="part5"><input type="text"  placeholder="输入验证码"><input type="button" value="发送验证码"  id="msgCode" onclick="timePass()"></p>
+        <p class="part3"><input type="button" value="立即领取" class="comBtn" id="rb_btn"></p>
+    </div>
+    <!---------------------错误提示---------------------------------------->
+    <p class="p_error" style="display: none;">验证码错误</p>
+</div>
+<div class="gq-2">
+    <img src="img/gq_2.jpg">
+</div>
+<div class="gq-3">
+    <p>
+        <img src="http://static.facebank.cn/static/wapFront/subject/guoqing/img/star.png"><strong>活动规则介绍</strong> <img src="http://static.facebank.cn/static/wapFront/subject/guoqing/img/star.png">
+    </p>
+    <ol>
+        <li>活动时间：2016.9.12-2016.10.14</li>
+        <li>活动奖品：999返现组合红包一套</li>
+        <li>领取方式：注册成为笑脸金融用户即享</li>
+        <li>红包有效期截止2016.10.14且仅限投资30天以上项目</li>
+        <li>新手专项项目仅限用户在平台首次投资使用且不可使用其他红包</li>
+    </ol>
+</div>
+<div class="gq-4">
+    <img src="http://static.facebank.cn/static/wapFront/subject/guoqing/img/gq_3.jpg">
+</div>
+<div class="wapMc">
+
+</div>
+<!-----------------------wap领取成功---------------------------->
+<div class="wapTk" id="gq_suc">
+    <div class="tk_con">
+        <p class="p_title">温馨提示</p>
+        <p class="p_con">恭喜您成功领取<br/>999元现金红包</p>
+        <!------跳转到wap首页---------->
+        <a class="p_btn" href="http://m.facebank.cn/wap/index">确定</a>
+        <div class="tiaozhuan">(<span id="tzNum1">3</span>)秒之后自动跳转</div>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<!-----------------------老用户注册提示,---------------------------->
+<div class="wapTk" id="gq_oldUser_tip" >
+    <div class="tk_con">
+        <p class="p_title">领取失败</p>
+        <p class="p_con">该活动仅新用户哦，您可以邀请好友获得加息红包</p>
+        <!------跳转到老用户的专题页---------->
+        <a class="p_btn" href="">确定</a>
+        <div class="tiaozhuan">(<span id="tzNum2">3</span>)秒之后自动跳转</div>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+<!-----------------------app领取成功提示返回---------------------------->
+<div class="appEnd">
+    <img src="http://static.facebank.cn/static/wapFront/subject/guoqing/img/appEnd.png">
+</div>
+<!-----------------------分享蒙层---------------------------->
+<div class="wapShare">
+    <img src="http://static.facebank.cn/static/wapFront/subject/reg_guide03/img/shareContent1.png">
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*qpp截止蒙层*/
+    var appEnd= document.body.scrollHeight;
+    $(".appEnd").css("height",appEnd);
+    /*错误提示
+    $("#rb_btn").click(
+            function(){
+                $(".p_error").show();
+            }
+    )
+    */
+    /*领取成功*/
+    $("#rb_btn").click(
+            function(){
+                $(".wapMc").show();
+                $("#gq_suc").show();
+                /*领取成功，3秒后自动跳转到首页*/
+                var djs=3;
+                var djsClear=setInterval(
+                        function(){
+                            $("#tzNum1").html(djs);
+                            djs--;
+                            if(djs< 0){
+                                location.href="http://m.facebank.cn/wap/index";
+                                clearInterval(djsClear);
+                            }
+                        },1000
+                )
+            }
+    )
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapTk").hide();
+            }
+    )
+
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#ff8955");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val("重获取("+miao+")");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").css("color", "#fff");
+            $("#msgCode").css("background-color", "#aaa");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+
+</script>
+</body>
+</html>

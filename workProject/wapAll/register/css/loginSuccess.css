@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.log_suc1{width: 30%;margin:10px auto; }
+.log_suc1 img{width: 100%;}
+.log_suc2{text-align: center;font-size: 1.2em;}
+.log_suc3{width: 70%;margin: 0 auto;}
+.log_suc3 a{display: block;line-height: 45px;margin-top: 10px;}
+.log_suc3 a.ls_1{color: #ffffff;background-color: #f86c36;}
+.log_suc3 a.ls_2{color: #f86c36;border: 1px #f86c36 solid;margin-bottom: 10px;  height: 43px;}
+.log_suc4{font-size: 0.8em;text-align: center;margin: 10px 0 30px;}
+.log_suc5{width: 50%;margin:10px auto; }
+.log_suc5 img{width: 100%;}

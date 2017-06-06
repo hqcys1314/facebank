@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{border: 1px #ddd solid;margin-top: 5%;margin-bottom:5%;  background-color: #fff;}
+.content .part {background-color: #fff;  margin-left: 5%;position: relative;}
+.content .bor{border-bottom:1px #ddd solid;}
+.content input {width: 82%;font-size: 1em;border: navajowhite;vertical-align: middle;}
+.content .part .icon{display: inline-block;height:45px;  margin-right: 5px;}
+.content .part .icon img{height: 100%;vertical-align: middle;}
+.loginBtn {width: 70%;margin: 5% auto 0; }
+.loginBtn input{width: 100%;background-color: #f8f8f8;border: 1px #f86c36 solid;color: #f86c36;
+    height: 45px;text-align: center;font-size: 1.2em;    border-radius: 2em;}
+.eye{position:absolute;right: 5%;width: 20px;top: 1em;}
+.eye img{width: 100%;}
+.error{width: 100%;text-align: center;font-size: 0.9em;color: #333; margin-top: 15px;}

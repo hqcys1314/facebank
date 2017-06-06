@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>账户信息</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="css/information.css?12">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    账户信息
+</div>
+<div class="infoPart1">
+   <div class="left"><img src="http://static.facebank.cn/static/wapFront/information/img/man1.png"></div>
+   <div class="right">
+       <p class="p1">账号</p>
+       <p class="p2">18618288464</p>
+   </div>
+</div>
+<div class="infoPart2">
+   <div class="div1 infoborder">
+       <a href="银行卡绑定.html"><span class="span1"><img src="http://static.facebank.cn/static/wapFront/information/img/infoIcon1.png"></span><span class="span2">银行卡认证</span><span class="span3">中国邮政储蓄银行5999</span><span class="span4"><img src="http://static.facebank.cn/static/wapFront/information/img/infoJiantou.png"></span></a>
+   </div>
+    <div class="div1">
+        <a href="密码管理.html"><span class="span1"><img src="http://static.facebank.cn/static/wapFront/information/img/infoIcon2.png"></span><span class="span2">密码管理</span><span class="span3"></span><span class="span4"><img src="http://static.facebank.cn/static/wapFront/information/img/infoJiantou.png"></span></a>
+    </div>
+</div>
+<div class="infoPart2">
+    <div class="div1 infoborder" id="contactUs">
+        <span class="span1"><img src="http://static.facebank.cn/static/wapFront/information/img/infoIcon3.png"></span><span class="span2">联系客服</span><span class="span3"></span>
+    </div>
+    <div class="div1">
+        <a href="关于我们.html"><span class="span1"><img src="http://static.facebank.cn/static/wapFront/information/img/infoIcon5.png"></span><span class="span2">关于我们</span><span class="span3"></span><span class="span4"><img src="http://static.facebank.cn/static/wapFront/information/img/infoJiantou.png"></span></a>
+    </div>
+</div>
+<div class="infoPart3">
+   退出登录
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="waptanch">
+    <p class="p1">确认退出</p>
+    <p class="p2">取消</p>
+</div>
+<div class="wapPos">
+    <div class="wapTip">
+        <p class="p1">关注“笑脸平台”微信公众号为您解答各种问题或拨打客服热线</p>
+        <p class="p_phone"><a href="tel:4008-900-766">4008-900-766</a></p>
+        <p class="p3">
+           我知道了
+        </p>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    /*点击取消关闭浮框*/
+    $("#contactUs").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapPos").show();
+            }
+    )
+    /*点击确定关闭弹框*/
+    $(".wapTip .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapPos").hide();
+            }
+    )
+    /*点击退出登录弹出浮框*/
+    $(".infoPart3").click(
+            function(){
+                $(".wapMc").show();
+                $(".waptanch").show();
+            }
+    )
+   /*点击取消关闭浮框*/
+     $(".waptanch .p2").click(
+           function(){
+                $(".wapMc").hide();
+                $(".waptanch").hide();
+            }
+    )
+</script>
+</html>

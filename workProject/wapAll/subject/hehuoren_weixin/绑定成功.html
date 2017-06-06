@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>绑定成功</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <style>
+        body{background-color: #ffffff;}
+        .suc2{font-size: 1.6em;color: #f86c36;line-height: 1.5em;}
+        .suc_tip{width: 77%;margin: 2em auto;}
+        .suc_tip ol{border-top: 1px #dddddd solid;list-style-position: inside;padding-top: 20px;color: #333333;}
+        .suc_tip ol li{margin-bottom: 6px;}
+    </style>
+</head>
+<body>
+<div class="suc1">
+    <img src="http://static.facebank.cn/static/wapFront/common/img/suc1.png">
+</div>
+<div class="suc2">
+   恭喜您<br/>
+   已绑定成功
+</div>
+<div class="suc_tip">
+    <ol>
+        <li>请关闭该页面，返回微信公众号</li>
+        <li>再次点击微信子菜单："合伙人海报"，即可获得个人专属海报。</li>
+    </ol>
+</div>
+<div class="suc3">
+    <a class="comBtn" onclick="javaScript:WeixinJSBridge.call('closeWindow');">关闭</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #f1f1f1;color: #666666;}
+.safe_banner{background-image: url("../img/safe_banner.jpg");background-repeat: no-repeat;background-position: center;width: 100%;height: 378px; }
+.safe_meau{margin: 15px auto 0; overflow: hidden;width: 1135px;}
+.safe_meau li{width: 215px;height: 230px;margin-left: 10px;text-align: center;padding-top: 15px;background-color: #ffffff;border-radius: 5px;
+        float: left;}
+.safe_meau li p{background-image: url("../img/safe_icon.png");background-repeat: no-repeat;width: 87px;height: 87px;margin: 0 auto 10px;}
+.safe_meau li h3{font-size: 18px;margin-bottom: 5px;}
+.safe_meau li div{font-size: 14px;line-height: 24px;}
+#list4 p{background-position:0 0;}
+#list1 p{background-position:0 -119px;}
+#list2 p{background-position:0 -238px;}
+#list3 p{background-position:0 -357px;}
+#list5 p{background-position:0 -476px;}
+
+.safe_show{background-color: #ffffff;overflow: hidden;width: 1115px;margin: 0 auto 40px;display: none;}
+.safe_show .white_connet{width:100%;height: 15px;background-color: #f1f1f1;}
+.safe_show .white_connet .pos1{width: 215px;height: 15px;background-color: #fff;}
+.safe_show .content{margin: 0 35px;}
+.content .guide{margin: 40px 0 5px;}
+.content .guide h3{color: #f96c37;font-size: 16px; margin-bottom: 5px;}
+.content .guide p{color: #666666;font-size: 14px;line-height: 26px;word-break: break-all;}
+.content .part{overflow: hidden;padding-bottom: 25px;border-bottom: 1px #eaeaea solid;padding-top: 25px;position: relative;display: block;}
+.content .part .title{color: #333a44;font-size: 18px; border-left: 4px #ffae00 solid;padding-left: 20px;margin-bottom: 20px;}
+
+#listShow1{display: block;}
+/*500强联手打造*/
+.safe_show .white_connet .pos2{width: 215px;height: 15px;background-color: #fff;margin-left: 225px;}
+.content .part .title img{float: right;}
+.content .part .baoxian{}
+.content .part .baoxian img{float: left;margin-right:10px; }
+.content .part .detail{float: left;width: 460px;font-size: 14px;line-height: 26px;margin-left: 20px;text-indent: 28px;word-break: break-all;}
+/*专业风控体系*/
+.safe_show .white_connet .pos3{width: 215px;height: 15px;background-color: #fff;margin-left: 450px;}
+.content .part .zhenxuan{width: 535px;float: left;}
+.content .part .zhenxuan .zhenxuan_con{width: 92%;margin: 10px auto;}
+.content .part .zhenxuan .zhenxuan_con .c_1{font-weight: bold;height: 30px;line-height:30px;margin-bottom: 20px; margin-top: 20px;color: #ffae00;font-size: 16px;}
+.content .part .zhenxuan .zhenxuan_con .c_1 span{margin-right: 5px;}
+.content .part .zhenxuan .zhenxuan_con .c_2{overflow: hidden;}
+.content .part .zhenxuan .zhenxuan_con .c_2 .span1{width: 45px;display: inline-block;float: left;}
+.content .part .zhenxuan .zhenxuan_con .c_2 .span1 img{width: 100%;}
+.content .part .zhenxuan .zhenxuan_con .c_2 .span2{display: inline-block;float: left;border-radius:2em; background-color: #e3edf4;font-size: 0.9em;    padding: 10px 12px;margin-left: -2px;}
+.content .part .zhenxuan .zhenxuan_con .c_3{overflow: hidden;margin-top: 10px;}
+.content .part .zhenxuan .zhenxuan_con .c_3 .span1{width: 83%;display: inline-block;float: right;border-radius: 2em; background-color: #fdeecc;font-size:14px;
+    padding: 10px 17px;margin-right: -2px;}
+.content .part .zhenxuan .zhenxuan_con .c_3 .span2{width: 45px;display: inline-block;float: right;}
+.content .part .zhenxuan .zhenxuan_con .c_3 .span2 img{width: 100%;}
+.content .part .hezuo{width: 500px;float: left;}
+.content .part .hezuo .title{ margin-left: 20px;}
+.content .part .title font{font-size: 12px;color: #999;margin-left: 10px;}
+.content .part .hezuo .hezuo_con{background-color: #f8f8f8;}
+.content .part .hezuo .hezuo_con img{margin-left:10px;margin-bottom: -4px;}
+/*资金安全保障*/
+.safe_show .white_connet .pos4{width: 215px;height: 15px;background-color: #fff;margin-left: 675px;}
+.safe_show .part .zijin{font-size: 14px;}
+.safe_show .part .zijin img{display: block;margin: 50px auto 0;}
+/*法律合规保障*/
+.safe_show .white_connet .pos5{width: 215px;height: 15px;background-color: #fff;margin-left: 900px;}
+.safe_show .part .law{font-size: 14px;}
+/*优秀管理团队*/
+.safe_show .part .team{font-size: 14px;}
+.safe_show .part .team img{display: block;    margin-bottom: 40px;}
+.safe_show .part .team p{text-indent: 36px; font-size: 18px;    line-height: 36px;}

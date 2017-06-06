@@ -1,0 +1,80 @@
+.record{
+  h3{
+      height: 42px;
+      line-height: 42px;
+      width: 95%;
+      margin-left: 5%;
+      font-weight: normal;
+      color: #333333;
+      font-size:0.9em ;
+  }
+  .list-content{
+    background-color:#fff;
+    overflow: hidden;
+    ul{
+      width: 95%;
+      padding-left: 5%;
+      li{
+        border-bottom: 1px #ddd solid;
+        overflow: hidden;
+        text-align: center;
+        color: #666;
+        .list-content-record{
+              height: 48px;
+              line-height: 48px;
+              font-size: 0.9em;
+              .date{
+                  float: left;
+                 width: 35%;
+               }
+             .change{
+                  width: 25%;
+                  float: left;
+                  color: #f86c36;
+                  img{
+                   width: 11px;
+                   margin-right: 2px;
+                 }
+             }
+              .value{
+                  width: 30%;
+                  float: left;
+              }
+              .arrow{
+                   width: 10%;
+                   float: left;
+                   img{
+                     width: 14px;
+                     vertical-align: -2px;
+                   }
+               }
+        }
+        
+        p{
+          font-size: 0.8em;
+          background-color: #f5f5f5;
+          width: 94%;
+          height: 32px;
+          line-height: 32px;
+          margin-bottom: 5px;
+          display: none;
+          color: #333333;
+          span{
+            margin-right: 10px;
+          }
+        }
+
+      }
+      li:last-child{
+        border: 0;
+      }
+      li.title{
+        font-size: 1em;
+        color: #999999;
+        .change{
+          color: #999999;
+        }
+      }
+    }
+  }
+}

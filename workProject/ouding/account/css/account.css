@@ -1,0 +1,39 @@
+.content {
+    width: 95%;
+    margin-left: 5%;
+}
+.content .part {
+    position: relative;
+    border-bottom: 1px #ddd solid;
+}
+.content .part .acc-item {
+    width: 100%;
+    font-size: 1em;
+    height: 60px;line-height: 60px;
+    color: #333;display: block;
+}
+.content .part p{height: 30px;line-height: 30px;font-size: 0.9em;color: #333333;}
+.content .part p font{color: #ff4830;margin-left: 5px;}
+.content .part .bank {
+    width: 100%;
+    font-size: 1.1em;
+    height: 40px;line-height: 20px;
+    color: #999;display: block;
+}
+.content .part .zhankai {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+.content .part .zhankai-1{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: 35px;
+    right: 15px;
+}
+
+
+

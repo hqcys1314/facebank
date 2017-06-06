@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>喜迎周年庆</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/hongbao/ygditui_0714/css/ygditui.css">
+</head>
+<body>
+<div class="gudong_1">
+    <div class="div1">
+        <img src="http://static.facebank.cn/static/wapFront/hongbao/ygditui_0714/img/gudong_1.jpg">
+    </div>
+    <div class="div2">
+        <img src="http://static.facebank.cn/static/wapFront/hongbao/ygditui_0714/img/gudong_3.png">
+        <p class="p1">0.88%</p>
+        <p class="p2">阳光周年庆专属</p>
+        <div class="lq_btn">
+            <input type="text" placeholder="请输入手机号"><input type="button" value="领取使用" id="lq_btn">
+        </div>
+
+    </div>
+</div>
+<div class="gudong_2">
+    <img src="http://static.facebank.cn/static/wapFront/hongbao/ygditui_0714/img/gudong_2.png">
+</div>
+<div class="wapMc" id="wapMc"></div>
+<div class="staffTipPos">
+    <div class="staffTip">
+        <div class="staffhead">
+            <img src="http://static.facebank.cn/static/wapFront/hongbao/ygditui_0714/img/gudong_num.png">
+            <span>恭喜您，<br>领取红包成功！</span>
+        </div>
+        <div class="btn" id="staffTipBtn">
+            领取成功
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/wapFront/common/js/common.js"></script>
+<script>
+    $('#lq_btn').click(
+            function(){
+                $('.wapMc').show();
+                $('.staffTipPos').show();
+
+            }
+    )
+    $('#staffTipBtn').click(
+            function(){
+                $('.staffTipPos').hide();
+                $('.wapMc').hide();
+                window.location="https://www.baidu.com/";
+            }
+    );
+</script>
+</html>

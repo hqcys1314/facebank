@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+/*领取红包*/
+body{background-color:#f65431; }
+.rb_0311_up{width: 100%;position: relative;}
+.rb_0311_up img{width: 100%;}
+.rb_0311_up .div_pos{position: absolute;top: 41%;width: 100%;text-align: center;}
+.rb_0311_up .div_pos input{border-radius: 5px;  text-align: center; height: 40px;font-size: 0.9em;}
+.rb_0311_up .div_pos input::-webkit-input-placeholder{text-align: center;}
+.rb_0311_up .div_pos input::-ms-input-placeholder{text-align: center;}
+.rb_0311_up .div_pos input::-moz-placeholder{text-align: center;}
+.rb_0311_up .div_pos .part1{position:relative;width: 65%;margin: 0 auto;color: #e64723;display: none;}
+.rb_0311_up .div_pos .part1 img{width: 100%;}
+.rb_0311_up .div_pos .part1 p{position: absolute;top: 24%;  width: 55%; font-size: 1.4em;font-weight: bold;margin-left: 35%;}
+.rb_0311_up .div_pos .part1 p font{font-size: 1.4em;vertical-align: -0.1em;}
+.rb_0311_up .div_pos .part2{ margin: 3% 0;}
+.rb_0311_up .div_pos .part2 input{width: 75%;margin: 0 auto;}
+.rb_0311_up .div_pos .part3 input{width: 75%;margin: 0 auto;font-size:1em;background-color: #ffde00;color: #75351c;  font-weight: bold;}
+.rb_0311_up .div_pos .part4{text-align: center;font-size: 0.8em;padding: 2% 0;color: #ffffff;}
+.rb_0311_up .div_pos .part4 font{font-weight: bold;}
+.rb_0311_up .div_pos .part5 {margin-bottom: 3%;}
+.rb_0311_up .div_pos .part5 input[type="text"]{width: 48%;}
+.rb_0311_up .div_pos .part5 input[type="button"]{color: #ffffff;width: 25%;margin-left: 2%;background-color: #ff8955;}
+.rb_0311_bottom{width: 100%;}
+.rb_0311_bottom img{width: 100%;}
+.rb_result_pos{display:none;position: absolute;top: 0;width: 100%;z-index: 22;left: 0;}
+.rb_result{background-color: #f65431;width: 75%;margin: 40% auto 0;padding: 0 10px 1.5em;border-radius: 0.2em;overflow: hidden;}
+.rb_result .rb_head{position: relative;height: 45px;line-height: 45px;border-bottom: 1px #fff solid;}
+.rb_result .rb_head .span1{color: #ffffff;}
+.rb_result .rb_head .close{position: absolute; right:0;width: 22px;}
+.rb_result .rb_head .close img{width: 100%;vertical-align: middle;}
+.rb_result .rb_content_new{color: #ffffff;font-size: 1.1em;text-align: center;margin: 10px 0;}
+.rb_result .rb_content_old{color: #ffffff; font-size: 0.9em;margin: 10px 0;}
+
+a {color: #fcee21;}
+a:hover,a:focus,a:active{color: #fcee21;cursor: pointer;}
+

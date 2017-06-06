@@ -1,0 +1,121 @@
+body{
+    background-color: #e22631;
+}
+.bg {
+    width: 100%;
+    position: relative;
+}
+.bg .p_guize {
+    position: absolute;
+    right: 0;
+    border-radius: 2em 0 0 2em;
+    color: #ffffff;
+    top: 10px;
+    font-size: 0.8em;
+    padding: 7px 7px 7px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.bg .bg-img{
+    width: 100%;
+}
+.con{text-align:center;}
+.con p{color:#ffffff;font-size:0.9em;margin-bottom:10px;}
+.con a{display:block;width:80%;margin:0 auto 10px
+;}
+.con a img{width:100%;}
+
+.kai-foot {
+    width: 100%;
+}
+.kai-foot img {
+    width: 100%;
+}
+/*规则*/
+.wapGz {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-left: -41%;
+    z-index: 21;
+    width: 82%;
+    height: 395px;
+    display: none;
+}
+.wapGz .gz_con {
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 15px;
+    background-color: #fff9da;
+    height: 95%;
+}
+.wapGz .gz_con .p_title {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    color: #f86c36;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 1px #fcba86 solid;
+}
+.wapGz .gz_con .content {
+    overflow-y: scroll;
+    height: 80%;
+}
+.wapGz .gz_con .content h2 {
+    color: #f86c36;
+    background-color: #feedcc;
+    padding-left: 5%;
+    font-size: 1em;
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.wapGz .gz_con .content h3 {
+    font-size: 0.95em;
+    font-weight: normal;
+    width: 90%;
+    margin: 10px 0 0;
+    padding-left: 6%;
+}
+.wapGz .gz_con .content p {
+    color: #666666;
+    font-size: 0.9em;
+    width: 100%;
+    margin: 3px auto 0;
+}
+.wapGz .gz_con .content ol {
+    color: #666666;
+    font-size: 0.95em;
+    width: 77%;
+    margin: 5px auto 5px;
+    line-height: 22px;
+}
+.wapGz .gz_con .p_con {
+    width: 210px;
+    margin: 0 auto;
+    padding: 6px 0;
+    text-align: center;
+}
+.wapGz .gz_con .p_btn {
+    background-color: #feedcc;
+    color: #999999;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+.wapGz .gz_con .p_close {
+    text-align: center;
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    margin-left: -15px;
+}
+.wapGz .gz_con .p_close img {
+    width: 30px;
+}

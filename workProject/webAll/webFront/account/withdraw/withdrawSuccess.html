@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="刷脸金融">
+    <meta name="description" content="刷脸金融">
+    <title>刷脸金融www.facebank.net.cn-中国领先个人微金融服务平台！微理财，微信贷，云银行，专注小微信贷与个人金融服务！</title>
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/head_foot.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/common.css" />
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/account/accCom/css/account.css"/>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/webFront/account/withdraw/css/withdraw.css"/>
+    <link rel="stylesheet" href="css/withdraw_3.23.css"/>
+</head>
+<body>
+<!--百度统计异步代码-->
+<script src="http://static.facebank.cn/static/webFront/common/js/baidujk.js"> </script>
+<!---------页头结束----------->
+<iframe src="../../common/head.html" width="100%" height="119px" style="overflow: hidden;"></iframe>
+<div class="account" id="acount">
+    <div class="accountNav">
+        <a href="">刷脸金融首页></a><a href="">我的账户></a><a id="breadbag" onclick="accClick();"></a>
+    </div>
+    <div class="clear"></div>
+    <div class="accountLeft" id="acountLeft">
+        <ul class="alList">
+            <li class="alYulan "><a href="#"> 账户概览</a></li>
+            <li class="alZjjl"><a href="#"> 资金记录</a></li>
+            <li class="alCz"><a href="#"> 我要充值</a></li>
+            <li class="altx"><a href="#"> 我要提现</a></li>
+            <li class="alTzjl"><a href="#"> 投资记录</a></li>
+            <li class="alHongbao"><a href="#"> 我的红包</a><img src="http://static.facebank.cn/static/webFront/account/accCom/img/accHot.png" alt=""/></li>
+            <li class="alJifen"><a href="#">积分兑换</a></li>
+            <li class="alAnquan"><a href="#"> 安全中心</a></li>
+            <li class="alXixin"><a href="#"> 消息中心</a><img src="http://static.facebank.cn/static/webFront/account/accCom/img/accCircle.png" alt="" id="alXixinImg"/></li>
+            <li class="alYqhy"><a href="#"> 邀请好友</a></li>
+            <li class="alZqzr"><a href="#"> 债权转让</a></li>
+            <li class="alZr"><a href="#"> 债权转让</a></li>
+
+        </ul>
+    </div>
+    <div class="accountRight" id="acountRight">
+        <div class="accountTitle">
+            <a href="#" class="accountTitleCharge">充值</a>
+            <span class="titleName">提现</span>
+        </div>
+        <div class="withdrawSuccess">
+         你已成功申请提现<span>800</span>元
+        <p>预计一个工作日到达招商银行(尾号0921)</p>
+        </div>
+        <div class="withdrawUrl">您现在可以<a href="#">查看安全中心</a>或<a href="#">浏览投资项目</a></div>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/webFront/account/accCom/js/account.js"></script>
+<script>
+    function accClick(){
+        window.location.href="http://www.facebank.cn/index";
+    }
+    $('#breadbag').html("我要提现");
+    $("#alXixinImg").hide();
+    //$("#alXixinImg").show();
+    $('.altx').addClass("alChoosed");
+</script>
+</html>

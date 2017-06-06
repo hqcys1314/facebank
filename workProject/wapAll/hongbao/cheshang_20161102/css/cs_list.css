@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #e64530;}
+.cs_1{width: 100%;}
+.cs_1 img{width: 100%;}
+.cs_2{background-color: #e64530;margin-top: -5px;padding-bottom: 10px;padding-top: 15px;}
+.cs_2 .bid_list{background-color: #ffffff;width: 86%;margin: 0 auto 10px;border-radius: 5px;padding: 4%;overflow: hidden;}
+.cs_2 .bid_list h3{color: #000000;font-size: 0.95em;}
+.cs_2 .bid_list .left{width: 62%;float: left;}
+.cs_2 .bid_list .left ul{    margin-top: 10px;}
+.cs_2 .bid_list .left ul li{text-align: center;width: 50%;float: left;}
+.cs_2 .bid_list .left ul li .span1{color: #f86c36;font-size: 1.3em;}
+.cs_2 .bid_list .left ul li .span2{color: #f86c36;font-size: 0.8em;}
+.cs_2 .bid_list .left ul li p{color: #999999;font-size: 0.75em; margin-top: 3px;}
+.cs_2 .bid_list .right{width: 38%;float: left;}
+.cs_2 .bid_list .right p{font-size: 0.7em;    text-align: center;}
+.cs_2 .bid_list .right p span{color: #f86c36;}
+.cs_2 .bid_list .right a{display: block;color:#ffffff;font-size: 0.9em;    padding: 5px 0;
+    width: 60%; margin: 20px auto 0;border-radius: 3px;text-align: center;}
+.cs_2 .bid_list .right img{width: 63px;margin-left: 27%;margin-top: -15px;}
+.btn_red{background-color: #f86c36;}
+.btn_gray{background-color: #cccccc;}
+
+

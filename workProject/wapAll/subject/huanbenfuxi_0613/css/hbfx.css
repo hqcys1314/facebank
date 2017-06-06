@@ -1,0 +1,8 @@
+@charset "UTF-8";
+body{background-color: #ffffff;}
+.part_1{width: 100%;}
+.part_1 img{width: 100%;}
+.part_2{width: 90%;margin: 10px auto;}
+.part_2 h3{height: 40px;line-height: 40px;font-size: 1.2em;color: #f86c36; }
+.part_2 p{font-size: 1em;line-height: 24px;}
+.part_3{height: 40px;line-height: 40px;text-align: center;font-size: 0.9em;color: #999999;}

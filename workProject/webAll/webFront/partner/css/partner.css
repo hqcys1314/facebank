@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #f1f1f1;}
+.ldy_1{width: 100%;background:url("../img/ldy_banner.jpg") no-repeat center;height: 435px;}
+.ldy_2{width: 1000px;margin: -20px auto 0;overflow: hidden;}
+.ldy_2 li{border: 1px #e72f31 solid;width: 320px;margin: 0 5px;border-radius: 3px;position: relative;margin-top: 20px;float: left;background-color: #ffffff;}
+.ldy_2 li .title{overflow: hidden;background-color: #ffffff;position: absolute;top:-11px;font-weight: bold;
+    left: 50%;margin-left: -48px;}
+.ldy_2 li .title .span_num{color: #ffffff;background-color: #e82e2f;border-radius: 50%;font-size: 0.9em;width: 22px;height: 22px;
+    line-height: 22px;text-align: center;display: block;float: left;}
+.ldy_2 li .title .span_con{font-size: 18px;color: #e82e2f;float: left;display: block;height: 24px;line-height: 24px;margin-left: 3px;}
+.ldy_2 li .p1{width: 90%;font-size: 16px;color: #333333;margin: 20px auto 10px;}
+.ldy_2 li .p_img{width: 253px;margin:0 auto 10px;}
+.ldy_2 li .p_img img{width: 100%;}
+.ldy_3{width: 1000px;margin: 20px auto;background-color: #ffffff;padding: 45px 0 20px;}
+.ldy_3 h2{border-top:1px #eb4343 dashed;text-align: center;font-size: 26px;color: #eb4343;position: relative;font-weight: normal;
+    width: 960px;margin: 0 auto 40px; }
+.ldy_3 h2 span{position: absolute;top:-20px;left: 420px;padding: 0 5px;background-color: #ffffff; }
+.ldy_3 .gz{width: 960px;margin: 0 auto;}
+.ldy_3 .gz h3{font-size: 26px;color:#eb4343;border-left: 4px #eb4343 solid;padding-left: 20px; font-weight: normal;margin: 20px 0;}
+.ldy_3 .gz ol{color: #666666;    margin-left: 50px;font-size: 22px;}
+.ldy_3 .gz ol li{margin-top: 6px;}
+.ldy_3 .gz img{width:656px;margin-left: 170px; }
+.ldy_3 .gz .p1{color: #666666;font-size: 22px;margin-top: 7px;margin-left: 5%;line-height: 35px;}
+.ldy_3 .gz .p2{color: #666666;font-size: 22px;margin-left: 5%;}
+.ldy_3 .gz .p3{color: #666666;font-size: 22px;margin-left: 5%;}
+.ldy_3 .gz .p4{color: #666666;font-size: 22px;overflow: hidden;margin-left: 5%;line-height: 35px;}
+.ldy_3 .gz .p4 .span1{float: left;display: inline-block;width: 68px;}
+.ldy_3 .gz .p4 .span2{float: left;display: inline-block;}
+.ldy_4{width: 1000px;margin: 20px auto;text-align: center;background-color: #ffffff;}

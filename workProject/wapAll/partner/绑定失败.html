@@ -1,0 +1,44 @@
+
+<title>合伙人绑定成功</title>
+<meta charset="UTF-8" />
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+<title></title>
+<link href="http://static.facebank.cn/static/wapFront/common/css/common.css" rel="stylesheet" />
+<style type="text/css">
+    body{background-color: #ffffff;}
+    .suc2{font-size: 1.6em;color: #666;line-height: 1.5em;}
+    .suc_tip{width: 77%;margin: 2em auto;}
+    .suc_tip {border-top: 1px #dddddd solid;list-style-position: inside;padding-top: 20px;color: #333333;text-align:center; }
+</style>
+<div class="suc1">
+    <img src="http://static.facebank.cn/static/wapFront/common/img/error.png" /></div>
+<div class="suc2">
+    绑定失败</div>
+<div class="suc_tip">
+            请关闭该页面，返回微信公众号
+</div>
+<div class="suc3">
+    <a class="comBtn" onclick="javaScript:WeixinJSBridge.call('closeWindow');">关闭</a>
+</div>
+
+<script src="https://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        var params = location.search;
+        if(params&&params.indexOf('curDevice') > -1){
+            $(".head").hide();
+
+        }else{
+            $(".head").show();
+        }
+    })
+</script>
+<script type="text/javascript">
+    !function(key){
+        var w = window, d = document, _fd=w._fd=w._fd||[], methods = ["pageView","event","event2app","autoEvent2app","setUserInfo","setContentInfo"];
+        var fac=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);_fd.push(e);return _fd}};
+        for(var t=0;t<methods.length;t++){var e=methods[t];_fd[e]=fac(e)}
+        var g = d.createElement('script'), s = d.getElementsByTagName('script')[0];g.type = 'text/javascript';g.async = true;g.defer = true;g.src = '//sdk.firedata.cc/js/'+key+'.js';s.parentNode.insertBefore(g, s);
+    }('9WAI779FPB');
+    _fd.pageView();
+</script>

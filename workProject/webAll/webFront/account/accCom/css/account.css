@@ -1,0 +1,33 @@
+﻿/*我的账户共用样式*/
+.account {width: 1110px;margin:0 auto;  font-family:"微软雅黑";}
+.accountNav {text-indent: 10px;height: 50px;line-height: 50px;font-size: 12px;color: #666;}
+.accountNav a {margin-right: 5px;color: #999;}
+.accountLeft {width:115px; float: left;text-indent: 10px; }
+.accountHeight {height: 1000px;}
+.alList li{font-size:14px;  margin: 0px 0px 18px;}
+.alList li:hover{background-color: #fff;border-left: 1px #fdcd01 solid;}
+.allist a:hover{color:#ffbc00;}
+.alList img{  vertical-align: top;}
+.alYulan{color: #000;font-weight: bold;}
+.alChoosed{background-color: #fff;border-left: 1px #fdcd01 solid;}
+.alChoosed a{color:#ffbc00;}
+.accountRight {float: left;width: 993px;border: 1px #eaeaea solid;  margin-bottom: 20px;}
+.accountTitle{margin: 0px 25px;border-bottom:1px #f86c36 solid;line-height: 50px;  height: 50px;}
+.accountTitle .titleName {font-size: 16px;font-weight: bold;color: #f86c36; }
+.accountTitle .accountTitleCharge {width: 58px;height: 25px;display: inline-block;
+    line-height: 25px;border-radius: 3px;background-color: #f2f8fe;color:#4171ab;
+    border: 1px #a5bcd8 solid;text-align: center;float: right;  margin-top: 13px;}
+.accountTitle .accountTitleCharge:hover{background-color:#e6f3ff;color:#4171ab;}
+.table {border-spacing: 0;border-collapse: collapse; text-align: center;
+     width: 850px;max-width: 100%; margin-bottom: 20px; margin: 0 75px;
+  font-size: 14px;color: #787878;   line-height: 45px; margin-top: 20px;}
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+     border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+
+}

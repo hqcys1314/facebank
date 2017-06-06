@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>新春红包</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/css/jihe.css">
+</head>
+<body>
+<div class="bg">
+    <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/jihe-banner.jpg" class="bg-img">
+    <p class="p_guize">查看规则></p>
+</div>
+<div class="con">
+    <p>温暖红包，福利传递</p>
+    <a href=""><img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/qufa.png" alt="去发红包"></a>
+    <p>未投资用户专享红包</p>
+    <a href=""><img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/quqiang.png" alt="去抢红包"></a>
+</div>
+<div style="height: 6em;">
+
+</div>
+<div class="kai-foot">
+    <img src="http://static.facebank.cn/static/wapFront/activity2017/newYear0110/img/kai_bottom.png">
+</div>
+<div class="wapMc">
+
+</div>
+<!-----------------------规则弹框---------------------------->
+<div class="wapGz" id="guize">
+    <div class="gz_con">
+        <p class="p_title">活动规则</p>
+        <div class="content">
+            <h3>活动时间：2016年1月12日（00：00）- 2016年2月28日（23：59）</h3>
+            <ol>
+                <li>活动对象：新春红包仅限未投资过的新用户领取</li>
+                <li>红包有效期：须在成功领取之日起45天之内使用，过期失效</li>
+                <li>新春红包：砸金蛋后的叠加效果可使加息红包达到（1.1%~1.5%）</li>
+                <li>使用红包：请从【笑脸金融】客户端（PC\APP\微信公众号均可）登录后进入【我的红包】中查看并使用；</li>
+                <li>新春红包不可与其他红包叠加使用，可用于非新手标以及其他限制使用红包的投资项目；</li>
+                <li>加息红包产生的收益不与正常投资收益合并显示，待投资项目期满后将会以【红包奖励】的形式发放至您的平台账户中；</li>
+            </ol>
+            <p class="p_btn">上下滑动查看更多...</p>
+            <p class="p_con">活动最终解释权归笑脸金融所有</p>
+        </div>
+        <p class="p_close">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/close.png" class="tk_close">
+        </p>
+    </div>
+</div>
+
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*规则弹框*/
+    $(".bg .p_guize").click(
+            function(){
+                $(".wapMc").show();
+                $(".wapGz").show();
+            }
+    )
+    $(".tk_close").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapGz").hide();
+            }
+    )
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸币明细</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/jifen/css/mingxi.css">
+    <meta name="page-name" content="笑脸币明细"/>
+    <meta name="user-id" content=""/>
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    笑脸币明细
+</div>
+<div class="mx_tab">
+    <ul>
+        <li class="mx_on" id="list1" onclick="listTab(1)" data-event="jf_detail_get" data-event-name="积分-笑脸币明细-已获得" data-event-category="jf_detail_getBtn">已获得</li>
+        <li class="mx_off" id="list2" onclick="listTab(2)" data-event="jf_detail_exchange" data-event-name="积分-笑脸币明细-已兑换" data-event-category="jf_detail_exchangeBtn">已兑换</li>
+    </ul>
+</div>
+<div class="regresh">
+    放开以刷新..
+</div>
+<div id="listShow1">
+    <div class="mx_empy">
+        <p class="p1">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/mx_empty.png">
+        </p>
+        <p class="p2">
+            暂无笑脸币获得记录
+        </p>
+        <a class="mx_btn" data-event="jf_detail_earn" data-event-name="积分-笑脸币明细-赚笑脸币" data-event-category="jf_detail_earnBtn">
+            赚笑脸币
+        </a>
+    </div>
+</div>
+<div id="listShow2">
+    <div class="mx_empy">
+        <p class="p1">
+            <img src="http://static.facebank.cn/static/wapFront/jifen/img/mx_empty.png">
+        </p>
+        <p class="p2">
+            暂无笑脸币兑换记录
+        </p>
+        <a class="mx_btn">
+            赚笑脸币
+        </a>
+    </div>
+</div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    function listTab(num){
+        for(var i=1;i<=2;i++){
+            if(i==num){
+                $("#listShow"+i).show();
+                $("#list"+i).removeClass("mx_off").addClass("mx_on");
+            }
+            else{
+                $("#listShow"+i).hide();
+                $("#list"+i).removeClass("mx_on").addClass("mx_off");
+
+            }
+        }
+    }
+
+</script>
+</html>

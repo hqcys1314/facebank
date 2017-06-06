@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>授权信息</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/staticod/ouding/certification/css/shouquan.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.go(-1)" class="left">
+        <img src="http://static.facebank.cn/staticod/ouding/common/img/fanhui.svg">
+    </a>
+    <h3>授权信息</h3>
+</header>
+<section class="content">
+    <div class="tip">请如实完成以下信息，会极大提升你的通过率</div>
+    <div class="part" id="phoneLink" data-event="authority-phone" data-event-name="授权信息-手机运营商" data-event-category="authority-phone-link">
+        <p>手机运营商</p>
+        <div class="jieshao">了解您的通话、日常情况</div>
+        <!---------------------填写未完成icon状态---------------------------->
+        <span class="zhankai" style="display: none">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+        <!---------------------填写完成icon状态---------------------------->
+        <span class="duigou">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/duigou_kong.svg">
+        </span>
+    </div>
+    <div class="part cer_identitycard" data-event="authority-bank" data-event-name="授权信息-银行卡验证" data-event-category="authority-bank-link">
+        <p>上传身份证照片</p>
+        <div class="jieshao">了解您的信息</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part" id="bankLink" data-event="authority-bank" data-event-name="授权信息-银行卡验证" data-event-category="authority-bank-link">
+        <p>银行卡验证</p>
+        <div class="jieshao">验证和绑定银行卡，用于提现和还款</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <div class="part" id="zhimaLink" data-event="authority-zhima" data-event-name="授权信息-芝麻信用" data-event-category="authority-zhima-link">
+        <p>芝麻信用</p>
+        <div class="jieshao">授权查询你的芝麻信用分等</div>
+        <span class="zhankai">
+                <img src="http://static.facebank.cn/staticod/ouding/common/img/zhankai.svg">
+        </span>
+    </div>
+    <!----------------------按钮为红色--------------------->
+    <input type="button" value="提交" class="tijiao color-red" style="display: none">
+    <!----------------------按钮为灰色-------------------->
+    <input type="button" value="提交" class="tijiao">
+</section>
+     <a href="更多授权信息.html" class="more"><img src="http://static.facebank.cn/staticod/ouding/certification/img/jia.png"></a>
+
+</body>
+<script src="http://static.facebank.cn/staticod/ouding/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    $("#bankLink").click(
+            function(){
+                location.href="银行卡认证.html"
+            }
+    )
+
+</script>
+</html>

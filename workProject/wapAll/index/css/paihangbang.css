@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.listTab{height: 40px;background-color: #fff; margin-bottom: 0.5em;}
+.listTab ul{width: 100%;}
+.listTab ul li{float: left;text-align: center;font-size: 1em;height: 40px;line-height:40px;width: 49.5%; }
+.listTabOn{border-bottom: 1px #f86c36 solid;color: #000;}
+.listTabOff{color: #999;}
+.listShow2{display: none;}
+.ul_com{overflow: hidden;}
+.ul_com li{float: left;width: 33.3%;text-align: center;}
+.ul_com .li_1{width: 26%;}
+.ul_com .li_1 img{width: 25px;vertical-align: middle;}
+.ul_com .li_1 .span1{border-radius: 50%;text-align: center;background-color: #fcccb8;color: #ffffff;    margin: 8px auto;
+    font-size: 13px;width: 24px; height: 24px;display: block;vertical-align: middle;line-height: 24px;}
+.ul_com .li_2{width: 37%;}
+.ul_1{font-size: 0.95em;color: #333333;height: 30px;line-height: 30px;}
+.ul_2{font-size: 0.9em;background-color: #ffffff;height: 40px;line-height: 40px;border-top: 1px #dddddd solid;}
+.phb_fud{max-width: 600px;width: 100%;background-color: #fff2ec; position: fixed;bottom: 0; z-index: 2;border-top: 1px #fcccb8 solid;overflow: hidden;padding: 10px 0;}
+.phb_fud ul{overflow: hidden;}
+.phb_fud ul li{float: left;width: 49%;border-right: 1px #ddd solid;padding: 5px 0;}
+.phb_fud ul li a{display: block;overflow: hidden;margin-left: 10%;}
+.phb_fud ul li .span1{float: left;width: 32px;margin-right: 5%;}
+.phb_fud ul li .span1 img{width: 100%;}
+.phb_fud ul li .span2{float: left;font-size:0.9em;}
+.phb_fud ul li .span2 font{display: block;font-size: 1em;color: #f86c36;font-weight: bold;}

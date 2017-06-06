@@ -1,0 +1,41 @@
+.cer-tip{font-size: 0.9em;width: 90%;margin: 0 auto;line-height: 22px;}
+.cer-tip p{width: 100%;text-align: center;}
+.cer-tip p img{width: 20%;margin: 20px auto;}
+/*失败页面*/
+.cer-rec{margin-left: 5%;border-bottom: 1px #dddddd solid;padding-bottom: 10px;margin-bottom: 20px;}
+.cer-rec h3{border-left: 3px #333 solid;font-weight: normal;text-indent: 10px;color: #333333;    height: 20px;line-height: 20px;}
+.cer-rec .cer-rec-bid{position: relative;margin-top: 15px;}
+.cer-rec .cer-rec-bid .part {padding-top: 10px;
+    position: relative;border-top: 1px #dddddd solid;
+   padding-left: 57px;background-repeat: no-repeat;
+    background-size: 44px 44px;background-position:0 15px ;
+}
+.cer-rec .cer-rec-bid .part p {
+    font-size: 1em;padding-top: 5px;
+    color: #000;
+}
+.cer-rec .cer-rec-bid .part .jieshao {
+    width: 100%;
+    font-size: 1.05em;
+    height: 32px;
+    line-height: 32px;
+    color: #999;
+    padding-bottom: 5px;
+}
+.cer-rec .cer-rec-bid .part .biaoshi {
+   color: #ff4830;border: 1px #ff4830 solid;font-size: 0.8em;
+    position: absolute;border-radius: 2em;
+    top: 14px;padding:2px 5px;
+    right: 18px;
+}
+.cer-rec .cer-rec-bid .part .tiaozhuan {
+    width: 14px;
+    position: absolute;
+    bottom: 7px;
+    right: 15px;
+}
+.cer-rec .menkan{font-size: 0.7em;}
+#rec_1{background-image:url("../img/rec_1.png");}
+#rec_2{background-image:url("../img/rec_2.png");}
+#rec_3{background-image:url("../img/rec_3.png");}
+#rec_4{background-image:url("../img/rec_4.png");}

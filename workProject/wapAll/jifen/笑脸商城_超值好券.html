@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>笑脸商城-超值好券</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/jifen/css/jifen.css">
+    <meta name="page-name" content="超值好券"/>
+    <meta name="user-id" content=""/>
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    笑脸商城
+</div>
+<div class="quan_title">
+    <p class="p1">
+        <img src="http://static.facebank.cn/static/wapFront/jifen/img/quan_icon.png">
+    </p>
+    <p class="p2">
+       超值好券
+    </p>
+</div>
+<div class="quan_con">
+    <div class="quan_list">
+        <div class="part part_margin">
+
+            <div class="div_img">
+                <a data-event="jf_consume_goods" data-event-name="积分-我的笑脸币页-可兑换商品" data-event-category="jf_consume_goodsLink"><img src="http://static.facebank.cn/static/wapFront/jifen/img/huafei_100.png"></a>
+            </div>
+            <div class="div_title">
+                50元话费充值卡
+            </div>
+            <div class="div_value">
+                <p>
+                    <span class="span1"><img src="http://static.facebank.cn/static/wapFront/jifen/img/huafei_100.png"></span>
+                    <span class="span2">500</span>
+                    <span class="span3">笑脸币</span>
+                </p>
+                <p>
+                    <span class="span4">原价</span>
+                    <span class="span5">1000笑脸币<font></font></span>
+                </p>
+            </div>
+        </div>
+        <div class="part ">
+            <div class="div_img">
+                <img src="http://static.facebank.cn/static/wapFront/jifen/img/huafei_100.png">
+            </div>
+            <div class="div_title">
+                50元话费充值卡
+            </div>
+            <div class="div_value">
+                <p>
+                    <span class="span1"><img src="http://static.facebank.cn/static/wapFront/jifen/img/money_icon.png"></span>
+                    <span class="span2">500</span>
+                    <span class="span3">笑脸币</span>
+                </p>
+                <p>
+                    <span class="span4">原价</span>
+                    <span class="span5">1000笑脸币<font></font></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---弹框提示--->
+<div class="wapMc"></div>
+<!---已经购买过弹框--->
+<div class="wapPos" style="text-align: center" id="tip1">
+    <div class="wapTip">
+        <p class="p1">本个月已经购买过<br/>您下个月可以再次购买</p>
+        <p class="p3">
+            确定
+        </p>
+    </div>
+</div>
+<!---限制购买弹框--->
+<div class="wapPos" style="text-align: center" id="tip2">
+    <div class="wapTip">
+        <p class="p1">仅限白银会员购买<br/>去投资提升会员等级？</p>
+        <p class="p2">
+            <span class="span1"><a href="">去投资</a></span><span class="span2">再看看</span>
+        </p>
+    </div>
+</div>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*点击关闭弹框*/
+    $(".wapPos .p3").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapPos").hide();
+            }
+    )
+    $(".wapPos .span2").click(
+            function(){
+                $(".wapMc").hide();
+                $(".wapPos").hide();
+            }
+    )
+</script>
+</body>
+</html>

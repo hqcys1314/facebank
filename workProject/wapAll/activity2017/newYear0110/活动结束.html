@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>新春红包</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <style>
+        body{background-color: #f1f1f1;}
+        div{margin-top: 200px;
+            width:100%;text-align: center;font-size: 1em;color: #999999;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        活动已结束，感谢关注<br/>
+        <span id="time">5</span>秒后进入笑脸金融
+    </div>
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /*5秒后自动跳转到首页*/
+                    var djs=5;
+                   var djsClear=setInterval(
+                           function(){
+                               $("#time").html(djs);
+                               djs--;
+                               if(djs< 0){
+                                   location.href="https://m.facebank.cn/wap/index";
+                                   clearInterval(djsClear);
+                               }
+                           },1000
+                   )
+</script>
+</html>

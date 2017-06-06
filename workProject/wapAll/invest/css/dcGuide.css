@@ -1,0 +1,16 @@
+body{background-color: #e04c24;}
+.dcg-1{width: 100%;}
+.dcg-1 img{width: 100%;}
+.dcg-2{margin-bottom: 1.25rem;}
+.dcg-2 .dcg-pos{width: 90%;margin: 0 auto;border-radius: 5px;background-color:#FFFFFF;padding-bottom: 1rem; }
+.dcg-2 .dcg-pos h3{height: 2.75rem;line-height: 2.75rem;border-bottom: 1px #fda892 dashed;font-size: 1.125rem;font-weight: bold;
+width: 90%;margin: 0 auto;text-align: center;color: #fc5225;}
+.dcg-2 .dcg-pos p{line-height: 1.25rem;}
+.dcg-2 .dcg-pos .p-content{font-size: 0.875rem;width: 90%;margin: 0 auto;}
+.dcg-2 .dcg-pos .p-title{font-size: 0.875rem;color: #000000;width: 90%;margin:0 auto ;}
+.dcg-2 .dcg-pos .p1{margin-top: 1rem;margin-bottom: 1rem;}
+.dcg-2 .div-buy{width: 90%;margin: 0 auto;}
+.dcg-2 .div-buy img{width:100%;}
+.dcg-3{color: #FFFFFF;width: 90%;margin: 1rem auto;line-height: 1.188rem;font-size: 0.813rem;}
+.dcg-4{width: 90%;margin: 0 auto 3rem;background-color: #d3d11f;text-align: center;color:#d14019;border-radius: 5px;
+    font-size: 1.063rem;height: 2.75rem;line-height: 2.75rem;}

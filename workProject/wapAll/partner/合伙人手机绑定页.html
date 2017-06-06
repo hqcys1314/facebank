@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>微信绑定</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="http://css.facebank.net.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://css.facebank.net.cn/static/wapFront/partner/css/phoneBind.css">
+</head>
+<body>
+<div class="head">
+    <a href="javascript:history.go(-1)">
+        <img src="http://static.facebank.cn/static/wapFront/common/img/jiantou.png">
+    </a>
+    微信绑定
+</div>
+<div class="bd_1">
+    <img src="http://img.facebank.net.cn/static/wapFront/partner/img/logo.png">
+</div>
+<!--领取按钮-->
+<div class="bd_2">
+    <div class="div_pos">
+        <p class="part1">
+            <span class="icon"><img src="http://img.facebank.net.cn/static/wapFront/partner/img/icon1.png"></span>
+            <input type="tel" placeholder="请输入您的手机号码"></p>
+        <div class="part2">
+            <span class="icon"><img src="http://img.facebank.net.cn/static/wapFront/partner/img/icon2.png"></span>
+            <input type="tel"  placeholder="请输入验证码">
+            <input type="button" value="发送验证码"  id="msgCode" onclick="timePass()">
+        </div>
+        <p class="part4">
+            温馨提示：未注册笑脸金融账号的手机号，登录时将自动注册笑脸金融账号，且代表您已同意《<a href="http://m.facebank.cn/wap/agreementReg" data-event="wap_facebankAggrement" data-event-name="wap用户注册页-笑脸金融用户协议链接" data-event-category="wap_facebankAggrementLink">笑脸金融用户协议</a>》
+        </p>
+        <p class="part3"><input type="button" value="立即绑定" id="bind"></p>
+
+    </div>
+</div>
+
+</body>
+<script src="http://js.facebank.net.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    /* 模仿android里面的Toast效果*/
+    var Toast = function(config){
+        this.context = config.context==null?$('body'):config.context;//上下文
+        this.message = config.message;//显示内容
+        this.left = config.left;//距容器左边的距离
+        this.top = config.top;//距容器上方的距离
+        this.init();
+    }
+    var msgEntity;
+    Toast.prototype = {
+        //初始化显示的位置内容等
+        init : function(){
+            $("#toastMessage").remove();
+            //设置消息体
+            var msgDIV = new Array();
+            msgDIV.push('<div id="toastMessage">');
+            msgDIV.push('<span>'+this.message+'</span>');
+            msgDIV.push('</div>');
+            msgEntity = $(msgDIV.join('')).appendTo(this.context);
+            //设置消息样式
+            var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2-20: this.left;
+            var top = this.top == null ? '50%' : this.top;
+            msgEntity.css({position:'fixed',top:top,'z-index':'99',left:'26%','background-color':'#333333','color':'white','text-align':'center','font-size':'0.8em',padding:'7px 2%',width:'44%','border-radius':'5px','box-shadow': '0px 0px 5px #000'});
+            msgEntity.hide();
+        },
+        //显示动画
+        show :function(time){
+            msgEntity.fadeIn(time/4);
+            msgEntity.fadeOut(time/2);
+        }
+
+    }
+    /*点击按钮，吐司错误提示*/
+    $("#bind").click(
+            function(){
+                new Toast({context:$('body'),message:'XXXXXX'}).show("5000");
+            }
+    )
+    /*获取验证码*/
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#msgCode").val("获取验证码");
+            $("#msgCode").css("color", "#f86025");
+            $("#msgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#msgCode").val("重获取("+miao+")");
+            $("#msgCode").attr('disabled',true);
+            $("#msgCode").css("color", "#666666");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+        }
+    }
+
+</script>
+</html>

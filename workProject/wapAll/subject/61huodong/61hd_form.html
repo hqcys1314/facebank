@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="html_1">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>6.1儿童节活动</title>
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/common/css/common.css">
+    <link rel="stylesheet" href="http://static.facebank.cn/static/wapFront/subject/61huodong/css/61huodong.css">
+    <meta name="page-name" content="填写信息"/>
+    <meta name="user-id" content=""/>
+</head>
+<body class="body_2">
+        <div class="form_61_3">
+            <p class="p1">宝宝基本信息</p>
+            <p class="p2">
+                <span class="span1">昵称</span><input type="text">
+            </p>
+            <p class="p2">
+                <span class="span1">性别</span><input type="radio" name="sex" id="woman"><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/woman.png">
+                <input type="radio"  name="sex" id="man"><img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/man.png">
+                <span class="span1">年龄</span><select><option>0岁</option><option>1岁</option><option>2岁</option><option>3岁</option><option>4岁</option><option>5岁</option><option>6岁</option><option>7岁</option><option>8岁</option><option>9岁</option><option>10岁</option></select>
+            </p>
+            <p class="p2">
+                <span class="span1">特长</span><textarea rows="3"></textarea>
+            </p>
+            <p class="p1">宝宝靓照</p>
+        </div>
+       <div class="form_61_1">
+           <img src="http://static.facebank.cn/static/wapFront/subject/61huodong/img/photo.jpg">
+       </div>
+       <div class="form_61_2">
+           <p>上传图片<input type="file" value="上传图片" data-event="shangchuan" data-event-name="上传图片" data-event-category="shangchuanBtn"></p>
+       </div>
+        <div style="height: 4em;">
+
+        </div>
+        <div class="gameMc"></div>
+        <div class="gameMcPos">
+            <input type="button" class="input_btn" data-event="canxuan" data-event-name="立即参选" data-event-category="canxuanBtn">
+        </div>
+
+</body>
+<script src="http://static.facebank.cn/static/wapFront/common/js/jquery-1.11.3.min.js"></script>
+<script>
+    var womanStatus=$("#woman").is(':checked')
+    if(womanStatus){
+        woman=1;
+    }else{
+        woman=0;
+    }
+</script>
+</html>

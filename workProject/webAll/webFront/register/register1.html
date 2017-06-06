@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="刷脸金融">
+    <meta name="description" content="刷脸金融">
+    <title>设置登录密码</title>
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/head_foot.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/common/css/common.css" />
+    <link rel="stylesheet"  href="http://static.facebank.cn/static/webFront/register/css/register.css" />
+</head>
+<body>
+<!------页头开始--------->
+<div class="top">
+    <div class="top-1">
+        <ul class="top-1-left">
+            <li>
+                <span class="home">刷脸金融,欢迎您!</span>
+            </li>
+            <li>
+                <span class="top-phone">客服热线：</span>
+                <span class="phone">4008 900 766</span>
+            </li>
+        </ul>
+        <ul class="top-1-right">
+            <li> <a  href="http://www.facebank.cn/index"> 首页 </a> </li>
+            <li> <a  href="http://www.facebank.cn/login" data-event="topLogin" data-event-name="页头-登录" data-event-category="topLoginLink"> 请登录 </a> </li>
+            <li> <a  href="http://www.facebank.cn/goRegister" data-event="topRegister" data-event-name="页头-快速注册" data-event-category="topRegisterLink"> 快速注册 </a> </li>
+            <li> <a  href="http://www.facebank.cn/static/helpcenter" data-event="topHelp" data-event-name="页头-帮助中心" data-event-category="topHelpLink"> 帮助中心 </a> </li>
+            <li> <a  href="http://cms.facebank.cn/a/uploadpage.html" target="_blank" class="phone-border" data-event="top" data-event-name="页头-下载专区" data-event-category="topLoadLink" ><span class="phone-load" > 移动端下载 </span></a> </li>
+        </ul>
+    </div>
+</div>
+<!--清除浮动-->
+<div class="clear"></div>
+<!--导航-->
+<div class="common_nav">
+    <div class="nav-1">
+        <div class="nav-1-left">
+            <a  href="http://www.facebank.cn/index" data-event="topLogo" data-event-name="页头-Logo" data-event-category="topLogoLink">
+                <img src="http://static.facebank.cn/static/webFront/common/img/logo.png" /></a>
+        </div>
+        <div class="navTitle" id="navTitle">
+            用户注册
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="registerTitle regT1">
+    <ul>
+        <li class="title1">创建账户</li>
+        <li class="title2">银行卡认证</li>
+        <li class="title3">支付密码设置</li>
+        <li class="title4">注册成功</li>
+    </ul>
+</div>
+<div class="clear"></div>
+<div class="register">
+    <div class="regList">
+        <span class="span1">手机号码</span>
+        <input type="text" placeholder="请输入您的手机号码">
+        <span class="regDel"></span>
+        <span class="errortipCom errtipReg">请输入您的常用手机号码</span>
+        <span class="warmtipCom warmtipReg">请输入您的常用手机号码</span>
+        <span class="successMark"></span>
+    </div>
+    <div class="regList">
+        <span class="span1">登录密码</span>
+        <input type="text" placeholder="请输入6-20位密码">
+        <span class="regDel"></span>
+        <span class="errortipCom errtipReg">请输入6-20位密码</span>
+        <span class="warmtipCom warmtipReg">请输入6-20位密码</span>
+        <span class="successMark"></span>
+    </div>
+    <div class="regList">
+        <span class="span1">确认密码</span>
+        <input type="text" placeholder="请重复密码">
+        <span class="regDel"></span>
+        <span class="errortipCom errtipReg">两次输入的密码不一样</span>
+        <span class="warmtipCom warmtipReg">两次输入的密码不一样</span>
+        <span class="successMark"></span>
+    </div>
+    <div class="regList">
+        <span class="span1">推荐人(选填)</span>
+        <input type="text" placeholder="请输入推荐人手机号码">
+        <span class="regDel"></span>
+        <span class="errortipCom errtipReg">请输入推荐人手机号码</span>
+        <span class="warmtipCom warmtipReg">请输入推荐人手机号码</span>
+        <span class="successMark"></span>
+    </div>
+    <div class="regList1 regListImgcode">
+        <span class="span1">图形验证码</span>
+        <input type="text" value="" placeholder="请输入图形验证码">
+        <span class="span2"><img src="http://static.facebank.cn/static/webFront/login/img/loginImgcode.png"></span>
+        <span class="span3">看不清？<a data-event="regImgcardExchange"
+                                   data-event-name="注册页面-切换图形验证码按钮"
+                                   data-event-category="regImgcardExchangeBtn">换一张</a></span>
+        <span class="errortipCom errtipReg">请输入图形验证码</span>
+        <span class="warmtipCom warmtipReg">请输入图形验证码</span>
+        <span class="successMark"></span>
+    </div>
+    <div class="regList1">
+        <span class="span1">短信验证码</span>
+        <input type="text" value="" placeholder="请输入短信验证码">
+        <input class="span4" data-event="regMsgcard"
+              data-event-name="注册页面-短信验证码按钮"
+              data-event-category="regMsgcardBtn" value="获取动态密码"
+                 onclick="timePass()" id="regMsgCode" type="button">
+    </div>
+    <div class="regVoiceTip" id="regVoiceTip">动态密码已发送至您的手机133****9873，
+        <br>请尽快输入，若收不到短信请<a data-event="regVoicecard"
+                            data-event-name="注册页面-语音验证码按钮"
+                            data-event-category="regVoicecardBtn" id="regVoiceCode"
+                >语音获取</a></div>
+    <div class="regVoiceTip regVoiceWordTip">您的手机号133****9873将在60秒内收到021-1111111的电话，请接听并在120秒内输入</div>
+    <div class="regContract">
+        <input type="checkbox"><span>我已阅读并同意<a data-event="regUserAgreement"
+                                               data-event-name="注册页面-用户协议按钮"
+                                               data-event-category="regUserAgreementBtn"
+            >《刷脸金融用户协议》</a></span>
+    </div>
+    <div class="registerBtn improtant_button" data-event="regRegister"
+         data-event-name="注册页面-立即注册按钮"
+         data-event-category="regRegisterBtn"
+            >
+        立即注册
+    </div>
+    <div class="regLast">我已注册，立即<a data-event="regLogin"
+                                   data-event-name="注册页面-登录按钮"
+                                   data-event-category="regLoginBtn"
+            >登录></a></div>
+</div>
+<!--蒙版--->
+<div class="mask">
+</div>
+<div class="maskBox">
+    <div class="maskBoxCenter">
+        <div class="maskContent">
+            <p><span></span></p>
+            <div class="maskCenter">您输入的预留手机号码与银行预留手机号码不一致，请您与银行核实后再次输入。</div>
+            <p class="p_link"><a href="">点我了解详情>></a></p>
+            <div class="confirm improtant_button">确定</div>
+        </div>
+    </div>
+</div>
+<!--蒙版结束--->
+</body>
+<script src="http://static.facebank.cn/static/webFront/common/js/jquery-1.11.3.min.js"></script>
+<script src="http://static.facebank.cn/static/webFront/common/js/common.js"></script>
+<script src="http://static.facebank.cn/static/webFront/register/js/register.js"></script>
+<script>
+    var miao=60;
+    function timePass() {
+        if (miao == 0) {
+            $("#regMsgCode").val("获取动态验证码");
+            $("#regMsgCode").css("color", "#333");
+            $("#regMsgCode").attr('disabled',false);
+            miao = 60;
+        } else {
+            $("#regMsgCode").val(miao + "秒后重发");
+            $("#regMsgCode").attr('disabled',true);
+            $("#regMsgCode:hover").css("color", "#999");
+            miao--;
+            setTimeout(
+                    function () {
+                        timePass()
+                    }, 1000)
+
+        }
+    }
+    $("#regVoiceCode").click(
+            function(){
+                $("#regVoiceTip").hide();
+                $(".regVoiceWordTip").show();
+                setTimeout(
+                        function () {
+                            $(".regVoiceWordTip").hide();
+                            $("#regVoiceTip").show();
+                        }, 120000)
+
+            }
+    )
+    /*蒙版显示*/
+    /*
+     $("").click(
+     function(){
+     $(".mask").show();
+     $(".maskBox").show();
+     }
+     );
+     */
+</script>
+
+</html>

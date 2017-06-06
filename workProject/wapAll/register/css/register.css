@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/*注册页面*/
+.log_logo{text-align: center;width:100%;margin-top: 10px;margin-bottom: 5px;}
+.log_logo img{width: 96px;}
+.regMsgBd {border: 1px #ddd solid; background-color: #fff;}
+.regMsg {background-color: #fff;  margin-left: 5%;position: relative;}
+.regMsgBd .bor{border-bottom:1px #ddd solid;}
+.regMsgicon{display: inline-block;height:45px;  margin-right: 5px;}
+.regMsgicon img{height: 100%;vertical-align: middle;}
+.regMsgBd input{ width: 82%;font-size: 1em;border: navajowhite;vertical-align: middle;}
+.regXieyi {margin-top:10px;font-size: 0.8em;text-align: left; margin-left: 20px;}
+.regXieyi input{vertical-align: middle;}
+.regXieyi a{color: #f86c32;margin-left: 1%;}
+.regXieyi span{vertical-align: middle;margin-left: 1%;}
+.regMsgBtn {font-size: 1.1em;width: 70%;margin: 2% auto 0;}
+.regMsgBtn input{width: 100%;}
+.wapWechat{background-color: #000;opacity: 0.6;position: absolute;top: 0;width: 100%;display: none;}
+.wapWechat img{width: 100%;}
+.eye{position:absolute;right: 5%;width: 20px;top: 1em;}
+.eye img{width: 100%;}
+.regTj{padding:0 0 0 5%;    font-size: 0.9em;color: #333;height: 30px;line-height: 30px;border-bottom: 1px #ddd solid;}
+.regTj span{float: right;width: 28px;height: 30px;}
+.regTj span img{ width: 100%;}
+#regtj{border-top: 0;display: none;}
+.hideShowPassword-toggle, .my-toggle-class { z-index: 3;}
+.hideShowPassword-toggle {background-image: url(../img/wink.svg);
+    background-position: -44px center;background-repeat: no-repeat;cursor: pointer;
+    height: 100%;overflow: hidden;text-indent: -9999em; width: 44px;}
+.hideShowPassword-toggle-hide {background-position:0 center;}
+/*验证码*/
+.regPart1{text-align: center;font-size: 1em;margin-top: 25px;}
+.regPart2{text-align: center;font-size: 1.3em;font-weight: bold;color: #000000;margin-top: 10px;margin-bottom: 0.7em;}
+.regMsgBd .bor1 input[type="text"]{width: 50%;font-size: 1em;border: navajowhite;vertical-align: middle;}
+.regMsgBd .msgcard {border: 1px #f86c36 solid;outline: 0;background-color: #fff; color: #f96c36;font-size: 0.8em;
+    right: 12px;width: 86px;text-align: center;height: 25px;border-radius: 2em;position: absolute;top: 10px;}
+.nocode{text-align: right;  margin:0 10px 10px;font-size: 0.9em;float: right;width: 50%;}
+/*注册成功*/
+.regSuc1 {width: 30%;margin:50px auto 30px;}
+.regSuc1 img{width: 100%;}
+.regSuc2 {text-align: center;}
+.regSuc3 {width: 80%;margin:30px auto 10px;display: block;background-color: #f86c36;border-radius: 3px;}
+.regSuc3 a{width: 100%;display: block;line-height: 45px;}
+.regSuc4{width: 50%;float: right;text-align: right;margin: 10px 10% 0 0;}
+
+/*普通登录*/
+.listTab{height: 40px;background-color: #fff; margin-bottom:3%;}
+.listTab ul{width: 100%;}
+.listTab ul li{float: left;text-align: center;font-size: 1em;height: 40px;line-height:40px;width: 49.5%; }
+.listTabOn{border-bottom: 1px #f86c36 solid;color: #000;}
+.listTabOff{color: #999;}
+.listShow2{display: none;}
+.loginReg{  text-align: center;font-size: 1.1em;height:45px;line-height: 45px;width: 70%;  display: block;
+    margin: 2% auto 0;border-radius: 2em; color: #f86c36;border: 1px #f86c36 solid;  }
+.loginWord{color: #666;font-size: 0.9em;padding-right: 1.5em;width: 60%;margin: 10px auto;  overflow: hidden;}
+.loginWord a {text-decoration: none;}
+.loginWord .a1{ color: #666666;}
+.loginWord .a2{  float: right;color: #f86c36;}
+/*快捷登录*/
+.quickTip{width: 90%;margin: 10px auto;font-size: 0.7em;}
+.quickTip a{color: #f86c36;text-decoration: none;}
+.tip{width: 100%;    text-align: center;margin-top: 100px;  max-width: 600px;}
+.tip img{width: 70%;}
